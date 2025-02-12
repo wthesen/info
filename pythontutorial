@@ -1,0 +1,980 @@
+Python Tutorial
+Note
+
+Before running the script a second time, please make sure to delete everything from the project!
+
+There is no overwriting with most Python APIs, which may cause errors.
+
+Connecting Techlog Python to an external Python environment
+Since the release of Techlog 2020, users can connect their Techlog instance to any external Python IDE.
+
+This document will outline how to setup the connection to some of the most popular IDEs with remote Techlog.
+
+The list of covered environments is not extensive, and a similar process can be applied for any other.
+
+Warning
+
+While using remote Techlog, please always make sure that you have a running Techlog instance corresponding to the Techlog Python environment you are trying to link.
+
+Note
+
+Replace “Techlog xxxx” in the code samples with the correct name of your Techlog folder
+
+Table of Contents
+Spyder
+
+VS Code
+
+PyCharm
+
+Jupyter Notebooks
+
+Spyder
+Inside Spyder, click on the Preferences icon.
+
+../_images/preferences.png
+Click on the Python Interpreter tab.
+
+Select Use the following Python Interpreter and navigate to the python.exe file in the Techlog installation folder. Press Apply, then OK.
+
+../_images/pythonInterpreter.png
+Open a Windows command prompt window.
+
+../_images/windowsCommand.png
+Note
+
+You can type “cmd” in Windows search bar to open the application. Administrative rights might be required to install the library. You can right-click on cmd.exe and “Run as Administrator”.
+
+Type the following line in the Command Prompt:
+
+command line
+cd C:\Program Files\Schlumberger\Techlog xxxx\Python36_x64
+../_images/runPythonTechlogCmd.png
+Note
+
+Your installation file might be on a different drive than C; also depending on version of Techlog, the folder name might differ.
+
+Type the following line in the Command Prompt and go through the installation:
+
+Kernel installation
+python.exe -m pip install spyder-kernels==2.4.4
+../_images/spyderKernelInstallation.png
+Note
+
+Version of spyder-kernels depends on the version of Techlog. If version is not specified, the newest package is installed, which might not be compatible.
+
+Establish the connection to Techlog by writing these lines in the script content:
+
+Establish the connection to Techlog
+import sys
+import os
+TL_path = "C:/Program Files/Schlumberger/Techlog xxxx"
+sys.path.append(os.path.join(TL_path, "PythonScripts"))
+os.environ['PATH'] = ";".join(os.environ['PATH'].split(';') + [TL_path + "\\bin64"])
+import remote_techlog
+remote_techlog.connect_to_techlog()
+Note
+
+The previous section is mandatory for any Python script or notebook you write, it should always be at the beginning.
+
+../_images/establishConnectionToTechlog.png
+Start writing your own code below.
+
+VS Code
+Inside VS Code, navigate to Help > Show All Commands or with Ctrl+Shift+P.
+
+../_images/showAllCommands.png
+Click on the Python: Select Interpreter.
+
+../_images/selectInterpreter.png
+Note
+
+If it does not appear as shown below, start typing python.*
+
+Select Enter interpreter path. Paste the Techlog Python directory and press Enter.
+
+../_images/interpreterPath.png
+Establish the connection to Techlog by writing these lines in the script content:
+
+Establish the connection to Techlog
+import sys
+import os
+TL_path = "C:/Program Files/Schlumberger/Techlog xxxx"
+sys.path.append(os.path.join(TL_path, "PythonScripts"))
+os.environ['PATH'] = ";".join(os.environ['PATH'].split(';') + [TL_path + "\\bin64"])
+import remote_techlog
+remote_techlog.connect_to_techlog()
+Note
+
+The previous section is mandatory for any Python script or notebook you write, it should always be at the beginning.
+
+../_images/establishConnectionToTechlog2.png
+Start writing your own code below.
+
+PyCharm
+Open PyCharm and select Create a New Project.
+
+../_images/createPycharmProject.png
+Create a project location (1), select Custom environment (2), and navigate to the python.exe in the Techlog version you want to use.
+
+../_images/customEnvironment.png
+Create a new Python file by right-clicking on the project folder.
+
+../_images/newPythonFile.png
+Establish the connection to Techlog by writing these lines in the script content:
+
+Establish the connection to Techlog
+import sys
+import os
+TL_path = "C:/Program Files/Schlumberger/Techlog xxxx"
+sys.path.append(os.path.join(TL_path, "PythonScripts"))
+os.environ['PATH'] = ";".join(os.environ['PATH'].split(';') + [TL_path + "\\bin64"])
+import remote_techlog
+remote_techlog.connect_to_techlog()
+Note
+
+The previous section is mandatory for any Python script or notebook you write, it should always be at the beginning.
+
+../_images/establishConnectionToTechlog-PyCharm.png
+Start writing your own code below.
+
+Jupyter Notebooks
+Jupyter Notebooks offer an interactive environment for running code cells, facilitating iterative exploration and immediate feedback on results.
+
+They support seamless integration of code with text, images, and visualizations, enhancing collaboration and enabling the creation of rich, shareable documents.
+
+Warning
+
+The following steps assume a conda environment has already been setup on the machine with the jupyter notebook library installed on top of it.
+
+Open a Windows command prompt window.
+
+../_images/windowsCommand.png
+Note
+
+You can type “cmd” in Windows search bar to open the application. Administrative rights might be required to install the library. You can right-click on cmd.exe and “Run as Administrator”.
+
+Type the following line in the Command Prompt:
+
+Command line
+cd C:\Program Files\Schlumberger\Techlog xxxx\Python36_x64
+../_images/runPythonTechlogCmd.png
+Note
+
+Your installation file might be on a different drive than C; also depending on version of Techlog, the folder name might differ.
+
+Install ipykernel with the command below:
+
+Kernel installation
+python.exe -m pip install ipykernel
+../_images/pycharmKernelInstallation.png
+Note
+
+ipykernel is a Python package that provides the IPython kernel for Jupyter, it allows you to run Python code inside Jupyter Notebooks.
+
+Open a new Windows command prompt window.
+
+../_images/windowsCommand.png
+Activate your base conda environment:
+
+Conda environment activation
+conda activate
+Copy these lines to create a new conda environment with Jupyter:
+
+Create new conda environment with Jupyter
+conda create –n techlog python=3.12.1 jupyter
+../_images/newCondaEnvironment.png
+Note
+
+Your python version might be on different depending on version of Techlog, please double check to match with Techlog Python iteration.
+
+Activate your new environment:
+
+activate the new environment
+conda activate techlog
+../_images/activateCondaEnvironment.png
+Connect the environment containing the Jupyter kernel to the Techlog Python path:
+
+Connect the environment containing the Jupyter kernel to the Techlog Python path
+“C:\Program Files\Schlumberger\Techlog xxxx\Python36_x64\python.exe” -m ipykernel install –-name techlog
+../_images/connectEnvironmentToJupyter.png
+From the same cmd with the activated techlog conda environment, open Jupyter Notebook:
+
+Open Jupyter Notebook
+jupyter notebook --notebook-dir=path/to/your/desired/folder
+Note
+
+The notebook-dir argument allows to change the working directory and is hepful to organize projects.
+
+Create a new Notebook.
+
+../_images/newNotebook.png
+Go to Kernel > Change Kernel… and Select techlog kernel.
+
+../_images/kernelSetting.png
+Establish the connection to Techlog by writing these lines in the notebook content:
+
+Establish the connection to Techlog
+import sys
+import os
+TL_path = "C:/Program Files/Schlumberger/Techlog xxxx"
+sys.path.append(os.path.join(TL_path, "PythonScripts"))
+os.environ['PATH'] = ";".join(os.environ['PATH'].split(';') + [TL_path + "\\bin64"])
+import remote_techlog
+remote_techlog.connect_to_techlog()
+Note
+
+The previous section is mandatory for any Python script or notebook you write, it should always be at the beginning.
+
+../_images/establishConnectionWithJupyter.png
+Start writing your own code below.
+
+Installing custom packages and importing modules
+Installing custom packages
+You can install any package to the Techlog Python environment with the following command in a command line window:
+
+Install seaborn
+# Installing seaborn, a popular plot library
+pip install seaborn
+Import different modules
+Following snippets of code have to be run in a python editor.
+
+Import the different modules
+# Techlog Python modules
+import TechlogDatabase as db
+import TechlogStat as stat
+import TechlogPlot as plt
+import TechlogVST as vst
+import tl
+import tl.workflow as wf
+
+# Popular Python modules
+import numpy as np
+import random as rd
+Importing, Creating and Exporting data
+Open project
+db.openProject('C:\\Techlog-Projects\\tl_tutorial.tlp', silent= True) # Open or create a project, close the previous project (without saving)
+
+project = tl.get_project()
+print('Current working project is: ' + project.get_full_name())
+Current working project is: tl_tutorial
+
+Import data inside your project
+Import .dlis file
+
+Import .dlis file
+#db.importFile('my_DLIS_file.dlis', loadToTheBuffer= False, level= 'project')
+Import .las file
+
+Import .las file
+#db.importFile('my_LAS_file.las', loadToTheBuffer= False, level= 'project')
+Create data inside your project
+Create a new well
+Create new well
+project = tl.get_project()
+well_test = project.create_well(well_name='well_test')
+Create a new dataset
+Create new dataset
+well_test = project.get_child('well_test') # With OOP, methods refer to the Project > Well > Dataset > Variable hierarchy when called
+dataset_test = well_test.create_dataset(dataset_name='dataset_test', row_count=3000)
+dataset_survey = well_test.create_dataset(dataset_name='SURVEY', row_count=3000)
+Create a new variable
+Create new variables
+# Create a survey dataset
+measured_depth = dataset_survey.create_variable(variable_name='MD',  unit='m', family='Measured Depth')
+dataset_survey.set_reference(measured_depth)
+
+azimuth = dataset_survey.create_variable(variable_name='AZI',  unit='deg', family='Hole Azimuth')
+inclination = dataset_survey.create_variable(variable_name='INCLINATION',  unit='deg', family='Hole Deviation')
+
+rows = dataset_survey.get_row_count()
+measured_depth.set_values(np.linspace(1000, 4000, num=rows))
+azimuth.set_values([20]*rows)
+inclination.set_values([0.25]*rows)
+
+# Create a regular dataset
+measured_depth = dataset_test.create_variable(variable_name='MD',  unit='m', family='Measured Depth')
+dataset_test.set_reference(measured_depth)
+
+gamma_ray = dataset_test.create_variable(variable_name='GR', unit='gAPI', family='Gamma Ray')
+neutron = dataset_test.create_variable(variable_name='NEUT', unit='m3/m3', family='Neutron Porosity')
+density = dataset_test.create_variable(variable_name='DENS', unit='g/cm3', family='Bulk Density')
+
+rows = dataset_test.get_row_count()
+measured_depth.set_values(np.linspace(1000, 4000, num=rows))
+gamma_ray.set_values(np.array([rd.randint(0,150) for i in range(1000, 4000)]))
+neutron.set_values(np.array([rd.uniform(0,0.45) for i in range(1000, 4000)]))
+density.set_values(np.array([rd.uniform(2.65,2.85) for i in range(1000, 4000)]))
+Create a new group
+Create new group
+well_test.set_groups(['Wells_py'])
+dataset_test.set_groups(['Datasets_py'])
+gamma_ray.set_groups(['LQC'])
+neutron.set_groups(['LQC'])
+density.set_groups(['LQC'])
+../_images/CreateNewGroup.jpg
+Get group
+print(well_test.get_groups())
+print(dataset_test.get_groups())
+print(gamma_ray.get_groups())
+Output:
+[‘Wells_py’] [‘Datasets_py’] [‘LQC’]
+
+Change group
+print('Group before change:', well_test.get_groups())
+db.wellGroupChange('well_test', []) # Specify empty list to remove from groups
+print('Group after change :', well_test.get_groups())
+
+print(db.wellGroupChange('well_test', ['Wells_py']))
+Group before change: [‘Wells_py’] Group after change : [] True
+
+Create a new zonation
+Create a new global zonation
+projectZonation = tl.zonation.createGlobalZonation('ZONATION_Py_project', 'project')
+userZonation = tl.zonation.createGlobalZonation('ZONATION_Py_user', 'user')
+Get a global zonation
+userZonation = tl.zonation.getGlobalZonation('ZONATION_Py_user')
+Delete a global zonation
+tl.zonation.deleteGlobalZonation(userZonation)
+Create a new zone
+projectZonation.createAndAppendChildZone('Zone_01')
+zone_02 = projectZonation.createZone('Zone_02')
+projectZonation.appendChildZone(zone_02)
+../_images/CreateNewZone.jpg
+Get zones
+print('List of child zones:', projectZonation.getChildZones())
+print('Count of child zones:', projectZonation.getChildZonesCount())
+print('Get child zone by index:', projectZonation.getChildZone(1))
+print('Check if zone is in global zonation:', projectZonation.findChildZone('Zone_02'))
+Output:
+List of child zones : [<Zone project.ZONATION_Py_project.Zone_01>, <Zone project.ZONATION_Py_project.Zone_02>] Count of child zones : 2 Get child zone by index: <Zone project.ZONATION_Py_project.Zone_02> Check if zone is in global zonation: <Zone project.ZONATION_Py_project.Zone_02>
+
+Delete a zone
+projectZonation.removeChildZone(zone_02)
+Output:
+<Zone project.ZONATION_Py_project.Zone_02>
+
+Create a new zonation dataset
+db.zonationAdd('well_test', 'ZONATION_Py_project', 'Measured Depth', 'm')
+db.zonationSave('well_test', 'ZONATION_Py_project')
+db.zoneAdd('well_test', 'ZONATION_Py_project', 'Zone Name', 'Zone_01', 2285, 2355, 'red')
+db.zoneChangeColor('ZONATION_Py_project', 'Zone_01', 'teal')
+top, bottom = db.datasetZoneDetail('well_test', 'ZONATION_Py_project', 'Zone_01', 'Zone Name')
+print('Top of zone:', top)
+print('Bottom of zone:', bottom)
+db.zonationSave('well_test', 'ZONATION_Py_project')
+Output:
+Top of zone: 2285.0 Bottom of zone: 2355.0 True
+
+../_images/CreateNewZonationDataset.jpg
+Set well properties
+Set well properties
+well_test = project.get_child('well_test') # With OOP, methods refer to the Project > Well > Dataset > Variable hierarchy when called
+well_test.set_name('Well3')
+well_test.set_color('#FF0000')
+../_images/SetWellProperties_1.jpg
+Set well properties
+well_test.set_property('Country', 'CO')
+well_test.set_property('Field', 'FIELD1')
+well_test.set_property('Company', 'COMPANY1')
+well_test.set_property('Longitude','64.25')
+well_test.set_property('Latitude','30.55')
+well_test.set_property('Elevation', '0', 'm')
+well_test.set_property('Elevation_datum', 'KB', 'm')
+well_test.set_property('Total_depth', '4000', 'm')
+well_test.set_property('Water_depth', '0', 'm')
+../_images/SetWellProperties_2.jpg
+Set dataset properties
+Set dataset properties
+dataset_test.set_property('STEP', '1', 'm')
+dataset_test.set_property('STRT', '1000', 'm')
+dataset_test.set_property('STOP', '4000', 'm')
+../_images/SetDatasetProperties.jpg
+Remove dataset properties
+Remove dataset properties
+dataset_test.remove_property('STOP')
+Export file
+Export file
+db.exportFile('C:\\Techlog-Projects\\tl_tutorial\\Export_Files\\Well3_dataset_test_Export', ['Well3.dataset_test'], 'LAS 3.0')
+Export project
+Export project
+db.exportProject('C:\\Techlog-Projects\\New_Project') # Will export the currently opened project as a compressed Techlog project (.tlpx)
+Working with data
+Warning
+
+This part assumes that you have the following objects created inside your project:
+A well Well3 (for more details about how to create a well see Create a new well)
+
+A regular dataset dataset_test (for more details about how to create a dataset see Create a new dataset)
+
+The variables MD, GR and NEUT (for more details about how to create a variable see Create a new variable)
+
+A zonation dataset ZONATION_Py_project (for more details about how to create a zonation see Create a new zonation dataset)
+
+A zone Zone_01 (for more details about how to create a zone see Create a new zone)
+
+A full survey dataset SURVEY
+
+Please refer to the previous tutorial parts on object creation(Create data inside your project) if you are missing one of these elements.
+
+Get project objects
+Get project objects
+project = tl.get_project()
+print(project.contains_well('Well3'))
+print(project.get_child('Well3').contains_dataset('dataset_test'))
+print(project.get_child('Well3').get_child('dataset_test').contains_variable('GR'))
+Output:
+True True True
+
+Get project objects from TechlogDatabase module
+print('Project wells:', db.wellList())
+print('Well3 datasets:', db.datasetList('Well3'))
+print('dataset_test variables:', db.variableList('Well3', 'dataset_test'))
+Output:
+Project wells: [‘Well3’] Well3 datasets: [‘dataset_test’, ‘SURVEY’, ‘ZONATION_Py_project’] dataset_test variables: [‘DENS’, ‘GR’, ‘MD’, ‘NEUT’]
+
+Get properties
+Get properties
+print('Well full name:', project.get_child('Well3').get_full_name())
+print('Well name:', project.get_child('Well3').get_name())
+print('Well color:', project.get_child('Well3').get_color())
+Output:
+Well full name: tl_tutorial.Well3 Well name: Well3 Well color: #ff0000
+
+Get properties
+print('First 3 well properties:', project.get_child('Well3').get_properties()[:3])
+Output:
+First 3 well properties: [<Property Company = ‘COMPANY1’>, <Property Country = ‘CO’>, <Property Elevation = ‘0’>]
+
+Get properties
+print('Dataset full name:', project.get_child('Well3').get_child('dataset_test').get_full_name())
+print('Dataset name:', project.get_child('Well3').get_child('dataset_test').get_name())
+print('Dataset reference:', project.get_child('Well3').get_child('dataset_test').get_reference())
+Output:
+Dataset full name: tl_tutorial.Well3.dataset_test Dataset name: dataset_test Dataset reference: <Variable “tl_tutorial.Well3.dataset_test.MD”>
+
+Get properties
+print('First 3 dataset properties:',
+project.get_child('Well3').get_child('dataset_test').get_properties()[:3])
+print('Dataset STRT property:', project.get_child('Well3').get_child('dataset_test').get_property('STRT'))
+Output:
+First 3 dataset properties: [<Property STEP = ‘1’>, <Property STRT = ‘1000’>] Dataset STRT property: <Property STRT = ‘1000’>
+
+Get properties
+print('Variable full name:', project.get_child('Well3').get_child('dataset_test').get_child('GR').get_full_name())
+print('Variable name:', project.get_child('Well3').get_child('dataset_test').get_child('GR').get_name())
+print('Variable family:', project.get_child('Well3').get_child('dataset_test').get_child('GR').get_family())
+print('Variable measurement:', project.get_child('Well3').get_child('dataset_test').get_child('GR').get_measurement())
+print('Variable unit:', project.get_child('Well3').get_child('dataset_test').get_child('GR').get_storage_unit())
+Output:
+Variable full name: tl_tutorial.Well3.dataset_test.GR Variable name: GR Variable family: Gamma Ray Variable measurement: Gamma_Ray Variable unit: gAPI
+
+Get stats
+Get properties
+print('First 10 GR Values:', project.get_child('Well3').get_child('dataset_test').get_child('GR').get_values()[:10])
+Output:
+First 10 GR Values: [ 56. 83. 85. 69. 123. 16. 127. 56. 69. 119.]
+
+Get properties
+print('Number of values in GR curve:', project.get_child('Well3').get_child('dataset_test').get_child('GR').get_row_count())
+Output:
+Number of values in GR curve: 3000
+
+Get properties
+GR_values_total = project.get_child('Well3').get_child('dataset_test').get_child('GR').get_values()
+GR_values = [i for i in GR_values_total if i != -9999]
+
+import statistics
+print('Max:', max(GR_values))
+print('Min:', min(GR_values))
+print('Mean:', statistics.mean(GR_values))
+print('Median:', statistics.median(GR_values))
+print('Quantiles:', statistics.quantiles(GR_values))
+print('Number of values:', len(GR_values))
+Output:
+Max: 150.0 Min: 0.0 Mean: 75.84066666666666 Median: 75.0 Quantiles: [39.0, 75.0, 113.0] Number of values: 3000
+
+Get statistics with TechlogStat
+print('Average:',stat.average(GR_values))
+print('Q1:', stat.percentile(GR_values, 25))
+print('Q3:', stat.percentile(GR_values, 75))
+print('Median:', stat.median(GR_values))
+Output:
+Average: 75.84066666666666 Q1: 39.0 Q3: 113.0 Median: 75.0
+
+Get a range of values between depths
+Get a range of values between depths
+depth_values = project.get_child('Well3').get_child('dataset_test').get_reference().get_values()
+gr_values = project.get_child('Well3').get_child('dataset_test').get_child('GR').get_values()
+
+top = 2300
+bottom = 2350
+
+depths = [depth_values[i] for i in range(len(depth_values)) if top < depth_values[i] < bottom]
+values = [gr_values[i] for i in range(len(depth_values)) if top < depth_values[i] < bottom]
+
+print('Number of values within interval:', len(values), '\n',
+'Minimum value within interval:', min(values), '\n',
+'Maximum value within interval:', max(values))
+Output:
+Number of values within interval: 50 Minimum value within interval: 2.0 Maximum value within interval: 149.0
+
+Get a range of values by zonations
+Get a range of values by zonations
+depth_values = project.get_child('Well3').get_child('dataset_test').get_reference().get_values()
+gr_values = project.get_child('Well3').get_child('dataset_test').get_child('GR').get_values()
+
+for zone in db.zoneList('Well3', 'ZONATION_Py_project', 'Zone Name'):
+    top, bottom =  db.datasetZoneDetail('Well3', 'ZONATION_Py_project', zone[0], 'Zone Name')
+    print('Zone:', zone[0])
+    print('Top of zone:', top)
+    print('Bottom of zone:', bottom)
+
+    depths = [depth_values[i] for i in range(len(depth_values)) if top < depth_values[i] < bottom]
+    values = [gr_values[i] for i in range(len(depth_values)) if top < depth_values[i] < bottom]
+
+    print('Number of values within interval:', len(values))
+    print('Minimum value within interval:', min(values))
+    print('Maximum value within interval:', max(values))
+Output:
+Zone: Zone_01 Top of zone: 2285.0 Bottom of zone: 2355.0 Number of values within interval: 70 Minimum value within interval: 2.0 Maximum value within interval: 149.0
+
+Query rename tool in Python
+Query rename tool in python
+for well in project.get_wells():
+    if well.get_groups() == ['Wells_py']: # Filter on wells within a certain group
+        for dataset in well.get_datasets():
+            for variable in dataset.get_variables():
+                if variable.get_name().startswith('GR'): # Partial string matching
+                    print('Before: ', variable)
+                    variable_name = variable.get_name()
+                    variable.set_name(variable_name +'_Py')
+                    print('After : ', variable)
+Output:
+Before: <Variable “tl_tutorial.Well3.dataset_test.GR”> After : <Variable “tl_tutorial.Well3.dataset_test.GR_Py”>
+
+Query convert tool in Python
+Query convert tool in Python
+for well in project.get_wells():
+    if well.get_name() in ['Well3']: # Filtering on well names
+        for dataset in well.get_datasets():
+            if 'dataset_test' in dataset.get_name(): # Partial string matching
+                if dataset.contains_variable('NEUT'): # Filtering on variable name
+                    variable = dataset.get_child('NEUT')
+                    print('Before:', variable.get_full_name(), variable.get_storage_unit())
+                    db.variableUnitConvert(well.get_name(), dataset.get_name(), variable.get_name(), '%')
+                    print('After :', variable.get_full_name(), variable.get_storage_unit())
+Output:
+Before: tl_tutorial.Well3.dataset_test.NEUT m3/m3 After : tl_tutorial.Well3.dataset_test.NEUT %
+
+Query duplicate tool in Python
+GQuery duplicate tool in Python
+for well in project.get_wells():
+    if well.contains_dataset('dataset_test'):
+        db.datasetDuplicate(well.get_name(), 'dataset_test', well.get_name(), 'dataset_test_copy')
+Dataset has been copied under the same well and is called: dataset_test_copy
+
+Query delete tool in Python
+Query delete tool in Python
+for well in project.get_wells():
+    if well.contains_dataset('dataset_test_copy'):
+        well.delete_dataset('dataset_test_copy')
+        print(well.contains_dataset('dataset_test_copy'))
+Output:
+False
+
+Query list tool in Python
+Query list tool in Python
+well = project.get_child('Well3')
+dataset = well.get_child('dataset_test')
+for variable in dataset.get_variables():
+    if variable.get_family() == 'Gamma Ray':
+        print(variable.get_full_name(), variable.get_family())
+Output:
+tl_tutorial.Well3.dataset_test.GR_Py Gamma Ray
+
+Query filter tool in Python
+Query filter tool in Python
+zone = 'Zone_01'
+well_list = []
+for well in project.get_wells():
+    for dataset in well.get_datasets():
+        if dataset.get_type() == 'Zonation':
+            ZoneObject = [elt[0] for elt in db.zoneList(well.get_name(), dataset.get_name(), 'Zone Name')]
+            if zone in ZoneObject:
+                well_list.append(well.get_name())
+print(well_list)
+Output:
+[‘Well3’]
+
+Query with partial string matching in Python
+Get properties
+db.variableDuplicate('Well3', 'dataset_test', 'GR_Py', 'Py_GR')
+
+dataset = project.get_child('Well3').get_child('dataset_test')
+print('Dataset', dataset.get_full_name())
+print('-')
+
+if dataset.contains_variable('GR_Py'):
+    print('Variable named GR_py is in dataset')
+print('-')
+
+for variable in dataset.get_variables():
+    if 'GR' in variable.get_name():
+        print('Variable named', variable.get_name(), 'containing GR substring is in dataset')
+print('-')
+
+for variable in dataset.get_variables():
+    if variable.get_name().startswith('GR'):
+        print('Variable named', variable.get_name(), 'starting with GR substring is in dataset')
+print('-')
+
+for variable in dataset.get_variables():
+    if variable.get_name().endswith('GR'):
+        print('Variable named', variable.get_name(), 'ending with GR substring is in dataset')
+Output:
+Dataset tl_tutorial.Well3.dataset_test - Variable named GR_py is in dataset - Variable named GR_Py containing GR substring is in dataset Variable named Py_GR containing GR substring is in dataset - Variable named GR_Py starting with GR substring is in dataset - Variable named Py_GR ending with GR substring is in dataset
+
+Manage Aliases
+Create a new Alias
+Create new Alias
+gr_curves = []
+for well in project.get_wells():
+    for dataset in well.get_datasets():
+        for variable in dataset.get_variables():
+            if variable.get_family() == 'Gamma Ray':
+                if variable.get_name() not in gr_curves:
+                    gr_curves.append(variable.get_name())
+print('Unique Gamma Ray curves:', gr_curves)
+db.aliasCreate('user', 'BEST_GR', 'Gamma Ray', gr_curves)
+Output:
+Unique Gamma Ray curves: [‘GR_Py’, ‘Py_GR’]
+
+Edit an Alias
+Edit an Alias
+print('BEST_GR Alias exists?', db.aliasExists('user', 'BEST_GR'))
+db.aliasChangeName(level= 'user', alias= 'BEST_GR', name= 'My_GR')
+
+old_alias_variables = db.aliasVariables('user', 'My_GR')
+print('Old alias (BEST_GR) variables:', old_alias_variables)
+new_alias_variables = old_alias_variables[:3]
+print('New alias (My_GR) variables:', new_alias_variables)
+db.aliasChangeVariables('user', 'My_GR', new_alias_variables)
+Output:
+BEST_GR Alias exists? True Old alias (BEST_GR) variables: [‘GR_Py’, ‘Py_GR’] New alias (My_GR) variables: [‘GR_Py’, ‘Py_GR’]
+
+Edit an Alias
+db.aliasCreate('user', 'My_NPHI', 'Porosity', ['NEUT'])
+print('Before: ', db.aliasFamily('user', 'My_NPHI'))
+db.aliasChangeFamily('user', 'My_NPHI', 'Neutron Porosity')
+print('After : ', db.aliasFamily('user', 'My_NPHI'))
+Output:
+Before: Porosity After : Neutron Porosity
+
+Delete an Alias
+Get properties
+print('Before:', db.aliasList('user'))
+db.aliasDelete('user', 'My_NPHI')
+print('After :', db.aliasList('user'))
+Output:
+Before: [‘A_RES’, ‘DEN’, ‘GR’, ‘My_GR’, ‘My_NPHI’, ‘NEUT’, ‘P_RES’] After : [‘A_RES’, ‘DEN’, ‘GR’, ‘My_GR’, ‘NEUT’, ‘P_RES’]
+
+Import/Export Aliases list
+Import/Export Aliases list
+db.aliasExport('user', 'C:\\Techlog-Projects\\tl_tutorial\\My_Aliases.csv')
+db.aliasImport('user', 'C:\\Techlog-Projects\\tl_tutorial\\My_Aliases.csv')
+Family assignment
+Family assignment
+well3 = project.get_child('Well3')
+dataset_test = well3.get_child('dataset_test')
+gamma_ray = dataset_test.get_child('GR_Py')
+Reassign family automatically
+Reassign family automatically
+db.familyAutoAssignment('project', catalog= 'techlog', allVariables= True)
+Assign a family manually
+Assign a family manually
+gamma_ray.set_family('Gamma Ray')
+References management
+Set well location information
+Set longitude & latitude
+well3 = project.get_child('Well3')
+well3.set_property('Longitude', '2.2944991')
+well3.set_property('Latitude', '48.8582602')
+Assign CRS
+well3.set_property('Horizontal_coordinate_system', 'RGF_1993_Lambert_93')
+Transform coordinates
+XY = db.convertLLToCRS(
+    longitude= float(well3.get_property('Longitude').value),
+    latitude= float(well3.get_property('Latitude').value),
+    datum= well3.get_property('Horizontal_coordinate_system').value,
+    unit = 'km')
+print(XY)
+
+well3.set_property(name= 'X', value= str(XY[0]), unit= 'km')
+well3.set_property(name= 'Y', value= str(XY[1]), unit= 'km')
+Output:
+(648.2370966299023, 6862.256137676893, ‘km’, ‘PROJCS[“RGF_1993_Lambert_93”, GEOGCS[“GCS_RGF_1993”, DATUM[“D_RGF_1993”, SPHEROID[“GRS_1980”,6378137.0,298.257222101]],PRIMEM[“Greenwich”,0.0], UNIT[“Degree”,0.0174532925199433]],PROJECTION[“Lambert_Conformal_Conic”], PARAMETER[“False_Easting”,700000.0], PARAMETER[“False_Northing”,6600000.0],PARAMETER[“Central_Meridian”,3.0], PARAMETER[“Standard_Parallel_1”,44.0], PARAMETER[“Standard_Parallel_2”,49.0],PARAMETER[“Latitude_Of_Origin”,46.5], UNIT[“Meter”,1.0],AUTHORITY[“EPSG”,2154]]’, ‘GEOGCS[“GCS_RGF_1993”, DATUM[“D_RGF_1993”,SPHEROID[“GRS_1980”,6378137.0,298.257222101]], PRIMEM[“Greenwich”,0.0],UNIT[“Degree”,0.0174532925199433], AUTHORITY[“EPSG”,4171]]’, ‘GCS_RGF_1993’)
+
+Create an Index dataset
+Create an Index dataset
+db.computeTVD(well= 'Well3', dataset= 'SURVEY', datasetOutputName= 'Index', elevation= 0, elevationUnit= 'm', tiePointMethod= 'survey')
+../_images/CreateIndexDataset.jpg
+Variable splicing
+Variable splicing
+# Create two datasets for variable splicing
+well_test.create_dataset('dataset1', row_count=3000)
+well_test.create_dataset('dataset2', row_count=3000)
+dataset1 = well_test.get_child('dataset1')
+dataset2 = well_test.get_child('dataset2')
+
+rows = dataset1.get_row_count()
+measured_depth = dataset1.create_variable(variable_name='MD',  unit='m', family='Measured Depth')
+measured_depth.set_values(np.linspace(1000, 4000, num=rows))
+dataset1.set_reference(measured_depth)
+
+measured_depth = dataset2.create_variable(variable_name='MD',  unit='m', family='Measured Depth')
+measured_depth.set_values(np.linspace(1000, 4000, num=rows))
+dataset2.set_reference(measured_depth)
+
+neutron = dataset1.create_variable(variable_name='NEUT', unit='m3/m3', family='Neutron Porosity')
+neutron.set_values(np.array([rd.uniform(0,0.45) for i in range(1000,1750)]+ [-9999]*2250))
+neutron = dataset2.create_variable(variable_name='NEUT', unit='m3/m3', family='Neutron Porosity')
+neutron.set_values(np.array([-9999]*800 + [rd.uniform(0,0.45) for i in range(1800,4000)]))
+
+# Create the splicing object
+obj = vst.createPropMergeObject('Well3', 'Spliced_Variables', ['dataset1', 'dataset2'], refStep = 1, refUnit = 'm')
+
+# Splice the variables
+vst.spliceVariables(obj, {'NEUT': [('dataset1', [(1000, 1750)]), ('dataset2', [(1800, 4000)])]})
+‘Spliced_Variables’
+
+../_images/VariableSplicing.jpg
+Despiking
+Despiking
+gamma_ray_spiky = dataset_test.create_variable(variable_name='GR_spiky', unit='gAPI', family='Gamma Ray')
+gamma_ray_spiky.set_values(np.array([100 for i in range(1000, 4000)]))
+gamma_ray_spiky.set_values(np.array([140]*20),1000,1020)
+
+gr_values = gamma_ray_spiky.with_mode('r').get_values()
+despiked_gr_values = stat.despike(gr_values, 20, 6, True)
+
+project.get_child('Well3').get_child('dataset_test').create_variable('GR_despiked', 1, 'GAPI', 'Gamma Ray', 'FLOAT', 'w')
+gr_sand_despiked = project.get_child('Well3').get_child('dataset_test').get_child('GR_despiked')
+gr_sand_despiked.with_mode('w').set_values(despiked_gr_values)
+../_images/Despiking.jpg
+Despiking flag
+depth_values = project.get_child('Well3').get_child('dataset_test').get_reference().get_values()
+gr_values = project.get_child('Well3').get_child('dataset_test').get_child('GR_spiky').get_values()
+flag = stat.flagDespike(depth_values, gr_values, 20, 6, True) # List containing 0 and 1 values where there is a despike flag
+
+project.get_child('Well3').get_child('dataset_test').create_variable('GR_despiked_flag', 1, '', 'General Flag','FLOAT','w')
+flag_variable = project.get_child('Well3').get_child('dataset_test').get_child('GR_despiked_flag')
+flag_variable.with_mode('w').set_values(flag)
+set(flag)
+{0, 1}
+
+../_images/DespikingFlag.jpg
+Smoothing
+Smoothing
+gr_py = project.get_child('Well3').get_child('dataset_test').get_child('GR_Py')
+gr_values = gr_py.get_values()
+
+smoothed_gr_values = stat.gaussianSmooth(gr_values, 100)
+project.get_child('Well3').get_child('dataset_test').create_variable('GR_Py_smoothed', 1, 'GAPI', 'Gamma Ray', 'FLOAT', 'w')
+gr_sand_smoothed = project.get_child('Well3').get_child('dataset_test').get_child('GR_Py_smoothed')
+gr_sand_smoothed.with_mode('w').set_values(smoothed_gr_values)
+../_images/Smoothing.jpg
+Interpolation
+Interpolation
+gamma_ray_missing = dataset_test.create_variable(variable_name='GR_missing', unit='gAPI', family='Gamma Ray')
+gamma_ray_missing.set_values(np.array([100 for i in range(1000, 4000)]))
+gamma_ray_missing.set_values(np.array([-9999]*20),1000,1020)
+
+depth_values = project.get_child('Well3').get_child('dataset_test').get_reference().get_values()
+gr_missingvalues = project.get_child('Well3').get_child('dataset_test').get_child('GR_missing').get_values()
+int_gr_values = stat.linInterp(gr_missingvalues, depth_values, depth_values)
+
+project.get_child('Well3').get_child('dataset_test').create_variable('GR_interpolated', 1, 'GAPI', 'Gamma Ray', 'FLOAT', 'w')
+gr_sand_int = project.get_child('Well3').get_child('dataset_test').get_child('GR_interpolated')
+gr_sand_int.with_mode('w').set_values(int_gr_values)
+../_images/Interpolation.jpg
+Working with workflows
+Warning
+
+This part assumes that you have the following objects created inside your project:
+A well Well3 (for more details about how to create a well see Create a new well)
+
+A regular dataset dataset_test (for more details about how to create a dataset see Create a new dataset)
+
+The variables MD, GR and NEUT (for more details about how to create a variable see Create a new variable)
+
+A zonation dataset ZONATION_Py_project (for more details about how to create a zonation see Create a new zonation dataset)
+
+A zone Zone_01 (for more details about how to create a zone see Create a new zone)
+
+A full survey dataset SURVEY
+
+Please refer to the previous tutorial parts on object creation(Create data inside your project) if you are missing one of these elements.
+
+Create a workflow
+Create a workflow
+workflow_manager = wf.get_or_create_workflow_manager()
+eval_workflow = workflow_manager.create_workflow('new_workflow')
+eval_workflow.set_name('Formation Evaluation')
+vshgr_method = wf.get_method_by_id('GammaRayShaleVolume')
+mnemonic_selection = vshgr_method.get_default_mnemonic_selection()
+mnemonic_selection.set_family("Gamma Ray", "Gamma Ray") # Set Gamma Ray as mandatory input curve in AWI
+method_instance = eval_workflow.create_method(mnemonic_selection)
+eval_workflow.add_datasets(['Well3.dataset_test'])
+Set zonation
+Set zonation
+eval_workflow.set_zonation('ZONATION_Py_project', ['Zone_01'])
+print(eval_workflow.get_zonation())
+Outpu:
+‘ZONATION_Py_project’
+
+Display workflow parameters
+Display workflow parameters
+print('Input datasets:', eval_workflow.get_datasets())
+print(' Workflow methods:', eval_workflow.get_methods())
+print('Method definition:', method_instance.get_definition())
+print('Input variables:', method_instance.get_input_variables())
+print('Output variables:', method_instance.get_outputs())
+Output:
+Input datasets: [‘Well3.dataset_test’] Workflow methods: [<MethodInstance “Vsh gamma ray”>] Method definition: <MethodDefinition id:”GammaRayShaleVolume” title:”Gamma ray” menu:”&Gamma ray…”> Input variables: [<InputVariable “GR_despiked”>, <InputVariable “”>, <InputVariable “”>] Output variables: [<MethodOutput “VSH_GR”>, <MethodOutput “VSH_GR_UNCL”>]
+
+Set workflow parameters
+Set workflow parameters
+print([x.get_name() for x in method_instance.get_parameters()])
+gr_matrix_zone01 = method_instance.get_parameters()[0]
+gr_shale_zone01 = method_instance.get_parameters()[1]
+gr_matrix_zone01.set_value(5.0)
+gr_shale_zone01.set_value(90.0)
+# Here, there are four editable parameters in the AWI, meaning we need to call every other 4th index if we want to edit the same parameter from a different zone
+method_instance.set_output_group('Formation Evaluation')
+method_instance.set_output_suffix('_Py')
+Output:
+[‘GR_matrix’, ‘GR_shale’, ‘GR unit’, ‘GR method’]
+
+../_images/WorkflowParameter.jpg
+Execute the method
+Execute the method
+print('Before:', method_instance.get_apply_mode())
+method_instance.set_apply_mode(wf.ApplyMode.SaveAndDisplay) # Also exist Display and Save modes
+print('After :', method_instance.get_apply_mode())
+method_instance.run()
+Output:
+Before: ApplyMode.Display After : ApplyMode.SaveAndDisplay
+
+The variable VSH_GR_Py is created under the group “Formation Evaluation”.
+
+Get all available method calls
+Set longitude & latitude
+method_definitions = tl.workflow.get_methods()
+for method_definition in method_definitions:
+   print(method_definition)
+Output:
+<MethodDefinition id:”MethodForTestingPurposes” title:”Method for testing purposes” menu:”Method for testing purposes”> <MethodDefinition id:”SlownessTimeCoherence” title:”Slowness time coherence” menu:”Slowness time coherence…”> <MethodDefinition id:”AnisotropyPostProcessing” title:”Anisotropy post-processing” menu:”Anisotropy post-processing…”> <MethodDefinition id:”DeltaTFinalization” title:”Delta-T finalization” menu:”Delta-T finalization…”> <MethodDefinition id:”FourComponentRotation” title:”Four-component rotation” menu:”Four-component rotation…”> <MethodDefinition id:”DispersionAnalysis” title:”Dispersion analysis” menu:”Dispersion analysis”> <MethodDefinition id:”AnhydriteFlag” title:”Anhydrite Flag” menu:”&Anhydrite flag…”> <MethodDefinition id:”VtiAnnie” title:”VTI Annie” menu:”VTI Annie…”> <MethodDefinition id:”VtiEmpirical” title:”VTI empirical” menu:”VTI empirical…”> <MethodDefinition id:”VtiEpsilonGammaLinearMethod” title:”VTI epsilon-gamma linear method” menu:”VTI epsilon-gamma linear method…”> <MethodDefinition id:”VtiMannieCore” title:”VTI Mannie core” menu:”VTI Mannie core…”> … <MethodDefinition id:”Gardner” title:”Gardner” menu:”Gardner…”> <MethodDefinition id:”Miller” title:”Miller” menu:”Miller…”> <MethodDefinition id:”Traugott” title:”Traugott” menu:”Traugott…”> <MethodDefinition id:”WendtNonAcoustic” title:”Wendt non-acoustic” menu:”Wendt non-acoustic…”>
+
+Working with plots
+Warning
+
+To showcase the capabilities of Techlog plots, the next part was run with actual borehole data, not the random logs we created in this tutorial. To reproduce a similar result with the project data, please adjust the variables in the next code block. In case you are missing a second well, duplicate Well3 for demonstration purposes.
+
+General information
+Many TechlogPlot APIs use the same naming convention across different plots, allowing to swap seamlessly between different plot types, or from single-well to multi-well plots.
+
+Here are common examples:
+boxPlot AddZone, crossPlot AddZone, histogramMultiWell AddZone, logView AddZone, etc.
+
+boxPlot Create, crossPlot Create, histogramMultiWell Create, logView Create, etc.
+
+baseMap Open, matrixCrossPlot Open, histogramMultiWell Open, stereonet Open, etc.
+
+boxPlot Save, crossPlot Save, histogramMultiWell Save, logView Save, etc.
+
+boxPlotMultiWell SelectVariable, crossPlotMultiWell SelectVariable, histogramMultiWell SelectVariable, etc.
+
+boxPlot SetZonation, crossPlot SetZonation, histogramMultiWell SetZonation, logView SetZonation, etc.
+
+boxPlot SetXAxisType, crossPlot SetXAxisType, histogramMultiWell SetXAxisType, etc.
+
+boxPlot SetXAxisUserLimits, crossPlot SetXAxisUserLimits, histogramMultiWell SetXAxisUserLimits, etc.
+
+Define input variables
+LogView
+Logview
+# Concatenate input names to get the curves
+logview_neutron1 = well1 + '.' + dataset1 + '.' + plot_neutron
+logview_density1 = well1 + '.' + dataset1 + '.' + plot_density
+logview_gr1 = well1 + '.' + dataset1 + '.' + plot_gr
+logview_vsh_gr1 = well1 + '.' + dataset1 + '.' + plot_vsh_gr
+
+# Create LogView window
+logview = plt.logViewCreate('LogView created with Python')
+
+# Set tracks for well1
+plt.logViewInsertVariable(logview, logview_gr1) # Display the variable in a new track (1st)
+plt.logViewInsertVariable(logview, logview_vsh_gr1) # Display the variable in a new track (2nd)
+plt.logViewInsertVariable(logview, logview_neutron1) # Display the variable in a new track (3rd)
+plt.logViewInsertVariableInTrack(logview, logview_neutron1, logview_density1) # Display the variable alongside another in same track
+plt.logViewAddTrackTopHeaderNoteByWell(logview, well1, 1, 'GAMMA RAY') # Insert annotation at the top of the 1st track
+plt.logViewAddTrackTopHeaderNoteByWell(logview, well1, 3, 'NEUTRON & DENSITY') # Insert annotation at the top of the 3rd track
+plt.logViewInsertTrackByWell(logview, well1, 4, 4) # Insert zonation track in 4th position of layout
+plt.logViewSetZonationTrackSet(logview, 4, zonation) # Add zonation to zonation track in 4th position
+plt.logViewSetZonationTrackTextOrientation(logview, 4, False) # Set orientation of names in track 4 to horizontal
+
+# Set additional tracks
+plt.logViewInsertHistogramByZone(logview, logview_vsh_gr1, zonation) # Add histogram by zone on new track
+
+# General
+plt.logViewSetLayoutScale(logview, 1000) # Set LogView layout scale
+plt.logViewSave(logview, 'Logview_Py') # Save LogView
+../_images/logview.png
+CrossPlot
+CrossPlot
+# Concatenate input names to get the curves
+crossplot_neutron = well1 + '.' + dataset1 + '.' + plot_neutron
+crossplot_density = well1 + '.' + dataset1 + '.' + plot_density
+crossplot_gr = well1 + '.' + dataset1 + '.' + plot_gr
+
+crossplot = plt.crossPlotCreate('CrossPlot created with Python', crossplot_neutron, crossplot_density)  # Create the neutron-density CrossPlot
+plt.crossPlotSetColor(crossplot, crossplot_gr) # Set color scale with variable
+plt.crossPlotAddChart(crossplot, 'Sperry, Neutron Porosity vs Bulk Density, Sperry SUN CNT475') # Add chart to plot
+plt.setPaletteToWidget(crossplot, 'GammaRay_0_200') # Set palette to plot
+plt.crossPlotSetPaletteBoundaries(crossplot, 0, 150) # Change palette limits
+plt.crossPlotSetXAxisType(crossplot, 1) # Set x-axis type to user-defined
+plt.crossPlotSetXAxisUserLimits(crossplot, 0, 0.5) # Set x-axis user limits
+plt.crossPlotSetLegendX(crossplot, 'Neutron Porosity (%)') # Set x-axis legend
+plt.crossPlotSetLegendY(crossplot, 'Bulk Density (g/cm3)') # Set y-axis legend
+plt.crossPlotSave(crossplot, 'Crossplot_Py') # Save CrossPlot
+../_images/crossplot.png
+Histogram
+Histogram
+# Concatenate input names to get the curves
+histogram_gr = well1 + '.' + dataset1 + '.' + plot_gr
+
+histogram = plt.histogramCreate('Histogram created with Python', histogram_gr) # Create the histogram plotting GR values
+plt.histogramSetXAxisType(histogram, 0) # Set x-axis bounds to variable min/max values
+plt.histogramQuantileValues(histogram, 10, 25, 50, 75, 90) # Set quantile percentages
+plt.histogramQuantileDisplay(histogram, True, False) # Display quantiles with colors
+plt.histogramSetPrecision(histogram, 100) # Change the number of bins
+plt.histogramSetZonation(histogram, zonation) # Set zonation to plot
+plt.histogramAddZone(histogram, zone2) # Set zone to plot
+plt.histogramSave(histogram, 'Histogram_' + well1 + '_' + dataset1 + '_' + zone2) # Save histogram
+../_images/histogram.png
+Box Plot
+Box plot
+# Concatenate input names to get the curves
+boxplot_gr1 = well1 + '.' + dataset1 + '.' + plot_gr
+boxplot_gr2 = well2 + '.' + dataset2 + '.' + plot_gr
+
+mwboxplot = plt.boxPlotMultiWellCreate(['Gamma Ray']) # Create multi-well BoxPlot
+plt.boxPlotMultiWellAddData(mwboxplot, [boxplot_gr1, boxplot_gr2]) # Add GR variables to box plot (default to first variable in alphabetical order)
+plt.boxPlotMultiWellMeanStdDeviation(mwboxplot, True) # Display standard deviation on plot
+plt.boxPlotMultiWellSelectVariable(mwboxplot, well1, dataset1, 0, plot_gr) # Select another variable from Gamma Ray family
+plt.boxPlotMultiWellSelectVariable(mwboxplot, well2, dataset2, 0, plot_gr)
+plt.boxPlotMultiWellSetXAxisType(mwboxplot, 1) # Change x-axis type to user-defined
+plt.boxPlotMultiWellSetXAxisUserLimits(mwboxplot, 20, 80) # Change x-axis limits
+plt.boxPlotMultiWellSave(mwboxplot, 'MultiWellBoxPlot_Python') # Save BoxPlot
+../_images/boxplot.png
