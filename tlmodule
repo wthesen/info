@@ -1,0 +1,4331 @@
+The tl module
+The tl module provides a modern set of APIs to interact with Techlog. It differs from APIs found in Techlog* modules in several ways:
+
+tl is object oriented while Techlog* APIs are function-based,
+
+tl raises exceptions in case of error, where Techlog* APIs usually return a value to indicate success or failure,
+
+tl is designed to work with the new remote architecture,
+
+tl aims at performance, for instance by providing data through numpy arrays,
+
+overall, tl is designed to be more “pythonic”.
+
+The result is an API that is easier to use for people experienced with Python development, while being more flexible.
+
+In order to get the best performance, it is strongly encouraged to use numpy to manipulate variables. Please note that numpy is not imported by default, so you should do it in your scripts.
+
+Not all features of Techlog are available with this new APIs. For instance, plots are not available in tl, so TechlogPlot should be used instead. However, it is strongly recommended to use APIs available in tl instead of the TechlogDatabase ones when possible.
+
+Module’s content
+Properties: the property class.
+
+Entities: projects, wells, datasets and variables.
+
+Contexts: information about the current context: parameters, current well/dataset/zonation, etc.
+
+Working sets: a tool for looping over data in an efficient and flexible way.
+
+Techlog zonation API: manipulate global zonations.
+
+Techlog Workflow API: manipulate AWI workflows
+Properties
+classtl.property.Property(name, value, unit='', description='')
+A custom property that can be set to some Techlog objects.
+
+Parameters
+:
+name (str) – The name of the property.
+
+value (str) – The value of the property.
+
+unit (str) – The unit of the property.
+
+description (str) – The description of the property
+Entities
+Wrappers around project, well, dataset and variables.
+
+The Variable class allow efficient access to variables data by returning numpy arrays.
+
+Entity
+classtl.entity.Entity(ref: RemoteRef)
+The Entity class is the base class for Project, Well, Dataset and Variable.
+
+It holds common properties of all derived classes.
+
+add_history(history_item: HistoryItem)
+add_history(description: str, date: datetime = None, user: str = '')
+Add an HistoryItem to the entity’s history.
+
+Parameters
+:
+history_item (HistoryItem) – The HistoryItem to add.
+
+description (str) – The description of the item to add.
+
+date (Optional[datetime.datetime]) – The date associated with the item to add. If not set or None, use the current date.
+
+user (str) – The user name associated with the item.
+
+clear_history()
+Remove all history items from the entity.
+
+get_entity(*names: str)→ Entity
+get_full_name(with_project: bool = False)→ str
+Gets the full name of the entity.
+
+Parameters
+:
+with_project (bool) – True to exclude the project in the name.
+
+../_images/entity.png
+Display the full name of a parameter
+from tl.context import get_context
+
+context = get_context()
+
+varNeut = context.parameters['NEUT']
+print(varNeut.get_full_name())
+MyProject.Well1.DATAFULL.NEUT
+Returns
+:
+Full name of the entity returned as in a string.
+
+Return type
+:
+str
+
+get_groups()→ List[str]
+Gets the ordered list of all the parent groups of this entity, from top-most to bottom-most.
+
+Returns
+:
+The list of parent group names.
+
+Return type
+:
+List[str]
+
+get_history()→ List[HistoryItem]
+Gets the history of the entity.
+
+Returns
+:
+The history items.
+
+Return type
+:
+List[HistoryItem]
+
+get_parent()→ Entity | None
+Gets the parent of the entity.
+
+../_images/entity.png
+Display the dataset used in the current Python AWI
+from tl.context import get_context
+
+context = get_context()
+
+varNeut = context.parameters['NEUT']
+print(varNeut.get_parent())
+<Dataset "MyProject.Well1.DATAFULL">
+Returns
+:
+Parent entity that can be a Project, Well or Dataset object.
+
+Return type
+:
+Optional[Entity]
+
+get_path(with_project: bool = False)→ Tuple[str]
+Gets the path to the entity returned in a tuple.
+
+Parameters
+:
+with_project (bool) – True to exclude the project in the path
+
+../_images/entity.png
+Display the path of a parameter
+from tl.context import get_context
+
+context = get_context()
+
+varNeut = context.parameters['NEUT']
+print(varNeut.get_path())
+
+Returns
+:
+Tuple that contains the path to the entity.
+
+Return type
+:
+Tuple[str]
+
+get_properties()→ List[Property]
+Gets the list of properties set on this entity.
+
+Returns
+:
+The properties of the entity.
+
+Return type
+:
+List[Property]
+
+get_property(name: str)→ Property
+Gets a property by name.
+
+Parameters
+:
+name (str) – The name of the property to get.
+
+Returns
+:
+The property
+
+Return type
+:
+Property
+
+Raises
+:
+KeyError – If the property name doesn’t exists.
+
+has_property(name: str)→ bool
+Test if the property name is set on this entity.
+
+Parameters
+:
+name (str) – The name of the property to test.
+
+Returns
+:
+True if the property is set.
+
+Return type
+:
+bool
+
+remove_property(property: Property | str)
+Removes a property from the entity.
+
+Parameters
+:
+property (Union[Property, str]) – The name of the property or a Property object to delete.
+
+Raises
+:
+KeyError – If the property doesn’t exists.
+
+set_groups(groups: List[str])
+Changes the parent groups to match groups.
+
+Raises
+:
+ValueError – If a group name is invalid.
+
+set_history(history: List[HistoryItem])
+Sets the whole history of the entity.
+
+Warning
+
+This function allows to rewrite the whole history of the entity, misusing it can lead to loss of data.
+
+Parameters
+:
+history (List[HistoryItem]) – The list of HistoryItem that will
+
+history. (replace the existing)
+
+set_property(property: Property)
+set_property(name: str, value: str, unit: str = None, description: str = None)
+Sets a property.
+
+Parameters
+:
+property (Property) – A property object; Will set value, unit and description at once.
+
+name (str) – The name of the property to set.
+
+value (str) – The value to set.
+
+unit (Optional[str]) – The unit to set. If not set, keep the previous value.
+
+description (Optional[str]) – The description to set. If not set, keep the previous value.
+
+Project
+classtl.entity.Project(project_key: str = None)
+The Project class is the entry point to browse through the data stored in the main Techlog project.
+
+contains_well(well_name: str)→ bool
+Returns True if the project contains a well named well_name.
+
+Parameters
+:
+well_name (str) – The name of the well
+
+Returns
+:
+Whether the project contains well_name.
+
+Return type
+:
+bool
+
+create_well(well_name: str)→ Well
+Creates a Well entity with a unique name in the collection of well names of the Project.
+
+Parameters
+:
+well_name (str) – The name of the well
+
+Returns
+:
+A Well entity
+
+Return type
+:
+Well
+
+Raises
+:
+ValueError – If the well name already exists in the project.
+
+delete_well(well_name: str)
+delete_well(well: Well)
+Deletes the given well.
+
+Parameters
+:
+well (Well) – The well to delete. The well object should no longer be used after deletion.
+
+well_name (str) – The name of the well to delete.
+
+Raises
+:
+ValueError – If the given well do not belong to the project.
+
+get_child(well_name: str)→ Well
+Gets a Well entity by its name in the collection of wells of the Project.
+
+Parameters
+:
+well_name (str) – The name of the well
+
+Returns
+:
+A Well entity
+
+Return type
+:
+Well
+
+Raises
+:
+ValueError – If the well name isn’t found in the project.
+
+get_directory()→ Path
+Gets the path of the currently open project in the Techlog session.
+
+Returns
+:
+Path to the project folder.
+
+Return type
+:
+Path
+
+get_name()→ str
+Gets the name of the currently open project in the Techlog session.
+
+Returns
+:
+A project name
+
+Return type
+:
+str
+
+get_or_create_well(well_name: str)→ Well
+Gets or creates a Well entity with a unique name in the collection of well names of the Project.
+
+Parameters
+:
+well_name (str) – The name of the well
+
+Returns
+:
+A Well entity
+
+Return type
+:
+Well
+
+get_parent()→ None
+Gets the parent of the entity.
+
+Returns
+:
+Projects have no parents, so always return None.
+
+Return type
+:
+None
+
+get_well(well_name: str)→ Well
+Gets a Well entity by its name in the collection of wells of the Project.
+
+Parameters
+:
+well_name (str) – The name of the well
+
+Returns
+:
+A Well entity
+
+Return type
+:
+Well
+
+Raises
+:
+ValueError – If the well name isn’t found in the project.
+
+get_wells()→ List[Well]
+Returns the list of wells in the project.
+
+Returns
+:
+A list of wells.
+
+Return type
+:
+List[Well]
+
+Well
+classtl.entity.Well
+The Well class gives access to datasets which are normally used to represent data along a given borehole.
+
+contains_dataset(dataset_name: str)→ bool
+Returns True if the project contains a dataset named dataset_name.
+
+Parameters
+:
+dataset_name (str) – The name of the dataset
+
+Returns
+:
+Whether the well contains dataset_name.
+
+Return type
+:
+bool
+
+create_dataset(dataset_name: str, row_count: int = 0)→ Dataset
+Creates a Dataset entity with a unique name in the collection of dataset names of the Well.
+
+Parameters
+:
+dataset_name (str) – The name of the dataset
+
+row_count (int) – The number of rows in the dataset
+
+Returns
+:
+A Dataset entity
+
+Return type
+:
+Dataset
+
+Error
+
+If the dataset name already exists in this Well.
+
+delete_dataset(dataset_name: str)
+delete_dataset(dataset: Dataset)
+Deletes the given dataset.
+
+Parameters
+:
+dataset (Dataset) – The dataset to delete. The dataset object should no longer be used after deletion.
+
+dataset_name (str) – The name of the dataset to delete.
+
+Raises
+:
+ValueError – If the given dataset do not belong to the well.
+
+get_child(dataset_name: str)→ Dataset
+Gets a Dataset entity by its name in the collection of datasets of the Well.
+
+Parameters
+:
+dataset_name (str) – The name of the dataset
+
+Returns
+:
+A Dataset entity
+
+Return type
+:
+Dataset
+
+Error
+
+If the dataset name isn’t found in this Well.
+
+get_color()→ str
+Gets the well color.
+
+Returns
+:
+A color in html hex format (#RRGGBB).
+
+Return type
+:
+str
+
+get_dataset(dataset_name: str)→ Dataset
+Gets a Dataset entity by its name in the collection of datasets of the Well.
+
+Parameters
+:
+dataset_name (str) – The name of the dataset
+
+Returns
+:
+A Dataset entity
+
+Return type
+:
+Dataset
+
+Error
+
+If the dataset name isn’t found in this Well.
+
+get_datasets()→ List[Dataset]
+Returns the list of datasets in the well.
+
+Returns
+:
+All the children datasets.
+
+Return type
+:
+List[Dataset]
+
+get_name()→ str
+Gets the well name.
+
+Returns
+:
+A well name
+
+Return type
+:
+str
+
+get_or_create_dataset(dataset_name: str, row_count: int = 0)→ Dataset
+Gets or creates a Dataset entity with a unique name in the collection of dataset names of the Well.
+
+Parameters
+:
+well_name (str) – The name of the well
+
+Returns
+:
+A Dataset entity
+
+Return type
+:
+Dataset
+
+get_parent()→ Project
+Gets the parent project.
+
+Returns
+:
+The parent of the well.
+
+Return type
+:
+Project
+
+set_color(color: str)
+Sets the well color.
+
+Parameters
+:
+color (str) – A color in html hex format (#RRGGBB).
+
+set_name(well_name: str)
+Sets the well name.
+
+Parameters
+:
+well_name (str) – The new well name.
+
+Raises
+:
+ValueError – If a well named well_name already exists.
+
+Dataset
+classtl.entity.Dataset
+The Dataset class gives access to variables that share the same index.
+
+contains_variable(variable_name: str)→ bool
+Returns True if the project contains a variable named variable_name.
+
+Parameters
+:
+variable_name (str) – The name of the variable
+
+Returns
+:
+Whether the dataset contains variable_name.
+
+Return type
+:
+bool
+
+create_variable(variable_name: str, column_count: int = 1, unit: str = None, family: str = None, format: str = None, mode: str = 'w')→ Variable
+Creates a Variable entity with a unique name in the collection of well names of the Dataset.
+
+Parameters
+:
+variable_name (str) – The name of the variable
+
+column_count (int) – The variable column count
+
+unit (str) – The variable storage unit
+
+family (str) – The Techlog family to be assigned to the variable
+
+format (str) – The variable data format to be used (‘FLOAT’, ‘DOUBLE’, ‘STRING’)
+
+mode (str) – creates and returns the variable in read only mode (‘r’) or in read and write (‘w’)
+
+Returns
+:
+A Variable entity
+
+Return type
+:
+Variable
+
+Error
+
+If the variable name already exists in this Dataset.
+
+delete_variable(variable_name: str)
+delete_variable(variable: Variable)
+Deletes the given variable.
+
+Parameters
+:
+variable (Variable) – The variable to delete. The variable object should no longer be used after deletion.
+
+variable_name (str) – The name of the variable to delete.
+
+Raises
+:
+ValueError – If the given variable do not belong to the well.
+
+get_child(variable_name: str, mode: str = 'r')→ Variable
+Gets a Variable entity by its name in the collection of variables of the Dataset.
+
+Parameters
+:
+variable_name (str) – The name of the variable
+
+mode (str) – Accessing the Variable entity in read only mode (‘r’) or read and write (‘w’)
+
+Returns
+:
+A Variable entity
+
+Return type
+:
+Dataset
+
+Error
+
+If the variable name isn’t found in this Dataset.
+
+get_name()→ str
+Gets the dataset name.
+
+Returns
+:
+A dataset name
+
+Return type
+:
+str
+
+get_or_create_variable(variable_name: str, column_count: int = 1, unit: str = None, family: str = None, format: str = None, mode: str = 'w')→ Variable
+Gets or creates a Variable entity with a unique name in the collection of well names of the Dataset.
+
+Parameters
+:
+variable_name (str) – The name of the variable
+
+column_count (int) – The variable column count
+
+unit (str) – The variable storage unit
+
+family (str) – The Techlog family to be assigned to the variable
+
+format (str) – The variable data format to be used (‘FLOAT’, ‘DOUBLE’, ‘STRING’)
+
+mode (str) – creates and returns the variable in read only mode (‘r’) or in read and write (‘w’)
+
+Returns
+:
+A Variable entity
+
+Return type
+:
+Variable
+
+get_parent()→ Well
+Gets the parent well.
+
+Returns
+:
+The parent of the dataset.
+
+Return type
+:
+Well
+
+get_reference()→ Variable
+Gets the reference Variable of this Dataset.
+
+Returns
+:
+A Variable entity
+
+Return type
+:
+Variable
+
+get_row_count()→ int
+Gets the number of rows in the Dataset (and therefore the row count of all its variables).
+
+Returns
+:
+The number of rows in the Dataset
+
+Return type
+:
+int
+
+get_type()→ str
+get_variable(variable_name: str, mode: str = 'r')→ Variable
+Gets a Variable entity by its name in the collection of variables of the Dataset.
+
+Parameters
+:
+variable_name (str) – The name of the variable
+
+mode (str) – Accessing the Variable entity in read only mode (‘r’) or read and write (‘w’)
+
+Returns
+:
+A Variable entity
+
+Return type
+:
+Dataset
+
+Error
+
+If the variable name isn’t found in this Dataset.
+
+get_variables()→ List[Dataset]
+Returns the list of variables in the well.
+
+Returns
+:
+All the children variables.
+
+Return type
+:
+List[Dataset]
+
+insert_rows(row: int, row_count: int = 1)
+remove_rows(row: int, row_count: int = 1)
+set_name(dataset_name: str)
+Sets the dataset name.
+
+Parameters
+:
+dataset_name (str) – The new dataset name.
+
+Raises
+:
+ValueError – If a dataset named dataset_name already exists.
+
+set_reference(reference: Variable)
+Sets the reference Variable to this dataset.
+
+Parameters
+:
+reference (Variable) – The Variable entity to be assigned as reference to this Dataset
+
+Error
+
+Variable type is not Continuous or DateTime or Variable columnCount is greater than 1 or Variable doesn’t belong to this Dataset.
+
+set_row_count(row_count: int)
+Sets the number of rows in the Dataset (and therefore the row count of all its variables).
+
+Parameters
+:
+row_count (int) – The number of rows in the Dataset.
+
+set_type(dataset_type: str)
+Variable
+classtl.entity.Variable
+The Variable class gives access to a numpy array of values along an index.
+
+convert_to_storage_unit(target_unit: str)
+Change the unit used to store the variable and update the values accordingly.
+
+Parameters
+:
+unit (str) – The new variable unit
+
+get_column_count()→ int
+Gets the number of columns in the Variable (number of columns for array variables, and 1 for regular logs).
+
+Returns
+:
+The number of columns in the Variable
+
+Return type
+:
+int
+
+get_data_format()→ str
+Gets the variable format.
+
+Returns
+:
+The variable format (‘FLOAT’, ‘DOUBLE’, ‘STRING’)
+
+Return type
+:
+str
+
+get_description()→ str
+get_display_unit()→ str
+Gets the variable display unit.
+
+Returns
+:
+The variable display unit
+
+Return type
+:
+str
+
+get_family()→ str
+Gets the variable family.
+
+Returns
+:
+The variable family
+
+Return type
+:
+str
+
+get_measurement()→ str
+get_mode()→ str
+Gets the access mode of the variable. It can be read-only or read and write.
+
+Returns
+:
+The variable access mode (‘r’ = read-only, ‘w’ = read and write)
+
+Return type
+:
+str
+
+get_name()→ str
+Gets the variable name.
+
+Returns
+:
+A variable name
+
+Return type
+:
+str
+
+get_palette()→ str
+get_parent()→ Dataset
+Gets the parent dataset.
+
+Returns
+:
+The parent of the variable.
+
+Return type
+:
+Dataset
+
+get_row_count()→ int
+Gets the number of rows in the Variable (and therefore the row count of the parent Dataset).
+
+Returns
+:
+The number of rows in the Variable
+
+Return type
+:
+int
+
+get_secondary_unit()→ str
+Gets the variable secondary unit.
+
+Returns
+:
+The variable secondary unit
+
+Return type
+:
+str
+
+get_storage_unit()→ str
+Gets the unit used to store the variable in the database.
+
+Returns
+:
+The variable unit
+
+Return type
+:
+str
+
+get_type()→ str
+get_unit()→ str | None
+Gets the unit used to get/set the values. None if the storage unit should be used.
+
+Returns
+:
+The get/set unit
+
+Return type
+:
+Optional[str]
+
+get_values(begin_row: int = None, end_row: int = None, unit: str = None, interpolation: InterpolationInfo = None, ignore_incompatible_units: bool = False)→ ndarray
+Gets the variable values returned in a numpy array.
+
+Parameters
+:
+begin_row (int) – Range of values starting at a given index (default = top index of the dataset)
+
+end_row (int) – Range of values ending at a given index (default = bottom index of the dataset)
+
+unit (str) – Returns variable values converted to a compatible unit. If the values can’t be converted to the unit, they are returned in the storage unit.
+
+interpolation (InterpolationInfo) – Interpolation method to be used when target_dataset is specified.
+
+ignore_incompatible_units (bool) – Ignore compatible units.
+
+Error
+
+If begin_row is lower than the top index of the dataset or end_row is greater than the bottom index of the dataset.
+
+Returns
+:
+A numpy array containing variable values.
+
+Return type
+:
+np.ndarray
+
+set_column_count(column_count: int)
+Changes the number of columns of the array variable. Increasing the number of columns fills the new columns with absent values and preserve the data in the existing ones. Column references and names are modified the same way if they are set.
+
+Parameters
+:
+column_count (int) – The new column count
+
+Error
+
+column_count is 0
+
+set_data_format(data_format: str)
+Sets the variable format.
+
+Parameters
+:
+data_format (str) – The new variable format (‘FLOAT’, ‘DOUBLE’, ‘STRING’)
+
+Error
+
+If the new variable format isn’t ‘FLOAT’, ‘DOUBLE’ or ‘STRING’.
+
+set_description(description: str)
+set_family(family: str)
+Sets the variable family.
+
+Parameters
+:
+family (str) – The new variable family
+
+set_name(variable_name: str)
+Sets the variable name.
+
+Parameters
+:
+variable_name (str) – The new variable name.
+
+Raises
+:
+ValueError – If a variable named variable_name already exists.
+
+set_palette(palette: str)
+set_secondary_unit(secondary_unit: str)
+Sets the variable secondary unit.
+
+Parameters
+:
+secondary_unit (str) – The new variable secondary unit
+
+set_storage_unit(unit: str)
+Sets the unit used to store the variable in the database.
+
+Warning
+
+This will _not_ update the value. So if a variable in meters contains the value 1 (m), after calling set_storage_unit('ft') the value with be 1 ft.
+
+Parameters
+:
+unit (str) – The new variable unit
+
+set_type(variable_type: str)
+set_values(values: ndarray, begin_row: int = None, end_row: int = None, unit: str = None, ignore_incompatible_units: bool = False)
+Sets a numpy array values to the variable.
+
+Parameters
+:
+values (np.ndarray) – A numpy array values to be set to the variable.
+
+begin_row (int) – Starting at a given index (default = top index of the dataset)
+
+end_row (int) – Ending at a given index (default = bottom index of the dataset)
+
+unit (str) – Unit of the values set to the variable. If the unit isn’t compatible with the variable storage unit, there is no conversion that applies.
+
+ignore_incompatible_units (bool) – Ignore compatible units.
+
+Error
+
+If begin_row is lower than the top index of the dataset or end_row is greater than the bottom index of the dataset.
+
+with_mode(mode: str)→ Variable
+Returns a new reference to the variable with the given mode.
+
+Parameters
+:
+mode (str) – The new variable access mode (‘r’ = read-only, ‘w’ = read and write)
+
+Returns
+:
+A reference to the same variable with the given mode.
+
+Return type
+:
+Variable
+
+Raises
+:
+ValueError – If the new variable access mode isn’t ‘r’ or ‘w’.
+
+with_unit(unit: str | None)
+Sets the unit used to get/set the value. None means to use the storage unit.
+
+Parameters
+:
+unit (str) – The unit to get/set values
+Contexts
+classtl.context.AwiV1Context
+classtl.context.AwiV2Context
+classtl.context.Context
+The Context class allows to access basic information as current well/dataset, zonation/zone used in the context of the Python script execution.
+
+propertycurrent_zone_name: str | None
+Gets the zone name processed in the current Python script execution context.
+
+Returns
+:
+A zone name
+
+Return type
+:
+str
+
+ 
+propertydataset_name: str | None
+Gets the dataset name processed in the current Python script execution context.
+
+Returns
+:
+A dataset name
+
+Return type
+:
+Optional[str]
+
+ 
+propertyindexes_ranges: List[range]
+Gets the list of range of indexes (one range or more in case of repeated zones) for the current zone processed by the Python script. The function returns the real dataset indexes stored in the project while the loop_ranges function returns range of indexes computed on temporary variables created by the AWI.
+
+Returns
+:
+A list of range of indexes
+
+Return type
+:
+List[range]
+
+is_first_dataset()→ bool
+Gets if the current execution context process the first dataset of the AWI workflow.
+
+Returns
+:
+True if it is the first dataset, False if not
+
+Return type
+:
+bool
+
+is_first_well()→ bool
+Gets if the current execution context process the first well of the AWI workflow.
+
+Returns
+:
+True if it is the first well, False if not
+
+Return type
+:
+bool
+
+is_first_zone()→ bool
+Gets if the current execution context process the first zone of the AWI workflow.
+
+Returns
+:
+True if it is the first zone, False if not
+
+Return type
+:
+bool
+
+is_last_dataset()→ bool
+Gets if the current execution context process the last dataset of the AWI workflow.
+
+Returns
+:
+True if it is the last dataset, False if not
+
+Return type
+:
+bool
+
+is_last_well()→ bool
+Gets if the current execution context process the last well of the AWI workflow.
+
+Returns
+:
+True if it is the last well, False if not
+
+Return type
+:
+bool
+
+is_last_zone()→ bool
+Gets if the current execution context process the last zone of the AWI workflow.
+
+Returns
+:
+True if it is the last zone, False if not
+
+Return type
+:
+bool
+
+propertyloop_ranges: List[range]
+Gets the list of range of indexes (one range or more in case of repeated zones) for the current zone processed by the Python script. The range of indexes returned by this function is the same than the range of indexes returned by the indexes_ranges function when the script is executed on the whole dataset or in the Python editor context. In the AWI context the range of indexes is computed based on temporary variable values within the zone.
+
+Returns
+:
+A list of range of indexes
+
+Return type
+:
+List[range]
+
+ 
+propertyparameters: _ty.Dict[_ty.Any]
+Gets the dictonary of parameters defined in the Python script. The context.parameters function contains the parameters set in the Python editor. Variable parameters uses the Variable class from this module.
+
+../_images/context_parameters.png
+Display the parameters of the current context
+from tl.context import *
+
+context = get_context()
+
+if not context.parameters is None:
+  for name, value in context.parameters.items():
+    print(name, type(value))
+GR <class 'tl.entity.Variable'>
+FACTOR <class 'int'>
+USE_FACTOR <class 'str'>
+OUT <class 'tl.entity.Variable'>
+Returns
+:
+A dictonary of parameters
+
+Return type
+:
+Dict[Any]
+
+ 
+propertyproject: Project
+Gets the Techlog Project in the Python script execution context.
+
+Returns
+:
+A Project object
+
+Return type
+:
+Project
+
+ 
+propertyuse_real_indexes: bool
+Returns a boolean value telling if the real dataset indexes are returned by the loop_ranges function during the script execution.
+
+Get the current context
+from tl.context import *
+
+context = get_context()
+
+if get_context_type() is EditorContext:
+  print('In Python editor context real dataset indexes are used = ', context.use_real_indexes)
+else:
+  print('In AWI context real dataset indexes are used = ', context.use_real_indexes)
+In Python editor context real dataset indexes are used =  True
+Returns
+:
+(True) in Python editor context, (False) in AWI context
+
+Return type
+:
+bool
+
+ 
+propertywell_name: str | None
+Gets the well name processed in the current Python script execution context.
+
+Returns
+:
+A well name
+
+Return type
+:
+Optional[str]
+
+ 
+propertyzonation_name: str | None
+Gets the zonation name processed in the current Python script execution context.
+
+Returns
+:
+A zonation name
+
+Return type
+:
+Optional[str]
+
+ 
+propertyzone_names: List[str]
+Gets the list of zone names that apply to the Python script context.
+
+Returns
+:
+A list of zone names
+
+Return type
+:
+List[str]
+
+classtl.context.EditorContext
+tl.context.get_context()→ Context
+Gets the current context of the Python script execution. Provide a uniform interface from both Python editor and Python AWI.
+
+Returns
+:
+Gets a Context object that gives access to information about the current execution.
+
+Return type
+:
+Context
+
+tl.context.get_context_type()→ str
+Gets the type of context of the Python script execution. It can be EditorContext, AwiV1Context (v1 engine) or AwiV2Context (v2 engine).
+
+Example
+
+if get_context_type() is EditorContext:
+print(‘Python editor context’)
+
+Returns
+:
+Gets a Context class type as EditorContext, AwiV1Context or AwiV2Context.
+
+Return type
+:
+Context class t
+Working sets
+classtl.working_set.WorkingSet(_reference=None, _ranges=None, _block_size=None, _block_size_in_bytes=None, **params)
+WorkingSet allow to easily loop on the parameters defined in the Python script context. It works block-by-block, where blocks are numpy arrays.
+
+../_images/working_set_WorkingSet.png
+Compute Volume Shale Gamma Ray
+import tl.working_set
+
+wset = tl.working_set.get_working_set()
+context = tl.context.get_context()
+
+for b in wset.blocks():
+  # vsh and gr are variable parameters, so b.vsh and b.gr are numpy arrays containing a block of the variable.
+  # matrix and shale could be variables too, but it will usually be constant float.
+  # In that case, b.matrix and b.shale will just be floats.
+  b.vsh = (b.gr-b.matrix)/(b.shale-b.matrix)
+
+  # It's also possible to make your own `WorkingSet` with arbitrary parameters:
+  wset = tl.working_set.WorkingSet(
+    vsh = context.parameters['vsh'],
+    foo = 42,
+    bar = "Hello World!",
+  )
+blocks()
+Returns an iterator on blocks.
+
+Blocks can be heavy. Do not fetch all the block in a list (i.e. do not write something like list(wset.blocks())), it will crash if the data is too big.
+
+Warning: This is not a standard iterator that simply produces values. When the next element of the iterator is accessed, the previous one is saved. If you don’t consume the whole iterator, the last block of data will not be saved.
+
+Returns
+:
+A WorkingSet object
+
+Return type
+:
+WorkingSet
+
+evaluate(evaluate_block, *args, executor=None, reduce=None, **kwargs)
+Ability to delegate the computation to an evaluate_block function. Only the variables and parameters pass as arguments to the evaluate_block function are loaded and evaluated by the evaluate function.
+
+Parameters
+:
+evaluate_block – the name of the function to be evaluated
+
+../_images/working_set_evaluate.png
+Use a function to compute values
+import tl.working_set
+import numpy as np
+
+def evaluate(GAMM, GAMM_MATRIX, GAMM_SHALE):
+  return {'VSH':np.clip((GAMM-GAMM_MATRIX)/(GAMM_SHALE-GAMM_MATRIX),0,1)}
+
+wset = tl.working_set.get_working_set()
+wset.evaluate(evaluate)
+classmethodfrom_context()
+subset(*param_names)
+Gets a copy of self containing only the parameter passed in param_names.
+
+../_images/working_set_subset.png
+Process values by blocks
+import tl.working_set
+
+# Working here only on a subset of the parameters computing average of the variable
+wset = tl.working_set.get_working_set()
+cumul = 0
+count = 0
+for b in wset.subset('gamm').blocks():
+  cumul += b.gamm.sum()
+  count += len(b.row_indexes)
+  avg = cumul / count
+  print(avg)
+Returns
+:
+A WorkingSet object
+
+Return type
+:
+WorkingSet
+
+tl.working_set.get_working_set()
+Gets the WorkingSet built from the parameter table of the Python editor.
+
+../_images/working_set_get_working_set.png
+Copy values of the variable GR into the variable OUT
+import tl.working_set
+
+# Parameters can be accessed directly on `WorkingSet` object.
+# The name of the variable is the one set in the column 'Name' of the parameter table of the Python editor.
+wset = tl.working_set.get_working_set()
+varGr = wset.GR
+varOut = wset.OUT
+varOut.set_values(varGr.get_values())
+Returns
+:
+A WorkingSet object built from the Python script context.
+
+Return type
+:
+WorkingSet
+Techlog zonation API
+Getting started with zonation
+Creating and accessing existing global zonations
+Global zonation can be created with createGlobalZonation:
+
+Create a global zonation ‘ZONATION’ at Project level
+from tl.zonation import *
+zonation = createGlobalZonation('ZONATION', 'project')
+print(zonation)
+<GlobalZonation project.ZONATION>
+The second argument is the project level. It’s possible for two global zonations to have the same name, but only if they are at different levels:
+
+Create a global zonation ‘ZONATION’ at User level
+from tl.zonation import *
+userZonation = createGlobalZonation('ZONATION', 'user')
+print(userZonation)
+<GlobalZonation user.ZONATION>
+Existing global zonations at a specific level can be obtained with getGlobalZonation:
+
+Get an existing global zonation at Project level
+from tl.zonation import *
+zonation = getGlobalZonation('ZONATION', 'project')
+print(zonation)
+<GlobalZonation project.ZONATION>
+If several global zonations with the same name exists, Techlog will work with the one at the highest priority level. The levels are, by order of priority:
+
+user,
+
+project,
+
+company,
+
+techlog.
+
+You can omit the second argument of getGlobalZonation to get the existing one at the highest priority:
+
+Get an existing global zonation
+from tl.zonation import *
+userZonation = getGlobalZonation('ZONATION')
+print(userZonation)
+<GlobalZonation user.ZONATION>
+Global zonations can also be “temporary” (i.e. not stored at any level). This occurs when a zonation dataset exists but no matching global zonation has been created yet. Techlog will build a “temporary” global zonation in this case. Temporary global zonations can only be accessed by omitting the second argument or passing None. Creating a global zonation with the same name as a temporary one will instantly “promote” it.
+
+The function getGlobalZonation will raise an error if the global zonation doesn’t exist. If you are not sure that it exsists, it might be easier to use findGlobalZonation:
+
+Difference between finding and getting
+from tl.zonation import *
+print(findGlobalZonation('ZONATION'))
+print(findGlobalZonation('DONT_EXISTS') is None)
+print(getGlobalZonation('DONT_EXISTS'))
+<GlobalZonation user.ZONATION>
+True
+Traceback (most recent call last):
+  ...
+ValueError: Global zonation 'DONT_EXISTS' not found in level ''.
+Global zonations can be deleted as follow:
+
+Delete a global zonation
+from tl.zonation import *
+
+zonation = getGlobalZonation('ZONATION', 'project')
+userZonation = getGlobalZonation('ZONATION')
+
+deleteGlobalZonation(userZonation)
+
+# The global zonation 'ZONATION' at project level still exists!
+assert findGlobalZonation('ZONATION') == zonation
+Note
+
+Global zonation always contains all the zones that are present in zonation datasets with the same name. Thus, it is possible for a newly created global zonation to already contain zones if a zonation dataset with the same name already exists. Zones present in a dataset cannot be deleted from the global zonation, unless they are also removed from the zonation datasets.
+
+Manipulating zones
+Global zonations contains a tree of zones, so GlobalZonation and Zone both contain a list of child zones. These two classes share the same interface to access their children, implemented in a common base class ZoneContainer.
+
+The easiest way to create a zone is to use ZoneContainer.createAndAppendChildZone:
+
+Create a zone
+from tl.zonation import *
+zonation = getGlobalZonation('ZONATION')
+
+zone_01 = zonation.createAndAppendChildZone('Zone_01')
+print(zone_01)
+<Zone project.ZONATION.Zone_01>
+This will create a new zone and place it after the last zone of zonation. Zones are not necessarily attached to a parent. We talk about “detached” zones. A detached zone can be created with zonation.createZone. It can then be placed in the hierarchy with ZoneContainer.appendChildZone or ZoneContainer.insertChildZone:
+
+Insert detached zones
+from tl.zonation import *
+zonation = getGlobalZonation('ZONATION')
+
+zone_03 = zonation.createZone('Zone_03')
+zonation.appendChildZone(zone_03)
+
+zone_02 = zonation.createZone('Zone_02')
+zonation.insertChildZone(1, zone_02)      # index=1 to insert at the 2nd position
+To get all the children of a global zonation or a zone, just call ZoneContainer.getChildZones:
+
+Get the list of the zones
+from tl.zonation import *
+zonation = getGlobalZonation('ZONATION')
+print(zonation.getChildZones())
+[<Zone project.ZONATION.Zone_01>, <Zone project.ZONATION.Zone_02>, <Zone project.ZONATION.Zone_03>]
+It is also possible to query the number of children and access zones by index.
+
+Get a zone by index
+from tl.zonation import *
+zonation = getGlobalZonation('ZONATION')
+print(zonation.getChildZonesCount())
+print(zonation.getChildZone(1))
+3
+<Zone project.ZONATION.Zone_02>
+GlobalZonation and Zone behave like list of zones:
+
+Access zones
+from tl.zonation import *
+zonation = getGlobalZonation('ZONATION')
+
+print(len(zonation))
+
+print(zonation[1])
+
+for zone in zonation:
+  print(zone)
+3
+<Zone project.ZONATION.Zone_02>
+<Zone project.ZONATION.Zone_01>
+<Zone project.ZONATION.Zone_02>
+<Zone project.ZONATION.Zone_03>
+Warning
+
+Each call to a method of GlobalZonation or Zone trigger a RPC call to Techlog. This is much slower than calling a normal python function. This should not be an issue for standard use-case where the number of zones in a global zonation is limited. However, to avoid performance issues when manipulating a lot of zones, it is advised to minimize the number of calls.
+
+To make it easier to work with hierarchical global zonations, GlobalZonation.getAllZones returns all the zones recursively, in depth-first order.
+
+List all the zones
+from tl.zonation import *
+zonation = getGlobalZonation('ZONATION')
+print(zonation.getAllZones())
+[<Zone project.ZONATION.Zone_01>, <Zone project.ZONATION.Zone_02>, <Zone project.ZONATION.Zone_03>]
+tl.zonation Reference
+Classes
+The module tl.zonation provides two main classes: GlobalZonation and Zone. Because both of them can have child zones, the function to create and manipulate children are declared in a common base class ZoneContainer:
+
+classtl.zonation.ZoneContainer(ref: RemoteRef)
+Base class for both GlobalZonation and Zone.
+
+Contains shared functions to get, add and remove zones.
+
+ZoneContainer acts like a list of zones.
+
+appendChildZone(zone: Zone)
+Add zone as the last child.
+
+If the zone is allready in the global zonation, it will be moved.
+
+Parameters
+:
+zone (Zone) – the child zone to append.
+
+Raises
+:
+ValueError – The zone do not belong to the right global zonation or you try to add a zone as its own descendent.
+
+createAndAppendChildZone(zoneName: str, color=None, description='', pattern=None)→ Zone
+Add a new zone as the last child of the object.
+
+Parameters
+:
+zoneName (str) – The zone name, must be unique in the GlobalZonation.
+
+color (Optional[str]) – The zone color. Automaticaly choosen if None.
+
+description (Optional[str]) – A description.
+
+pattern (Optional[Pattern]) – An optional pattern.
+
+Returns
+:
+The new zone.
+
+Return type
+:
+Zone
+
+Raises
+:
+NameError – The name is invalid or already exists.
+
+findChildZone(name=None)→ Zone
+Return the child zone with the given name or None if not found.
+
+Parameters
+:
+name (str) – The name of the zone.
+
+Returns
+:
+The zone with the given name or None.
+
+Return type
+:
+Zone
+
+getChildZone(name: str)→ Zone
+getChildZone(index: int)→ Zone
+Return the child zone with the given name or index.
+
+Parameters
+:
+name (str) – The name of the zone.
+
+index (int) – The index of the zone.
+
+Returns
+:
+The zone with the given name or index.
+
+Return type
+:
+Zone
+
+Raises
+:
+NameError – The name is invalid.
+
+IndexError – The index is invalid.
+
+getChildZoneIndex(zone: Zone)→ int
+getChildZoneIndex(zoneName: str)→ int
+Returns the index of a zone in the list of children or -1 if not found.
+
+Parameters
+:
+zone (Zone) – A child zone.
+
+zoneName (str) – The name of the child zone.
+
+Returns
+:
+The index of zone in the list of children or -1 if not found.
+
+Return type
+:
+int
+
+getChildZones()→ List[Zone]
+Return a list of the direct children zones.
+
+Returns
+:
+The children zones.
+
+Return type
+:
+List[Zone]
+
+getChildZonesCount()→ int
+Return the number of top-level zones.
+
+Returns
+:
+The number of top-level zones.
+
+Return type
+:
+int
+
+insertChildZone(index: int, zone: Zone)
+Add zone as the index’s child.
+
+If the zone is allready in the global zonation, it will be moved.
+
+Parameters
+:
+index (int) – 0-based index where the zone will be inserted.
+
+zone (Zone) – the child zone to insert.
+
+Raises
+:
+ValueError – The zone do not belong to the right global zonation or you try to add a zone as its own descendent or index is invalid.
+
+removeChildZone(zone: Zone)→ Zone
+removeChildZone(zoneName: str)→ Zone
+removeChildZone(index: int)→ Zone
+Remove a zone from the child list.
+
+The zone must be a direct child of self.
+
+After calling this function, the zone is no longer in the tree, but it still exists. You can re-insert it elsewhere.
+
+Parameters
+:
+zone (Zone) – the child zone to remove.
+
+zoneName (str) – the name of the zone to remove.
+
+index (int) – the index of the child zone to remove.
+
+Raises
+:
+RuntimeError – zone is not a direct child of self.
+
+NameError – No child zone named zone (if zone is str).
+
+classtl.zonation.GlobalZonation
+Bases: ZoneContainer
+
+A global zonation.
+
+addProperty(name: str, unit: str = '', description: str = '')
+Add a property.
+
+Parameters
+:
+name (str) – The property name.
+
+unit (str) – The unit.
+
+description (str) – The description.
+
+Raises
+:
+ValueError – Property already exists or name is invalid.
+
+createZone(zoneName: str, color=None, description='', pattern=None)→ Zone
+Create a new zone.
+
+It is not parented, you must explicitely add it to the global zonation or another zone with addChild or insertChild. It is not possible to attach a zone created for one global zonation to another one.
+
+Parameters
+:
+name (str) – The zone name.
+
+color (Optional[str]) – The color of the zone.
+
+description (Optional[str]) – A description.
+
+pattern (Optional[Pattern]) – An optional pattern.
+
+Returns
+:
+The new zone.
+
+Return type
+:
+Zone
+
+Raises
+:
+RuntimeError – The zone cannot be created.
+
+define(text: str)
+Define the entire global zonation from an indented text.
+
+Parameters
+:
+text (str) – an indented text
+
+findZone(zoneName: str)→ Zone
+Return the zone zoneName, no matter where it is in the hierachy.
+
+Parameters
+:
+zoneName (str) – The zone name.
+
+Returns
+:
+The zone or None if not found.
+
+Return type
+:
+Zone
+
+getAllZones()→ List[Zone]
+Return a list of all zones in the global zonation.
+
+Returns
+:
+All the zones.
+
+Return type
+:
+List[Zone]
+
+getName()→ str
+Return the name of the variable.
+
+Returns
+:
+The name of the variable.
+
+Return type
+:
+str
+
+getProperties()→ List[str]
+Return the list of property names.
+
+Returns
+:
+The list of property names.
+
+Return type
+:
+List[str]
+
+getPropertyDescription(name: str)→ str
+Get the description of the given property.
+
+Parameters
+:
+name (str) – The property name.
+
+Returns
+:
+The description of the property.
+
+Return type
+:
+str
+
+Raises
+:
+NameError – Property name doesn’t exist.
+
+getPropertyUnit(name: str)→ str
+Get the unit of the given property.
+
+Parameters
+:
+name (str) – The property name.
+
+Returns
+:
+The unit of the property.
+
+Return type
+:
+str
+
+Raises
+:
+NameError – Property name doesn’t exist.
+
+getPropertyValue(name: str, zoneName: str)→ str
+Get the value of the given property for this zone.
+
+Parameters
+:
+name (str) – The property name.
+
+zoneName (str) – The zone name.
+
+Returns
+:
+The value.
+
+Return type
+:
+str
+
+Raises
+:
+ValueError – Property or zone does not exist.
+
+getStorageLevel()→ str | None
+Return the project level of the global zonation, or None for “temporary” global zonations.
+
+Returns
+:
+The project level (all lowercase) or None.
+
+Return type
+:
+Optional[str]
+
+getZone(zoneName: str)→ Zone
+Return the zone zoneName, no matter where it is in the hierachy.
+
+Parameters
+:
+zoneName (str) – The zone name.
+
+Returns
+:
+The zone.
+
+Return type
+:
+Zone
+
+Raises
+:
+NameError – The zone do not exists.
+
+isActive()→ bool
+Determine if the current global zonation is active.
+
+A global zonation is active when it has the highest priority when multiple global zonations have same name but different levels (user > project > company > techlog).
+
+Returns
+:
+true if the global zonation has the highest priority.
+
+false if another global zonation has the same name but a higher priority.
+
+removeProperty(name: str)
+Remove a property.
+
+Parameters
+:
+name (str) – The property name.
+
+Raises
+:
+ValueError – Property does not exist.
+
+removeZone(zone: Zone)→ Zone
+removeZone(zoneName: str)→ Zone
+Remove a zone from the zonation, no matter where it is in the hierarchy.
+
+Parameters
+:
+zone (Zone) – The zone to remove.
+
+zoneName (str) – The name of the zone to remove.
+
+Raises
+:
+NameError – The zone do not exists.
+
+setPropertyDescription(name: str, description: str)
+Set the description of the given property.
+
+Parameters
+:
+name (str) – The property name.
+
+description (str) – The new description.
+
+Raises
+:
+NameError – Property name doesn’t exist.
+
+setPropertyUnit(name: str, unit: str)
+Set the unit of the given property.
+
+Parameters
+:
+name (str) – The property name.
+
+unit (str) – The new unit.
+
+Raises
+:
+NameError – Property name doesn’t exist.
+
+setPropertyValue(name: str, zoneName: str, value: str)
+Set the value of the given property for this zone.
+
+Parameters
+:
+name (str) – The property name.
+
+zoneName (str) – The zone name.
+
+value (str) – The property value.
+
+Raises
+:
+ValueError – Property or zone does not exist.
+
+classtl.zonation.Zone
+Bases: ZoneContainer
+
+A zone in a GlobalZonation.
+
+getAllDescendentZones()→ List[Zone]
+Return a list of all the descendent zones.
+
+Returns
+:
+All the zones.
+
+Return type
+:
+List[Zone]
+
+getColor()→ str
+Return the color of the zone.
+
+Returns
+:
+The color of the zone.
+
+Return type
+:
+str
+
+getDescription()→ str
+Return the description of the zone.
+
+Returns
+:
+The description of the zone.
+
+Return type
+:
+str
+
+getIndex()→ int
+Returns the index of the zone in its parent.
+
+Returns -1 if the zone is detached.
+
+getName()→ str
+Return the name of the zone.
+
+Returns
+:
+The name of the zone.
+
+Return type
+:
+str
+
+getParent()→ Zone
+Get the parent of the zone, or None if it is a top-level zone.
+
+Returns
+:
+The parent zone.
+
+Return type
+:
+Zone
+
+getPattern()→ Pattern
+Return the pattern of the zone.
+
+Returns
+:
+A pattern.
+
+Return type
+:
+Pattern
+
+getPropertyValue(name: str)→ str
+Return the value of the property name for this zone.
+
+Parameters
+:
+name (str) – The name of the property.
+
+Returns
+:
+The value of the property.
+
+Return type
+:
+str
+
+Raises
+:
+RuntimeError – If there is no property name.
+
+isInHierarchy()→ bool
+Test if the zone is in the hierarchy.
+
+Returns
+:
+Whether the zone is in the hierarchy.
+
+Return type
+:
+bool
+
+moveTo(parent: ZoneContainer, index: int = None)
+Move the zone to a new parent.
+
+Parameters
+:
+parent (ZoneContainer) – The parent of the zone.
+
+index (Optional[int]) – Where to insert the zone. Appends the zone by default.
+
+Raises
+:
+IndexError – The index in invalid.
+
+ValueError – Try to insert a zone below itself.
+
+setColor(color: str)
+Set the color of the zone.
+
+Parameters
+:
+color (str) – The color to set.
+
+setDescription(description: str)
+Set the description of the zone.
+
+Parameters
+:
+description (str) – The description to set.
+
+setName(name: str)
+Rename the zone.
+
+The name must be unique.
+
+Parameters
+:
+name (str) – The new name.
+
+Raises
+:
+NameError – The name already exists.
+
+setPattern(patternName: str, level: str = 'techlog')
+setPattern(pattern: Pattern)
+Set the pattern of the zone.
+
+Parameters
+:
+pattern (Pattern) – A pattern.
+
+patternName (str) – Name of the pattern.
+
+level (str) – the storage level of the pattern. Defaults to ‘techlog’. Ignored if nameOrPattern is a Pattern.
+
+setPropertyValue(name: str, value: str)
+Set the value of the given property for this zone.
+
+Parameters
+:
+name (str) – The property name.
+
+value (str) – The property value.
+
+Raises
+:
+ValueError – Property does not exist.
+
+classtl.zonation.Pattern(name: str, level: str = 'techlog')
+A pattern that can be used with zonations.
+
+Parameters
+:
+name – The name of the pattern.
+
+level – The storage level of the pattern.
+
+Functions
+tl.zonation.createGlobalZonation(zonationName: str, storageLevel: str)→ GlobalZonation
+Create a global zonation.
+
+Parameters
+:
+name (str) – The global zonation name.
+
+storageLevel (str) – The project level.
+
+Returns
+:
+The new global zonation.
+
+Return type
+:
+GlobalZonation
+
+Raises
+:
+ValueError – Couldn’t create the global zonation.
+
+tl.zonation.getGlobalZonation(zonationName: str, storageLevel: str = None)→ GlobalZonation
+Get a global zonation.
+
+If storageLevel is None (the default), it returns the global zonation with the given name at the highest priority level.
+
+Parameters
+:
+name (str) – The global zonation name.
+
+storageLevel (str) – The project level.
+
+Returns
+:
+The new global zonation.
+
+Return type
+:
+GlobalZonation
+
+Raises
+:
+ValueError – The storageLevel is not valid.
+
+ValueError – The global zonation does not exist.
+
+tl.zonation.getGlobalZonationList(storageLevel: str = None)→ list[GlobalZonation]
+Get the list of the global zonations.
+
+Parameters
+:
+storageLevel (str) –
+
+The project level to filter.
+
+If None, the function will returns all of the global zonations.
+
+Returns
+:
+The list of global zonations.
+
+Return type
+:
+list[GlobalZonation]
+
+Raises
+:
+ValueError – The storageLevel is not valid.
+
+tl.zonation.findGlobalZonation(zonationName: str, storageLevel: str = None)→ GlobalZonation
+Like getGlobalZonation, but return None if the zonation is not found.
+
+Parameters
+:
+name (str) – The global zonation name.
+
+storageLevel (str) – The project level.
+
+Returns
+:
+The new global zonation. None: The zonation doesn’t exist.
+
+Return type
+:
+GlobalZonation
+
+tl.zonation.deleteGlobalZonation(zonation: GlobalZonation)
+Delete a global zonation.
+
+Parameters
+:
+zonation (GlobalZonation) – The global zonation object to delete.
+
+Raises
+:
+ValueError – The global zonation does not exsist.
+Techlog Workflow API
+This documentation page is related to workflow manipulation with python.
+
+It introduces the following classes:
+
+Workflow manager,
+
+Workflow,
+
+Method definition,
+
+Mnemonic selection,
+
+Method instance,
+
+Method parameter,
+
+Method output,
+
+Input variable,
+
+Input dataset.
+
+Below a picture to visually understand what the different classes correspond to:
+
+../_images/workflow.png
+Getting started with workflows
+Workflow manager
+The workflow manager handles workflows containing one or more methods.
+
+For more details see Workflow manager class
+
+Create a workflow manager with an empty workflow inside
+import tl.workflow
+
+workflow_manager = tl.workflow.get_or_create_workflow_manager()
+workflow_manager.create_workflow('workflow')
+Workflow
+A workflow is a part of a workflow manager containing one or more methods. It has parameters related to all methods inside. The actions available can be related to the inputs like the datasets or related to the run: run the workflow and activate cascade launch.
+
+For more details see Workflow class
+
+Change the name of a workflow
+import tl.workflow
+
+workflow_manager = tl.workflow.get_or_create_workflow_manager()
+workflow = workflow_manager.create_workflow('workflow')
+workflow.set_name("New name")
+Method definition
+A lot of AWI methods in Techlog can be accessed through Python. This class is like the method identity card. All methods usable with Python API can be listed with the following command:
+
+tl.workflow.get_methods()
+In this class, different parameters can be accessed like: id, menu, title, …
+
+For more details see Method definition class
+
+Get the title of a method
+import tl.workflow
+
+method = tl.workflow.get_method_by_id("GammaRayShaleVolume")
+print("Title of the method is: " + method.get_title())
+How to list the method definitions
+The following code snippet helps you to list all method definitions:
+
+List all the methods
+import tl.workflow
+
+method_definitions = tl.workflow.get_methods()
+print(f"There are {len(method_definitions)} available methods:")
+for method_definition in method_definitions:
+  print(f"  - {method_definition.get_title().ljust(80)} (ID: {method_definition.get_id()})")
+You will see that it outputs, for each method definition, its id, title and menu. This is a convenient way to find a method definition.
+
+To find an ID, you can open the wanted method in the AWI and look at the main parameters. If the method is accessible through this API, the Method ID parameter is visible with its value.
+
+Mnemonic selection
+Mnemonic selection is an association of mnemonic labels and corresponding inputs. It can be retrieved from method definition with method.get_default_mnemonic_selection():
+
+Get the mnemonic selection of the method “Shale volume Gamma ray”
+import tl.workflow
+
+vshgr_method = tl.workflow.get_method_by_id("GammaRayShaleVolume")
+mnemonic_selection = vshgr_method.get_default_mnemonic_selection()
+Once you have the mnemonic selection element, a lot of information related to it can be accessed like: the labels, if a field is mandatory or not, if a list can be set, …
+
+A field can be filled when mentionning the type and the input name.
+
+Note
+
+There are 4 types of mnemonic inputs:
+
+Family,
+
+Variable,
+
+Alias,
+
+MainFamily.
+
+To be able to run, all mandatory elements must be filled. The goal of the following function is to alert if it is not well filled:
+
+mnemonic_selection.is_valid()
+For more details see Mnemonic selection class
+
+Create and fill a mnemonic for method “Shale volume Gamma ray”
+import tl.workflow
+
+vshgr_method = tl.workflow.get_method_by_id("GammaRayShaleVolume")
+mnemonic_selection = vshgr_method.get_default_mnemonic_selection()
+mnemonic_selection.set_variable("Gamma Ray", "GR")
+print("Mnemonic selection is valid: " + str(mnemonic_selection.is_valid()))
+Method instance
+A method instance represents a method in a workflow. This class contains every parameter related to this instance. Method instance can be accessed when creating a method:
+
+Add a method in a workflow
+workflow_manager = tl.workflow.get_or_create_workflow_manager()
+workflow = workflow_manager.create_workflow('workflow')
+method_instance = workflow.create_method(mnemonic_selection)
+The method definition can be accessed through the method instance with the following command:
+
+method_instance.get_definition()
+Several parameters can be accessed and changed through getters and setters like: name of the method, the apply mode, prefix, suffix, …
+
+Note
+
+The apply mode can have 3 different values:
+
+Display,
+
+Save,
+
+SaveAndDisplay.
+
+When properly set, a method can be run if it is properly filled with command below.
+
+method_instance.run()
+For more details see Method instance class
+
+Create a method instance, set prefix and group on a method
+import tl.workflow
+
+# Create a workflow.
+workflow_manager = tl.workflow.get_or_create_workflow_manager()
+workflow = workflow_manager.create_workflow('workflow')
+
+# Open the method `Shale volume Gamma ray`.
+vshgr_method = tl.workflow.get_method_by_id("GammaRayShaleVolume")
+mnemonic_selection = vshgr_method.get_default_mnemonic_selection()
+mnemonic_selection.set_family("Gamma Ray", "Gamma Ray")
+method_instance = workflow.create_method(mnemonic_selection)
+
+# Set up the prefix and the group.
+method_instance.set_output_prefix("prefix_")
+method_instance.set_output_group("group_")
+
+# Create a dataset with a Gamma ray variable, and use it in the workflow.
+db.wellCreate("Well_test_method_parameter")
+db.datasetCreate("Well_test_method_parameter", "Dataset", "MD", "Measured Depth", "ft", [1,2])
+db.variableSave("Well_test_method_parameter", "Dataset", "GR", "Gamma Ray", "gAPI", [0,1])
+workflow.add_datasets(["Well_test_method_parameter.Dataset"])
+
+# Run the method.
+method_instance.run()
+Note
+
+The result can be checked in the properties of a method in Output variables tab.
+
+Warning
+
+Be careful, this test creates a well called Well_test_method_parameter in your project.
+
+Users can also create a method instance from an existing PythonAWI script.
+It requires first to get a default MnemonicSelection from the Python script, with the function get_default_mnemonic_selection_from_pythonawi_script.
+After setting each input, method creation is made through the same method Workflow.create_method
+Here is an example of code to do it:
+Open a PythonAWI script
+import tl.workflow
+
+workflow_manager = tl.workflow.get_or_create_workflow_manager()
+workflow = workflow_manager.create_workflow('workflow')
+mnemonic_selection = tl.workflow.get_default_mnemonic_selection_from_pythonawi_script('project', 'my_python_awi_script')
+mnemonic_selection.set_family("Gamma Ray", "Gamma Ray")
+method_instance = workflow.create_method(mnemonic_selection)
+Method parameter
+This class represents a parameter of a method, meaning every element in the table the user can see in the AWI. All information can be reached and values of a parameter can be changed. Parameters can be accessed with method instance with following function:
+
+method_instance.get_parameters()
+For more details see Method parameter class
+
+Get a method parameter and set some values
+import tl.workflow
+
+# Create a workflow.
+workflow_manager = tl.workflow.get_or_create_workflow_manager()
+workflow = workflow_manager.create_workflow('workflow')
+
+# Open the method `Shale volume Gamma ray`.
+vshgr_method = tl.workflow.get_method_by_id("GammaRayShaleVolume")
+mnemonic_selection = vshgr_method.get_default_mnemonic_selection()
+mnemonic_selection.set_family("Gamma Ray", "Gamma Ray")
+method_instance = workflow.create_method(mnemonic_selection)
+
+# Create a dataset with a Gamma ray variable, and use it in the workflow.
+db.wellCreate("Well_test_method_parameter")
+db.datasetCreate("Well_test_method_parameter", "Dataset", "MD")
+db.variableCreate("Well_test_method_parameter", "Dataset", "GR", 1)
+workflow.add_datasets(["Well_test_method_parameter.Dataset"])
+
+# Get the first parameter of the method: GR_matrix
+method_parameter = method_instance.get_parameters()[0]
+
+# Set the value of the parameter (we expect it to be a float value)
+method_parameter.set_value(3.14159)
+Note
+
+The result can be seen in the AWI table, in tab Parameters, the value for GR_matrix is set to 3.14159.
+
+Warning
+
+Be careful, this test creates a well called Well_test_method_parameter in your project.
+
+Method output
+This class contains all information regarding output of a method. Parameters associated to an output can be reached with the getters and changed with the setters like: output description, family, unit, … The element can be accessed with the following command:
+
+method_instance.get_outputs()
+For more details see Method output class
+
+Get family of output VSH_GR for method “Shale volume Gamma ray”
+import tl.workflow
+
+# Create a workflow.
+workflow_manager = tl.workflow.get_or_create_workflow_manager()
+workflow = workflow_manager.create_workflow('workflow')
+
+# Open the method `Shale volume Gamma ray`.
+vshgr_method = tl.workflow.get_method_by_id("GammaRayShaleVolume")
+mnemonic_selection = vshgr_method.get_default_mnemonic_selection()
+mnemonic_selection.set_family("Gamma Ray", "Gamma Ray")
+method_instance = workflow.create_method(mnemonic_selection)
+
+# Print the family of VSH_GR.
+output_VSH_GR = method_instance.get_outputs()[0]
+print("Family of VSH_GR output: " + output_VSH_GR.get_family())
+Input variable
+This class corresponds to every input you can find in the AWI. An input corresponds to every line filled in the mnemonic window and for each well and dataset you have added in the AWI. The element can be accessed with the following command (it can be filtered by well, dataset or input name):
+
+method_instance.get_input_variables()
+For more details see Input variable class
+
+Input dataset
+This class corresponds to a line in the AWI. Meaning all inputs related to a well.dataset. It can be accessed through the following command:
+
+method_instance.get_input_datasets()
+For more details see Input dataset class
+
+Class details
+Global functions
+tl.workflow.get_or_create_workflow_manager()→ WorkflowManager
+Get the current workflow manager, or create a new one.
+
+Returns
+:
+The requested WorkflowManager.
+
+Return type
+:
+WorkflowManager
+
+Raises
+:
+RuntimeError – If the function fails to create or get a workflow manager.
+
+tl.workflow.get_methods(project_name: str = None)→ list[MethodDefinition]
+Get the list of method definitions.
+
+Returns
+:
+The list of method definitions
+
+Return type
+:
+list
+
+tl.workflow.get_method_by_id(id: str)→ MethodDefinition
+Gets the method definition from its id
+
+Parameters
+:
+id (str) – id of the method to find
+
+Returns
+:
+the method definition having the given id
+
+Return type
+:
+MethodDefinition
+
+Raises
+:
+NameError – if method definition does not exist
+
+tl.workflow.get_default_mnemonic_selection_from_pythonawi_script(level: str, python_script_name: str)
+Return the mnemonic selection for a pythonawi script
+
+Parameters
+:
+level (str) – level of storage
+
+python_script_name (str) – name of the PythonAWI script
+
+Raises
+:
+ValueError – if python script is not a PythonAWI or give no mnemonic
+
+tl.workflow.load_workflow(name: str, level: str = 'Project', is_template: bool = False)
+Load the workflow
+
+Parameters
+:
+name (str) – Name of the workflow to load.
+
+level (str) – Level at which the workflow was saved.
+
+is_template (bool) – True if this is a workflow template.
+
+Raises
+:
+RuntimeError – If the workflow is closed.
+
+Workflow manager class
+classtl.workflow.WorkflowManager(ref: RemoteRef)
+The WorkflowManager class is the class representing an AWI Workflow Manager (i.e. the object containing workflows).
+
+close(silent: bool = True)→ bool
+Close the workflow manager.
+
+Warning: By default the workflows and their methods will be closed without being saved.
+
+Parameters
+:
+silent (bool, optional) – True to force the removal of the workflows and their methods, False to query the user agreement if the workflows or at least one of their methods have been modified. Defaults to True.
+
+Returns
+:
+True if the workflow manager has been closed, False otherwise.
+
+Return type
+:
+bool
+
+Raises
+:
+RuntimeError – If the workflow manager was already closed.
+
+create_workflow(name)→ Workflow
+Create a new workflow
+
+Parameters
+:
+name (str) – Name of the workflow created
+
+Returns
+:
+Workflow that has been created
+
+Return type
+:
+Workflow
+
+Raises
+:
+RuntimeError – If the workflow manager is closed.
+
+get_workflows()→ list[Workflow]
+Return workflows.
+
+Returns
+:
+List of workflows in WorkflowManager.
+
+Return type
+:
+list[Workflow]
+
+Raises
+:
+RuntimeError – If the workflow manager is closed.
+
+is_closed()→ bool
+Check whether the current workflow manager has been closed.
+
+Returns
+:
+True if the current workflow manager has been closed, False if it still exists.
+
+Return type
+:
+bool
+
+Workflow class
+classtl.workflow.Workflow(ref: RemoteRef)
+The Workflow class is the class representing a workflow inside an AWI Workflow Manager
+
+add_datasets(datasets: list[str])
+Add datasets in the workflow.
+
+Parameters
+:
+datasets (list[str]) – List of datasets with format “well.dataset” to add to the workflow
+
+Raises
+:
+RuntimeError – If the workflow is closed.
+
+NameError – If the datasets are not properly named (Well name.`Dataset name`).
+
+NameError – If one of the datasets does not exist.
+
+close(silent: bool = True)→ bool
+Close the workflow.
+
+Warning: By default the workflow and its methods will be closed without being saved.
+
+Parameters
+:
+silent (bool, optional) – True to force the removal of the workflow and its methods, False to query the user agreement if the workflow or at least one of its methods have been modified. Defaults to True.
+
+Returns
+:
+True if the workflow has been closed, False otherwise.
+
+Return type
+:
+bool
+
+Raises
+:
+RuntimeError – If the workflow was already closed.
+
+create_method(mnemonic_selection: MnemonicSelection)→ MethodInstance
+Create a method instance.
+
+Works with methods that are not tool locked.
+
+Parameters
+:
+mnemonic_selection (MnemonicSelection) – Valid mnemonic selection to create a method instance
+
+Returns
+:
+The method instance that has been created
+
+Return type
+:
+MethodInstance
+
+Raises
+:
+RuntimeError – If the method can not be created.
+
+create_method_with_tool_lock_agreement(mnemonic_selection)→ MethodInstance
+Create a method instance Works with methods that are tool locked
+
+IMPORTANT: The company who has licensed this software has accepted on your behalf the terms and conditions for the use of this software. By using this method and accessing this software you acknowledge that you are bound by the terms and conditions agreed to on your behalf. Please note that the algorithms and/or methods referred to as “Schlumberger Tool-lock” software, are restricted. In accordance with terms and conditions, you agree to ONLY use the Schlumberger Tool-lock software with data generated exclusively by Schlumberger products and services.
+
+By using this function, you acknowledge that you have read and understood this restriction.
+
+Parameters
+:
+mnemonic_selection (MnemonicSelection) – Valid mnemonic selection to create a method instance
+
+Returns
+:
+The tool lock method instance that has been created
+
+Return type
+:
+MethodInstance
+
+Raises
+:
+RuntimeError – If the method can not be created.
+
+get_datasets()→ list[str]
+Get datasets of the workflow.
+
+Returns
+:
+The list of datasets in the current workflow
+
+Return type
+:
+list
+
+Raises
+:
+RuntimeError – If the workflow is closed.
+
+get_method(method_name: str)→ MethodInstance
+Return workflow method with the given name
+
+Parameters
+:
+method_name (str) – Name of the method
+
+Returns
+:
+Method instance with the given name
+
+Return type
+:
+MethodInstance
+
+Raises
+:
+RuntimeError – If the workflow is closed.
+
+get_methods()→ list[MethodInstance]
+Return workflow methods.
+
+Returns
+:
+List of method instance belonging to current workflow
+
+Return type
+:
+list[MethodInstance]
+
+Raises
+:
+RuntimeError – If the workflow is closed.
+
+get_name()→ str
+Return workflow name.
+
+Returns
+:
+The name of the workflow
+
+Return type
+:
+str
+
+Raises
+:
+RuntimeError – If the workflow is closed.
+
+get_workflow_manager()→ WorkflowManager
+Return the workflow manager.
+
+Returns
+:
+The workflow manager the current workflow belongs to
+
+Return type
+:
+WorkflowManager
+
+Raises
+:
+RuntimeError – If the workflow is closed.
+
+get_zonation()→ str
+Get zonation selection for this workflow.
+
+Raises
+:
+RuntimeError – If the workflow is closed.
+
+get_zones()→ str
+Get zone selection for this workflow.
+
+Raises
+:
+RuntimeError – If the workflow is closed.
+
+is_cascade_launch()→ bool
+Is cascade launch.
+
+Returns
+:
+True if cascade launch mode activated, otherwise False
+
+Return type
+:
+bool
+
+Raises
+:
+RuntimeError – If the workflow is closed.
+
+is_closed()→ bool
+Check whether the current workflow has been closed.
+
+Returns
+:
+True if the current workflow has been closed, False if it still exists.
+
+Return type
+:
+bool
+
+remove_datasets(datasets: list[str])
+Remove datasets in the workflow.
+
+Parameters
+:
+datasets (list[str]) – List of datasets with format “well.dataset” to remove from the workflow
+
+Raises
+:
+RuntimeError – If the workflow is closed.
+
+NameError – If the datasets are not properly named (Well name.`Dataset name`).
+
+run()
+Run the workflow, starting with the first method.
+
+Raises
+:
+RuntimeError – If the workflow is closed.
+
+save(name: str, level: str = 'Project', workflow_parameters: bool = True)
+Save the workflow with the given name and its workflow parameters.
+
+Parameters
+:
+name (str) – Name of the workflow saved.
+
+level (str) – Level at which the workflow will be saved: ‘Project’, ‘User’, ‘Company’ or ‘Techlog’.
+
+workflow_parameters (bool) – If true, the workflow parameters will be saved.
+
+Raises
+:
+RuntimeError – If the workflow is closed.
+
+save_as_template(name: str, level: str = 'Project', reference_dataset_name: str = '')
+Save the workflow as template with the given name and its zone parameters.
+
+Parameters
+:
+name (str) – Name of the workflow saved as template.
+
+level (str) – Level at which the workflow will be saved: ‘Project’, ‘User’, ‘Company’ or ‘Techlog’.
+
+reference_dataset_name (str) – Full name of the dataset (Well name.`Dataset name`) used to filter the zone parameters. If unset, the last dropped dataset will be used.
+
+Raises
+:
+RuntimeError – If the workflow is closed.
+
+NameError – If the dataset is not properly named (Well name.`Dataset name`).
+
+set_cascade_launch(cascade: bool)
+Set cascade launch.
+
+Parameters
+:
+cascade (bool) – True to set cascade launch mode, otherwise False
+
+Raises
+:
+RuntimeError – If the workflow is closed.
+
+RuntimeError – If the cascace launch mode could not be set.
+
+set_name(name: str)
+Set the name of the workflow.
+
+Parameters
+:
+name (str) – New name of the workflow
+
+Raises
+:
+RuntimeError – If the workflow is closed.
+
+NameError – If the name is not valid.
+
+set_zonation(zonation: str, zones: list[str], zoneFamily: str = 'Zone Name')
+Set zonation selection for this workflow.
+
+Parameters
+:
+zonation (str) – Name of the zonation.
+
+zones (list[str]) – Name of the zone.
+
+zoneFamily (str, optional) – Zone family. Defaults to ‘Zone Name’.
+
+Raises
+:
+RuntimeError – If the workflow is closed.
+
+Method definition class
+classtl.workflow.MethodDefinition(ref: RemoteRef)
+The MethodDefinition represents the definition of a method.
+
+get_default_mnemonic_selection()→ MnemonicSelection
+Get the list of mnemonics to fill in before creating a MethodInstance by calling the function Workflow.create.
+
+Returns
+:
+List of mnemonics to fill in before creating a MethodInstance by calling the function Workflow.create_workflow.
+
+Return type
+:
+MnemonicSelection
+
+Raises
+:
+RuntimeError – If the workflow has been closed.
+
+get_help_id()→ str
+Get the help ID of the current method definition.
+
+Returns
+:
+Identifier used for Guru Help.
+
+Return type
+:
+str
+
+Raises
+:
+RuntimeError – If the workflow has been closed.
+
+get_id()→ str
+Get the ID of the method definition.
+
+Returns
+:
+Identifier of the method definition.
+
+Return type
+:
+str
+
+Raises
+:
+RuntimeError – If the workflow has been closed.
+
+get_menu()→ str
+Get the menu title of the current method definition.
+
+Returns
+:
+Title displayed in the Techlog menus.
+
+Return type
+:
+str
+
+Raises
+:
+RuntimeError – If the workflow has been closed.
+
+get_title()→ str
+Get the title of the current method definition.
+
+Returns
+:
+Title of the current method definition.
+
+Return type
+:
+str
+
+Raises
+:
+RuntimeError – If the workflow has been closed.
+
+Mnemonic selection class
+classtl.workflow.MnemonicSelection
+MnemonicSelection is a dict(str, MnemonicValue) with keys that are Mnemonic Labels associated to Mnemonic Values
+
+The Mnemonic selection is a dictionary, so you can use functions related to dictionary objects in Python.
+
+Access the mnemonic list of a method
+import tl.workflow
+
+vshgr_method = tl.workflow.get_method_by_id("GammaRayShaleVolume")
+mnemonic_selection = vshgr_method.get_default_mnemonic_selection()
+print(mnemonic_selection.keys())          # mnemonic labels of your method
+print(mnemonic_selection["Gamma Ray"])    # mnemonic value properties associated to label "Gamma Ray"
+print(mnemonic_selection.items())         # mnemonic labels and values associated to your method
+get_types(labelName: str)→ list[MnemonicType]
+Return types set for given label
+
+Parameters
+:
+labelName (str) – Name of the label
+
+Returns
+:
+Types corresponding to the given label
+
+Return type
+:
+list[MnemonicType]
+
+get_values(labelName: str)→ list[str]
+Return values set for given label
+
+Parameters
+:
+labelName (str) – Name of the label
+
+Returns
+:
+Values corresponding to the given label
+
+Return type
+:
+list[str]
+
+is_valid()→ bool
+Check if the mnemonic has been well filled
+
+Returns
+:
+True if mnemonic is well filled
+
+Return type
+:
+bool
+
+Raises
+:
+Exception – If a mandatory field is not filled
+
+Exception – If a list has been set for a single input
+
+set_alias(labelName: str, aliasName: str)
+Set alias for given parameter For single input only otherwise see set_list
+
+Parameters
+:
+labelName (str) – Name of the label
+
+aliasName (str) – Alias to associate to label
+
+set_family(labelName: str, familyName: str)
+Set family for given parameter For single input only otherwise see set_list
+
+Parameters
+:
+labelName (str) – Name of the label’
+
+familyName (str) – Family to associate to label
+
+set_list(labelName: str, listTupleNameType: str)
+Set list of input by giving tuples of (name, type) Type format can be tl.workflow.MnemonicType.Family, Variable, Alias or MainFamily
+
+Parameters
+:
+labelName (str) – Name of the label
+
+listTupleNameType (list[tuple]) – List of tuple (name, type) to associate to label
+
+set_main_family(labelName: str, mainFamilyName: str)
+Set main family for given parameter For single input only otherwise see set_list
+
+Parameters
+:
+labelName (str) – Name of the label
+
+mainFamilyName (str) – main family to associate to label
+
+set_variable(labelName: str, variableName: str)
+Set variable for given parameter For single input only otherwise see set_list
+
+Parameters
+:
+labelName (str) – Name of the label
+
+variableName (str) – Variable to associate to label
+
+unset_mnemonic(labelName: str)
+Clear the fields associated to given label
+
+Parameters
+:
+labelName (str) – Name of the label
+
+Method instance class
+classtl.workflow.MethodInstance(ref: RemoteRef)
+The MethodInstance class is the class representing a method inside an AWI Workflow
+
+close(silent: bool = True)→ bool
+Close the method and remove it from the workflow.
+
+Warning: By default the method is closed without being saved.
+
+Parameters
+:
+silent (bool, optional) – True to force the removal of the method, False to query the user agreement. Defaults to True.
+
+Returns
+:
+True if the method has been closed, False if the method has not been removed from the workflow.
+
+Return type
+:
+bool
+
+Raises
+:
+RuntimeError – If the method or its workflow has been closed.
+
+get_apply_mode()→ ApplyMode
+Get the apply mode (Display, Save, SaveAndDisplay).
+
+Returns
+:
+Apply mode.
+
+Return type
+:
+ApplyMode
+
+Raises
+:
+RuntimeError – If the method or its workflow has been closed.
+
+get_definition()→ MethodDefinition
+Get the definition of the current method.
+
+Returns
+:
+Definition of the method the current instance was created from.
+
+Return type
+:
+MethodDefinition
+
+Raises
+:
+RuntimeError – If the method or its workflow has been closed.
+
+get_input_datasets(well_name: str = '')→ list[InputDataset]
+Get all of the datasets.
+
+Returns
+:
+Datasets.
+
+Return type
+:
+list[InputDataset]
+
+Raises
+:
+RuntimeError – If the method or its workflow has been closed.
+
+get_input_variables(well_name: str = '', dataset_name: str = '', label_name: str = '')→ list[InputVariable]
+Get all of the inputs.
+
+Returns
+:
+Inputs.
+
+Return type
+:
+list[InputVariable]
+
+Raises
+:
+RuntimeError – If the method or its workflow has been closed.
+
+get_layout_template()→ str
+Get the layout template selected for the method.
+
+Returns
+:
+Name of the template selected.
+
+Return type
+:
+str
+
+Raises
+:
+RuntimeError – If the method or its workflow has been closed.
+
+get_layout_template_type()→ TemplateType
+Get the layout template type.
+
+Returns
+:
+Layout template type.
+
+Return type
+:
+TemplateType
+
+Raises
+:
+RuntimeError – If the method or its workflow has been closed.
+
+get_logviews()→ dict[str, int]
+Get the id of the logviews associated to method.
+
+Returns
+:
+Dictionary with key corresponding to logview name and value corresponding to its id.
+
+Return type
+:
+dict[str, int]
+
+Raises
+:
+RuntimeError – If the method or its workflow has been closed.
+
+get_name()→ str
+Get the name of the method, as displayed in the workflow.
+
+Returns
+:
+Name of the method.
+
+Return type
+:
+str
+
+Raises
+:
+RuntimeError – If the method or its workflow has been closed.
+
+get_output_by_name(name: str)→ MethodOutput
+Get an output property by name.
+
+Parameters
+:
+name (str) – Name of the output property to look for.
+
+Returns
+:
+Output property with the given name.
+
+Return type
+:
+MethodOutput
+
+Raises
+:
+RuntimeError – If the method or its workflow has been closed.
+
+NameError – If the method does not have any output with the given name.
+
+get_output_group()→ str
+Get the name of the group of the output variables.
+
+Returns
+:
+Name of the group, in the output datasets, which will hold the output variables generated by the current method.
+
+Return type
+:
+str
+
+Raises
+:
+RuntimeError – If the method or its workflow has been closed.
+
+get_output_prefix()→ str
+Get the prefix applied to the output variables.
+
+Returns
+:
+Prefix applied to the output variables.
+
+Return type
+:
+str
+
+Raises
+:
+RuntimeError – If the method or its workflow has been closed.
+
+get_output_suffix()→ str
+Get the suffix applied to the output variables.
+
+Returns
+:
+Suffix applied to the output variables.
+
+Return type
+:
+str
+
+Raises
+:
+RuntimeError – If the method or its workflow has been closed.
+
+get_outputs()→ list[MethodOutput]
+Get all of the output properties.
+
+Returns
+:
+Output properties.
+
+Return type
+:
+list[MethodOutput]
+
+Raises
+:
+RuntimeError – If the method or its workflow has been closed.
+
+get_parameters(parameter_name: str = '', tab_name: str = '', well_name: str = '', dataset_name: str = '', zone_name: str = '')→ list[MethodParameter]
+Get all of the parameters.
+
+Returns
+:
+Parameters.
+
+Return type
+:
+list[MethodParameter]
+
+Raises
+:
+RuntimeError – If the method or its workflow has been closed.
+
+RuntimeError – If the zonation is not valid.
+
+NameError – if the method does not have any parameter with the given name.
+
+NameError – if the method does not have any tab with the given name.
+
+NameError – if the given well is not selected in the table.
+
+NameError – if the given dataset is not selected in the table.
+
+NameError – if the given zone is not selected in the table.
+
+get_tabs()→ list[str]
+Get the labels of the tabs displaying the parameters.
+
+Returns
+:
+Labels of the tabs displaying the parameters.
+
+Return type
+:
+list[str]
+
+Raises
+:
+RuntimeError – If the method or its workflow has been closed.
+
+get_workflow()→ Workflow
+Get the workflow this instance belongs to (its parent basically).
+
+Returns
+:
+Parent workflow.
+
+Return type
+:
+Workflow
+
+Raises
+:
+RuntimeError – If the method or its workflow has been closed.
+
+is_closed()→ bool
+Check whether the current method has been closed.
+
+Returns
+:
+True if the current method has been closed, False if it still exists in the workflow.
+
+Return type
+:
+bool
+
+is_enabled()→ bool
+Check whether the current method is enabled.
+
+Returns
+:
+True if the current method is enabled, False if the current method will be skipped when the parent workflow will run.
+
+Return type
+:
+bool
+
+Raises
+:
+RuntimeError – If the method or its workflow has been closed.
+
+move(up: bool = True, occurrence: int = 1)
+Move a method in its workflow.
+
+Parameters
+:
+up (bool) – True to move up the method. False to move down.
+
+occurrence (int) – number of occurrence the method will be moved.
+
+Raises
+:
+ValueError – If the number of occurrence is over the maximum.
+
+run()
+Run the method.
+
+Raises
+:
+RuntimeError – If the method or its workflow has been closed.
+
+set_apply_mode(mode: ApplyMode)
+Indicate if the output variables, generated by the current method, must be just displayed in a LogView, just saved in the project or both.
+
+Parameters
+:
+mode (ApplyMode) – Apply mode.
+
+Raises
+:
+RuntimeError – If the method or its workflow has been closed.
+
+set_enabled(enabled: bool)
+Enable or disable the current method.
+
+Parameters
+:
+enabled (bool) – True to enable the method, False to disable it.
+
+Raises
+:
+RuntimeError – If the method or its workflow has been closed.
+
+set_layout_template(layout_template: str, is_forced: bool = False)
+Set the layout template for the method.
+
+Parameters
+:
+layout_template (str) – Name of the layout template to set.
+
+is_forced (bool) – True if the user wants to keep only the tracks present in the template and ignore additionnal ones coming from the method.
+
+Raises
+:
+RuntimeError – If the method or its workflow has been closed.
+
+set_layout_template_type(template_type: TemplateType)
+Set dataset template type.
+
+Parameters
+:
+template_type (TemplateType) – Template type. Can be dataset or well.
+
+Raises
+:
+RuntimeError – If the method or its workflow has been closed.
+
+set_output_group(group: str)
+Set the name of the group of the output variables.
+
+Parameters
+:
+group (str) – Name of the group, in the output datasets, which will hold the output variables generated by the current method.
+
+Raises
+:
+RuntimeError – If the method or its workflow has been closed.
+
+set_output_prefix(prefix: str)
+Set the prefix applied to the output variables.
+
+Parameters
+:
+prefix (str) – Prefix applied to the output variables generated by the current method.
+
+Raises
+:
+RuntimeError – If the method or its workflow has been closed.
+
+set_output_suffix(suffix: str)
+Set the suffix applied to the output variables.
+
+Parameters
+:
+suffix (str) – Suffix applied to the output variables generated by the current method.
+
+Raises
+:
+RuntimeError – If the method or its workflow has been closed.
+
+Method parameter class
+classtl.workflow.MethodParameter(ref: RemoteRef)
+The MethodParameter represents a parameter of a MethodInstance.
+
+get_bottom()→ float
+Get the bottom depth/time of the dataset.
+
+Returns
+:
+Bottom depth/time of the dataset.
+
+Return type
+:
+float
+
+Raises
+:
+RuntimeError – If the current parameter is not valid.
+
+RuntimeError – If the method has been closed.
+
+get_dataset_name()→ str
+Get the name of the dataset.
+
+Returns
+:
+Name of the dataset.
+
+Return type
+:
+str
+
+Raises
+:
+RuntimeError – If the current parameter is not valid.
+
+RuntimeError – If the method has been closed.
+
+get_group()→ str
+Get the name of the group.
+
+Returns
+:
+Name of the group.
+
+Return type
+:
+str
+
+Raises
+:
+RuntimeError – If the current parameter is not valid.
+
+RuntimeError – If the method has been closed.
+
+get_name()→ str
+Get the name of the current parameter.
+
+Returns
+:
+Name of the parameter.
+
+Return type
+:
+str
+
+Raises
+:
+RuntimeError – If the current parameter is not valid.
+
+RuntimeError – If the method has been closed.
+
+get_possible_values()→ list[str]
+Get the possible values for a parameter.
+
+Returns
+:
+List of possible values of the current parameter if this is a defined list.
+
+Return type
+:
+list[str]
+
+Raises
+:
+RuntimeError – If the current parameter is not valid.
+
+RuntimeError – If the method has been closed.
+
+ValueError – If the parameter does not have defined list.
+
+get_tab()→ str
+Get the label of the tab where the parameter is displayed.
+
+Returns
+:
+Tab name.
+
+Return type
+:
+str
+
+Raises
+:
+RuntimeError – If the current parameter is not valid.
+
+RuntimeError – If the method has been closed.
+
+get_top()→ float
+Get the top depth/time of the dataset.
+
+Returns
+:
+Top depth/time of the dataset.
+
+Return type
+:
+float
+
+Raises
+:
+RuntimeError – If the current parameter is not valid.
+
+RuntimeError – If the method has been closed.
+
+get_top_bottom_unit()→ str
+Get the unit of the top and bottom depths/times of the dataset.
+
+Returns
+:
+Unit of the top and bottom depths/times.
+
+Return type
+:
+str
+
+Raises
+:
+RuntimeError – If the current parameter is not valid.
+
+RuntimeError – If the method has been closed.
+
+get_value()→ bool | float | int | str
+Get the current value of the parameter.
+
+Returns
+:
+Current value of the parameter.
+
+Return type
+:
+_ty.Union[bool, float, int , str]
+
+Raises
+:
+RuntimeError – If the current parameter is not valid.
+
+RuntimeError – If the method has been closed.
+
+get_value_type()→ ValueType
+Get the type of the parameter’s value.
+
+Returns
+:
+Type of the value of the current parameter.
+
+Return type
+:
+ValueType
+
+Raises
+:
+RuntimeError – If the current parameter is not valid.
+
+RuntimeError – If the method has been closed.
+
+get_value_unit()→ str
+Get the unit of the parameter’s value.
+
+Returns
+:
+Unit of the parameter’s value.
+
+Return type
+:
+str
+
+Raises
+:
+RuntimeError – If the current parameter is not valid.
+
+RuntimeError – If the method has been closed.
+
+get_well_name()→ str
+Get the name of the well.
+
+Returns
+:
+Name of the well.
+
+Return type
+:
+str
+
+Raises
+:
+RuntimeError – If the current parameter is not valid.
+
+RuntimeError – If the method has been closed.
+
+get_zonation()→ str
+Get the name of the zonation.
+
+Returns
+:
+Name of the zonation.
+
+Return type
+:
+str
+
+Raises
+:
+RuntimeError – If the current parameter is not valid.
+
+RuntimeError – If the method has been closed.
+
+get_zone_name()→ str
+Get the name of the zone.
+
+Returns
+:
+Name of the zone.
+
+Return type
+:
+str
+
+Raises
+:
+RuntimeError – If the current parameter is not valid.
+
+RuntimeError – If the method has been closed.
+
+is_valid()→ bool
+Check whether the current parameter is still used in the parent MethodInstance.
+
+Notes
+
+By setting some parameter’s value, the list of the parameters may change. As a consequence, a parameter may be no more used in the MethodInstance. If the current parameter is not valid, you should fetch the updated list of the parameters by calling MethodInstance.get_parameters().
+
+Returns
+:
+True if the parameter is valid, False if the parameter does not exist anymore.
+
+Return type
+:
+bool
+
+Raises
+:
+RuntimeError – If the current parameter is not valid.
+
+set_value(value: bool | float | int | str)
+Set the value of the parameter.
+
+Parameters
+:
+value (_ty.Union[bool, float, int , str]) – New value of the parameter.
+
+Raises
+:
+RuntimeError – If the current parameter is not valid.
+
+RuntimeError – If the method has been closed.
+
+ValueError – If the new value does not match the expected type (see get_value_type).
+
+ValueError – If the new value is not in the defined list (if exists).
+
+Method output class
+classtl.workflow.MethodOutput(ref: RemoteRef)
+The MethodOutput defines the properties of the outputs. These properties will be applied to any output variable created by MethodInstance.run().
+
+get_description()→ str
+Get the description of the output.
+
+Returns
+:
+Description of the output.
+
+Return type
+:
+str
+
+Raises
+:
+RuntimeError – If the current output is not valid.
+
+RuntimeError – If the method has been closed.
+
+get_family()→ str
+Get the family of the output.
+
+Returns
+:
+Name of the family of the output.
+
+Return type
+:
+str
+
+Raises
+:
+RuntimeError – If the current output is not valid.
+
+RuntimeError – If the method has been closed.
+
+get_format()→ OutputFormat
+Get the format of the output.
+
+Returns
+:
+Format of the output.
+
+Return type
+:
+OutputFormat
+
+Raises
+:
+RuntimeError – If the current output is not valid.
+
+RuntimeError – If the method has been closed.
+
+get_name()→ str
+Get the name of the output.
+
+Returns
+:
+Name of the output.
+
+Return type
+:
+str
+
+Raises
+:
+RuntimeError – If the current output is not valid.
+
+RuntimeError – If the method has been closed.
+
+get_palette()→ str
+Get the name of the palette of the output.
+
+Returns
+:
+Name of the palette.
+
+Return type
+:
+str
+
+Raises
+:
+RuntimeError – If the current output is not valid.
+
+RuntimeError – If the method has been closed.
+
+get_possible_families()→ list[str]
+Get the possible families for a given output.
+
+Returns
+:
+List of the possible families for the output.
+
+Return type
+:
+list[str]
+
+Raises
+:
+RuntimeError – If the current output is not valid.
+
+RuntimeError – If the method has been closed.
+
+get_possible_palettes()→ list[str]
+Get the possible palettes for a given output.
+
+Returns
+:
+List of the possible palettes for the output.
+
+Return type
+:
+list[str]
+
+Raises
+:
+RuntimeError – If the current output is not valid.
+
+RuntimeError – If the method has been closed.
+
+get_possible_units()→ list[str]
+Get the possible units for a given output.
+
+Returns
+:
+List of the possible units for the output.
+
+Return type
+:
+list[str]
+
+Raises
+:
+RuntimeError – If the current output is not valid.
+
+RuntimeError – If the method has been closed.
+
+get_unit()→ str
+Get the unit of the output.
+
+Returns
+:
+Unit of the output.
+
+Return type
+:
+str
+
+Raises
+:
+RuntimeError – If the current output is not valid.
+
+RuntimeError – If the method has been closed.
+
+is_used()→ bool
+Check whether the output variable(s) will be generated (True) or not (False).
+
+Returns
+:
+True if the method will generate output variable(s), False otherwise.
+
+Return type
+:
+bool
+
+Raises
+:
+RuntimeError – If the current output is not valid.
+
+RuntimeError – If the method has been closed.
+
+set_description(description: str)
+Set the description of the output.
+
+Parameters
+:
+description (str) – Description of the output.
+
+Raises
+:
+RuntimeError – If the current output is not valid.
+
+RuntimeError – If the method has been closed.
+
+set_family(family: str)
+Set the family of the output.
+
+Parameters
+:
+family (str) – Name of the family of the output.
+
+Raises
+:
+RuntimeError – If the current output is not valid.
+
+RuntimeError – If the method has been closed.
+
+set_format(format_: OutputFormat)
+Set the format of the output.
+
+Parameters
+:
+format (OutputFormat) – Format of the output.
+
+Raises
+:
+RuntimeError – If the current output is not valid.
+
+RuntimeError – If the method has been closed.
+
+set_name(name: str)
+Set the name of the output.
+
+Parameters
+:
+name (str) – Name of the output.
+
+Raises
+:
+RuntimeError – If the current output is not valid.
+
+RuntimeError – If the method has been closed.
+
+NameError – If the name contains a forbidden character.
+
+set_palette(palette: str)
+Set the name of the palette.
+
+Parameters
+:
+palette (str) – Name of the palette.
+
+Raises
+:
+RuntimeError – If the current output is not valid.
+
+RuntimeError – If the method has been closed.
+
+NameError – If the palette does not exist.
+
+set_unit(unit: str)
+Set the unit of the output.
+
+Parameters
+:
+unit (str) – Unit of the output.
+
+Raises
+:
+RuntimeError – If the current output is not valid.
+
+RuntimeError – If the method has been closed.
+
+ValueError – If the unit is not compatible with the family or the computation unit.
+
+set_used(used: bool)
+Indicate whether the output variable(s) will be generated.
+
+Parameters
+:
+used (bool) – True if the method should generate an output variable for each dataset, False otherwise.
+
+Raises
+:
+RuntimeError – If the current output is not valid.
+
+RuntimeError – If the method has been closed.
+
+Input variable class
+classtl.workflow.InputVariable(ref: RemoteRef)
+The InputVariable represents a box in the input tab in the AWI of a MethodInstance (i.e. a box in the AWI).
+
+get_dataset_name()→ str
+Get the name of the dataset.
+
+Returns
+:
+name of the dataset.
+
+Return type
+:
+str
+
+Raises
+:
+RuntimeError – If the current input is not valid.
+
+RuntimeError – If the method has been closed.
+
+get_group_name()→ str
+Get the name of the group.
+
+Returns
+:
+name of the group.
+
+Return type
+:
+str
+
+Raises
+:
+RuntimeError – If the current input is not valid.
+
+RuntimeError – If the method has been closed.
+
+get_input_dataset()→ InputDataset
+Get the corresponding input dataset.
+
+Returns
+:
+Input dataset associated to input variable.
+
+Return type
+:
+InputDataset
+
+Raises
+:
+RuntimeError – If the current input is not valid.
+
+RuntimeError – If the method has been closed.
+
+get_label_name()→ str
+Get the name of the label.
+
+Returns
+:
+name of the label.
+
+Return type
+:
+str
+
+Raises
+:
+RuntimeError – If the current input is not valid.
+
+RuntimeError – If the method has been closed.
+
+get_possible_inputs()→ list[str]
+Get the name of the possible variables for a given input.
+
+Returns
+:
+name of the label.
+
+Return type
+:
+str
+
+Raises
+:
+RuntimeError – If the current input is not valid.
+
+RuntimeError – If the method has been closed.
+
+get_variable_name()→ str
+Get the name of the variable.
+
+Returns
+:
+Name of the variable.
+
+Return type
+:
+str
+
+Raises
+:
+RuntimeError – If the current input is not valid.
+
+RuntimeError – If the method has been closed.
+
+get_well_name()→ str
+Get the name of the well.
+
+Returns
+:
+name of the well.
+
+Return type
+:
+str
+
+Raises
+:
+RuntimeError – If the current input is not valid.
+
+RuntimeError – If the method has been closed.
+
+set_variable(value: str)→ bool
+Set variable for given input.
+
+Raises
+:
+RuntimeError – If the current input is not valid.
+
+RuntimeError – If the method has been closed.
+
+ValueError – If the new value is not a possible input.
+
+Input dataset class
+classtl.workflow.InputDataset(ref: RemoteRef)
+The InputDataset represents a dataset and its variables of a MethodInstance (i.e. a line in the AWI.)
+
+get_dataset_name()→ str
+Get the name of the dataset.
+
+Returns
+:
+name of the dataset.
+
+Return type
+:
+str
+
+Raises
+:
+RuntimeError – If the current input dataset is not valid.
+
+RuntimeError – If the method has been closed.
+
+get_group_name()→ str
+Get the name of the group.
+
+Returns
+:
+name of the group.
+
+Return type
+:
+str
+
+Raises
+:
+RuntimeError – If the current input dataset is not valid.
+
+RuntimeError – If the method has been closed.
+
+get_input_variables()→ [<class 'tl.workflow.InputVariable'>]
+Get the variables in given dataset.
+
+Returns
+:
+list of the input variables in a dataset.
+
+Return type
+:
+[InputVariable]
+
+Raises
+:
+RuntimeError – If the current input dataset is not valid.
+
+RuntimeError – If the method has been closed.
+
+get_well_name()→ str
+Get the name of the well.
+
+Returns
+:
+name of the well.
+
+Return type
+:
+str
+
+Raises
+:
+RuntimeError – If the current input dataset is not valid.
+
+RuntimeError – If the method has been closed.
+
+is_used()→ bool
+Returns if the dataset is used or not.
+
+Returns
+:
+true if dataset is used for the computation.
+
+Return type
+:
+bool
+
+Raises
+:
+RuntimeError – If the current input dataset is not valid.
+
+RuntimeError – If the method has been closed.
+
+set_used(used: bool)
+Returns if the dataset is used or not.
+
+Parameters
+:
+used (bool) – New state of the parameter.
+
+Raises
+:
+RuntimeError – If the current input dataset is not valid.
+
+RuntimeError – If the method has been closed
