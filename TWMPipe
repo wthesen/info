@@ -1,0 +1,55 @@
+pipeline id	company	license number	license line number	line number	province	substance	status	outer diameter (mm)	from facility	to facility	from location	to location	length (m)	wall thickness (mm)	pipe type	pipe grade	pipe material	pipe maop	h2s content (%)	joint method
+AB-19467-23	Tidewater Midstream and Infrastructure Ltd.	19467	19467-23	23	AB	Natural Gas	Abandoned	168.3	Blind End	Blind End	10-06-081-24W4	12-06-081-24W4	1340	3.2	Z245.1	2901	Steel	0	0.4	Welded
+AB-19467-24	Tidewater Midstream and Infrastructure Ltd.	19467	19467-24	24	AB	Natural Gas	Abandoned	168.3	Blind End	Blind End	06-18-081-24W4	13-07-081-24W4	1110	3.2	Z245.1	2901	Steel	0	0.4	Welded
+AB-19467-56	Tidewater Midstream and Infrastructure Ltd.	19467	19467-56	56	AB	Natural Gas	Abandoned	114.3	Blind End	Blind End	06-08-081-25W4	11-08-081-25W4	500	4	Z245.1	2901	Steel	0	0.4	Welded
+AB-19467-59	Tidewater Midstream and Infrastructure Ltd.	19467	19467-59	59	AB	Natural Gas	Discontinued	114.3	Pipeline	Blind End	09-01-081-25W4	12-06-081-24W4	40	3.18	Z245.1	2901	Steel	0	0.4	Welded
+AB-22592-1	Tidewater Midstream and Infrastructure Ltd.	22592	22592-1	1	AB	Natural Gas	Discontinued	114.3	Blind End	Blind End	10-24-081-25W4	16-36-080-25W4	7850	3.96	Z245.1	2901	Steel	0	0	Welded
+AB-23332-1	Tidewater Midstream and Infrastructure Ltd.	23332	23332-1	1	AB	Natural Gas	Discontinued	114.3	Blind End	Blind End	10-24-081-25W4	09-36-080-25W4	6880	4	Z245.1	3592	Steel	0	0	Welded
+AB-23332-2	Tidewater Midstream and Infrastructure Ltd.	23332	23332-2	2	AB	Natural Gas	Discontinued	168.3	Blind End	Blind End	10-24-081-25W4	09-36-080-25W4	6900	4	Z245.1	3171	Steel	0	0	Welded
+AB-37069-1	Tidewater Midstream and Infrastructure Ltd.	37069	37069-1	1	AB	Salt Water	Discontinued	114.3	Blind End	Blind End	10-24-081-25W4	07-23-081-25W4	1800	3.8	CEN	1000	Fibreglass	0	0	Threaded
+AB-58021-1	Tidewater Midstream and Infrastructure Ltd.	58021	58021-1	1	AB	Natural Gas	Discontinued	114.3	Blind End	Blind End	11-30-081-24W4	16-36-080-25W4	8180	3.18	5LX	X42	Steel	0	0.4	Welded
+AB-58021-10	Tidewater Midstream and Infrastructure Ltd.	58021	58021-10	10	AB	Natural Gas	Discontinued	88.9	Blind End	Blind End	09-19-080-24W4	06-29-080-24W4	1600	3.2	Z245.1	2901	Steel	0	0.4	Welded
+AB-58021-12	Tidewater Midstream and Infrastructure Ltd.	58021	58021-12	12	AB	Natural Gas	Discontinued	273.1	Blind End	Blind End	13-07-081-24W4	16-36-080-25W4	3200	4	Z245.1	2901	Steel	0	0.4	Welded
+AB-58021-13	Tidewater Midstream and Infrastructure Ltd.	58021	58021-13	13	AB	Natural Gas	Discontinued	114.3	Blind End	Blind End	06-29-080-24W4	16-36-080-25W4	3800	3.2	Z245.1	2901	Steel	0	0.4	Welded
+AB-58021-14	Tidewater Midstream and Infrastructure Ltd.	58021	58021-14	14	AB	Natural Gas	Operating	88.9	Well	Pipeline	03-09-081-25W4	14-09-081-25W4	1220	3.2	Z245.1	2901	Steel	2410	0.4	Welded
+AB-58021-15	Tidewater Midstream and Infrastructure Ltd.	58021	58021-15	15	AB	Natural Gas	Discontinued	168.3	Blind End	Blind End	12-32-080-24W4	13-31-080-24W4	2000	4	Z245.1	2901	Steel	0	0.4	Welded
+AB-58021-16	Tidewater Midstream and Infrastructure Ltd.	58021	58021-16	16	AB	Natural Gas	Discontinued	88.9	Blind End	Blind End	05-09-081-25W4	03-09-081-25W4	980	3.2	Z245.1	2901	Steel	0	0.4	Welded
+AB-58021-17	Tidewater Midstream and Infrastructure Ltd.	58021	58021-17	17	AB	Natural Gas	Discontinued	114.3	Blind End	Blind End	10-26-080-25W4	11-31-080-24W4	3050	3.2	Z245.1	2901	Steel	0	0.4	Welded
+AB-58021-18	Tidewater Midstream and Infrastructure Ltd.	58021	58021-18	18	AB	Natural Gas	Discontinued	219.1	Blind End	Blind End	09-24-081-25W4	16-13-081-25W4	1400	4.8	Z245.1	3592	Steel	0	0.4	Welded
+AB-58021-19	Tidewater Midstream and Infrastructure Ltd.	58021	58021-19	19	AB	Natural Gas	Discontinued	168.3	Blind End	Blind End	13-05-081-24W4	12-32-080-24W4	1950	4	Z245.1	2901	Steel	0	0.4	Welded
+AB-58021-2	Tidewater Midstream and Infrastructure Ltd.	58021	58021-2	2	AB	Natural Gas	Discontinued	114.3	Blind End	Blind End	10-07-081-24W4	13-07-081-24W4	1350	3.18	5LX	X42	Steel	0	0.4	Welded
+AB-58021-20	Tidewater Midstream and Infrastructure Ltd.	58021	58021-20	20	AB	Natural Gas	Discontinued	168.3	Blind End	Blind End	06-09-081-24W4	06-08-081-24W4	1600	3.2	Z245.1	3591	Steel	0	0.4	Welded
+AB-58021-21	Tidewater Midstream and Infrastructure Ltd.	58021	58021-21	21	AB	Natural Gas	Discontinued	168.3	Blind End	Blind End	06-08-081-24W4	12-06-081-24W4	2900	3.2	Z245.1	3591	Steel	0	0.4	Welded
+AB-58021-22	Tidewater Midstream and Infrastructure Ltd.	58021	58021-22	22	AB	Natural Gas	Discontinued	114.3	Blind End	Blind End	07-25-081-25W4	04-30-081-24W4	600	3.2	Z245.1	2901	Steel	0	0.4	Welded
+AB-58021-23	Tidewater Midstream and Infrastructure Ltd.	58021	58021-23	23	AB	Natural Gas	Discontinued	114.3	Blind End	Blind End	10-16-080-24W4	06-29-080-24W4	4480	3.2	Z245.1	2901	Steel	0	0.4	Welded
+AB-58021-24	Tidewater Midstream and Infrastructure Ltd.	58021	58021-24	24	AB	Natural Gas	Operating	114.3	Well	Well	13-01-080-24W4	10-16-080-24W4	5000	3.2	Z245.1	2901	Steel	4970	0.4	Welded
+AB-58021-25	Tidewater Midstream and Infrastructure Ltd.	58021	58021-25	25	AB	Natural Gas	Discontinued	114.3	Blind End	Blind End	07-16-081-25W4	15-09-081-25W4	640	3.2	Z245.1	2901	Steel	0	0.4	Welded
+AB-58021-26	Tidewater Midstream and Infrastructure Ltd.	58021	58021-26	26	AB	Natural Gas	Discontinued	168.3	Blind End	Blind End	12-32-080-24W4	16-36-080-25W4	2500	3.2	Z245.1	2901	Steel	0	0.4	Welded
+AB-58021-27	Tidewater Midstream and Infrastructure Ltd.	58021	58021-27	27	AB	Natural Gas	Discontinued	168.3	Blind End	Blind End	06-08-081-24W4	12-06-081-24W4	2690	3.2	Z245.1	2901	Steel	0	0.4	Welded
+AB-58021-29	Tidewater Midstream and Infrastructure Ltd.	58021	58021-29	29	AB	Natural Gas	Discontinued	114.3	Blind End	Blind End	10-26-080-25W4	07-26-080-25W4	300	3.2	Z245.1	2901	Steel	0	0.4	Welded
+AB-58021-3	Tidewater Midstream and Infrastructure Ltd.	58021	58021-3	3	AB	Natural Gas	Discontinued	114.3	Blind End	Pipeline	02-02-081-25W4	09-01-081-25W4	2190	3.18	Z245.1	2901	Steel	0	0.4	Welded
+AB-58021-30	Tidewater Midstream and Infrastructure Ltd.	58021	58021-30	30	AB	Natural Gas	Discontinued	114.3	Blind End	Blind End	06-21-080-24W4	11-16-080-24W4	1360	3.2	Z245.1	2901	Steel	0	0.4	Welded
+AB-58021-31	Tidewater Midstream and Infrastructure Ltd.	58021	58021-31	31	AB	Natural Gas	Discontinued	114.3	Blind End	Blind End	07-11-081-25W4	11-12-081-25W4	1520	3.2	Z245.1	2901	Steel	0	0.4	Welded
+AB-58021-32	Tidewater Midstream and Infrastructure Ltd.	58021	58021-32	32	AB	Natural Gas	Discontinued	114.3	Blind End	Blind End	06-13-081-25W4	15-13-081-25W4	880	3.2	Z245.1	2901	Steel	0	0.4	Welded
+AB-58021-33	Tidewater Midstream and Infrastructure Ltd.	58021	58021-33	33	AB	Natural Gas	Discontinued	114.3	Blind End	Blind End	02-17-081-24W4	06-08-081-24W4	1930	3.2	Z245.1	2901	Steel	0	0.4	Welded
+AB-58021-34	Tidewater Midstream and Infrastructure Ltd.	58021	58021-34	34	AB	Natural Gas	Discontinued	114.3	Blind End	Blind End	04-07-081-24W4	04-07-081-24W4	270	3.2	Z245.1	2901	Steel	0	0.4	Welded
+AB-58021-35	Tidewater Midstream and Infrastructure Ltd.	58021	58021-35	35	AB	Natural Gas	Discontinued	114.3	Blind End	Blind End	15-29-080-24W4	06-29-080-24W4	930	3.2	Z245.1	2901	Steel	0	0.4	Welded
+AB-58021-36	Tidewater Midstream and Infrastructure Ltd.	58021	58021-36	36	AB	Natural Gas	Discontinued	141.3	Blind End	Blind End	06-18-081-24W4	13-07-081-24W4	1110	22.4	3408	6.3	Polyethylene	0	0.4	Butt Fusion
+AB-58021-37	Tidewater Midstream and Infrastructure Ltd.	58021	58021-37	37	AB	Natural Gas	Discontinued	168.3	Blind End	Blind End	10-06-081-24W4	12-06-081-24W4	1050	3.2	Z245.1	2901	Steel	0	0.4	Welded
+AB-58021-4	Tidewater Midstream and Infrastructure Ltd.	58021	58021-4	4	AB	Natural Gas	Discontinued	114.3	Blind End	Blind End	11-12-081-25W4	12-07-081-24W4	1120	3.18	5LX	X42	Steel	0	0.4	Welded
+AB-58021-5	Tidewater Midstream and Infrastructure Ltd.	58021	58021-5	5	AB	Natural Gas	Discontinued	114.3	Blind End	Blind End	12-04-081-24W4	12-06-081-24W4	3570	4.8	Z245.1	2902	Steel	0	0.4	Welded
+AB-58021-6	Tidewater Midstream and Infrastructure Ltd.	58021	58021-6	6	AB	Natural Gas	Discontinued	114.3	Blind End	Blind End	14-17-081-24W4	13-18-081-24W4	2020	4	Z245.1	2902	Steel	0	0.4	Welded
+AB-58021-7	Tidewater Midstream and Infrastructure Ltd.	58021	58021-7	7	AB	Natural Gas	Discontinued	114.3	Blind End	Blind End	15-13-081-25W4	13-18-081-24W4	420	4	Z245.1	2902	Steel	0	0.4	Welded
+AB-58021-8	Tidewater Midstream and Infrastructure Ltd.	58021	58021-8	8	AB	Natural Gas	Discontinued	219.1	Blind End	Blind End	16-13-081-25W4	16-36-080-25W4	4720	5.6	Z245.1	2901	Steel	0	0.4	Welded
+AB-58021-9	Tidewater Midstream and Infrastructure Ltd.	58021	58021-9	9	AB	Natural Gas	Discontinued	168.3	Blind End	Blind End	11-08-081-25W4	13-07-081-24W4	7800	4	Z245.1	2901	Steel	0	0.4	Welded
+AB-58052-1	Tidewater Midstream and Infrastructure Ltd.	58052	58052-1	1	AB	Natural Gas	Discontinued	168.3	Blind End	Blind End	06-20-081-24W4	10-24-081-25W4	2890	4.8	Z245.1	3592	Steel	0	0.4	Welded
+AB-58052-2	Tidewater Midstream and Infrastructure Ltd.	58052	58052-2	2	AB	Natural Gas	Discontinued	168.3	Blind End	Blind End	06-19-081-24W4	11-19-081-24W4	200	4.8	Z245.1	3172	Steel	0	0.4	Welded
+AB-58052-3	Tidewater Midstream and Infrastructure Ltd.	58052	58052-3	3	AB	Natural Gas	Discontinued	219.1	Blind End	Blind End	07-11-082-25W4	10-24-081-25W4	7080	4	Z245.1	2901	Steel	0	0.4	Welded
+AB-58052-4	Tidewater Midstream and Infrastructure Ltd.	58052	58052-4	4	AB	Natural Gas	Discontinued	219.1	Blind End	Blind End	11-19-081-24W4	10-24-081-25W4	900	4	Z245.1	2901	Steel	0	0.4	Welded
+AB-58052-5	Tidewater Midstream and Infrastructure Ltd.	58052	58052-5	5	AB	Natural Gas	Discontinued	114.3	Blind End	Pipeline	07-35-081-25W4	07-35-081-25W4	100	4.8	Z245.1	2901	Steel	0	0.4	Welded
+AB-58052-6	Tidewater Midstream and Infrastructure Ltd.	58052	58052-6	6	AB	Natural Gas	Discontinued	114.3	Blind End	Blind End	10-23-081-25W4	16-23-081-25W4	750	4.8	Z245.1	2901	Steel	0	0.4	Welded
+AB-58052-7	Tidewater Midstream and Infrastructure Ltd.	58052	58052-7	7	AB	Natural Gas	Discontinued	88.9	Blind End	Blind End	10-03-082-25W4	02-02-082-25W4	1920	8.1	3408	11	Polyethylene	0	0.4	Butt Fusion
+AB-58052-8	Tidewater Midstream and Infrastructure Ltd.	58052	58052-8	8	AB	Natural Gas	Discontinued	88.9	Blind End	Blind End	07-10-082-25W4	07-11-082-25W4	1790	8.1	3408	11	Polyethylene	0	0.4	Butt Fusion
+AB-58052-9	Tidewater Midstream and Infrastructure Ltd.	58052	58052-9	9	AB	Natural Gas	Discontinued	114.3	Blind End	Blind End	03-29-081-24W4	06-20-081-24W4	1350	3.2	Z245.1	2901	Steel	0	0.4	Welded
+AB-58123-1	Tidewater Midstream and Infrastructure Ltd.	58123	58123-1	1	AB	Natural Gas	Abandoned	168.3	Blind End	Blind End	10-36-081-25W4	07-02-082-25W4	2630	3.2	Z245.1	3591	Steel	0	0.4	Welded
+AB-58123-2	Tidewater Midstream and Infrastructure Ltd.	58123	58123-2	2	AB	Natural Gas	Abandoned	114.3	Blind End	Blind End	04-31-081-24W4	10-36-081-25W4	1070	3.2	Z245.1	2901	Steel	0	0.4	Welded
