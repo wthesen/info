@@ -1,0 +1,1976 @@
+Starting project structure query...
+Current User: wadet
+
+==================== Project Information ====================
+Project Name: Hoole_Analysis
+
+==================== Wells ====================
+Available Wells:
+
+Well: 100/06-08-081-24W4/00
+
+Datasets:
+
+  Dataset: 2932ef5e_100060808124W400_'DEPTH'_'RSG'_'SP'_0be3f7
+TypeError: function missing required argument 'dateType' (pos 3)
+  Info: False
+  Variables (Curves):
+TypeError: function missing required argument 'informationType' (pos 4)
+    - CALD: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - CALN: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - DEPTH: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - DPHI: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - DRHO: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - GR: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - ILD: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - ILM: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - LWTKG: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - NPHI: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - PE: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - RHOB: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - RSG: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - SP: None
+
+  Dataset: 5d041a64_100060808124W400_'DEPTH'_'RSG'_'SP'_fa81f6
+TypeError: function missing required argument 'dateType' (pos 3)
+  Info: False
+  Variables (Curves):
+TypeError: function missing required argument 'informationType' (pos 4)
+    - CALD: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - CALN: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - DEPTH: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - DPHI: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - DRHO: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - GR: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - ILD: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - ILM: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - LWTKG: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - NPHI: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - PE: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - RHOB: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - RSG: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - SP: None
+
+  Dataset: ZONATION_Well_Tops
+TypeError: function missing required argument 'dateType' (pos 3)
+  Info: False
+  Variables (Curves):
+TypeError: function missing required argument 'informationType' (pos 4)
+    - Formation: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - Zone Desc: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - Zone Name: None
+
+Well: 100/06-09-081-24W4/00
+
+Datasets:
+
+  Dataset: ZONATION_Well_Tops
+TypeError: function missing required argument 'dateType' (pos 3)
+  Info: False
+  Variables (Curves):
+TypeError: function missing required argument 'informationType' (pos 4)
+    - Formation: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - Zone Desc: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - Zone Name: None
+
+Well: 100/06-18-081-24W4/00
+
+Datasets:
+
+  Dataset: a2bf2cd9_100061808124W400_'DEPT'_'NAPI'_'NPHI'_3358a1
+TypeError: function missing required argument 'dateType' (pos 3)
+  Info: False
+  Variables (Curves):
+TypeError: function missing required argument 'informationType' (pos 4)
+    - CCL: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - DEPT: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - GAPI: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - NAPI: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - NPHI: None
+
+  Dataset: ZONATION_Well_Tops
+TypeError: function missing required argument 'dateType' (pos 3)
+  Info: False
+  Variables (Curves):
+TypeError: function missing required argument 'informationType' (pos 4)
+    - Formation: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - Zone Desc: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - Zone Name: None
+
+Well: 100/06-30-081-24W4/00
+
+Datasets:
+
+  Dataset: 7f367d70_100063008124W400_'DEPT'_'AHF20'_'AHF30'_ec25ed
+TypeError: function missing required argument 'dateType' (pos 3)
+  Info: False
+  Variables (Curves):
+TypeError: function missing required argument 'informationType' (pos 4)
+    - AHF20: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - AHF30: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - AHF60: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - AHFCO60: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - AHMF: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - BS: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - CFTC: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - CNTC: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - DEPT: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - DPHI_DOL: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - DPHI_LIM: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - DPHI_SAN: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - DSOZ: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - DT: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - GR: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - HCAL: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - HDRA: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - NPOR_DOL: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - NPOR_LIM: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - NPOR_SAN: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - PEFZ: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - PHIE: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - PHIE_FIXED: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - RHOB_FIXED: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - RHOZ: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - RSOZ: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - RT: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - RXOZ: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - SP: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - SXO: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - SXO_FIXED: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - TT1: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - TT2: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - TT3: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - TT4: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - V_DOL: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - V_LIME: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - V_SAND: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - VSH: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - VSH_FIXED: None
+
+  Dataset: 887c020d_100063008124W400_'DEPT'_'AHF20'_'AHF30'_01c8bc
+TypeError: function missing required argument 'dateType' (pos 3)
+  Info: False
+  Variables (Curves):
+TypeError: function missing required argument 'informationType' (pos 4)
+    - AHF20: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - AHF30: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - AHF60: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - AHFCO60: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - AHMF: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - BS: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - CFTC: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - CNTC: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - DEPT: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - DPHI_DOL: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - DPHI_LIM: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - DPHI_SAN: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - DSOZ: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - GR: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - HCAL: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - HDRA: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - NPOR_DOL: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - NPOR_LIM: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - NPOR_SAN: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - PEFZ: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - PHIE: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - PHIE_FIXED: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - RHOB_FIXED: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - RHOZ: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - RSOZ: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - RT: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - RXOZ: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - SP: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - SXO: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - SXO_FIXED: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - V_DOL: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - V_LIME: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - V_SAND: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - VSH: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - VSH_FIXED: None
+
+  Dataset: 9dcbb5c0_100063008124W400_'DEPT'_'AHO10'_'AHO20'_ef55fd
+TypeError: function missing required argument 'dateType' (pos 3)
+  Info: False
+  Variables (Curves):
+TypeError: function missing required argument 'informationType' (pos 4)
+    - AHO10: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - AHO20: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - AHO30: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - AHO60: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - AHO90: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - AHOCO90: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - DEPT: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - DT: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - EHGR: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - HCAL: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - HDPH_DOL: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - HDPH_LIM: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - HDPH_SAN: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - HDRA: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - HGR: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - HMIN: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - HMNO: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - HNPO_DOL: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - HNPO_LIM: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - HNPO_SAN: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - PEF8: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - RHO8: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - RXO8: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - SP: None
+
+  Dataset: d81c1912_100063008124W400_'DEPT'_'BS'_'CFTC'_6c90fb
+TypeError: function missing required argument 'dateType' (pos 3)
+  Info: False
+  Variables (Curves):
+TypeError: function missing required argument 'informationType' (pos 4)
+    - BS: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - CFTC: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - CNTC: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - DEPT: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - DT: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - GR: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - TT1: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - TT2: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - TT3: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - TT4: None
+
+  Dataset: ZONATION_Well_Tops
+TypeError: function missing required argument 'dateType' (pos 3)
+  Info: False
+  Variables (Curves):
+TypeError: function missing required argument 'informationType' (pos 4)
+    - Formation: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - Zone Desc: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - Zone Name: None
+
+Well: 100/08-07-081-24W4/00
+
+Datasets:
+
+  Dataset: 051b5659_100080708124W400_'DEPT'_'SP'_'CALD'_4af9da
+TypeError: function missing required argument 'dateType' (pos 3)
+  Info: False
+  Variables (Curves):
+TypeError: function missing required argument 'informationType' (pos 4)
+    - CALD: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - CALN: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - DEPT: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - DPSS: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - DRHO: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - GR: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - ILD: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - ILM: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - LWTKG: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - NPSS: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - PE: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - PHIE: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - PHIE_FIXED: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - RHOB: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - RHOB_FIXED: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - SFL: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - SP: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - SXO: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - SXO_FIXED: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - V_DOL: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - V_LIME: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - V_SAND: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - VSH: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - VSH_FIXED: None
+
+  Dataset: 0a929bb4_100080708124W400_'DEPT'_'SP'_'CALD'_38d593
+TypeError: function missing required argument 'dateType' (pos 3)
+  Info: False
+  Variables (Curves):
+TypeError: function missing required argument 'informationType' (pos 4)
+    - CALD: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - CALN: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - DEPT: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - DPSS: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - DRHO: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - DT: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - GR: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - ILD: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - ILM: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - LWTKG: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - NPSS: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - PE: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - PHIE: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - PHIE_FIXED: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - RHOB: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - RHOB_FIXED: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - SFL: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - SP: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - SXO: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - SXO_FIXED: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - V_DOL: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - V_LIME: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - V_SAND: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - VSH: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - VSH_FIXED: None
+
+  Dataset: 97cf8e9f_100080708124W400_'DEPT'_'SP'_'CALD'_e31420
+TypeError: function missing required argument 'dateType' (pos 3)
+  Info: False
+  Variables (Curves):
+TypeError: function missing required argument 'informationType' (pos 4)
+    - CALD: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - CALN: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - DEPT: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - DPSS: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - DRHO: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - DT: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - GR: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - ILD: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - ILM: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - LWTKG: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - NPSS: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - PE: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - PHIE: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - PHIE_FIXED: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - RHOB: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - RHOB_FIXED: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - SFL: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - SP: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - SXO: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - SXO_FIXED: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - V_DOL: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - V_LIME: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - V_SAND: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - VSH: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - VSH_FIXED: None
+
+  Dataset: ZONATION_Well_Tops
+TypeError: function missing required argument 'dateType' (pos 3)
+  Info: False
+  Variables (Curves):
+TypeError: function missing required argument 'informationType' (pos 4)
+    - Formation: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - Zone Desc: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - Zone Name: None
+
+Well: 100/10-36-081-25W4/00
+
+Datasets:
+
+  Dataset: 54c34a08_100103608125W400_'DEPT'_'SP'_'CALD'_9f44eb
+TypeError: function missing required argument 'dateType' (pos 3)
+  Info: False
+  Variables (Curves):
+TypeError: function missing required argument 'informationType' (pos 4)
+    - CALD: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - CALN: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - DEPT: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - DPHI: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - DRHO: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - DT: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - GR: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - ILD: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - ILM: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - LWTKG: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - NPHI: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - PE: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - PHIE: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - PHIE_FIXED: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - RHOB: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - RHOB_FIXED: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - RSG: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - SP: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - V_DOL: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - V_LIME: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - V_SAND: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - VSH: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - VSH_FIXED: None
+
+  Dataset: ef337b36_100103608125W400_'DEPT'_'SP'_'CALD'_ae4854
+TypeError: function missing required argument 'dateType' (pos 3)
+  Info: False
+  Variables (Curves):
+TypeError: function missing required argument 'informationType' (pos 4)
+    - CALD: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - CALN: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - DEPT: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - DPHI: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - DRHO: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - DT: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - GR: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - ILD: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - ILM: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - LWTKG: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - NPHI: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - PE: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - PHIE: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - PHIE_FIXED: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - RHOB: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - RHOB_FIXED: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - RSG: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - SP: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - V_DOL: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - V_LIME: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - V_SAND: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - VSH: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - VSH_FIXED: None
+
+  Dataset: ZONATION_Well_Tops
+TypeError: function missing required argument 'dateType' (pos 3)
+  Info: False
+  Variables (Curves):
+TypeError: function missing required argument 'informationType' (pos 4)
+    - Formation: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - Zone Desc: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - Zone Name: None
+
+Well: 100/11-02-082-25W4/00
+
+Datasets:
+
+  Dataset: 35491465_100110208225W400_'DEPT'_'CALD'_'CALN'_04b472
+TypeError: function missing required argument 'dateType' (pos 3)
+  Info: False
+  Variables (Curves):
+TypeError: function missing required argument 'informationType' (pos 4)
+    - CALD: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - CALN: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - DEPT: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - DPSS: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - DRHO: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - GR: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - ILD: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - ILM: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - LWTKG: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - NPSS: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - PHIE: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - PHIE_FIXED: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - RHOB: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - RHOB_FIXED: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - SFL: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - SP: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - SXO: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - SXO_FIXED: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - V_DOL: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - V_DOL_NORM: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - V_LIME: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - V_LIME_NORM: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - V_SAND: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - V_SAND_NORM: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - VSH: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - VSH_FIXED: None
+
+  Dataset: 62ae0c37_100110208225W400_'DEPT'_'SP'_'SFL'_d969b7
+TypeError: function missing required argument 'dateType' (pos 3)
+  Info: False
+  Variables (Curves):
+TypeError: function missing required argument 'informationType' (pos 4)
+    - CALD: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - CALN: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - DEPT: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - DPSS: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - DRHO: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - GR: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - ILD: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - ILM: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - LWTKG: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - NPSS: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - PE: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - PHIE: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - PHIE_FIXED: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - RHOB: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - RHOB_FIXED: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - SFL: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - SP: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - SXO: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - SXO_FIXED: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - V_DOL: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - V_DOL_NORM: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - V_LIME: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - V_LIME_NORM: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - V_SAND: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - V_SAND_NORM: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - VSH: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - VSH_FIXED: None
+
+  Dataset: cdd5622b_100110208225W400_'DEPT'_'SP'_'SFL'_11ee1f
+TypeError: function missing required argument 'dateType' (pos 3)
+  Info: False
+  Variables (Curves):
+TypeError: function missing required argument 'informationType' (pos 4)
+    - CALD: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - CALN: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - DEPT: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - DPSS: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - DRHO: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - DT: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - GR: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - ILD: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - ILM: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - LWTKG: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - NPSS: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - PE: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - PHIE: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - PHIE_FIXED: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - RHOB: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - RHOB_FIXED: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - SFL: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - SP: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - SXO: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - SXO_FIXED: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - V_DOL: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - V_DOL_NORM: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - V_LIME: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - V_LIME_NORM: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - V_SAND: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - V_SAND_NORM: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - VSH: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - VSH_FIXED: None
+
+  Dataset: ZONATION_Well_Tops
+TypeError: function missing required argument 'dateType' (pos 3)
+  Info: False
+  Variables (Curves):
+TypeError: function missing required argument 'informationType' (pos 4)
+    - Formation: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - Zone Desc: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - Zone Name: None
+
+Well: 100/12-32-080-24W4/00
+
+Datasets:
+
+  Dataset: 2891af09_100123208024W400_'DEPT'_'CALI'_'DPHI'_0661fa
+TypeError: function missing required argument 'dateType' (pos 3)
+  Info: False
+  Variables (Curves):
+TypeError: function missing required argument 'informationType' (pos 4)
+    - CALI: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - CIDP: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - DEPT: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - DPHI: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - DRHO: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - GR: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - IDPH: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - IMPH: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - NPOR: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - PEF: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - PHIE: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - PHIE_FIXED: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - PHIE_RECOMPUTED: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - RHOB: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - RHOB_FIXED: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - SFLA: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - SFLU: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - SP: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - V_DOL: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - V_LIME: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - V_SAND: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - VSH: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - VSH_FIXED: None
+
+  Dataset: 864e417f_100123208024W400_'DEPT'_'CALI'_'DPHI'_3896b1
+TypeError: function missing required argument 'dateType' (pos 3)
+  Info: False
+  Variables (Curves):
+TypeError: function missing required argument 'informationType' (pos 4)
+    - CALI: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - CIDP: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - DEPT: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - DPHI: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - DRHO: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - GR: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - IDPH: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - IMPH: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - NPOR: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - PEF: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - PHIE: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - PHIE_FIXED: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - PHIE_RECOMPUTED: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - RHOB: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - RHOB_FIXED: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - SFLA: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - SFLU: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - SP: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - V_DOL: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - V_LIME: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - V_SAND: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - VSH: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - VSH_FIXED: None
+
+  Dataset: ZONATION_Well_Tops
+TypeError: function missing required argument 'dateType' (pos 3)
+  Info: False
+  Variables (Curves):
+TypeError: function missing required argument 'informationType' (pos 4)
+    - Formation: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - Zone Desc: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - Zone Name: None
+
+Well: 100/13-20-081-24W4/00
+
+Datasets:
+
+  Dataset: 3f040c18_100132008124W400_'DEPT'_'AF10'_'AF20'_cc45b7
+TypeError: function missing required argument 'dateType' (pos 3)
+  Info: False
+  Variables (Curves):
+TypeError: function missing required argument 'informationType' (pos 4)
+    - AF6C: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - AF9C: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - AF10: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - AF20: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - AF30: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - AF60: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - AF90: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - AHMF: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - AIBD: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - CFTC: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - CNTC: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - DEPT: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - DPDL: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - DPHZ: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - DPLS: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - DPSS: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - DSOZ: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - GDEV: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - GR: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - HCAL: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - HDAR: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - HDRA: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - HMIN: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - HMNO: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - NPDL: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - NPLS: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - NPOR: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - NPSS: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - PEFZ: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - PHIE: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - PHIE_FIXED: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - PHIE_RECOMPUTED: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - RHOB_FIXED: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - RHOZ: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - RSOZ: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - RT: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - RXOZ: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - SP: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - V_DOL: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - V_LIME: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - V_SAND: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - VSH: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - VSH_FIXED: None
+
+  Dataset: 4c949879_100132008124W400_'DEPT'_'AO10'_'AO20'_e333e7
+TypeError: function missing required argument 'dateType' (pos 3)
+  Info: False
+  Variables (Curves):
+TypeError: function missing required argument 'informationType' (pos 4)
+    - AHMF: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - AIBD: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - AO6C: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - AO9C: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - AO10: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - AO20: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - AO30: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - AO60: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - AO90: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - BS: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - DEPT: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - DPDL: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - DPH8: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - DPLS: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - DPSS: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - DSO8: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - EHGR: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - GR: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - HCAL: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - HDAR: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - HDRA: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - HGR: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - HMIN: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - HMNO: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - HNPO: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - NPDL: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - NPLS: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - NPSS: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - PEF8: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - RHO8: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - RSO8: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - RXO8: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - RXOI: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - SP: None
+
+  Dataset: 63c6bb69_100132008124W400_'DEPT'_'AF10'_'AF20'_3ff6ac
+TypeError: function missing required argument 'dateType' (pos 3)
+  Info: False
+  Variables (Curves):
+TypeError: function missing required argument 'informationType' (pos 4)
+    - AF6C: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - AF9C: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - AF10: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - AF20: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - AF30: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - AF60: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - AF90: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - AHMF: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - AIBD: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - CFTC: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - CNTC: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - DEPT: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - DPDL: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - DPHZ: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - DPLS: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - DPSS: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - DSOZ: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - DT: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - GDEV: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - GR: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - HCAL: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - HDAR: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - HDRA: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - HMIN: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - HMNO: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - NPDL: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - NPLS: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - NPOR: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - NPSS: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - PEFZ: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - PHIE: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - PHIE_FIXED: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - PHIE_RECOMPUTED: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - RHOB_FIXED: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - RHOZ: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - RSOZ: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - RT: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - RXOZ: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - SP: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - TT1: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - TT2: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - TT3: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - TT4: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - V_DOL: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - V_LIME: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - V_SAND: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - VSH: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - VSH_FIXED: None
+
+  Dataset: db556530_100132008124W400_'DEPT'_'AHF10'_'AHF20'_2d8fbe
+TypeError: function missing required argument 'dateType' (pos 3)
+  Info: False
+  Variables (Curves):
+TypeError: function missing required argument 'informationType' (pos 4)
+    - AHF10: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - AHF20: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - AHF30: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - AHF60: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - AHF90: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - AHFCO60: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - AHFCO90: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - AHIBD: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - AHMF: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - CFTC: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - CNTC: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - DEPT: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - DPHI_DOL: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - DPHI_LIM: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - DPHI_SAN: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - DPHZ: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - DSOZ: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - GDEV: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - GR: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - HCAL: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - HDAR: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - HDRA: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - HMIN: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - HMNO: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - NPOR: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - NPOR_DOL: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - NPOR_LIM: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - NPOR_SAN: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - PEFZ: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - PHIE: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - PHIE_FIXED: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - RHOB_FIXED: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - RHOZ: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - RSOZ: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - RT: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - RXOZ: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - SP: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - SXO: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - SXO_FIXED: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - V_DOL: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - V_LIME: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - V_SAND: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - VSH: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - VSH_FIXED: None
+
+  Dataset: decda82f_100132008124W400_'DEPT'_'AF10'_'AF20'_c22418
+TypeError: function missing required argument 'dateType' (pos 3)
+  Info: False
+  Variables (Curves):
+TypeError: function missing required argument 'informationType' (pos 4)
+    - AF6C: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - AF9C: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - AF10: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - AF20: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - AF30: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - AF60: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - AF90: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - AHMF: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - AIBD: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - CFTC: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - CNTC: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - DEPT: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - DPDL: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - DPHZ: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - DPLS: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - DPSS: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - DSOZ: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - DT: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - GDEV: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - GR: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - HCAL: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - HDAR: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - HDRA: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - HMIN: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - HMNO: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - NPDL: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - NPLS: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - NPOR: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - NPSS: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - PEFZ: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - PHIE: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - PHIE_FIXED: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - PHIE_RECOMPUTED: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - RHOB_FIXED: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - RHOZ: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - RSOZ: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - RT: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - RXOZ: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - SP: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - TT1: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - TT2: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - TT3: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - TT4: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - V_DOL: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - V_LIME: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - V_SAND: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - VSH: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - VSH_FIXED: None
+
+  Dataset: ZONATION_Well_Tops
+TypeError: function missing required argument 'dateType' (pos 3)
+  Info: False
+  Variables (Curves):
+TypeError: function missing required argument 'informationType' (pos 4)
+    - Formation: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - Zone Desc: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - Zone Name: None
+
+Well: 100/15-19-081-24W4/00
+
+Datasets:
+
+  Dataset: 156c7b8d_100151908124W400_'DEPT'_'SP'_'GR'_4269b2
+TypeError: function missing required argument 'dateType' (pos 3)
+  Info: False
+  Variables (Curves):
+TypeError: function missing required argument 'informationType' (pos 4)
+    - CALD: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - CALN: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - DEPT: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - DPSS: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - DRHO: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - DT: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - GR: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - ILD: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - ILM: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - LWTKG: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - NPSS: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - PE: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - PHIE: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - PHIE_FIXED: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - RHOB: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - RHOB_FIXED: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - SFL: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - SP: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - SXO: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - SXO_FIXED: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - V_DOL: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - V_DOL_NORM: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - V_LIME: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - V_LIME_NORM: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - V_SAND: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - V_SAND_NORM: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - VSH: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - VSH_FIXED: None
+
+  Dataset: 48356767_100151908124W400_'DEPT'_'CALD'_'CALN'_9f15f4
+TypeError: function missing required argument 'dateType' (pos 3)
+  Info: False
+  Variables (Curves):
+TypeError: function missing required argument 'informationType' (pos 4)
+    - CALD: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - CALN: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - DEPT: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - DPSS: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - DRHO: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - GR: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - LWTKG: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - NPSS: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - PE: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - PHIE: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - PHIE_FIXED: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - RHOB: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - RHOB_FIXED: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - V_DOL: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - V_DOL_NORM: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - V_LIME: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - V_LIME_NORM: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - V_SAND: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - V_SAND_NORM: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - VSH: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - VSH_FIXED: None
+
+  Dataset: b86c8976_100151908124W400_'DEPT'_'CALD'_'CALN'_b6c058
+TypeError: function missing required argument 'dateType' (pos 3)
+  Info: False
+  Variables (Curves):
+TypeError: function missing required argument 'informationType' (pos 4)
+    - CALD: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - CALN: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - DEPT: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - DPSS: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - DRHO: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - DT: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - GR: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - GR_2: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - ILD: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - ILM: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - LWTKG: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - NPSS: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - PE: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - PHIE: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - PHIE_FIXED: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - RHOB: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - RHOB_FIXED: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - SFL: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - SP: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - V_DOL: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - V_DOL_NORM: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - V_LIME: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - V_LIME_NORM: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - V_SAND: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - V_SAND_NORM: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - VSH: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - VSH_FIXED: None
+
+  Dataset: ZONATION_Well_Tops
+TypeError: function missing required argument 'dateType' (pos 3)
+  Info: False
+  Variables (Curves):
+TypeError: function missing required argument 'informationType' (pos 4)
+    - Formation: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - Zone Desc: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - Zone Name: None
+
+Well: 102/06-08-081-24W4/00
+
+Datasets:
+
+  Dataset: 1a58dca4_102060808124W400_'DEPT'_'AT20'_'AT30'_de0c76
+TypeError: function missing required argument 'dateType' (pos 3)
+  Info: False
+  Variables (Curves):
+TypeError: function missing required argument 'informationType' (pos 4)
+    - AT9C: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - AT20: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - AT30: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - AT90: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - BS: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - DEPT: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - DPHZ: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - DSOZ: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - GR: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - HCAL: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - HDRA: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - NPOR: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - PEFZ: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - PHIE: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - PHIE_FIXED: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - RHOB_FIXED: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - RHOZ: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - RSOZ: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - RT: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - RXOZ: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - SP: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - SXO: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - SXO_FIXED: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - V_DOL: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - V_LIME: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - V_SAND: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - VSH: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - VSH_FIXED: None
+
+  Dataset: ff8fc719_102060808124W400_'DEPT'_'AT20'_'AT30'_89d91e
+TypeError: function missing required argument 'dateType' (pos 3)
+  Info: False
+  Variables (Curves):
+TypeError: function missing required argument 'informationType' (pos 4)
+    - AT9C: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - AT20: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - AT30: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - AT90: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - BS: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - DEPT: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - DPHZ: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - DSOZ: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - GR: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - HCAL: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - HDRA: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - NPOR: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - PEFZ: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - PHIE: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - PHIE_FIXED: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - RHOB_FIXED: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - RHOZ: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - RSOZ: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - RT: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - RXOZ: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - SP: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - SXO: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - SXO_FIXED: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - V_DOL: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - V_LIME: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - V_SAND: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - VSH: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - VSH_FIXED: None
+
+Well: 102/06-19-081-24W4/00
+
+Datasets:
+
+  Dataset: ZONATION_Well_Tops
+TypeError: function missing required argument 'dateType' (pos 3)
+  Info: False
+  Variables (Curves):
+TypeError: function missing required argument 'informationType' (pos 4)
+    - Formation: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - Zone Desc: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - Zone Name: None
+
+Well: 102/10-06-081-24W4/00
+
+Datasets:
+
+  Dataset: 0d866b6c_102100608124W400_'DEPT'_'SFLU'_'IDPH'_91ea34
+TypeError: function missing required argument 'dateType' (pos 3)
+  Info: False
+  Variables (Curves):
+TypeError: function missing required argument 'informationType' (pos 4)
+    - CALI: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - CIDP: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - DEPT: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - DPHI: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - DRHO: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - GR: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - IDPH: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - IMPH: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - NPOR: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - PEF: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - PHIE: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - PHIE_FIXED: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - PHIE_RECOMPUTED: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - RHOB: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - RHOB_FIXED: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - SFLA: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - SFLU: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - SP: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - SPD: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - SPDF: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - V_DOL: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - V_LIME: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - V_SAND: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - VSH: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - VSH_FIXED: None
+
+  Dataset: 62548f00_102100608124W400_'DEPT'_'SFLU'_'IDPH'_6e6d69
+TypeError: function missing required argument 'dateType' (pos 3)
+  Info: False
+  Variables (Curves):
+TypeError: function missing required argument 'informationType' (pos 4)
+    - CALI: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - CIDP: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - DEPT: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - DPHI: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - DRHO: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - GR: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - IDPH: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - IMPH: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - NPOR: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - PEF: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - PHIE: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - PHIE_FIXED: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - PHIE_RECOMPUTED: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - RHOB: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - RHOB_FIXED: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - SFLA: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - SFLU: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - SP: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - SPD: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - SPDF: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - V_DOL: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - V_LIME: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - V_SAND: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - VSH: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - VSH_FIXED: None
+
+  Dataset: e33b31e8_102100608124W400_'DEPT'_'SFLU'_'IDPH'_0918bf
+TypeError: function missing required argument 'dateType' (pos 3)
+  Info: False
+  Variables (Curves):
+TypeError: function missing required argument 'informationType' (pos 4)
+    - CALI: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - CIDP: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - DEPT: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - DPHI: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - DRHO: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - GR: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - IDPH: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - IMPH: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - NPOR: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - PEF: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - PHIE: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - PHIE_FIXED: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - PHIE_RECOMPUTED: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - RHOB: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - RHOB_FIXED: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - SFLA: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - SFLU: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - SP: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - SPD: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - SPDF: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - V_DOL: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - V_LIME: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - V_SAND: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - VSH: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - VSH_FIXED: None
+
+  Dataset: ZONATION_Well_Tops
+TypeError: function missing required argument 'dateType' (pos 3)
+  Info: False
+  Variables (Curves):
+TypeError: function missing required argument 'informationType' (pos 4)
+    - Formation: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - Zone Desc: None
+TypeError: function missing required argument 'informationType' (pos 4)
+    - Zone Name: None
+
+==================== Selected Items ====================
+TypeError: function missing required argument 'wellName' (pos 1)
+TypeError: function missing required argument 'wellName' (pos 1)
+Currently Selected:
+Wells: []
+Datasets: None
+Variables: None
