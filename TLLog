@@ -1,1976 +1,1005 @@
-Starting project structure query...
-Current User: wadet
-
-==================== Project Information ====================
-Project Name: Hoole_Analysis
-
-==================== Wells ====================
-Available Wells:
-
-Well: 100/06-08-081-24W4/00
-
-Datasets:
-
-  Dataset: 2932ef5e_100060808124W400_'DEPTH'_'RSG'_'SP'_0be3f7
-TypeError: function missing required argument 'dateType' (pos 3)
-  Info: False
-  Variables (Curves):
-TypeError: function missing required argument 'informationType' (pos 4)
-    - CALD: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - CALN: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - DEPTH: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - DPHI: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - DRHO: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - GR: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - ILD: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - ILM: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - LWTKG: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - NPHI: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - PE: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - RHOB: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - RSG: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - SP: None
-
-  Dataset: 5d041a64_100060808124W400_'DEPTH'_'RSG'_'SP'_fa81f6
-TypeError: function missing required argument 'dateType' (pos 3)
-  Info: False
-  Variables (Curves):
-TypeError: function missing required argument 'informationType' (pos 4)
-    - CALD: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - CALN: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - DEPTH: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - DPHI: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - DRHO: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - GR: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - ILD: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - ILM: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - LWTKG: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - NPHI: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - PE: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - RHOB: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - RSG: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - SP: None
-
-  Dataset: ZONATION_Well_Tops
-TypeError: function missing required argument 'dateType' (pos 3)
-  Info: False
-  Variables (Curves):
-TypeError: function missing required argument 'informationType' (pos 4)
-    - Formation: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - Zone Desc: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - Zone Name: None
-
-Well: 100/06-09-081-24W4/00
-
-Datasets:
-
-  Dataset: ZONATION_Well_Tops
-TypeError: function missing required argument 'dateType' (pos 3)
-  Info: False
-  Variables (Curves):
-TypeError: function missing required argument 'informationType' (pos 4)
-    - Formation: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - Zone Desc: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - Zone Name: None
-
-Well: 100/06-18-081-24W4/00
-
-Datasets:
-
-  Dataset: a2bf2cd9_100061808124W400_'DEPT'_'NAPI'_'NPHI'_3358a1
-TypeError: function missing required argument 'dateType' (pos 3)
-  Info: False
-  Variables (Curves):
-TypeError: function missing required argument 'informationType' (pos 4)
-    - CCL: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - DEPT: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - GAPI: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - NAPI: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - NPHI: None
-
-  Dataset: ZONATION_Well_Tops
-TypeError: function missing required argument 'dateType' (pos 3)
-  Info: False
-  Variables (Curves):
-TypeError: function missing required argument 'informationType' (pos 4)
-    - Formation: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - Zone Desc: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - Zone Name: None
-
-Well: 100/06-30-081-24W4/00
-
-Datasets:
-
-  Dataset: 7f367d70_100063008124W400_'DEPT'_'AHF20'_'AHF30'_ec25ed
-TypeError: function missing required argument 'dateType' (pos 3)
-  Info: False
-  Variables (Curves):
-TypeError: function missing required argument 'informationType' (pos 4)
-    - AHF20: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - AHF30: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - AHF60: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - AHFCO60: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - AHMF: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - BS: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - CFTC: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - CNTC: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - DEPT: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - DPHI_DOL: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - DPHI_LIM: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - DPHI_SAN: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - DSOZ: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - DT: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - GR: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - HCAL: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - HDRA: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - NPOR_DOL: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - NPOR_LIM: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - NPOR_SAN: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - PEFZ: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - PHIE: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - PHIE_FIXED: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - RHOB_FIXED: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - RHOZ: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - RSOZ: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - RT: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - RXOZ: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - SP: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - SXO: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - SXO_FIXED: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - TT1: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - TT2: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - TT3: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - TT4: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - V_DOL: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - V_LIME: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - V_SAND: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - VSH: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - VSH_FIXED: None
-
-  Dataset: 887c020d_100063008124W400_'DEPT'_'AHF20'_'AHF30'_01c8bc
-TypeError: function missing required argument 'dateType' (pos 3)
-  Info: False
-  Variables (Curves):
-TypeError: function missing required argument 'informationType' (pos 4)
-    - AHF20: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - AHF30: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - AHF60: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - AHFCO60: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - AHMF: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - BS: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - CFTC: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - CNTC: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - DEPT: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - DPHI_DOL: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - DPHI_LIM: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - DPHI_SAN: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - DSOZ: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - GR: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - HCAL: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - HDRA: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - NPOR_DOL: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - NPOR_LIM: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - NPOR_SAN: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - PEFZ: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - PHIE: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - PHIE_FIXED: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - RHOB_FIXED: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - RHOZ: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - RSOZ: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - RT: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - RXOZ: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - SP: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - SXO: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - SXO_FIXED: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - V_DOL: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - V_LIME: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - V_SAND: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - VSH: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - VSH_FIXED: None
-
-  Dataset: 9dcbb5c0_100063008124W400_'DEPT'_'AHO10'_'AHO20'_ef55fd
-TypeError: function missing required argument 'dateType' (pos 3)
-  Info: False
-  Variables (Curves):
-TypeError: function missing required argument 'informationType' (pos 4)
-    - AHO10: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - AHO20: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - AHO30: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - AHO60: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - AHO90: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - AHOCO90: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - DEPT: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - DT: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - EHGR: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - HCAL: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - HDPH_DOL: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - HDPH_LIM: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - HDPH_SAN: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - HDRA: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - HGR: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - HMIN: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - HMNO: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - HNPO_DOL: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - HNPO_LIM: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - HNPO_SAN: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - PEF8: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - RHO8: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - RXO8: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - SP: None
-
-  Dataset: d81c1912_100063008124W400_'DEPT'_'BS'_'CFTC'_6c90fb
-TypeError: function missing required argument 'dateType' (pos 3)
-  Info: False
-  Variables (Curves):
-TypeError: function missing required argument 'informationType' (pos 4)
-    - BS: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - CFTC: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - CNTC: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - DEPT: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - DT: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - GR: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - TT1: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - TT2: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - TT3: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - TT4: None
-
-  Dataset: ZONATION_Well_Tops
-TypeError: function missing required argument 'dateType' (pos 3)
-  Info: False
-  Variables (Curves):
-TypeError: function missing required argument 'informationType' (pos 4)
-    - Formation: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - Zone Desc: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - Zone Name: None
-
-Well: 100/08-07-081-24W4/00
-
-Datasets:
-
-  Dataset: 051b5659_100080708124W400_'DEPT'_'SP'_'CALD'_4af9da
-TypeError: function missing required argument 'dateType' (pos 3)
-  Info: False
-  Variables (Curves):
-TypeError: function missing required argument 'informationType' (pos 4)
-    - CALD: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - CALN: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - DEPT: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - DPSS: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - DRHO: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - GR: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - ILD: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - ILM: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - LWTKG: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - NPSS: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - PE: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - PHIE: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - PHIE_FIXED: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - RHOB: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - RHOB_FIXED: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - SFL: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - SP: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - SXO: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - SXO_FIXED: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - V_DOL: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - V_LIME: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - V_SAND: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - VSH: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - VSH_FIXED: None
-
-  Dataset: 0a929bb4_100080708124W400_'DEPT'_'SP'_'CALD'_38d593
-TypeError: function missing required argument 'dateType' (pos 3)
-  Info: False
-  Variables (Curves):
-TypeError: function missing required argument 'informationType' (pos 4)
-    - CALD: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - CALN: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - DEPT: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - DPSS: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - DRHO: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - DT: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - GR: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - ILD: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - ILM: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - LWTKG: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - NPSS: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - PE: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - PHIE: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - PHIE_FIXED: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - RHOB: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - RHOB_FIXED: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - SFL: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - SP: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - SXO: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - SXO_FIXED: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - V_DOL: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - V_LIME: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - V_SAND: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - VSH: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - VSH_FIXED: None
-
-  Dataset: 97cf8e9f_100080708124W400_'DEPT'_'SP'_'CALD'_e31420
-TypeError: function missing required argument 'dateType' (pos 3)
-  Info: False
-  Variables (Curves):
-TypeError: function missing required argument 'informationType' (pos 4)
-    - CALD: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - CALN: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - DEPT: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - DPSS: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - DRHO: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - DT: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - GR: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - ILD: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - ILM: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - LWTKG: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - NPSS: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - PE: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - PHIE: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - PHIE_FIXED: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - RHOB: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - RHOB_FIXED: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - SFL: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - SP: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - SXO: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - SXO_FIXED: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - V_DOL: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - V_LIME: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - V_SAND: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - VSH: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - VSH_FIXED: None
-
-  Dataset: ZONATION_Well_Tops
-TypeError: function missing required argument 'dateType' (pos 3)
-  Info: False
-  Variables (Curves):
-TypeError: function missing required argument 'informationType' (pos 4)
-    - Formation: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - Zone Desc: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - Zone Name: None
-
-Well: 100/10-36-081-25W4/00
-
-Datasets:
-
-  Dataset: 54c34a08_100103608125W400_'DEPT'_'SP'_'CALD'_9f44eb
-TypeError: function missing required argument 'dateType' (pos 3)
-  Info: False
-  Variables (Curves):
-TypeError: function missing required argument 'informationType' (pos 4)
-    - CALD: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - CALN: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - DEPT: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - DPHI: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - DRHO: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - DT: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - GR: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - ILD: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - ILM: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - LWTKG: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - NPHI: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - PE: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - PHIE: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - PHIE_FIXED: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - RHOB: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - RHOB_FIXED: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - RSG: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - SP: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - V_DOL: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - V_LIME: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - V_SAND: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - VSH: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - VSH_FIXED: None
-
-  Dataset: ef337b36_100103608125W400_'DEPT'_'SP'_'CALD'_ae4854
-TypeError: function missing required argument 'dateType' (pos 3)
-  Info: False
-  Variables (Curves):
-TypeError: function missing required argument 'informationType' (pos 4)
-    - CALD: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - CALN: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - DEPT: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - DPHI: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - DRHO: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - DT: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - GR: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - ILD: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - ILM: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - LWTKG: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - NPHI: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - PE: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - PHIE: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - PHIE_FIXED: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - RHOB: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - RHOB_FIXED: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - RSG: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - SP: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - V_DOL: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - V_LIME: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - V_SAND: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - VSH: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - VSH_FIXED: None
-
-  Dataset: ZONATION_Well_Tops
-TypeError: function missing required argument 'dateType' (pos 3)
-  Info: False
-  Variables (Curves):
-TypeError: function missing required argument 'informationType' (pos 4)
-    - Formation: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - Zone Desc: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - Zone Name: None
-
-Well: 100/11-02-082-25W4/00
-
-Datasets:
-
-  Dataset: 35491465_100110208225W400_'DEPT'_'CALD'_'CALN'_04b472
-TypeError: function missing required argument 'dateType' (pos 3)
-  Info: False
-  Variables (Curves):
-TypeError: function missing required argument 'informationType' (pos 4)
-    - CALD: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - CALN: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - DEPT: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - DPSS: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - DRHO: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - GR: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - ILD: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - ILM: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - LWTKG: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - NPSS: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - PHIE: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - PHIE_FIXED: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - RHOB: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - RHOB_FIXED: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - SFL: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - SP: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - SXO: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - SXO_FIXED: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - V_DOL: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - V_DOL_NORM: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - V_LIME: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - V_LIME_NORM: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - V_SAND: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - V_SAND_NORM: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - VSH: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - VSH_FIXED: None
-
-  Dataset: 62ae0c37_100110208225W400_'DEPT'_'SP'_'SFL'_d969b7
-TypeError: function missing required argument 'dateType' (pos 3)
-  Info: False
-  Variables (Curves):
-TypeError: function missing required argument 'informationType' (pos 4)
-    - CALD: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - CALN: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - DEPT: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - DPSS: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - DRHO: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - GR: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - ILD: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - ILM: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - LWTKG: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - NPSS: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - PE: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - PHIE: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - PHIE_FIXED: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - RHOB: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - RHOB_FIXED: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - SFL: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - SP: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - SXO: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - SXO_FIXED: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - V_DOL: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - V_DOL_NORM: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - V_LIME: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - V_LIME_NORM: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - V_SAND: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - V_SAND_NORM: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - VSH: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - VSH_FIXED: None
-
-  Dataset: cdd5622b_100110208225W400_'DEPT'_'SP'_'SFL'_11ee1f
-TypeError: function missing required argument 'dateType' (pos 3)
-  Info: False
-  Variables (Curves):
-TypeError: function missing required argument 'informationType' (pos 4)
-    - CALD: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - CALN: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - DEPT: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - DPSS: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - DRHO: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - DT: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - GR: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - ILD: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - ILM: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - LWTKG: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - NPSS: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - PE: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - PHIE: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - PHIE_FIXED: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - RHOB: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - RHOB_FIXED: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - SFL: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - SP: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - SXO: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - SXO_FIXED: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - V_DOL: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - V_DOL_NORM: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - V_LIME: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - V_LIME_NORM: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - V_SAND: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - V_SAND_NORM: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - VSH: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - VSH_FIXED: None
-
-  Dataset: ZONATION_Well_Tops
-TypeError: function missing required argument 'dateType' (pos 3)
-  Info: False
-  Variables (Curves):
-TypeError: function missing required argument 'informationType' (pos 4)
-    - Formation: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - Zone Desc: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - Zone Name: None
-
-Well: 100/12-32-080-24W4/00
-
-Datasets:
-
-  Dataset: 2891af09_100123208024W400_'DEPT'_'CALI'_'DPHI'_0661fa
-TypeError: function missing required argument 'dateType' (pos 3)
-  Info: False
-  Variables (Curves):
-TypeError: function missing required argument 'informationType' (pos 4)
-    - CALI: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - CIDP: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - DEPT: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - DPHI: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - DRHO: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - GR: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - IDPH: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - IMPH: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - NPOR: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - PEF: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - PHIE: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - PHIE_FIXED: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - PHIE_RECOMPUTED: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - RHOB: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - RHOB_FIXED: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - SFLA: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - SFLU: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - SP: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - V_DOL: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - V_LIME: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - V_SAND: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - VSH: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - VSH_FIXED: None
-
-  Dataset: 864e417f_100123208024W400_'DEPT'_'CALI'_'DPHI'_3896b1
-TypeError: function missing required argument 'dateType' (pos 3)
-  Info: False
-  Variables (Curves):
-TypeError: function missing required argument 'informationType' (pos 4)
-    - CALI: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - CIDP: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - DEPT: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - DPHI: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - DRHO: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - GR: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - IDPH: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - IMPH: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - NPOR: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - PEF: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - PHIE: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - PHIE_FIXED: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - PHIE_RECOMPUTED: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - RHOB: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - RHOB_FIXED: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - SFLA: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - SFLU: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - SP: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - V_DOL: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - V_LIME: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - V_SAND: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - VSH: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - VSH_FIXED: None
-
-  Dataset: ZONATION_Well_Tops
-TypeError: function missing required argument 'dateType' (pos 3)
-  Info: False
-  Variables (Curves):
-TypeError: function missing required argument 'informationType' (pos 4)
-    - Formation: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - Zone Desc: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - Zone Name: None
-
-Well: 100/13-20-081-24W4/00
-
-Datasets:
-
-  Dataset: 3f040c18_100132008124W400_'DEPT'_'AF10'_'AF20'_cc45b7
-TypeError: function missing required argument 'dateType' (pos 3)
-  Info: False
-  Variables (Curves):
-TypeError: function missing required argument 'informationType' (pos 4)
-    - AF6C: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - AF9C: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - AF10: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - AF20: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - AF30: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - AF60: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - AF90: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - AHMF: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - AIBD: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - CFTC: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - CNTC: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - DEPT: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - DPDL: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - DPHZ: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - DPLS: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - DPSS: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - DSOZ: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - GDEV: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - GR: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - HCAL: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - HDAR: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - HDRA: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - HMIN: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - HMNO: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - NPDL: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - NPLS: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - NPOR: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - NPSS: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - PEFZ: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - PHIE: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - PHIE_FIXED: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - PHIE_RECOMPUTED: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - RHOB_FIXED: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - RHOZ: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - RSOZ: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - RT: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - RXOZ: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - SP: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - V_DOL: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - V_LIME: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - V_SAND: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - VSH: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - VSH_FIXED: None
-
-  Dataset: 4c949879_100132008124W400_'DEPT'_'AO10'_'AO20'_e333e7
-TypeError: function missing required argument 'dateType' (pos 3)
-  Info: False
-  Variables (Curves):
-TypeError: function missing required argument 'informationType' (pos 4)
-    - AHMF: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - AIBD: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - AO6C: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - AO9C: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - AO10: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - AO20: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - AO30: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - AO60: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - AO90: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - BS: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - DEPT: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - DPDL: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - DPH8: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - DPLS: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - DPSS: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - DSO8: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - EHGR: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - GR: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - HCAL: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - HDAR: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - HDRA: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - HGR: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - HMIN: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - HMNO: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - HNPO: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - NPDL: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - NPLS: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - NPSS: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - PEF8: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - RHO8: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - RSO8: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - RXO8: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - RXOI: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - SP: None
-
-  Dataset: 63c6bb69_100132008124W400_'DEPT'_'AF10'_'AF20'_3ff6ac
-TypeError: function missing required argument 'dateType' (pos 3)
-  Info: False
-  Variables (Curves):
-TypeError: function missing required argument 'informationType' (pos 4)
-    - AF6C: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - AF9C: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - AF10: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - AF20: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - AF30: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - AF60: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - AF90: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - AHMF: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - AIBD: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - CFTC: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - CNTC: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - DEPT: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - DPDL: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - DPHZ: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - DPLS: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - DPSS: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - DSOZ: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - DT: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - GDEV: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - GR: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - HCAL: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - HDAR: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - HDRA: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - HMIN: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - HMNO: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - NPDL: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - NPLS: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - NPOR: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - NPSS: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - PEFZ: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - PHIE: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - PHIE_FIXED: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - PHIE_RECOMPUTED: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - RHOB_FIXED: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - RHOZ: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - RSOZ: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - RT: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - RXOZ: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - SP: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - TT1: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - TT2: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - TT3: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - TT4: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - V_DOL: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - V_LIME: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - V_SAND: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - VSH: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - VSH_FIXED: None
-
-  Dataset: db556530_100132008124W400_'DEPT'_'AHF10'_'AHF20'_2d8fbe
-TypeError: function missing required argument 'dateType' (pos 3)
-  Info: False
-  Variables (Curves):
-TypeError: function missing required argument 'informationType' (pos 4)
-    - AHF10: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - AHF20: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - AHF30: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - AHF60: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - AHF90: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - AHFCO60: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - AHFCO90: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - AHIBD: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - AHMF: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - CFTC: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - CNTC: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - DEPT: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - DPHI_DOL: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - DPHI_LIM: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - DPHI_SAN: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - DPHZ: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - DSOZ: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - GDEV: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - GR: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - HCAL: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - HDAR: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - HDRA: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - HMIN: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - HMNO: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - NPOR: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - NPOR_DOL: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - NPOR_LIM: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - NPOR_SAN: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - PEFZ: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - PHIE: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - PHIE_FIXED: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - RHOB_FIXED: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - RHOZ: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - RSOZ: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - RT: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - RXOZ: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - SP: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - SXO: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - SXO_FIXED: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - V_DOL: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - V_LIME: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - V_SAND: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - VSH: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - VSH_FIXED: None
-
-  Dataset: decda82f_100132008124W400_'DEPT'_'AF10'_'AF20'_c22418
-TypeError: function missing required argument 'dateType' (pos 3)
-  Info: False
-  Variables (Curves):
-TypeError: function missing required argument 'informationType' (pos 4)
-    - AF6C: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - AF9C: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - AF10: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - AF20: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - AF30: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - AF60: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - AF90: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - AHMF: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - AIBD: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - CFTC: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - CNTC: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - DEPT: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - DPDL: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - DPHZ: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - DPLS: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - DPSS: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - DSOZ: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - DT: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - GDEV: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - GR: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - HCAL: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - HDAR: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - HDRA: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - HMIN: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - HMNO: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - NPDL: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - NPLS: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - NPOR: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - NPSS: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - PEFZ: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - PHIE: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - PHIE_FIXED: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - PHIE_RECOMPUTED: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - RHOB_FIXED: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - RHOZ: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - RSOZ: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - RT: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - RXOZ: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - SP: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - TT1: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - TT2: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - TT3: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - TT4: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - V_DOL: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - V_LIME: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - V_SAND: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - VSH: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - VSH_FIXED: None
-
-  Dataset: ZONATION_Well_Tops
-TypeError: function missing required argument 'dateType' (pos 3)
-  Info: False
-  Variables (Curves):
-TypeError: function missing required argument 'informationType' (pos 4)
-    - Formation: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - Zone Desc: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - Zone Name: None
-
-Well: 100/15-19-081-24W4/00
-
-Datasets:
-
-  Dataset: 156c7b8d_100151908124W400_'DEPT'_'SP'_'GR'_4269b2
-TypeError: function missing required argument 'dateType' (pos 3)
-  Info: False
-  Variables (Curves):
-TypeError: function missing required argument 'informationType' (pos 4)
-    - CALD: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - CALN: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - DEPT: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - DPSS: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - DRHO: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - DT: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - GR: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - ILD: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - ILM: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - LWTKG: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - NPSS: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - PE: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - PHIE: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - PHIE_FIXED: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - RHOB: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - RHOB_FIXED: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - SFL: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - SP: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - SXO: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - SXO_FIXED: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - V_DOL: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - V_DOL_NORM: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - V_LIME: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - V_LIME_NORM: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - V_SAND: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - V_SAND_NORM: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - VSH: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - VSH_FIXED: None
-
-  Dataset: 48356767_100151908124W400_'DEPT'_'CALD'_'CALN'_9f15f4
-TypeError: function missing required argument 'dateType' (pos 3)
-  Info: False
-  Variables (Curves):
-TypeError: function missing required argument 'informationType' (pos 4)
-    - CALD: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - CALN: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - DEPT: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - DPSS: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - DRHO: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - GR: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - LWTKG: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - NPSS: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - PE: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - PHIE: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - PHIE_FIXED: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - RHOB: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - RHOB_FIXED: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - V_DOL: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - V_DOL_NORM: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - V_LIME: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - V_LIME_NORM: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - V_SAND: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - V_SAND_NORM: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - VSH: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - VSH_FIXED: None
-
-  Dataset: b86c8976_100151908124W400_'DEPT'_'CALD'_'CALN'_b6c058
-TypeError: function missing required argument 'dateType' (pos 3)
-  Info: False
-  Variables (Curves):
-TypeError: function missing required argument 'informationType' (pos 4)
-    - CALD: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - CALN: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - DEPT: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - DPSS: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - DRHO: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - DT: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - GR: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - GR_2: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - ILD: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - ILM: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - LWTKG: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - NPSS: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - PE: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - PHIE: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - PHIE_FIXED: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - RHOB: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - RHOB_FIXED: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - SFL: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - SP: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - V_DOL: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - V_DOL_NORM: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - V_LIME: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - V_LIME_NORM: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - V_SAND: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - V_SAND_NORM: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - VSH: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - VSH_FIXED: None
-
-  Dataset: ZONATION_Well_Tops
-TypeError: function missing required argument 'dateType' (pos 3)
-  Info: False
-  Variables (Curves):
-TypeError: function missing required argument 'informationType' (pos 4)
-    - Formation: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - Zone Desc: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - Zone Name: None
-
-Well: 102/06-08-081-24W4/00
-
-Datasets:
-
-  Dataset: 1a58dca4_102060808124W400_'DEPT'_'AT20'_'AT30'_de0c76
-TypeError: function missing required argument 'dateType' (pos 3)
-  Info: False
-  Variables (Curves):
-TypeError: function missing required argument 'informationType' (pos 4)
-    - AT9C: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - AT20: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - AT30: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - AT90: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - BS: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - DEPT: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - DPHZ: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - DSOZ: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - GR: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - HCAL: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - HDRA: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - NPOR: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - PEFZ: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - PHIE: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - PHIE_FIXED: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - RHOB_FIXED: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - RHOZ: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - RSOZ: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - RT: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - RXOZ: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - SP: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - SXO: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - SXO_FIXED: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - V_DOL: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - V_LIME: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - V_SAND: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - VSH: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - VSH_FIXED: None
-
-  Dataset: ff8fc719_102060808124W400_'DEPT'_'AT20'_'AT30'_89d91e
-TypeError: function missing required argument 'dateType' (pos 3)
-  Info: False
-  Variables (Curves):
-TypeError: function missing required argument 'informationType' (pos 4)
-    - AT9C: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - AT20: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - AT30: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - AT90: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - BS: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - DEPT: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - DPHZ: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - DSOZ: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - GR: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - HCAL: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - HDRA: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - NPOR: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - PEFZ: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - PHIE: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - PHIE_FIXED: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - RHOB_FIXED: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - RHOZ: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - RSOZ: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - RT: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - RXOZ: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - SP: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - SXO: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - SXO_FIXED: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - V_DOL: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - V_LIME: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - V_SAND: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - VSH: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - VSH_FIXED: None
-
-Well: 102/06-19-081-24W4/00
-
-Datasets:
-
-  Dataset: ZONATION_Well_Tops
-TypeError: function missing required argument 'dateType' (pos 3)
-  Info: False
-  Variables (Curves):
-TypeError: function missing required argument 'informationType' (pos 4)
-    - Formation: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - Zone Desc: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - Zone Name: None
-
-Well: 102/10-06-081-24W4/00
-
-Datasets:
-
-  Dataset: 0d866b6c_102100608124W400_'DEPT'_'SFLU'_'IDPH'_91ea34
-TypeError: function missing required argument 'dateType' (pos 3)
-  Info: False
-  Variables (Curves):
-TypeError: function missing required argument 'informationType' (pos 4)
-    - CALI: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - CIDP: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - DEPT: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - DPHI: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - DRHO: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - GR: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - IDPH: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - IMPH: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - NPOR: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - PEF: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - PHIE: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - PHIE_FIXED: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - PHIE_RECOMPUTED: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - RHOB: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - RHOB_FIXED: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - SFLA: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - SFLU: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - SP: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - SPD: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - SPDF: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - V_DOL: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - V_LIME: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - V_SAND: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - VSH: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - VSH_FIXED: None
-
-  Dataset: 62548f00_102100608124W400_'DEPT'_'SFLU'_'IDPH'_6e6d69
-TypeError: function missing required argument 'dateType' (pos 3)
-  Info: False
-  Variables (Curves):
-TypeError: function missing required argument 'informationType' (pos 4)
-    - CALI: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - CIDP: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - DEPT: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - DPHI: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - DRHO: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - GR: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - IDPH: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - IMPH: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - NPOR: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - PEF: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - PHIE: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - PHIE_FIXED: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - PHIE_RECOMPUTED: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - RHOB: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - RHOB_FIXED: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - SFLA: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - SFLU: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - SP: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - SPD: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - SPDF: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - V_DOL: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - V_LIME: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - V_SAND: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - VSH: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - VSH_FIXED: None
-
-  Dataset: e33b31e8_102100608124W400_'DEPT'_'SFLU'_'IDPH'_0918bf
-TypeError: function missing required argument 'dateType' (pos 3)
-  Info: False
-  Variables (Curves):
-TypeError: function missing required argument 'informationType' (pos 4)
-    - CALI: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - CIDP: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - DEPT: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - DPHI: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - DRHO: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - GR: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - IDPH: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - IMPH: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - NPOR: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - PEF: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - PHIE: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - PHIE_FIXED: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - PHIE_RECOMPUTED: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - RHOB: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - RHOB_FIXED: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - SFLA: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - SFLU: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - SP: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - SPD: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - SPDF: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - V_DOL: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - V_LIME: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - V_SAND: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - VSH: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - VSH_FIXED: None
-
-  Dataset: ZONATION_Well_Tops
-TypeError: function missing required argument 'dateType' (pos 3)
-  Info: False
-  Variables (Curves):
-TypeError: function missing required argument 'informationType' (pos 4)
-    - Formation: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - Zone Desc: None
-TypeError: function missing required argument 'informationType' (pos 4)
-    - Zone Name: None
-
-==================== Selected Items ====================
+Starting Techlog environment logging...
+Techlog Environment Log - 2025-02-19 10:46:49 UTC
+User: wadet
+Python Version: 3.12.1 (tags/v3.12.1:2305ca5, Dec  7 2023, 22:03:25) [MSC v.1937 64 bit (AMD64)]
+
+==================== Data Module ====================
+
+==================== Data Module ====================
+Data module members:
+- AbstractDataClass
+- Array
+- CacheVarData
+- DataProperty
+- DataPropertyManager
+- HistoryItem
+- MissingValue
+- TechlogMath
+- Variable
+- _getCurrentZoneIndices
+- db
+- getDatasetZoneIndiceBottom
+- getDatasetZoneIndiceTop
+- ignore_kw_args
+- logging
+- on_remote_process
+- printError
+- range
+- remote_techlog
+- six
+- sys
+- variableLoad
+- variableLoadFrom
+- warnings
+- wraps
+
+==================== Database ====================
+
+==================== Database ====================
+
+Object Info for db:
+
+Properties:
+- _addDataSetForAWI_id: None
+- _aliasChangeFamily_id: None
+- _aliasChangeName_id: None
+- _aliasChangeVariables_id: None
+- _aliasCreate_id: None
+- _aliasDelete_id: None
+- _aliasExists_id: None
+- _aliasExport_id: None
+- _aliasFamily_id: None
+- _aliasImport_id: None
+- _aliasIsActivated_id: None
+- _aliasList_id: None
+- _aliasSetActivated_id: None
+- _aliasVariables_id: None
+- _appDb_id: None
+- _arrayColumnNameListChange_id: None
+- _arrayColumnNameList_id: None
+- _arrayColumnSize_id: None
+- _arrayInterpolateHorizontally_id: None
+- _arrayInterpolate_id: None
+- _arraySplitFinished_id: None
+- _arraySplit_id: None
+- _arrayTempSave_id: None
+- _associatedFamily_id: None
+- _availableUnitSystems_id: None
+- _buildNumber_id: None
+- _cache_progress_bar_value: None
+- _compareFamily_id: None
+- _computeTVD_id: None
+- _contactAdd_id: None
+- _contactDelete_id: None
+- _contactGet_id: None
+- _contactList_id: None
+- _contactSave_id: None
+- _convertCRSMagicNameToTextualRepresentation_id: None
+- _convertCRSToLL_id: None
+- _convertCRStoLL_id: None
+- _convertCoordDatum_id: None
+- _convertCoord_id: None
+- _convertLLToCRS_id: None
+- _convertLLtoCRS_id: None
+- _convertWellSchematicDatasetToWitsmlObject_id: None
+- _correspondingUnit_id: None
+- _currentChange_id: 1
+- _currentDb_id: None
+- _currentSystemUnitList_id: None
+- _dataEditorOpen_id: None
+- _datasetCompare_id: None
+- _datasetCopy_id: None
+- _datasetDelete_id: None
+- _datasetDirectLoad_id: None
+- _datasetDuplicate_id: None
+- _datasetExists_id: None
+- _datasetExpand_id: None
+- _datasetGroupChange_id: None
+- _datasetGroup_id: None
+- _datasetHistoryAdd_id: None
+- _datasetHistoryClear_id: None
+- _datasetHistoryDelete_id: None
+- _datasetHistory_id: None
+- _datasetInformation_id: None
+- _datasetIsInFilter_id: None
+- _datasetList_id: None
+- _datasetMerge_id: None
+- _datasetMove_id: None
+- _datasetNewName_id: None
+- _datasetPropertyChange_id: None
+- _datasetPropertyDelete_id: None
+- _datasetPropertyDescription_id: None
+- _datasetPropertyList_id: None
+- _datasetPropertyUnit_id: None
+- _datasetPropertyValue_id: None
+- _datasetReduce_id: None
+- _datasetReferenceChange_id: None
+- _datasetRename_id: None
+- _datasetSamplingRate_id: None
+- _datasetSize_id: None
+- _datasetSort_id: None
+- _datasetTypeChange_id: None
+- _datasetTypeIDChange_id: None
+- _datasetTypeID_id: None
+- _datasetType_id: None
+- _datasetZoneDetail_id: None
+- _datasetZoneIndice_id: None
+- _depthInteractionChange_id: None
+- _dirCompanyChange_id: None
+- _dirCompany_id: None
+- _dirProjectList_id: None
+- _dirProject_id: None
+- _dirTechlog_id: 5
+- _dirUserChange_id: None
+- _dirUser_id: None
+- _doFirstReadTreatment_id: None
+- _doNothing_id: None
+- _doTheComposition_id: None
+- _expandEnvironmentStringsTL_id: None
+- _exportBufferClose_id: None
+- _exportBufferOpen_id: None
+- _exportDatabaseObjects_id: None
+- _exportFile_id: None
+- _exportMissingValueChange_id: None
+- _exportMissingValue_id: None
+- _exportProject_id: None
+- _familyAdd_id: None
+- _familyAutoAssignment_id: None
+- _familyList_id: None
+- _familyMax_id: None
+- _familyMin_id: None
+- _familyNameAssignment_id: None
+- _familyPropertyList_id: None
+- _familyProperty_id: None
+- _familyScale_id: None
+- _familyUnit_id: None
+- _forbiddenCharacterList_id: None
+- _getAWILogViewID_id: None
+- _getAWIlogViewID_id: None
+- _getAbsoluteBHIPath_id: None
+- _getCRSGeo2DList_id: None
+- _getCRSGeo2DToList_id: None
+- _getCRSProjList_id: None
+- _getCRSProjToList_id: None
+- _getCRSProjectList_id: None
+- _getCRSProjectToList_id: None
+- _getMagneticData_id: None
+- _getMagneticDeclinationInclination_id: None
+- _getMethodList_id: None
+- _getProject_id: None
+- _importAsciiArrayPolicyChange_id: None
+- _importAsciiArrayPolicy_id: None
+- _importBufferClose_id: None
+- _importBufferOpen_id: None
+- _importFile_id: None
+- _importProject_id: None
+- _importSegyModeChange_id: None
+- _importSegyMode_id: None
+- _interactiveSelectionChange_id: None
+- _interactiveSelection_id: None
+- _isNameValid_id: None
+- _launchImportWizard_id: None
+- _listZonationFromWorkflowFile_id: None
+- _loadZonationFromWorkflowFile_id: None
+- _logFileName_id: None
+- _lutils: <module 'tl.legacy.utils' from 'C:\\Program Files\\Techlog 2024.2 (r9274463)\\PythonScripts\\tl\\legacy\\utils.py'>
+- _mainFamilyList_id: None
+- _markerAdd_id: None
+- _markerDelete_id: None
+- _markerGet_id: None
+- _markerList_id: None
+- _markerSave_id: None
+- _markerToZonation_id: None
+- _measurementList_id: None
+- _measurementUnit_id: None
+- _mergeDatasets_id: None
+- _mergeDateTimeDatasets_id: None
+- _multiWellCreate_id: None
+- _objectAddZonation_id: None
+- _objectApplyModeChange_id: None
+- _objectApplyMode_id: None
+- _objectApply_id: None
+- _objectClose_id: None
+- _objectCopy_id: None
+- _objectCreate_id: None
+- _objectDelAllZone_id: None
+- _objectDelete_id: None
+- _objectExistes_id: None
+- _objectExists_id: None
+- _objectIsOpened_id: None
+- _objectList_id: None
+- _objectManagerSetWorkflow_id: None
+- _objectOpen_id: None
+- _objectPrefixAndSuffix_id: None
+- _objectPythonAWIPropertyChange_id: None
+- _objectSaveResultSummaries_id: None
+- _objectSave_id: None
+- _objectSetRealTime_id: None
+- _objectSetWorkflowCurrentMethod_id: None
+- _objectTypeList_id: None
+- _objectWorkflowIncludeMissingValue_id: None
+- _objectWorkflowLayoutTemplateChange_id: None
+- _objectWorkflowMethodsNames_id: None
+- _objectWorkflowSaveEmptyOutputs_id: None
+- _openMethod_id: None
+- _openProject_id: None
+- _parameterCreate_id: None
+- _parameterDictAWIChange_id: None
+- _parameterDictFromAWI_id: None
+- _parameterDictFromFileChange_id: None
+- _parameterDictFromFile_id: None
+- _parameterDictFromPythonEditor_id: None
+- _parameterDictPythonEditorChange_id: None
+- _parameterId_id: None
+- _parameterInputAWIChange_id: None
+- _parameterListId_id: None
+- _parameterValueChange_id: None
+- _parameterValueFromAWI_id: None
+- _parameterValue_id: None
+- _parameterVariableFromAWI_id: None
+- _parameterZonationFromAWI_id: None
+- _parametersLoad_id: None
+- _parametersSaveXML_id: None
+- _parametersSave_id: None
+- _progressBarHide_id: None
+- _progressBarSetAutoProgress_id: None
+- _progressBarSetValue_id: None
+- _progressBarSetVisible_id: None
+- _progressBarShow_id: None
+- _projectBrowserApplyFilter_id: None
+- _projectBrowserFilter_id: None
+- _projectBrowserImportRefresh_id: None
+- _projectBrowserQuickSearch_id: None
+- _projectBrowserRefresh_id: None
+- _projectBrowserSaveFilter_id: None
+- _projectClean_id: None
+- _projectMode_id: None
+- _projectName_id: None
+- _pythonExePath_id: None
+- _referenceName_id: None
+- _referenceValue_id: None
+- _replaceSpecialCharactersInName_id: None
+- _resamplingMethodDefaultChange_id: None
+- _resamplingMethodDefault_id: None
+- _resamplingMethodList_id: None
+- _resampling_id: None
+- _rt: <module 'remote_techlog' from 'C:\\Program Files\\Techlog 2024.2 (r9274463)\\PythonScripts\\remote_techlog\\__init__.py'>
+- _selectedDatasetList_id: None
+- _selectedVariableList_id: None
+- _selectedWellList_id: None
+- _shiftArrayByConst_id: None
+- _showAWILogView_id: None
+- _silentModeChange_id: None
+- _unitIsCompatible_id: None
+- _unitIsEquivalent_id: None
+- _unitList_id: None
+- _unitNames_id: None
+- _unitSystemChange_id: None
+- _unitSystem_id: None
+- _variableAliasChange_id: None
+- _variableCacheCreate_id: None
+- _variableCompare_id: None
+- _variableCopy_id: None
+- _variableCreate_id: None
+- _variableDelete_id: None
+- _variableDescriptionChange_id: None
+- _variableDescription_id: None
+- _variableDisplayUnit_id: None
+- _variableDuplicate_id: None
+- _variableExists_id: None
+- _variableFamilyChange_id: None
+- _variableFamily_id: None
+- _variableFloatToDoubleConvert_id: None
+- _variableGroupChange_id: None
+- _variableGroup_id: None
+- _variableHistoryAdd_id: None
+- _variableHistoryClear_id: None
+- _variableHistoryDelete_id: None
+- _variableHistory_id: None
+- _variableInformation_id: None
+- _variableIsInFilter_id: None
+- _variableIsIncreasing_id: None
+- _variableListByAlias_id: None
+- _variableListByFamily_id: None
+- _variableListCopy_id: None
+- _variableListDelete_id: None
+- _variableList_id: None
+- _variableLoadColumn_id: None
+- _variableMeasurement_id: None
+- _variableMerge_id: None
+- _variableNameWithoutVersion_id: None
+- _variablePaletteChange_id: None
+- _variablePalette_id: None
+- _variablePropertyChange_id: None
+- _variablePropertyDelete_id: None
+- _variablePropertyDescription_id: None
+- _variablePropertyList_id: None
+- _variablePropertyUnit_id: None
+- _variablePropertyValue_id: None
+- _variableRename_id: None
+- _variableResampling_id: None
+- _variableSaveColumn_id: None
+- _variableSecondaryUnitChange_id: None
+- _variableSecondaryUnit_id: None
+- _variableSourceFilenameChange_id: None
+- _variableStorageType_id: None
+- _variableTypeChange_id: None
+- _variableTypeIDChange_id: None
+- _variableTypeID_id: None
+- _variableType_id: None
+- _variableUnitChange_id: None
+- _variableUnitConvert_id: None
+- _variableUnit_id: None
+- _variableValuesChange_id: None
+- _variableVersion_id: None
+- _versionTest_id: None
+- _version_id: 4
+- _wellColorChange_id: None
+- _wellColor_id: None
+- _wellCopy_id: None
+- _wellCreate_id: None
+- _wellDelete_id: None
+- _wellDuplicate_id: None
+- _wellExists_id: None
+- _wellGroupChange_id: None
+- _wellGroup_id: None
+- _wellHistoryAdd_id: None
+- _wellHistoryClear_id: None
+- _wellHistoryDelete_id: None
+- _wellHistory_id: None
+- _wellIsInFilter_id: None
+- _wellList_id: None
+- _wellMove_id: None
+- _wellPropertyChange_id: None
+- _wellPropertyDelete_id: None
+- _wellPropertyDescription_id: None
+- _wellPropertyListChange_id: None
+- _wellPropertyList_id: None
+- _wellPropertyUnit_id: None
+- _wellPropertyValue_id: None
+- _wellRename_id: None
+- _workspacesClose_id: None
+- _zonationAdd_id: None
+- _zonationDelete_id: None
+- _zonationExists_id: None
+- _zonationSave_id: None
+- _zonationToMarker_id: None
+- _zoneAdd_id: None
+- _zoneChangeColor_id: None
+- _zoneChangeDescription_id: None
+- _zoneChangePattern_id: None
+- _zoneColor_id: None
+- _zoneDelete_id: None
+- _zoneDescription_id: None
+- _zoneList_id: None
+- _zonePattern_id: None
+
+Methods:
+- DataError()
+- TCacheVarData()
+- _client_service()
+- _currentPythonContext()
+- _raiseIfPyWE()
+- _raiseIfPyWERelaxed()
+- addDataSetForAWI()
+- aliasChangeFamily()
+- aliasChangeName()
+- aliasChangeVariables()
+- aliasCreate()
+- aliasDelete()
+- aliasExists()
+- aliasExport()
+- aliasFamily()
+- aliasImport()
+- aliasIsActivated()
+- aliasList()
+- aliasSetActivated()
+- aliasVariables()
+- appDb()
+- arrayColumnNameList()
+- arrayColumnNameListChange()
+- arrayColumnSize()
+- arrayInterpolate()
+- arrayInterpolateHorizontally()
+- arraySave()
+- arraySplit()
+- arraySplitFinished()
+- arrayTempSave()
+- associatedFamily()
+- availableUnitSystems()
+- buildNumber()
+- compareFamily()
+- computeTVD()
+- contactAdd()
+- contactDelete()
+- contactGet()
+- contactList()
+- contactSave()
+- convertCRSMagicNameToTextualRepresentation()
+- convertCRSToLL()
+- convertCRStoLL()
+- convertCoord()
+- convertCoordDatum()
+- convertLLToCRS()
+- convertLLtoCRS()
+- convertWellSchematicDatasetToWitsmlObject()
+- correspondingUnit()
+- currentChange()
+- currentDb()
+- currentSystemUnitList()
+- dataEditorOpen()
+- datasetCompare()
+- datasetCopy()
+- datasetCreate()
+- datasetDelete()
+- datasetDirectLoad()
+- datasetDuplicate()
+- datasetExists()
+- datasetExpand()
+- datasetGroup()
+- datasetGroupChange()
+- datasetHistory()
+- datasetHistoryAdd()
+- datasetHistoryClear()
+- datasetHistoryDelete()
+- datasetInformation()
+- datasetIsInFilter()
+- datasetList()
+- datasetMerge()
+- datasetMove()
+- datasetNewName()
+- datasetPropertyChange()
+- datasetPropertyDelete()
+- datasetPropertyDescription()
+- datasetPropertyList()
+- datasetPropertyUnit()
+- datasetPropertyValue()
+- datasetReduce()
+- datasetReferenceChange()
+- datasetRename()
+- datasetSamplingRate()
+- datasetSize()
+- datasetSort()
+- datasetType()
+- datasetTypeChange()
+- datasetTypeID()
+- datasetTypeIDChange()
+- datasetZoneDetail()
+- datasetZoneIndice()
+- depthInteractionChange()
+- dirCompany()
+- dirCompanyChange()
+- dirProject()
+- dirProjectList()
+- dirTechlog()
+- dirUser()
+- dirUserChange()
+- doFirstReadTreatment()
+- doNothing()
+- doTheComposition()
+- expandEnvironmentStringsTL()
+- exportBufferClose()
+- exportBufferOpen()
+- exportDatabaseObjects()
+- exportFile()
+- exportMissingValue()
+- exportMissingValueChange()
+- exportProject()
+- familyAdd()
+- familyAutoAssignment()
+- familyList()
+- familyMax()
+- familyMin()
+- familyNameAssignment()
+- familyProperty()
+- familyPropertyList()
+- familyScale()
+- familyUnit()
+- forbiddenCharacterList()
+- getAWILogViewID()
+- getAWIlogViewID()
+- getAbsoluteBHIPath()
+- getCRSGeo2DList()
+- getCRSGeo2DToList()
+- getCRSProjList()
+- getCRSProjToList()
+- getCRSProjectList()
+- getCRSProjectToList()
+- getMagneticData()
+- getMagneticDeclinationInclination()
+- getMethodList()
+- getProject()
+- importAsciiArrayPolicy()
+- importAsciiArrayPolicyChange()
+- importBufferClose()
+- importBufferOpen()
+- importFile()
+- importProject()
+- importSegyMode()
+- importSegyModeChange()
+- interactiveSelection()
+- interactiveSelectionChange()
+- isNameValid()
+- launchImportWizard()
+- listZonationFromWorkflowFile()
+- loadZonationFromWorkflowFile()
+- logFileName()
+- mainFamilyList()
+- markerAdd()
+- markerDelete()
+- markerGet()
+- markerList()
+- markerSave()
+- markerToZonation()
+- measurementList()
+- measurementUnit()
+- mergeDatasets()
+- mergeDateTimeDatasets()
+- multiWellCreate()
+- objectAddZonation()
+- objectApply()
+- objectApplyMode()
+- objectApplyModeChange()
+- objectClose()
+- objectCopy()
+- objectCreate()
+- objectDelAllZone()
+- objectDelete()
+- objectExistes()
+- objectExists()
+- objectIsOpened()
+- objectList()
+- objectManagerSetWorkflow()
+- objectOpen()
+- objectPrefixAndSuffix()
+- objectPythonAWIPropertyChange()
+- objectSave()
+- objectSaveResultSummaries()
+- objectSetRealTime()
+- objectSetWorkflowCurrentMethod()
+- objectTypeList()
+- objectWorkflowIncludeMissingValue()
+- objectWorkflowLayoutTemplateChange()
+- objectWorkflowMethodsNames()
+- objectWorkflowSaveEmptyOutputs()
+- openMethod()
+- openProject()
+- parameterCreate()
+- parameterDictAWIChange()
+- parameterDictFromAWI()
+- parameterDictFromFile()
+- parameterDictFromFileChange()
+- parameterDictFromPythonEditor()
+- parameterDictPythonEditorChange()
+- parameterId()
+- parameterInputAWIChange()
+- parameterListId()
+- parameterValue()
+- parameterValueChange()
+- parameterValueFromAWI()
+- parameterVariableFromAWI()
+- parameterZonationFromAWI()
+- parametersLoad()
+- parametersSave()
+- parametersSaveXML()
+- progressBarHide()
+- progressBarSetAutoProgress()
+- progressBarSetValue()
+- progressBarSetVisible()
+- progressBarShow()
+- projectBrowserApplyFilter()
+- projectBrowserFilter()
+- projectBrowserImportRefresh()
+- projectBrowserQuickSearch()
+- projectBrowserRefresh()
+- projectBrowserSaveFilter()
+- projectClean()
+- projectMode()
+- projectName()
+- pythonExePath()
+- referenceName()
+- referenceValue()
+- replaceSpecialCharactersInName()
+- resampling()
+- resamplingMethodDefault()
+- resamplingMethodDefaultChange()
+- resamplingMethodList()
+- selectedDatasetList()
+- selectedVariableList()
+- selectedWellList()
+- shiftArrayByConst()
+- showAWILogView()
+- silentModeChange()
+- unitIsCompatible()
+- unitIsEquivalent()
+- unitList()
+- unitNames()
+- unitSystem()
+- unitSystemChange()
+- variableAliasChange()
+- variableCompare()
+- variableCopy()
+- variableCreate()
+- variableDelete()
+- variableDescription()
+- variableDescriptionChange()
+- variableDisplayUnit()
+- variableDuplicate()
+- variableExists()
+- variableFamily()
+- variableFamilyChange()
+- variableFloatToDoubleConvert()
+- variableGroup()
+- variableGroupChange()
+- variableHistory()
+- variableHistoryAdd()
+- variableHistoryClear()
+- variableHistoryDelete()
+- variableInformation()
+- variableIsInFilter()
+- variableIsIncreasing()
+- variableList()
+- variableListByAlias()
+- variableListByFamily()
+- variableListCopy()
+- variableListDelete()
+- variableLoad()
+- variableLoadColumn()
+- variableLoadFrom()
+- variableMeasurement()
+- variableMerge()
+- variableNameWithoutVersion()
+- variablePalette()
+- variablePaletteChange()
+- variablePropertyChange()
+- variablePropertyDelete()
+- variablePropertyDescription()
+- variablePropertyList()
+- variablePropertyUnit()
+- variablePropertyValue()
+- variableRename()
+- variableResampling()
+- variableSave()
+- variableSaveColumn()
+- variableSecondaryUnit()
+- variableSecondaryUnitChange()
+- variableSourceFilenameChange()
+- variableStorageType()
+- variableTempSave()
+- variableType()
+- variableTypeChange()
+- variableTypeID()
+- variableTypeIDChange()
+- variableUnit()
+- variableUnitChange()
+- variableUnitConvert()
+- variableValuesChange()
+- variableVersion()
+- version()
+- versionTest()
+- wellColor()
+- wellColorChange()
+- wellCopy()
+- wellCreate()
+- wellDelete()
+- wellDuplicate()
+- wellExists()
+- wellGroup()
+- wellGroupChange()
+- wellHistory()
+- wellHistoryAdd()
+- wellHistoryClear()
+- wellHistoryDelete()
+- wellIsInFilter()
+- wellList()
+- wellMove()
+- wellPropertyChange()
+- wellPropertyDelete()
+- wellPropertyDescription()
+- wellPropertyList()
+- wellPropertyListChange()
+- wellPropertyUnit()
+- wellPropertyValue()
+- wellRename()
+- workspacesClose()
+- zonationAdd()
+- zonationDelete()
+- zonationExists()
+- zonationSave()
+- zonationToMarker()
+- zoneAdd()
+- zoneChangeColor()
+- zoneChangeDescription()
+- zoneChangePattern()
+- zoneColor()
+- zoneDelete()
+- zoneDescription()
+- zoneList()
+- zonePattern()
+
+Testing Database Methods:
+projectName(): Hoole_Analysis
+wellList(): ['100/06-08-081-24W4/00', '100/06-09-081-24W4/00', '100/06-18-081-24W4/00', '100/06-30-081-24W4/00', '100/08-07-081-24W4/00', '100/10-36-081-25W4/00', '100/11-02-082-25W4/00', '100/12-32-080-24W4/00', '100/13-20-081-24W4/00', '100/15-19-081-24W4/00', '102/06-08-081-24W4/00', '102/06-19-081-24W4/00', '102/10-06-081-24W4/00']
+selectedWellList(): []
 TypeError: function missing required argument 'wellName' (pos 1)
+selectedDatasetList(): None
 TypeError: function missing required argument 'wellName' (pos 1)
-Currently Selected:
-Wells: []
-Datasets: None
-Variables: None
+selectedVariableList(): None
+
+==================== Array Class ====================
+
+==================== Array Class ====================
+
+Object Info for Array:
+
+Properties:
+- _AbstractDataClass__propertyMgr: <Techlog.Data.DataPropertyManager object at 0x000002BF5EFAF2F0>
+- _Array__columnCountTemp: None
+- _Array__datasetSourceName: None
+- _Array__firstLoading: True
+- _Array__referenceSize: -1
+- _columnCount: 0
+- _data: None
+- _datasetName: 
+- _familyName: None
+- _groupName: None
+- _size: 0
+- _unitName: 
+- _variableName: 
+- _wellName: 
+
+Methods:
+- _initProperties()
+- _saveProperties()
+- arrayID()
+- arrayName()
+- columnCount()
+- columnCountChange()
+- columnSize()
+- columnSizeChange()
+- dataLoading()
+- datasetName()
+- datasetSourceChange()
+- datasetSourceName()
+- familyName()
+- familyNameChange()
+- groupName()
+- hasProperty()
+- history()
+- historyAdd()
+- historyClear()
+- propertyDescription()
+- propertyNames()
+- propertyUnit()
+- propertyValue()
+- propertyValueChange()
+- propertyValueDelete()
+- referenceName()
+- referenceSize()
+- referenceValue()
+- samplingRate()
+- save()
+- saveAs()
+- saveTemp()
+- setGroupName()
+- setOriginalDatasetName()
+- setOriginalWellName()
+- setValue()
+- setValueList()
+- setValues()
+- size()
+- unitName()
+- unitNameChange()
+- value()
+- valueList()
+- values()
+- variableID()
+- variableName()
+- wellName()
+
+==================== Current Context ====================
+
+==================== Current Context ====================
+
+Object Info for techlog_context:
+
+Properties:
+- apply_mode: SAVE
+- current_zone: None
+- engine: EDITOR
+- win_id: 912
+- zonation: Zonation('', '', '', '', '', '', '')
+- zones: ()
+
+==================== Project Structure ====================
+
+==================== Project Structure ====================
+
+Wells: ['100/06-08-081-24W4/00', '100/06-09-081-24W4/00', '100/06-18-081-24W4/00', '100/06-30-081-24W4/00', '100/08-07-081-24W4/00', '100/10-36-081-25W4/00', '100/11-02-082-25W4/00', '100/12-32-080-24W4/00', '100/13-20-081-24W4/00', '100/15-19-081-24W4/00', '102/06-08-081-24W4/00', '102/06-19-081-24W4/00', '102/10-06-081-24W4/00']
+
+Datasets for 100/06-08-081-24W4/00: ["2932ef5e_100060808124W400_'DEPTH'_'RSG'_'SP'_0be3f7", "5d041a64_100060808124W400_'DEPTH'_'RSG'_'SP'_fa81f6", 'ZONATION_Well_Tops']
+Variables in 2932ef5e_100060808124W400_'DEPTH'_'RSG'_'SP'_0be3f7: ['CALD', 'CALN', 'DEPTH', 'DPHI', 'DRHO', 'GR', 'ILD', 'ILM', 'LWTKG', 'NPHI', 'PE', 'RHOB', 'RSG', 'SP']
+Variables in 5d041a64_100060808124W400_'DEPTH'_'RSG'_'SP'_fa81f6: ['CALD', 'CALN', 'DEPTH', 'DPHI', 'DRHO', 'GR', 'ILD', 'ILM', 'LWTKG', 'NPHI', 'PE', 'RHOB', 'RSG', 'SP']
+Variables in ZONATION_Well_Tops: ['Formation', 'Zone Desc', 'Zone Name']
+
+Datasets for 100/06-09-081-24W4/00: ['ZONATION_Well_Tops']
+Variables in ZONATION_Well_Tops: ['Formation', 'Zone Desc', 'Zone Name']
+
+Datasets for 100/06-18-081-24W4/00: ["a2bf2cd9_100061808124W400_'DEPT'_'NAPI'_'NPHI'_3358a1", 'ZONATION_Well_Tops']
+Variables in a2bf2cd9_100061808124W400_'DEPT'_'NAPI'_'NPHI'_3358a1: ['CCL', 'DEPT', 'GAPI', 'NAPI', 'NPHI']
+Variables in ZONATION_Well_Tops: ['Formation', 'Zone Desc', 'Zone Name']
+
+Datasets for 100/06-30-081-24W4/00: ["7f367d70_100063008124W400_'DEPT'_'AHF20'_'AHF30'_ec25ed", "887c020d_100063008124W400_'DEPT'_'AHF20'_'AHF30'_01c8bc", "9dcbb5c0_100063008124W400_'DEPT'_'AHO10'_'AHO20'_ef55fd", "d81c1912_100063008124W400_'DEPT'_'BS'_'CFTC'_6c90fb", 'ZONATION_Well_Tops']
+Variables in 7f367d70_100063008124W400_'DEPT'_'AHF20'_'AHF30'_ec25ed: ['AHF20', 'AHF30', 'AHF60', 'AHFCO60', 'AHMF', 'BS', 'CFTC', 'CNTC', 'DEPT', 'DPHI_DOL', 'DPHI_LIM', 'DPHI_SAN', 'DSOZ', 'DT', 'GR', 'HCAL', 'HDRA', 'NPOR_DOL', 'NPOR_LIM', 'NPOR_SAN', 'PEFZ', 'PHIE', 'PHIE_FIXED', 'RHOB_FIXED', 'RHOZ', 'RSOZ', 'RT', 'RXOZ', 'SP', 'SXO', 'SXO_FIXED', 'TT1', 'TT2', 'TT3', 'TT4', 'V_DOL', 'V_LIME', 'V_SAND', 'VSH', 'VSH_FIXED']
+Variables in 887c020d_100063008124W400_'DEPT'_'AHF20'_'AHF30'_01c8bc: ['AHF20', 'AHF30', 'AHF60', 'AHFCO60', 'AHMF', 'BS', 'CFTC', 'CNTC', 'DEPT', 'DPHI_DOL', 'DPHI_LIM', 'DPHI_SAN', 'DSOZ', 'GR', 'HCAL', 'HDRA', 'NPOR_DOL', 'NPOR_LIM', 'NPOR_SAN', 'PEFZ', 'PHIE', 'PHIE_FIXED', 'RHOB_FIXED', 'RHOZ', 'RSOZ', 'RT', 'RXOZ', 'SP', 'SXO', 'SXO_FIXED', 'V_DOL', 'V_LIME', 'V_SAND', 'VSH', 'VSH_FIXED']
+Variables in 9dcbb5c0_100063008124W400_'DEPT'_'AHO10'_'AHO20'_ef55fd: ['AHO10', 'AHO20', 'AHO30', 'AHO60', 'AHO90', 'AHOCO90', 'DEPT', 'DT', 'EHGR', 'HCAL', 'HDPH_DOL', 'HDPH_LIM', 'HDPH_SAN', 'HDRA', 'HGR', 'HMIN', 'HMNO', 'HNPO_DOL', 'HNPO_LIM', 'HNPO_SAN', 'PEF8', 'RHO8', 'RXO8', 'SP']
+Variables in d81c1912_100063008124W400_'DEPT'_'BS'_'CFTC'_6c90fb: ['BS', 'CFTC', 'CNTC', 'DEPT', 'DT', 'GR', 'TT1', 'TT2', 'TT3', 'TT4']
+Variables in ZONATION_Well_Tops: ['Formation', 'Zone Desc', 'Zone Name']
+
+Datasets for 100/08-07-081-24W4/00: ["051b5659_100080708124W400_'DEPT'_'SP'_'CALD'_4af9da", "0a929bb4_100080708124W400_'DEPT'_'SP'_'CALD'_38d593", "97cf8e9f_100080708124W400_'DEPT'_'SP'_'CALD'_e31420", 'ZONATION_Well_Tops']
+Variables in 051b5659_100080708124W400_'DEPT'_'SP'_'CALD'_4af9da: ['CALD', 'CALN', 'DEPT', 'DPSS', 'DRHO', 'GR', 'ILD', 'ILM', 'LWTKG', 'NPSS', 'PE', 'PHIE', 'PHIE_FIXED', 'RHOB', 'RHOB_FIXED', 'SFL', 'SP', 'SXO', 'SXO_FIXED', 'V_DOL', 'V_LIME', 'V_SAND', 'VSH', 'VSH_FIXED']
+Variables in 0a929bb4_100080708124W400_'DEPT'_'SP'_'CALD'_38d593: ['CALD', 'CALN', 'DEPT', 'DPSS', 'DRHO', 'DT', 'GR', 'ILD', 'ILM', 'LWTKG', 'NPSS', 'PE', 'PHIE', 'PHIE_FIXED', 'RHOB', 'RHOB_FIXED', 'SFL', 'SP', 'SXO', 'SXO_FIXED', 'V_DOL', 'V_LIME', 'V_SAND', 'VSH', 'VSH_FIXED']
+Variables in 97cf8e9f_100080708124W400_'DEPT'_'SP'_'CALD'_e31420: ['CALD', 'CALN', 'DEPT', 'DPSS', 'DRHO', 'DT', 'GR', 'ILD', 'ILM', 'LWTKG', 'NPSS', 'PE', 'PHIE', 'PHIE_FIXED', 'RHOB', 'RHOB_FIXED', 'SFL', 'SP', 'SXO', 'SXO_FIXED', 'V_DOL', 'V_LIME', 'V_SAND', 'VSH', 'VSH_FIXED']
+Variables in ZONATION_Well_Tops: ['Formation', 'Zone Desc', 'Zone Name']
+
+Datasets for 100/10-36-081-25W4/00: ["54c34a08_100103608125W400_'DEPT'_'SP'_'CALD'_9f44eb", "ef337b36_100103608125W400_'DEPT'_'SP'_'CALD'_ae4854", 'ZONATION_Well_Tops']
+Variables in 54c34a08_100103608125W400_'DEPT'_'SP'_'CALD'_9f44eb: ['CALD', 'CALN', 'DEPT', 'DPHI', 'DRHO', 'DT', 'GR', 'ILD', 'ILM', 'LWTKG', 'NPHI', 'PE', 'PHIE', 'PHIE_FIXED', 'RHOB', 'RHOB_FIXED', 'RSG', 'SP', 'V_DOL', 'V_LIME', 'V_SAND', 'VSH', 'VSH_FIXED']
+Variables in ef337b36_100103608125W400_'DEPT'_'SP'_'CALD'_ae4854: ['CALD', 'CALN', 'DEPT', 'DPHI', 'DRHO', 'DT', 'GR', 'ILD', 'ILM', 'LWTKG', 'NPHI', 'PE', 'PHIE', 'PHIE_FIXED', 'RHOB', 'RHOB_FIXED', 'RSG', 'SP', 'V_DOL', 'V_LIME', 'V_SAND', 'VSH', 'VSH_FIXED']
+Variables in ZONATION_Well_Tops: ['Formation', 'Zone Desc', 'Zone Name']
+
+Datasets for 100/11-02-082-25W4/00: ["35491465_100110208225W400_'DEPT'_'CALD'_'CALN'_04b472", "62ae0c37_100110208225W400_'DEPT'_'SP'_'SFL'_d969b7", "cdd5622b_100110208225W400_'DEPT'_'SP'_'SFL'_11ee1f", 'ZONATION_Well_Tops']
+Variables in 35491465_100110208225W400_'DEPT'_'CALD'_'CALN'_04b472: ['CALD', 'CALN', 'DEPT', 'DPSS', 'DRHO', 'GR', 'ILD', 'ILM', 'LWTKG', 'NPSS', 'PHIE', 'PHIE_FIXED', 'RHOB', 'RHOB_FIXED', 'SFL', 'SP', 'SXO', 'SXO_FIXED', 'V_DOL', 'V_DOL_NORM', 'V_LIME', 'V_LIME_NORM', 'V_SAND', 'V_SAND_NORM', 'VSH', 'VSH_FIXED']
+Variables in 62ae0c37_100110208225W400_'DEPT'_'SP'_'SFL'_d969b7: ['CALD', 'CALN', 'DEPT', 'DPSS', 'DRHO', 'GR', 'ILD', 'ILM', 'LWTKG', 'NPSS', 'PE', 'PHIE', 'PHIE_FIXED', 'RHOB', 'RHOB_FIXED', 'SFL', 'SP', 'SXO', 'SXO_FIXED', 'V_DOL', 'V_DOL_NORM', 'V_LIME', 'V_LIME_NORM', 'V_SAND', 'V_SAND_NORM', 'VSH', 'VSH_FIXED']
+Variables in cdd5622b_100110208225W400_'DEPT'_'SP'_'SFL'_11ee1f: ['CALD', 'CALN', 'DEPT', 'DPSS', 'DRHO', 'DT', 'GR', 'ILD', 'ILM', 'LWTKG', 'NPSS', 'PE', 'PHIE', 'PHIE_FIXED', 'RHOB', 'RHOB_FIXED', 'SFL', 'SP', 'SXO', 'SXO_FIXED', 'V_DOL', 'V_DOL_NORM', 'V_LIME', 'V_LIME_NORM', 'V_SAND', 'V_SAND_NORM', 'VSH', 'VSH_FIXED']
+Variables in ZONATION_Well_Tops: ['Formation', 'Zone Desc', 'Zone Name']
+
+Datasets for 100/12-32-080-24W4/00: ["2891af09_100123208024W400_'DEPT'_'CALI'_'DPHI'_0661fa", "864e417f_100123208024W400_'DEPT'_'CALI'_'DPHI'_3896b1", 'ZONATION_Well_Tops']
+Variables in 2891af09_100123208024W400_'DEPT'_'CALI'_'DPHI'_0661fa: ['CALI', 'CIDP', 'DEPT', 'DPHI', 'DRHO', 'GR', 'IDPH', 'IMPH', 'NPOR', 'PEF', 'PHIE', 'PHIE_FIXED', 'PHIE_RECOMPUTED', 'RHOB', 'RHOB_FIXED', 'SFLA', 'SFLU', 'SP', 'V_DOL', 'V_LIME', 'V_SAND', 'VSH', 'VSH_FIXED']
+Variables in 864e417f_100123208024W400_'DEPT'_'CALI'_'DPHI'_3896b1: ['CALI', 'CIDP', 'DEPT', 'DPHI', 'DRHO', 'GR', 'IDPH', 'IMPH', 'NPOR', 'PEF', 'PHIE', 'PHIE_FIXED', 'PHIE_RECOMPUTED', 'RHOB', 'RHOB_FIXED', 'SFLA', 'SFLU', 'SP', 'V_DOL', 'V_LIME', 'V_SAND', 'VSH', 'VSH_FIXED']
+Variables in ZONATION_Well_Tops: ['Formation', 'Zone Desc', 'Zone Name']
+
+Datasets for 100/13-20-081-24W4/00: ["3f040c18_100132008124W400_'DEPT'_'AF10'_'AF20'_cc45b7", "4c949879_100132008124W400_'DEPT'_'AO10'_'AO20'_e333e7", "63c6bb69_100132008124W400_'DEPT'_'AF10'_'AF20'_3ff6ac", "db556530_100132008124W400_'DEPT'_'AHF10'_'AHF20'_2d8fbe", "decda82f_100132008124W400_'DEPT'_'AF10'_'AF20'_c22418", 'ZONATION_Well_Tops']
+Variables in 3f040c18_100132008124W400_'DEPT'_'AF10'_'AF20'_cc45b7: ['AF6C', 'AF9C', 'AF10', 'AF20', 'AF30', 'AF60', 'AF90', 'AHMF', 'AIBD', 'CFTC', 'CNTC', 'DEPT', 'DPDL', 'DPHZ', 'DPLS', 'DPSS', 'DSOZ', 'GDEV', 'GR', 'HCAL', 'HDAR', 'HDRA', 'HMIN', 'HMNO', 'NPDL', 'NPLS', 'NPOR', 'NPSS', 'PEFZ', 'PHIE', 'PHIE_FIXED', 'PHIE_RECOMPUTED', 'RHOB_FIXED', 'RHOZ', 'RSOZ', 'RT', 'RXOZ', 'SP', 'V_DOL', 'V_LIME', 'V_SAND', 'VSH', 'VSH_FIXED']
+Variables in 4c949879_100132008124W400_'DEPT'_'AO10'_'AO20'_e333e7: ['AHMF', 'AIBD', 'AO6C', 'AO9C', 'AO10', 'AO20', 'AO30', 'AO60', 'AO90', 'BS', 'DEPT', 'DPDL', 'DPH8', 'DPLS', 'DPSS', 'DSO8', 'EHGR', 'GR', 'HCAL', 'HDAR', 'HDRA', 'HGR', 'HMIN', 'HMNO', 'HNPO', 'NPDL', 'NPLS', 'NPSS', 'PEF8', 'RHO8', 'RSO8', 'RXO8', 'RXOI', 'SP']
+Variables in 63c6bb69_100132008124W400_'DEPT'_'AF10'_'AF20'_3ff6ac: ['AF6C', 'AF9C', 'AF10', 'AF20', 'AF30', 'AF60', 'AF90', 'AHMF', 'AIBD', 'CFTC', 'CNTC', 'DEPT', 'DPDL', 'DPHZ', 'DPLS', 'DPSS', 'DSOZ', 'DT', 'GDEV', 'GR', 'HCAL', 'HDAR', 'HDRA', 'HMIN', 'HMNO', 'NPDL', 'NPLS', 'NPOR', 'NPSS', 'PEFZ', 'PHIE', 'PHIE_FIXED', 'PHIE_RECOMPUTED', 'RHOB_FIXED', 'RHOZ', 'RSOZ', 'RT', 'RXOZ', 'SP', 'TT1', 'TT2', 'TT3', 'TT4', 'V_DOL', 'V_LIME', 'V_SAND', 'VSH', 'VSH_FIXED']
+Variables in db556530_100132008124W400_'DEPT'_'AHF10'_'AHF20'_2d8fbe: ['AHF10', 'AHF20', 'AHF30', 'AHF60', 'AHF90', 'AHFCO60', 'AHFCO90', 'AHIBD', 'AHMF', 'CFTC', 'CNTC', 'DEPT', 'DPHI_DOL', 'DPHI_LIM', 'DPHI_SAN', 'DPHZ', 'DSOZ', 'GDEV', 'GR', 'HCAL', 'HDAR', 'HDRA', 'HMIN', 'HMNO', 'NPOR', 'NPOR_DOL', 'NPOR_LIM', 'NPOR_SAN', 'PEFZ', 'PHIE', 'PHIE_FIXED', 'RHOB_FIXED', 'RHOZ', 'RSOZ', 'RT', 'RXOZ', 'SP', 'SXO', 'SXO_FIXED', 'V_DOL', 'V_LIME', 'V_SAND', 'VSH', 'VSH_FIXED']
+Variables in decda82f_100132008124W400_'DEPT'_'AF10'_'AF20'_c22418: ['AF6C', 'AF9C', 'AF10', 'AF20', 'AF30', 'AF60', 'AF90', 'AHMF', 'AIBD', 'CFTC', 'CNTC', 'DEPT', 'DPDL', 'DPHZ', 'DPLS', 'DPSS', 'DSOZ', 'DT', 'GDEV', 'GR', 'HCAL', 'HDAR', 'HDRA', 'HMIN', 'HMNO', 'NPDL', 'NPLS', 'NPOR', 'NPSS', 'PEFZ', 'PHIE', 'PHIE_FIXED', 'PHIE_RECOMPUTED', 'RHOB_FIXED', 'RHOZ', 'RSOZ', 'RT', 'RXOZ', 'SP', 'TT1', 'TT2', 'TT3', 'TT4', 'V_DOL', 'V_LIME', 'V_SAND', 'VSH', 'VSH_FIXED']
+Variables in ZONATION_Well_Tops: ['Formation', 'Zone Desc', 'Zone Name']
+
+Datasets for 100/15-19-081-24W4/00: ["156c7b8d_100151908124W400_'DEPT'_'SP'_'GR'_4269b2", "48356767_100151908124W400_'DEPT'_'CALD'_'CALN'_9f15f4", "b86c8976_100151908124W400_'DEPT'_'CALD'_'CALN'_b6c058", 'ZONATION_Well_Tops']
+Variables in 156c7b8d_100151908124W400_'DEPT'_'SP'_'GR'_4269b2: ['CALD', 'CALN', 'DEPT', 'DPSS', 'DRHO', 'DT', 'GR', 'ILD', 'ILM', 'LWTKG', 'NPSS', 'PE', 'PHIE', 'PHIE_FIXED', 'RHOB', 'RHOB_FIXED', 'SFL', 'SP', 'SXO', 'SXO_FIXED', 'V_DOL', 'V_DOL_NORM', 'V_LIME', 'V_LIME_NORM', 'V_SAND', 'V_SAND_NORM', 'VSH', 'VSH_FIXED']
+Variables in 48356767_100151908124W400_'DEPT'_'CALD'_'CALN'_9f15f4: ['CALD', 'CALN', 'DEPT', 'DPSS', 'DRHO', 'GR', 'LWTKG', 'NPSS', 'PE', 'PHIE', 'PHIE_FIXED', 'RHOB', 'RHOB_FIXED', 'V_DOL', 'V_DOL_NORM', 'V_LIME', 'V_LIME_NORM', 'V_SAND', 'V_SAND_NORM', 'VSH', 'VSH_FIXED']
+Variables in b86c8976_100151908124W400_'DEPT'_'CALD'_'CALN'_b6c058: ['CALD', 'CALN', 'DEPT', 'DPSS', 'DRHO', 'DT', 'GR', 'GR_2', 'ILD', 'ILM', 'LWTKG', 'NPSS', 'PE', 'PHIE', 'PHIE_FIXED', 'RHOB', 'RHOB_FIXED', 'SFL', 'SP', 'V_DOL', 'V_DOL_NORM', 'V_LIME', 'V_LIME_NORM', 'V_SAND', 'V_SAND_NORM', 'VSH', 'VSH_FIXED']
+Variables in ZONATION_Well_Tops: ['Formation', 'Zone Desc', 'Zone Name']
+
+Datasets for 102/06-08-081-24W4/00: ["1a58dca4_102060808124W400_'DEPT'_'AT20'_'AT30'_de0c76", "ff8fc719_102060808124W400_'DEPT'_'AT20'_'AT30'_89d91e"]
+Variables in 1a58dca4_102060808124W400_'DEPT'_'AT20'_'AT30'_de0c76: ['AT9C', 'AT20', 'AT30', 'AT90', 'BS', 'DEPT', 'DPHZ', 'DSOZ', 'GR', 'HCAL', 'HDRA', 'NPOR', 'PEFZ', 'PHIE', 'PHIE_FIXED', 'RHOB_FIXED', 'RHOZ', 'RSOZ', 'RT', 'RXOZ', 'SP', 'SXO', 'SXO_FIXED', 'V_DOL', 'V_LIME', 'V_SAND', 'VSH', 'VSH_FIXED']
+Variables in ff8fc719_102060808124W400_'DEPT'_'AT20'_'AT30'_89d91e: ['AT9C', 'AT20', 'AT30', 'AT90', 'BS', 'DEPT', 'DPHZ', 'DSOZ', 'GR', 'HCAL', 'HDRA', 'NPOR', 'PEFZ', 'PHIE', 'PHIE_FIXED', 'RHOB_FIXED', 'RHOZ', 'RSOZ', 'RT', 'RXOZ', 'SP', 'SXO', 'SXO_FIXED', 'V_DOL', 'V_LIME', 'V_SAND', 'VSH', 'VSH_FIXED']
+
+Datasets for 102/06-19-081-24W4/00: ['ZONATION_Well_Tops']
+Variables in ZONATION_Well_Tops: ['Formation', 'Zone Desc', 'Zone Name']
+
+Datasets for 102/10-06-081-24W4/00: ["0d866b6c_102100608124W400_'DEPT'_'SFLU'_'IDPH'_91ea34", "62548f00_102100608124W400_'DEPT'_'SFLU'_'IDPH'_6e6d69", "e33b31e8_102100608124W400_'DEPT'_'SFLU'_'IDPH'_0918bf", 'ZONATION_Well_Tops']
+Variables in 0d866b6c_102100608124W400_'DEPT'_'SFLU'_'IDPH'_91ea34: ['CALI', 'CIDP', 'DEPT', 'DPHI', 'DRHO', 'GR', 'IDPH', 'IMPH', 'NPOR', 'PEF', 'PHIE', 'PHIE_FIXED', 'PHIE_RECOMPUTED', 'RHOB', 'RHOB_FIXED', 'SFLA', 'SFLU', 'SP', 'SPD', 'SPDF', 'V_DOL', 'V_LIME', 'V_SAND', 'VSH', 'VSH_FIXED']
+Variables in 62548f00_102100608124W400_'DEPT'_'SFLU'_'IDPH'_6e6d69: ['CALI', 'CIDP', 'DEPT', 'DPHI', 'DRHO', 'GR', 'IDPH', 'IMPH', 'NPOR', 'PEF', 'PHIE', 'PHIE_FIXED', 'PHIE_RECOMPUTED', 'RHOB', 'RHOB_FIXED', 'SFLA', 'SFLU', 'SP', 'SPD', 'SPDF', 'V_DOL', 'V_LIME', 'V_SAND', 'VSH', 'VSH_FIXED']
+Variables in e33b31e8_102100608124W400_'DEPT'_'SFLU'_'IDPH'_0918bf: ['CALI', 'CIDP', 'DEPT', 'DPHI', 'DRHO', 'GR', 'IDPH', 'IMPH', 'NPOR', 'PEF', 'PHIE', 'PHIE_FIXED', 'PHIE_RECOMPUTED', 'RHOB', 'RHOB_FIXED', 'SFLA', 'SFLU', 'SP', 'SPD', 'SPDF', 'V_DOL', 'V_LIME', 'V_SAND', 'VSH', 'VSH_FIXED']
+Variables in ZONATION_Well_Tops: ['Formation', 'Zone Desc', 'Zone Name']
+
+Error saving log: [Errno 13] Permission denied: 'techlog_environment_20250219_034650.log'
+Log contents:
+Techlog Environment Log - 2025-02-19 10:46:49 UTC
+User: wadet
+Python Version: 3.12.1 (tags/v3.12.1:2305ca5, Dec  7 2023, 22:03:25) [MSC v.1937 64 bit (AMD64)]
+
+==================== Data Module ====================
+Data module members:
+- AbstractDataClass
+- Array
+- CacheVarData
+- DataProperty
+- DataPropertyManager
+- HistoryItem
+- MissingValue
+- TechlogMath
+- Variable
+- _getCurrentZoneIndices
+- db
+- getDatasetZoneIndiceBottom
+- getDatasetZoneIndiceTop
+- ignore_kw_args
+- logging
+- on_remote_process
+- printError
+- range
+- remote_techlog
+- six
+- sys
+- variableLoad
+- variableLoadFrom
+- warnings
+- wraps
+
+==================== Database ====================
+
+Testing Database Methods:
+projectName(): Hoole_Analysis
+wellList(): ['100/06-08-081-24W4/00', '100/06-09-081-24W4/00', '100/06-18-081-24W4/00', '100/06-30-081-24W4/00', '100/08-07-081-24W4/00', '100/10-36-081-25W4/00', '100/11-02-082-25W4/00', '100/12-32-080-24W4/00', '100/13-20-081-24W4/00', '100/15-19-081-24W4/00', '102/06-08-081-24W4/00', '102/06-19-081-24W4/00', '102/10-06-081-24W4/00']
+selectedWellList(): []
+selectedDatasetList(): None
+selectedVariableList(): None
+
+==================== Array Class ====================
+
+==================== Current Context ====================
+
+==================== Project Structure ====================
+
+Wells: ['100/06-08-081-24W4/00', '100/06-09-081-24W4/00', '100/06-18-081-24W4/00', '100/06-30-081-24W4/00', '100/08-07-081-24W4/00', '100/10-36-081-25W4/00', '100/11-02-082-25W4/00', '100/12-32-080-24W4/00', '100/13-20-081-24W4/00', '100/15-19-081-24W4/00', '102/06-08-081-24W4/00', '102/06-19-081-24W4/00', '102/10-06-081-24W4/00']
+
+Datasets for 100/06-08-081-24W4/00: ["2932ef5e_100060808124W400_'DEPTH'_'RSG'_'SP'_0be3f7", "5d041a64_100060808124W400_'DEPTH'_'RSG'_'SP'_fa81f6", 'ZONATION_Well_Tops']
+Variables in 2932ef5e_100060808124W400_'DEPTH'_'RSG'_'SP'_0be3f7: ['CALD', 'CALN', 'DEPTH', 'DPHI', 'DRHO', 'GR', 'ILD', 'ILM', 'LWTKG', 'NPHI', 'PE', 'RHOB', 'RSG', 'SP']
+Variables in 5d041a64_100060808124W400_'DEPTH'_'RSG'_'SP'_fa81f6: ['CALD', 'CALN', 'DEPTH', 'DPHI', 'DRHO', 'GR', 'ILD', 'ILM', 'LWTKG', 'NPHI', 'PE', 'RHOB', 'RSG', 'SP']
+Variables in ZONATION_Well_Tops: ['Formation', 'Zone Desc', 'Zone Name']
+
+Datasets for 100/06-09-081-24W4/00: ['ZONATION_Well_Tops']
+Variables in ZONATION_Well_Tops: ['Formation', 'Zone Desc', 'Zone Name']
+
+Datasets for 100/06-18-081-24W4/00: ["a2bf2cd9_100061808124W400_'DEPT'_'NAPI'_'NPHI'_3358a1", 'ZONATION_Well_Tops']
+Variables in a2bf2cd9_100061808124W400_'DEPT'_'NAPI'_'NPHI'_3358a1: ['CCL', 'DEPT', 'GAPI', 'NAPI', 'NPHI']
+Variables in ZONATION_Well_Tops: ['Formation', 'Zone Desc', 'Zone Name']
+
+Datasets for 100/06-30-081-24W4/00: ["7f367d70_100063008124W400_'DEPT'_'AHF20'_'AHF30'_ec25ed", "887c020d_100063008124W400_'DEPT'_'AHF20'_'AHF30'_01c8bc", "9dcbb5c0_100063008124W400_'DEPT'_'AHO10'_'AHO20'_ef55fd", "d81c1912_100063008124W400_'DEPT'_'BS'_'CFTC'_6c90fb", 'ZONATION_Well_Tops']
+Variables in 7f367d70_100063008124W400_'DEPT'_'AHF20'_'AHF30'_ec25ed: ['AHF20', 'AHF30', 'AHF60', 'AHFCO60', 'AHMF', 'BS', 'CFTC', 'CNTC', 'DEPT', 'DPHI_DOL', 'DPHI_LIM', 'DPHI_SAN', 'DSOZ', 'DT', 'GR', 'HCAL', 'HDRA', 'NPOR_DOL', 'NPOR_LIM', 'NPOR_SAN', 'PEFZ', 'PHIE', 'PHIE_FIXED', 'RHOB_FIXED', 'RHOZ', 'RSOZ', 'RT', 'RXOZ', 'SP', 'SXO', 'SXO_FIXED', 'TT1', 'TT2', 'TT3', 'TT4', 'V_DOL', 'V_LIME', 'V_SAND', 'VSH', 'VSH_FIXED']
+Variables in 887c020d_100063008124W400_'DEPT'_'AHF20'_'AHF30'_01c8bc: ['AHF20', 'AHF30', 'AHF60', 'AHFCO60', 'AHMF', 'BS', 'CFTC', 'CNTC', 'DEPT', 'DPHI_DOL', 'DPHI_LIM', 'DPHI_SAN', 'DSOZ', 'GR', 'HCAL', 'HDRA', 'NPOR_DOL', 'NPOR_LIM', 'NPOR_SAN', 'PEFZ', 'PHIE', 'PHIE_FIXED', 'RHOB_FIXED', 'RHOZ', 'RSOZ', 'RT', 'RXOZ', 'SP', 'SXO', 'SXO_FIXED', 'V_DOL', 'V_LIME', 'V_SAND', 'VSH', 'VSH_FIXED']
+Variables in 9dcbb5c0_100063008124W400_'DEPT'_'AHO10'_'AHO20'_ef55fd: ['AHO10', 'AHO20', 'AHO30', 'AHO60', 'AHO90', 'AHOCO90', 'DEPT', 'DT', 'EHGR', 'HCAL', 'HDPH_DOL', 'HDPH_LIM', 'HDPH_SAN', 'HDRA', 'HGR', 'HMIN', 'HMNO', 'HNPO_DOL', 'HNPO_LIM', 'HNPO_SAN', 'PEF8', 'RHO8', 'RXO8', 'SP']
+Variables in d81c1912_100063008124W400_'DEPT'_'BS'_'CFTC'_6c90fb: ['BS', 'CFTC', 'CNTC', 'DEPT', 'DT', 'GR', 'TT1', 'TT2', 'TT3', 'TT4']
+Variables in ZONATION_Well_Tops: ['Formation', 'Zone Desc', 'Zone Name']
+
+Datasets for 100/08-07-081-24W4/00: ["051b5659_100080708124W400_'DEPT'_'SP'_'CALD'_4af9da", "0a929bb4_100080708124W400_'DEPT'_'SP'_'CALD'_38d593", "97cf8e9f_100080708124W400_'DEPT'_'SP'_'CALD'_e31420", 'ZONATION_Well_Tops']
+Variables in 051b5659_100080708124W400_'DEPT'_'SP'_'CALD'_4af9da: ['CALD', 'CALN', 'DEPT', 'DPSS', 'DRHO', 'GR', 'ILD', 'ILM', 'LWTKG', 'NPSS', 'PE', 'PHIE', 'PHIE_FIXED', 'RHOB', 'RHOB_FIXED', 'SFL', 'SP', 'SXO', 'SXO_FIXED', 'V_DOL', 'V_LIME', 'V_SAND', 'VSH', 'VSH_FIXED']
+Variables in 0a929bb4_100080708124W400_'DEPT'_'SP'_'CALD'_38d593: ['CALD', 'CALN', 'DEPT', 'DPSS', 'DRHO', 'DT', 'GR', 'ILD', 'ILM', 'LWTKG', 'NPSS', 'PE', 'PHIE', 'PHIE_FIXED', 'RHOB', 'RHOB_FIXED', 'SFL', 'SP', 'SXO', 'SXO_FIXED', 'V_DOL', 'V_LIME', 'V_SAND', 'VSH', 'VSH_FIXED']
+Variables in 97cf8e9f_100080708124W400_'DEPT'_'SP'_'CALD'_e31420: ['CALD', 'CALN', 'DEPT', 'DPSS', 'DRHO', 'DT', 'GR', 'ILD', 'ILM', 'LWTKG', 'NPSS', 'PE', 'PHIE', 'PHIE_FIXED', 'RHOB', 'RHOB_FIXED', 'SFL', 'SP', 'SXO', 'SXO_FIXED', 'V_DOL', 'V_LIME', 'V_SAND', 'VSH', 'VSH_FIXED']
+Variables in ZONATION_Well_Tops: ['Formation', 'Zone Desc', 'Zone Name']
+
+Datasets for 100/10-36-081-25W4/00: ["54c34a08_100103608125W400_'DEPT'_'SP'_'CALD'_9f44eb", "ef337b36_100103608125W400_'DEPT'_'SP'_'CALD'_ae4854", 'ZONATION_Well_Tops']
+Variables in 54c34a08_100103608125W400_'DEPT'_'SP'_'CALD'_9f44eb: ['CALD', 'CALN', 'DEPT', 'DPHI', 'DRHO', 'DT', 'GR', 'ILD', 'ILM', 'LWTKG', 'NPHI', 'PE', 'PHIE', 'PHIE_FIXED', 'RHOB', 'RHOB_FIXED', 'RSG', 'SP', 'V_DOL', 'V_LIME', 'V_SAND', 'VSH', 'VSH_FIXED']
+Variables in ef337b36_100103608125W400_'DEPT'_'SP'_'CALD'_ae4854: ['CALD', 'CALN', 'DEPT', 'DPHI', 'DRHO', 'DT', 'GR', 'ILD', 'ILM', 'LWTKG', 'NPHI', 'PE', 'PHIE', 'PHIE_FIXED', 'RHOB', 'RHOB_FIXED', 'RSG', 'SP', 'V_DOL', 'V_LIME', 'V_SAND', 'VSH', 'VSH_FIXED']
+Variables in ZONATION_Well_Tops: ['Formation', 'Zone Desc', 'Zone Name']
+
+Datasets for 100/11-02-082-25W4/00: ["35491465_100110208225W400_'DEPT'_'CALD'_'CALN'_04b472", "62ae0c37_100110208225W400_'DEPT'_'SP'_'SFL'_d969b7", "cdd5622b_100110208225W400_'DEPT'_'SP'_'SFL'_11ee1f", 'ZONATION_Well_Tops']
+Variables in 35491465_100110208225W400_'DEPT'_'CALD'_'CALN'_04b472: ['CALD', 'CALN', 'DEPT', 'DPSS', 'DRHO', 'GR', 'ILD', 'ILM', 'LWTKG', 'NPSS', 'PHIE', 'PHIE_FIXED', 'RHOB', 'RHOB_FIXED', 'SFL', 'SP', 'SXO', 'SXO_FIXED', 'V_DOL', 'V_DOL_NORM', 'V_LIME', 'V_LIME_NORM', 'V_SAND', 'V_SAND_NORM', 'VSH', 'VSH_FIXED']
+Variables in 62ae0c37_100110208225W400_'DEPT'_'SP'_'SFL'_d969b7: ['CALD', 'CALN', 'DEPT', 'DPSS', 'DRHO', 'GR', 'ILD', 'ILM', 'LWTKG', 'NPSS', 'PE', 'PHIE', 'PHIE_FIXED', 'RHOB', 'RHOB_FIXED', 'SFL', 'SP', 'SXO', 'SXO_FIXED', 'V_DOL', 'V_DOL_NORM', 'V_LIME', 'V_LIME_NORM', 'V_SAND', 'V_SAND_NORM', 'VSH', 'VSH_FIXED']
+Variables in cdd5622b_100110208225W400_'DEPT'_'SP'_'SFL'_11ee1f: ['CALD', 'CALN', 'DEPT', 'DPSS', 'DRHO', 'DT', 'GR', 'ILD', 'ILM', 'LWTKG', 'NPSS', 'PE', 'PHIE', 'PHIE_FIXED', 'RHOB', 'RHOB_FIXED', 'SFL', 'SP', 'SXO', 'SXO_FIXED', 'V_DOL', 'V_DOL_NORM', 'V_LIME', 'V_LIME_NORM', 'V_SAND', 'V_SAND_NORM', 'VSH', 'VSH_FIXED']
+Variables in ZONATION_Well_Tops: ['Formation', 'Zone Desc', 'Zone Name']
+
+Datasets for 100/12-32-080-24W4/00: ["2891af09_100123208024W400_'DEPT'_'CALI'_'DPHI'_0661fa", "864e417f_100123208024W400_'DEPT'_'CALI'_'DPHI'_3896b1", 'ZONATION_Well_Tops']
+Variables in 2891af09_100123208024W400_'DEPT'_'CALI'_'DPHI'_0661fa: ['CALI', 'CIDP', 'DEPT', 'DPHI', 'DRHO', 'GR', 'IDPH', 'IMPH', 'NPOR', 'PEF', 'PHIE', 'PHIE_FIXED', 'PHIE_RECOMPUTED', 'RHOB', 'RHOB_FIXED', 'SFLA', 'SFLU', 'SP', 'V_DOL', 'V_LIME', 'V_SAND', 'VSH', 'VSH_FIXED']
+Variables in 864e417f_100123208024W400_'DEPT'_'CALI'_'DPHI'_3896b1: ['CALI', 'CIDP', 'DEPT', 'DPHI', 'DRHO', 'GR', 'IDPH', 'IMPH', 'NPOR', 'PEF', 'PHIE', 'PHIE_FIXED', 'PHIE_RECOMPUTED', 'RHOB', 'RHOB_FIXED', 'SFLA', 'SFLU', 'SP', 'V_DOL', 'V_LIME', 'V_SAND', 'VSH', 'VSH_FIXED']
+Variables in ZONATION_Well_Tops: ['Formation', 'Zone Desc', 'Zone Name']
+
+Datasets for 100/13-20-081-24W4/00: ["3f040c18_100132008124W400_'DEPT'_'AF10'_'AF20'_cc45b7", "4c949879_100132008124W400_'DEPT'_'AO10'_'AO20'_e333e7", "63c6bb69_100132008124W400_'DEPT'_'AF10'_'AF20'_3ff6ac", "db556530_100132008124W400_'DEPT'_'AHF10'_'AHF20'_2d8fbe", "decda82f_100132008124W400_'DEPT'_'AF10'_'AF20'_c22418", 'ZONATION_Well_Tops']
+Variables in 3f040c18_100132008124W400_'DEPT'_'AF10'_'AF20'_cc45b7: ['AF6C', 'AF9C', 'AF10', 'AF20', 'AF30', 'AF60', 'AF90', 'AHMF', 'AIBD', 'CFTC', 'CNTC', 'DEPT', 'DPDL', 'DPHZ', 'DPLS', 'DPSS', 'DSOZ', 'GDEV', 'GR', 'HCAL', 'HDAR', 'HDRA', 'HMIN', 'HMNO', 'NPDL', 'NPLS', 'NPOR', 'NPSS', 'PEFZ', 'PHIE', 'PHIE_FIXED', 'PHIE_RECOMPUTED', 'RHOB_FIXED', 'RHOZ', 'RSOZ', 'RT', 'RXOZ', 'SP', 'V_DOL', 'V_LIME', 'V_SAND', 'VSH', 'VSH_FIXED']
+Variables in 4c949879_100132008124W400_'DEPT'_'AO10'_'AO20'_e333e7: ['AHMF', 'AIBD', 'AO6C', 'AO9C', 'AO10', 'AO20', 'AO30', 'AO60', 'AO90', 'BS', 'DEPT', 'DPDL', 'DPH8', 'DPLS', 'DPSS', 'DSO8', 'EHGR', 'GR', 'HCAL', 'HDAR', 'HDRA', 'HGR', 'HMIN', 'HMNO', 'HNPO', 'NPDL', 'NPLS', 'NPSS', 'PEF8', 'RHO8', 'RSO8', 'RXO8', 'RXOI', 'SP']
+Variables in 63c6bb69_100132008124W400_'DEPT'_'AF10'_'AF20'_3ff6ac: ['AF6C', 'AF9C', 'AF10', 'AF20', 'AF30', 'AF60', 'AF90', 'AHMF', 'AIBD', 'CFTC', 'CNTC', 'DEPT', 'DPDL', 'DPHZ', 'DPLS', 'DPSS', 'DSOZ', 'DT', 'GDEV', 'GR', 'HCAL', 'HDAR', 'HDRA', 'HMIN', 'HMNO', 'NPDL', 'NPLS', 'NPOR', 'NPSS', 'PEFZ', 'PHIE', 'PHIE_FIXED', 'PHIE_RECOMPUTED', 'RHOB_FIXED', 'RHOZ', 'RSOZ', 'RT', 'RXOZ', 'SP', 'TT1', 'TT2', 'TT3', 'TT4', 'V_DOL', 'V_LIME', 'V_SAND', 'VSH', 'VSH_FIXED']
+Variables in db556530_100132008124W400_'DEPT'_'AHF10'_'AHF20'_2d8fbe: ['AHF10', 'AHF20', 'AHF30', 'AHF60', 'AHF90', 'AHFCO60', 'AHFCO90', 'AHIBD', 'AHMF', 'CFTC', 'CNTC', 'DEPT', 'DPHI_DOL', 'DPHI_LIM', 'DPHI_SAN', 'DPHZ', 'DSOZ', 'GDEV', 'GR', 'HCAL', 'HDAR', 'HDRA', 'HMIN', 'HMNO', 'NPOR', 'NPOR_DOL', 'NPOR_LIM', 'NPOR_SAN', 'PEFZ', 'PHIE', 'PHIE_FIXED', 'RHOB_FIXED', 'RHOZ', 'RSOZ', 'RT', 'RXOZ', 'SP', 'SXO', 'SXO_FIXED', 'V_DOL', 'V_LIME', 'V_SAND', 'VSH', 'VSH_FIXED']
+Variables in decda82f_100132008124W400_'DEPT'_'AF10'_'AF20'_c22418: ['AF6C', 'AF9C', 'AF10', 'AF20', 'AF30', 'AF60', 'AF90', 'AHMF', 'AIBD', 'CFTC', 'CNTC', 'DEPT', 'DPDL', 'DPHZ', 'DPLS', 'DPSS', 'DSOZ', 'DT', 'GDEV', 'GR', 'HCAL', 'HDAR', 'HDRA', 'HMIN', 'HMNO', 'NPDL', 'NPLS', 'NPOR', 'NPSS', 'PEFZ', 'PHIE', 'PHIE_FIXED', 'PHIE_RECOMPUTED', 'RHOB_FIXED', 'RHOZ', 'RSOZ', 'RT', 'RXOZ', 'SP', 'TT1', 'TT2', 'TT3', 'TT4', 'V_DOL', 'V_LIME', 'V_SAND', 'VSH', 'VSH_FIXED']
+Variables in ZONATION_Well_Tops: ['Formation', 'Zone Desc', 'Zone Name']
+
+Datasets for 100/15-19-081-24W4/00: ["156c7b8d_100151908124W400_'DEPT'_'SP'_'GR'_4269b2", "48356767_100151908124W400_'DEPT'_'CALD'_'CALN'_9f15f4", "b86c8976_100151908124W400_'DEPT'_'CALD'_'CALN'_b6c058", 'ZONATION_Well_Tops']
+Variables in 156c7b8d_100151908124W400_'DEPT'_'SP'_'GR'_4269b2: ['CALD', 'CALN', 'DEPT', 'DPSS', 'DRHO', 'DT', 'GR', 'ILD', 'ILM', 'LWTKG', 'NPSS', 'PE', 'PHIE', 'PHIE_FIXED', 'RHOB', 'RHOB_FIXED', 'SFL', 'SP', 'SXO', 'SXO_FIXED', 'V_DOL', 'V_DOL_NORM', 'V_LIME', 'V_LIME_NORM', 'V_SAND', 'V_SAND_NORM', 'VSH', 'VSH_FIXED']
+Variables in 48356767_100151908124W400_'DEPT'_'CALD'_'CALN'_9f15f4: ['CALD', 'CALN', 'DEPT', 'DPSS', 'DRHO', 'GR', 'LWTKG', 'NPSS', 'PE', 'PHIE', 'PHIE_FIXED', 'RHOB', 'RHOB_FIXED', 'V_DOL', 'V_DOL_NORM', 'V_LIME', 'V_LIME_NORM', 'V_SAND', 'V_SAND_NORM', 'VSH', 'VSH_FIXED']
+Variables in b86c8976_100151908124W400_'DEPT'_'CALD'_'CALN'_b6c058: ['CALD', 'CALN', 'DEPT', 'DPSS', 'DRHO', 'DT', 'GR', 'GR_2', 'ILD', 'ILM', 'LWTKG', 'NPSS', 'PE', 'PHIE', 'PHIE_FIXED', 'RHOB', 'RHOB_FIXED', 'SFL', 'SP', 'V_DOL', 'V_DOL_NORM', 'V_LIME', 'V_LIME_NORM', 'V_SAND', 'V_SAND_NORM', 'VSH', 'VSH_FIXED']
+Variables in ZONATION_Well_Tops: ['Formation', 'Zone Desc', 'Zone Name']
+
+Datasets for 102/06-08-081-24W4/00: ["1a58dca4_102060808124W400_'DEPT'_'AT20'_'AT30'_de0c76", "ff8fc719_102060808124W400_'DEPT'_'AT20'_'AT30'_89d91e"]
+Variables in 1a58dca4_102060808124W400_'DEPT'_'AT20'_'AT30'_de0c76: ['AT9C', 'AT20', 'AT30', 'AT90', 'BS', 'DEPT', 'DPHZ', 'DSOZ', 'GR', 'HCAL', 'HDRA', 'NPOR', 'PEFZ', 'PHIE', 'PHIE_FIXED', 'RHOB_FIXED', 'RHOZ', 'RSOZ', 'RT', 'RXOZ', 'SP', 'SXO', 'SXO_FIXED', 'V_DOL', 'V_LIME', 'V_SAND', 'VSH', 'VSH_FIXED']
+Variables in ff8fc719_102060808124W400_'DEPT'_'AT20'_'AT30'_89d91e: ['AT9C', 'AT20', 'AT30', 'AT90', 'BS', 'DEPT', 'DPHZ', 'DSOZ', 'GR', 'HCAL', 'HDRA', 'NPOR', 'PEFZ', 'PHIE', 'PHIE_FIXED', 'RHOB_FIXED', 'RHOZ', 'RSOZ', 'RT', 'RXOZ', 'SP', 'SXO', 'SXO_FIXED', 'V_DOL', 'V_LIME', 'V_SAND', 'VSH', 'VSH_FIXED']
+
+Datasets for 102/06-19-081-24W4/00: ['ZONATION_Well_Tops']
+Variables in ZONATION_Well_Tops: ['Formation', 'Zone Desc', 'Zone Name']
+
+Datasets for 102/10-06-081-24W4/00: ["0d866b6c_102100608124W400_'DEPT'_'SFLU'_'IDPH'_91ea34", "62548f00_102100608124W400_'DEPT'_'SFLU'_'IDPH'_6e6d69", "e33b31e8_102100608124W400_'DEPT'_'SFLU'_'IDPH'_0918bf", 'ZONATION_Well_Tops']
+Variables in 0d866b6c_102100608124W400_'DEPT'_'SFLU'_'IDPH'_91ea34: ['CALI', 'CIDP', 'DEPT', 'DPHI', 'DRHO', 'GR', 'IDPH', 'IMPH', 'NPOR', 'PEF', 'PHIE', 'PHIE_FIXED', 'PHIE_RECOMPUTED', 'RHOB', 'RHOB_FIXED', 'SFLA', 'SFLU', 'SP', 'SPD', 'SPDF', 'V_DOL', 'V_LIME', 'V_SAND', 'VSH', 'VSH_FIXED']
+Variables in 62548f00_102100608124W400_'DEPT'_'SFLU'_'IDPH'_6e6d69: ['CALI', 'CIDP', 'DEPT', 'DPHI', 'DRHO', 'GR', 'IDPH', 'IMPH', 'NPOR', 'PEF', 'PHIE', 'PHIE_FIXED', 'PHIE_RECOMPUTED', 'RHOB', 'RHOB_FIXED', 'SFLA', 'SFLU', 'SP', 'SPD', 'SPDF', 'V_DOL', 'V_LIME', 'V_SAND', 'VSH', 'VSH_FIXED']
+Variables in e33b31e8_102100608124W400_'DEPT'_'SFLU'_'IDPH'_0918bf: ['CALI', 'CIDP', 'DEPT', 'DPHI', 'DRHO', 'GR', 'IDPH', 'IMPH', 'NPOR', 'PEF', 'PHIE', 'PHIE_FIXED', 'PHIE_RECOMPUTED', 'RHOB', 'RHOB_FIXED', 'SFLA', 'SFLU', 'SP', 'SPD', 'SPDF', 'V_DOL', 'V_LIME', 'V_SAND', 'VSH', 'VSH_FIXED']
+Variables in ZONATION_Well_Tops: ['Formation', 'Zone Desc', 'Zone Name']
