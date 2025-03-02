@@ -1,0 +1,16 @@
+category,count,status
+Wells,18,Ready
+Poor Quality Wells,8,Analyzed
+Unusable Quality Wells,7,Analyzed
+Fair Quality Wells,3,Analyzed
+Log Curves,17,Ready
+Unique Curve Types,5,Ready
+data Files,236,Ready
+logs Files,0,Empty
+maps Files,0,Empty
+results Files,0,Empty
+standardized_las Files,0,Empty
+charts Files,0,Empty
+lithology Files,2,Ready
+pay_analysis Files,4,Ready
+summary Files,4,Ready

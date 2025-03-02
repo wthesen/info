@@ -1,0 +1,35 @@
+PAY MAPPING AND BYPASS PAY IDENTIFICATION GUIDE
+============================================
+
+1. DEFINE PAY CRITERIA
+-------------------
+- Use the pay_cutoffs.csv file to define cutoffs for each formation
+- Typical cutoffs:
+  * VSH < 0.4 (cleaner reservoir)
+  * PHIE > 0.08 (sufficient porosity)
+  * SW < 0.6 (hydrocarbon presence)
+  * K > 1-10 mD (formation-dependent)
+
+2. FLAG PAY ZONES
+---------------
+- Calculate flag curves in your log analysis workflow
+- Generate summations of net pay for each well/zone
+- Populate the pay_analysis_template.csv with real data
+
+3. IDENTIFY BYPASS PAY
+--------------------
+- Compare identified pay intervals with perforation history
+- Flag unperforated pay intervals
+- Calculate potential hydrocarbon volumes
+- Rank opportunities based on quality and thickness
+
+4. CREATE PAY MAPS
+-----------------
+- Use the pay_mapping_data.csv template for data organization
+- Import to mapping software (Petrel, Techlog Maps, etc.)
+- Generate contour maps for:
+  * Net Pay Thickness
+  * Average Porosity
+  * Hydrocarbon Pore Volume
+  * Recoverable Reserves
+- Identify sweet spots and bypass opportunities

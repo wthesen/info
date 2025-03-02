@@ -1,0 +1,32 @@
+LITHOLOGY COMPUTATION GUIDE
+=========================
+
+1. DATA PREPARATION
+------------------
+- Ensure all wells have standardized GR, RHOB, NPHI, and PE curves
+- Quality control the input data to remove spikes and bad hole sections
+- Normalize the log data across all wells
+
+2. MINERAL MODEL SETUP
+---------------------
+- Define end-member minerals for the study area (Matrix properties.csv)
+- Sandstone: Quartz (2.65 g/cc, -0.03 v/v, 1.8 PE)
+- Limestone: Calcite (2.71 g/cc, 0.0 v/v, 5.1 PE)
+- Dolomite: Dolomite (2.87 g/cc, 0.02 v/v, 3.1 PE)
+- Shale: Illite or mixed clay (2.53 g/cc, 0.30 v/v, 3.5 PE)
+- Anhydrite: (2.98 g/cc, 0.0 v/v, 5.0 PE)
+
+3. MINERAL COMPUTATION METHODS
+----------------------------
+- Deterministic approach: Use simultaneous equations to solve for mineral volumes
+- Probabilistic approach: Use Bayesian inversion methods
+- Machine Learning: Use cluster analysis or neural nets for lithofacies identification
+
+4. RECOMMENDED TECHLOG WORKFLOW
+-----------------------------
+- Import logs into Techlog
+- Create a Multi-Mineral Processing module
+- Define mineral end-members and fluid properties
+- Set up constraints (total volume = 1.0, non-negative volumes)
+- Run the inversion
+- QC results with core data if available

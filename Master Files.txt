@@ -1,0 +1,63 @@
+
+## Master Files
+
+The workflow creates several key master files:
+
+1. `master_well_index.csv` - Central database of all wells with metadata
+2. `log_curve_inventory.csv` - Inventory of all curves across all wells
+3. `quality_assessment.csv` - Assessment of data quality for each well
+
+## Templates
+
+Ready-to-use templates are provided for:
+
+1. Lithology interpretation (`lithology/lithology_interpretation_template.csv`)
+2. Pay analysis (`pay_analysis/pay_analysis_template.csv`)
+3. Recompletion candidates (`pay_analysis/recompletion_candidates.csv`)
+4. Pay mapping data (`pay_analysis/pay_mapping_data.csv`)
+5. LAS standardization (`las_standardization_template.txt`)
+
+## Guides
+
+Detailed guides are provided in the `summary` directory:
+
+1. Project status summary (`project_status.txt`)
+2. Lithology computation guide (`lithology_computation_guide.txt`)
+3. Pay mapping guide (`pay_mapping_guide.txt`)
+
+## Workflow Stages
+
+### 1. Project Setup
+- Creates directory structure
+- Tests write permissions
+
+### 2. Data Organization
+- Creates master well index
+- Creates log curve inventory
+- Assesses data quality
+
+### 3. Lithology Analysis
+- Sets up matrix properties
+- Creates templates for lithology interpretation
+
+### 4. Pay Analysis
+- Defines pay cutoffs by formation
+- Creates templates for pay flagging
+- Sets up recompletion candidate tracking
+
+### 5. Documentation
+- Creates comprehensive guides
+- Provides project status summary
+
+## Usage
+
+### Running the Complete Workflow
+
+```python
+from petrophysical_analysis_workflow import PetrophysicalWorkflow
+
+# Initialize workflow
+workflow = PetrophysicalWorkflow()
+
+# Run the complete workflow
+project_dir = workflow.run_complete_workflow()

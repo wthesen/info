@@ -1,0 +1,2 @@
+Project initialized at 2025-03-01 22:43:46.360105
+Created directories: C:\Users\wadet\techlog_analysis\data, C:\Users\wadet\techlog_analysis\logs, C:\Users\wadet\techlog_analysis\maps, C:\Users\wadet\techlog_analysis\results, C:\Users\wadet\techlog_analysis\standardized_las, C:\Users\wadet\techlog_analysis\charts
