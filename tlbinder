@@ -1,0 +1,1092 @@
+Binder API
+The Binder API enables you to assign a variable produced by one AWI method (referred to as the producer) as an input parameter for another AWI method (referred to as the consumer). Specifically, the consumer AWI method utilizes the assigned variable depth by depth during computation, replacing the need for a constant parameter. This connection between the producer’s variable and the consumer’s parameter is established through the mapping configuration. With this API, you can define and manage all three components: producer, consumer, and mapping configurations.
+
+../_images/Binder.png
+The configuration files can be deployed at User and Company levels under ApplicationWorkflowInterface folder. Producer, Consumer and Mapping configuration files could reside at different levels. ​
+
+Mapping configuration file should have the same name as consumer file.​
+
+Example of a default configuration files are deployed at Techlog level under ApplicationWorkflowInterface folder:
+- QuantiElan.consumer
+- KerogenProperties.producer
+- PreSaltTemp.producer
+- QuantiElan.mapping​
+Getting started with AWI files handling
+This documentation page explains how to read and modify AWI files with Python.
+
+It introduces the following classes:
+
+AWI consumer,
+
+AWI producer,
+
+AWI mapping,
+
+Version.
+
+AWI consumer
+An AWI consumer defines a list of parameters that can be used as input to an AWI method.
+These parameters are grouped together in tables.
+
+For more details see AWI consumer class.
+Load an AWI consumer from a file
+import Binder
+
+# Define a function that will print the content of an AWI consumer.
+def printConsumer(consumer:Binder.AwiConsumer):
+  tables = consumer.get_parameter_tables()
+  print(f"The AWI consumer \"{consumer}\" has {len(tables)} tables:")
+  for table in tables:
+    parameters = table.get_parameters()
+    print(f"\t- Table \"{table}\" has {len(parameters)} parameters:")
+    for parameter in parameters:
+      print(f"\t\t- Parameter \"{parameter}\"")
+
+# Load the AWI consumer and display all of the parameters.
+quantiElan = Binder.AwiConsumer.load(r"..\ApplicationWorkflowInterface\QuantiElan.consumer")
+printConsumer(quantiElan)
+
+# Get a specific parameter table.
+deepResistivityTable = quantiElan.get_parameter_table_from_name("DeepResistivity")
+print(f"\nThe table \"{deepResistivityTable}\" contains {len(deepResistivityTable.get_parameters())} parameters.")
+# Get a specific parameter.
+shallowFormationParameter = quantiElan.get_parameter_table_from_name("ShallowResistivity").get_parameter_from_name("Shallow_Formation_Water_Resistivity")
+print(f"\nThe parameter \"{shallowFormationParameter}\" is in the table \"{shallowFormationParameter.get_parent()}\".")
+AWI producer
+An AWI producer defines a list of outputs that represent the results of computations from an external method.
+
+For more details see AWI producer class.
+Load an AWI producer from a file
+import Binder
+
+# Define a function that will print the content of an AWI producer.
+def printProducer(producer:Binder.AwiProducer):
+    outputs = producer.get_outputs()
+    print(f"The AWI producer \"{producer}\" has {len(outputs)} outputs:")
+    for output in outputs:
+        print(f"\t- Output \"{output.get_default_variable_name()}\" @ {output.get_index()}")
+
+# Load the AWI producers and display all of the outputs.
+kerogenProperties = Binder.AwiProducer.load(r"..\ApplicationWorkflowInterface\KerogenProperties.producer")
+printProducer(kerogenProperties)
+preSaltTemp = Binder.AwiProducer.load(r"..\ApplicationWorkflowInterface\PreSaltTemp.producer")
+printProducer(preSaltTemp)
+
+# Get a specific output.
+rhok = kerogenProperties.get_output_from_index(1)
+print(f"\nThe output \"{rhok}\" belongs to the AWI producer \"{rhok.get_parent()}\".")
+Create an AWI producer from scratch
+import Binder
+
+# Create an AWI producer with 3 outputs.
+myProducer = Binder.AwiProducer("MyProducerId", "My beautiful producer")
+myProducer.add_output(0, "GR")
+myProducer.add_output(1, "POTA")
+myProducer.add_output(2, "TH")
+myProducer.save_as(r"D:\My User Folder\My AWI Files\MyBeautifulProducer.producer", Binder.Version(1))
+
+# Remove the 2nd output and save.
+myProducer.remove_output_from_index(1)
+myProducer.save(Binder.Version(2))
+AWI mapping
+An AWI mapping binds some outputs, defined by one or several AWI producer (s), to the parameters defined by an AWI consumer.
+It allows to specify, for each input parameter of an AWI method, the possible source of the values.
+
+For more details see AWI mapping class.
+Note
+
+As an AWI mapping is tightly coupled with an AWI consumer, the related files are stored in the same folder, sharing the same filename but having a different file extension (“.consumer” and “.mapping”). For this reason, the path is not needed when saving the mapping file.
+
+Load an AWI mapping from a file
+import Binder
+
+# Define a function that will print the content of an AWI producer.
+def printMapping(mapping:Binder.AwiMapping):
+  bindings = mapping.get_bindings()
+  print(f"The AWI mapping \"{mapping}\" has {len(bindings)} bindings:")
+  for binding in bindings:
+    output_full_name = f"{binding.get_output().get_parent()}.{binding.get_output()}"
+    parameter = binding.get_parameter()
+    parameter_full_name = f"{parameter.get_parent().get_parent()}.{parameter.get_parent()}.{parameter}"
+    print(f"\t- {output_full_name} --> {parameter_full_name}")
+
+# Load the AWI consumer and the AWI producers used for the mapping.
+quantiElan = Binder.AwiConsumer.load(r"..\ApplicationWorkflowInterface\QuantiElan.consumer")
+kerogenProperties = Binder.AwiProducer.load(r"..\ApplicationWorkflowInterface\KerogenProperties.producer")
+preSaltTemp = Binder.AwiProducer.load(r"..\ApplicationWorkflowInterface\PreSaltTemp.producer")
+quantiElanMapping = Binder.AwiMapping.load(quantiElan, { kerogenProperties, preSaltTemp })
+printMapping(quantiElanMapping)
+Create an AWI mapping from scratch
+import Binder
+
+# Get the consumer and the producers that will be bound together.
+quantiElan = Binder.AwiConsumer.load(r"..\ApplicationWorkflowInterface\QuantiElan.consumer")
+kerogenProperties = Binder.AwiProducer.load(r"..\ApplicationWorkflowInterface\KerogenProperties.producer")
+myProducer = Binder.AwiProducer.load(r"D:\My User Folder\My AWI Files\MyBeautifulProducer.producer")
+
+# Create the mapping.
+myMapping = Binder.AwiMapping()
+
+# Bind 3 outputs to 2 parameters.
+xiWaterSalinity = quantiElan.get_parameter_table_from_name("Minerals").get_parameter_from_name("XIWater_Salinity")
+myMapping.bind(myProducer.get_output_from_index(0), xiWaterSalinity)
+myMapping.bind(kerogenProperties.get_output_from_index(2), xiWaterSalinity)
+uiWaterSalinity = quantiElan.get_parameter_table_from_name("Minerals").get_parameter_from_name("UIWater_Salinity")
+myMapping.bind(kerogenProperties.get_output_from_index(1), uiWaterSalinity)
+
+# Save the mapping, version 1.2.3.
+myMapping.save_as(r"D:\My User Folder\My AWI Files", Binder.Version(1, 2, 3))
+Version
+A simple class that handles a version number.
+
+Versions handling
+from Binder import Version, VersionPart
+
+# Fixed versions.
+print(f"version 1: {Version(1)}")
+print(f"version 1.2: {Version(1, 2)}")
+print(f"version 1.2.3: {Version(1, 2, 3)}")
+v234 = Version.parse("2.3.4")
+print(f"Parsed version \"2.3.4\": {v234}")
+
+# Increase version numbers.
+print(f"Next major version after 1.2.3: {Version(1, 2, 3).increase(VersionPart.Major)}")
+print(f"Next minor version after 1.2.3: {Version(1, 2, 3).increase(VersionPart.Minor)}")
+print(f"Next patch version after 1.2.3: {Version(1, 2, 3).increase(VersionPart.Patch)}")
+For more details see Version class and VersionPart enumeration.
+
+Using a Python AWI as an AWI producer
+The Binder API can be used, for instance, to bind the outputs of a Python AWI with the parameters of an AWI method. Note: Currently, the only AWI method supporting the Binder API is Quanti.Elan.
+
+1. Create a Python AWI by clicking on the command “Python editor for AWI”, in the menu “Utility”.
+
+2. Define your output variables.
+
+3. Set up the function which will perform the desired computation.
+Hint
+
+Here is an example of a Python AWI defining one output variable PI and setting its content to the constant value 3.14159:
+
+../_images/Binder_PythonAwiExample.png
+4. Save the Python AWI at the desired level (Project, Company or User)
+Hint
+
+The previous Python AWI is saved as PiComputation.py at Project level:
+
+../_images/Binder_PythonAwiSave.png
+5. Using the Binder API, create a new AWI producer.
+Define the outputs.
+Use the function set_python_script(…) to define the file name of the associated Python script.
+Create an AWI producer associated to a Python script.
+from Binder import *
+
+USER_FOLDER = "C:\\Users\\MyUserName\\AppData\\Roaming\\Schlumberger\\Techlog\\"
+TARGET_FOLDER = USER_FOLDER + "ApplicationWorkflowInterface\\"
+
+# Create a new Awi Producer associated to the Python script 'PiComputation.py'.
+piConstantProducer = AwiProducer("PiConstant", "Pi constant value")
+piConstantProducer.set_python_script("PiComputation.py")
+piConstantProducer.add_output(0, "PI")
+
+# Save it into the subdirectory `ApplicationWorkflowInterface` of the User folder.
+piConstantProducer.save_as(TARGET_FOLDER + "PiConstant.producer", Version(1))
+6. Load the current AWI mapping.
+Bind the new outputs to the desired parameters.
+Save the AWI mapping.
+Bind the output “PI” to the parameter “Kerogen / Bulk Density” of Quanti.Elan.
+# Load the AWI consumer, the AWI producers and the AWI mapping.
+quantiElan = AwiConsumer.load(r"..\ApplicationWorkflowInterface\QuantiElan.consumer")
+kerogenProperties = AwiProducer.load(r"..\ApplicationWorkflowInterface\KerogenProperties.producer")
+preSaltTemp = AwiProducer.load(r"..\ApplicationWorkflowInterface\PreSaltTemp.producer")
+quantiElanMapping = AwiMapping.load(quantiElan, { kerogenProperties, preSaltTemp })
+
+# Replace the outputs bound with the parameter "Kerogen / Bulk Density", and bind this parameter to the output "PI".
+kerogenBulkDensity = quantiElan.get_parameter_table_from_name("Minerals").get_parameter_from_name("Kerogen_Bulk_Density")
+quantiElanMapping.unbind(None, kerogenBulkDensity)    # Remove any output bound to the parameter
+piOutput = piConstantProducer.get_output_from_index(0)
+quantiElanMapping.bind(piOutput, kerogenBulkDensity)
+
+# Save the modified AWI mapping in the user folder.
+quantiElanMapping.save_as(TARGET_FOLDER, quantiElanMapping.get_version().increase(None))
+7. Start Techlog.
+
+8. From the Project Browser, in the Python scripts folder, right click on your Python AWI and select Open with workflow.
+⟹ A new workflow should be created with a method “Python: …”.
+
+9. Set the Apply Mode either to save or save and display.
+
+10. Run the method.
+
+11. Open the Quanti.Elan method, located in the submenu “Quanti.Elan” of the menu “Petrophysics”.
+⟹ The method “Quanti.Elan” should be added to your workflow.
+
+12. Open the parameters tab and check if the outputs of your Python AWI have been bound properly.
+Hint
+
+Example of an AWI workflow with the Python AWI “PiComputation” defined above, and a Quanti.Elan method:
+
+../_images/Binder_QuantiElanWorkflow.png
+Class details
+API
+Binder.API.get_version()→ Version
+Gets the version of the Binder API.
+
+Returns
+:
+Version of the Binder API.
+
+Return type
+:
+Version
+
+AWI consumer class
+classBinder.AwiConsumer(private, consumer: PreInitializationDataConsumer, file_path: str)
+A consumer for an AWI method.
+
+classParameter(parent: ParameterTable, parameter: Parameter)
+A parameter in an AWI consumer.
+
+get_id()→ UUID
+Gets the unique identifier of the current AWI consumer’s parameter.
+
+Returns
+:
+Unique identifier.
+
+Return type
+:
+uuid.UUID
+
+get_name()→ str
+Gets the name of the parameter.
+
+If the name is not set, the function will return the identifier of the parameter.
+
+Returns
+:
+Name or identifier of the current parameter.
+
+Return type
+:
+str
+
+get_parent()→ ParameterTable
+Gets the parent object.
+
+Returns
+:
+Parent object.
+
+Return type
+:
+AwiConsumer.ParameterTable
+
+classParameterTable(parent: AwiConsumer, table: Table)
+A table of parameters in an AWI consumer.
+
+get_id()→ UUID
+Gets the unique identifier of the current AWI consumer’s table.
+
+Returns
+:
+Unique identifier.
+
+Return type
+:
+uuid.UUID
+
+get_name()→ str
+Gets the name of the current table.
+
+If the name is not set, the function will return the identifier of the table.
+
+Returns
+:
+Name or identifier of the current table.
+
+Return type
+:
+str
+
+get_parameter_from_name(parameter_name: str)→ Parameter
+Looks for a parameter.
+
+Parameters
+:
+parameter_name (str) – Name of the parameter to look for.
+
+Raises
+:
+ValueError – The current table does not contain the parameter with the given name.
+
+Returns
+:
+Parameter in the current table.
+
+Return type
+:
+AwiConsumer.Parameter
+
+get_parameters()→ list[Parameter]
+Gets the list of the parameters in the current table.
+
+Returns
+:
+List of parameters stored in the current table.
+
+Return type
+:
+List[‘AwiConsumer.Parameter’]
+
+get_parent()→ AwiConsumer
+Gets the parent object.
+
+Returns
+:
+Parent object.
+
+Return type
+:
+AwiConsumer
+
+get_binder_api_version()→ Version
+Gets the version of the Binder API used to create the current AWI consumer.
+
+Returns
+:
+Version of the Binder API. None if the AWI consumer is not saved.
+
+Return type
+:
+Version
+
+get_file_path()→ str
+Gets the full path of the file storing the current AWI consumer.
+
+Returns
+:
+Full path of the AWI consumer file.
+
+Return type
+:
+str
+
+get_method_id()→ str
+Gets the identifier of the AWI method.
+
+Returns
+:
+Identifier of the AWI method which will consume the data.
+
+Return type
+:
+str
+
+get_method_name()→ str
+Gets the name of the AWI method.
+
+If the name is not set, the function will return the identifier of the AWI method.
+
+Returns
+:
+Name or identifier of the AWI method which will consume the data.
+
+Return type
+:
+str
+
+get_parameter_table_from_name(table_name: str)→ ParameterTable
+Looks for a table.
+
+Parameters
+:
+table_name (str) – Name of the table to look for.
+
+Raises
+:
+ValueError – The current AWI consumer does not contain the table.
+
+Returns
+:
+Table of parameters in the current AWI consumer.
+
+Return type
+:
+AwiConsumer.ParameterTable
+
+get_parameter_tables()→ list[ParameterTable]
+Gets the list of the tables defined in the current AWI consumer.
+
+Returns
+:
+List of the parameter tables in the current AWI consumer.
+
+Return type
+:
+List[‘AwiConsumer.ParameterTable’]
+
+get_version()→ Version
+Gets the version of the AWI consumer.
+
+Returns
+:
+Version of the saved AWI consumer. None if the AWI consumer is not saved.
+
+Return type
+:
+Version
+
+staticload(awi_consumer_file_path: str)→ AwiConsumer
+Loads an AWI consumer from an existing file.
+
+Parameters
+:
+awi_consumer_file_path (str) – Path of the file storing the AWI consumer.
+
+Raises
+:
+FileNotFoundError – awi_consumer_file_path is not a valid file path.
+
+AssertionError – awi_consumer_file_path is not a valid consumer file.
+
+Returns
+:
+AWI consumer.
+
+Return type
+:
+AwiConsumer
+
+AWI producer class
+classBinder.AwiProducer(method_id: str, method_name: str | None = None, producer: PreInitializationDataProducer = None, file_path: str = None)
+Represents a method producing some outputs that can be consumed by an AWI method.
+
+classOutput(parent: AwiProducer, output: Output)
+An output of an AWI producer.
+
+get_default_variable_name()→ str
+Gets the name of the variable used by default.
+
+Returns
+:
+Name of the variable by default.
+
+Return type
+:
+str
+
+get_id()→ UUID
+Gets the unique identifier of the current AWI producer’s output.
+
+Returns
+:
+Unique identifier.
+
+Return type
+:
+uuid.UUID
+
+get_index()→ int
+Gets the index of the current output.
+
+Returns
+:
+Index of the current output. Should be greater or equal to 0.
+
+Return type
+:
+int
+
+get_parent()→ AwiProducer
+Gets the parent object.
+
+Returns
+:
+Parent object.
+
+Return type
+:
+AwiConsumer.ParameterTable
+
+add_output(index: int, default_variable_name: str)→ Output
+Adds an output to the current producer.
+
+Parameters
+:
+index (int) – Index of the output variable. Must be greater or equal to 0.
+
+default_variable_name (str) – Name of the variable used by default.
+
+Raises
+:
+ValueError – if the index is a negative number.
+
+ValueError – if the default_variable_name is empty or is not valid.
+
+ValueError – if another output has the same variable name.
+
+ValueError – if another output has the same index.
+
+Returns
+:
+Added output.
+
+Return type
+:
+AwiProducer.Output
+
+get_binder_api_version()→ Version
+Gets the version of the Binder API used to create the current AWI producer.
+
+Returns
+:
+Version of the Binder API. None if the AWI producer is not saved.
+
+Return type
+:
+Version
+
+get_file_path()→ str
+Gets the full path of the file storing the current AWI producer.
+
+Returns
+:
+Full path of the AWI producer file.
+
+Return type
+:
+str
+
+get_method_id()→ str
+Gets the identifier of the method producing outputs.
+
+Returns
+:
+Identifier of the method which produce outputs for AWI methods.
+
+Return type
+:
+str
+
+get_method_name()→ str
+Gets the name of the method producing outputs.
+
+If the name is not set, the function will return the identifier of the AWI method.
+
+Returns
+:
+Name of the method producing outputs.
+
+Return type
+:
+str
+
+get_output_from_index(index: int)→ Output
+Looks for an output.
+
+Parameters
+:
+index (int) – Index (int) of the variable to look for.
+
+Raises
+:
+ValueError – The current AWI producer does not contain the output.
+
+Returns
+:
+Output in the current AWI producer.
+
+Return type
+:
+AwiProducer.Output
+
+get_outputs()→ list[Output]
+Gets the list of the outputs.
+
+Returns
+:
+List of the outputs available from the current AWI producer.
+
+Return type
+:
+List[‘AwiProducer.Output’]
+
+get_python_script()→ str
+Gets the Python script associated with the current AWI producer.
+
+Returns
+:
+File name of the Python script. None if not set.
+
+Return type
+:
+str
+
+get_version()→ Version
+Gets the version of the AWI producer.
+
+Returns
+:
+Version of the saved AWI producer. None if the AWI producer is not saved.
+
+Return type
+:
+Version
+
+is_modified()→ bool
+Gets whether the current AWI producer has been modified.
+
+Returns
+:
+True if current AWI producer has been modified and so should be saved; False if it has not been modified.
+
+Return type
+:
+bool
+
+staticload(awi_producer_file_path: str)→ AwiProducer
+Loads an AWI producer from an existing file.
+
+Parameters
+:
+awi_producer_file_path (str) – Path of the file storing the AWI producer.
+
+Raises
+:
+FileNotFoundError – awi_producer_file_path is not a valid file path.
+
+AssertionError – awi_producer_file_path is not a valid producer file.
+
+Returns
+:
+AWI producer.
+
+Return type
+:
+AwiProducer
+
+remove_output_from_index(index: int)
+Removes an existing output for the current AWI producer.
+
+Parameters
+:
+index (int) – Index of the output to remove.
+
+Raises
+:
+ValueError – The output does not exist.
+
+save(version: Version = None)
+Saves the current AWI producer into the current file.
+
+Parameters
+:
+version (Version) –
+
+New version of the AWI producer (must be greater than the current one).
+
+If the version is unset (None), then the version of the current AWI producer will be increased on the meaningful part (ex: 1 → 2, 1.2 → 1.3, 1.2.3 → 1.2.4).
+
+Raises
+:
+RuntimeError – The file path is not known, the object should be saved by calling the save_as function.
+
+OSError – The path of the file is not valid.
+
+ValueError – The version is lower or equal to the current version.
+
+save_as(awi_producer_file_path: str, version: Version)
+Saves the current AWI producer into a file.
+
+Parameters
+:
+awi_producer_file_path (str) – Path of the destination file.
+
+version (Version) – New version of the AWI producer (must be greater than the current one).
+
+Raises
+:
+OSError – The path of the file is not valid.
+
+ValueError – The version is lower or equal to the current version.
+
+set_python_script(python_script: str)
+Sets the Python script associated with the current AWI producer.
+
+Parameters
+:
+python_script (str) –
+
+Relative path of the Python script associated with the current AWI producer.
+
+When used for Techlog, the file name must be relative to a known folder: the User folder, the Company folder or the Project folder.
+
+Most of the time, it just contains the file name of the Python script. (ex: “MyPythonAwiMethod.py”).
+
+Raises
+:
+ValueError – The file name is not valid.
+
+AWI mapping class
+classBinder.AwiMapping(mapping: PreInitializationDataMapping = None)
+Connects outputs from AWI producers to parameters defined in an AWI consumer.
+
+classBinding(parent: AwiMapping, output: AwiProducer.Output, parameter: AwiConsumer.Parameter)
+Connects an output, from an AWI producer, to a parameter of an AWI consumer.
+
+get_output()→ AwiProducer.Output
+Gets the output of an AWI producer.
+
+Returns
+:
+Output of an AWI producer.
+
+Return type
+:
+AwiProducer.Output
+
+get_parameter()→ Parameter
+Gets the parameter of an AWI consumer.
+
+Returns
+:
+Parameter of an AWI consumer.
+
+Return type
+:
+AwiConsumer.Parameter
+
+get_parent()→ AwiMapping
+Gets the parent object.
+
+Returns
+:
+Parent object.
+
+Return type
+:
+AwiMapping
+
+bind(output: AwiProducer.Output, parameter: AwiConsumer.Parameter)→ AwiMapping.Binding
+Binds an AWI producer’s output with an AWI consumer’s parameter.
+
+Parameters
+:
+output (AwiProducer.Output) – Output from an AWI producer.
+
+parameter (AwiConsumer.Parameter) – Parameter from an AWI consumer.
+
+Raises
+:
+ValueError – The output is not set.
+
+ValueError – The parameter is not set.
+
+ValueError – The parameter belongs to a different AWI consumer.
+
+ValueError – The output and the parameter are already bound.
+
+Returns
+:
+Added binding.
+
+Return type
+:
+AwiMapping.Binding
+
+get_binder_api_version()→ Version
+Gets the version of the Binder API used to create the current AWI mapping.
+
+Returns
+:
+Version of the Binder API. None if the AWI mapping is not saved.
+
+Return type
+:
+Version
+
+get_bindings()→ list[Binding]
+Gets the bindings between the outputs of the registered AWI producers and the parameter of the AWI consumer.
+
+Returns
+:
+List of bindings.
+
+Return type
+:
+list[‘AwiMapping.Binding’]
+
+Raises
+:
+ValueError – if the consumer is not valid.
+
+ValueError – if the producer of an output is missing.
+
+get_consumer()→ AwiConsumer
+Gets the consumer.
+
+Returns
+:
+AWI consumer.
+
+Return type
+:
+AwiConsumer
+
+get_file_path()→ str
+Gets the full path of the file storing the current AWI mapping.
+
+Returns
+:
+Full path of the AWI mapping file.
+
+Return type
+:
+str
+
+get_folder()→ str
+Gets the folder storing the file of the current AWI mapping.
+
+Returns
+:
+Path of the folder.
+
+Return type
+:
+str
+
+get_producers()→ set
+Gets the set of the AWI producers.
+
+Returns
+:
+AWI producers.
+
+Return type
+:
+set[AwiProducer]
+
+get_version()→ Version
+Gets the version of the AWI mapping.
+
+Returns
+:
+Version of the saved AWI mapping. None if the AWI mapping is not saved.
+
+Return type
+:
+Version
+
+is_modified()→ bool
+Gets whether the current AWI mapping has been modified.
+
+Returns
+:
+True if current AWI mapping has been modified and so should be saved; False if it has not been modified.
+
+Return type
+:
+bool
+
+staticload(consumer: AwiConsumer, producers: set, folder: str = None)→ AwiMapping
+Loads an AWI mapping from an existing file.
+
+Parameters
+:
+consumer (AwiConsumer) – AWI consumer.
+
+producers (set[AwiProducer]) – AWI producers.
+
+folder (str) – Path of the folder which store the AWI mapping file. If unset, the function will look into the same folder as the AWI consumer.
+
+Raises
+:
+AssertionError – The AWI mapping file is not a valid mapping file.
+
+FileNotFoundError – The AWI mapping file corresponding to consumer does not exist..
+
+OSError – The folder does not exist.
+
+ValueError – consumer is not a valid AWI consumer.
+
+Returns
+:
+AWI mapping.
+
+Return type
+:
+AwiMapping
+
+save(version: Version = None)
+Saves the current AWI mapping.
+
+Parameters
+:
+version (Version) –
+
+New version of the AWI mapping (must be greater than the current one).
+
+If the version is not specified (None), then the version of the current AWI mapping will be increased on the meaningful part (ex: 1 → 2, 1.2 → 1.3, 1.2.3 → 1.2.4).
+
+Raises
+:
+OSError – The path of the current AWI mapping file is not valid.
+
+OSError – At least one of the bound AWI producers has not been saved.
+
+RuntimeError – The file path of the AWI consumer is not valid.
+
+ValueError – The version is lower or equal to the current version.
+
+ValueError – There is no binding in the current mapping.
+
+ValueError – The file extension of the AWI consumer is not valid.
+
+save_as(folder: str, version: Version)
+Saves the current AWI mapping in the given folder.
+
+Parameters
+:
+folder (str) – Path of the folder which will store the AWI mapping file. If unset, the function will store the file into the same folder as the AWI consumer.
+
+version (Version) – New version of the AWI mapping (must be greater than the current one).
+
+Raises
+:
+OSError – The destination folder does not exist.
+
+OSError – The path of the current AWI mapping file is not valid.
+
+OSError – At least one of the bound AWI producers has not been saved.
+
+RuntimeError – The file path of the AWI consumer is not valid.
+
+ValueError – The version is lower or equal to the current version.
+
+ValueError – There is no binding in the current mapping.
+
+ValueError – The file extension of the AWI consumer is not valid.
+
+unbind(output: AwiProducer.Output, parameter: AwiConsumer.Parameter)→ int
+Removes the binding(s) between an AWI producer’s output and an AWI consumer’s parameter.
+
+If output is None, then all the bindings with the given parameter will be removed. If parameter is None, then all the bindings with the given output will be removed. If both output and parameter are None, all of the bindings will be removed.
+
+Parameters
+:
+output (AwiProducer.Output) – Output from an AWI producer.
+
+parameter (AwiConsumer.Parameter) – Parameter of an AWI consumer.
+
+Returns
+:
+Number of removed bindings.
+
+Return type
+:
+int
+
+Version class
+classBinder.Version(major: int, minor: int = -1, patch: int = -1)
+Represents a version number.
+
+compare_to(other: Version)→ int
+Compares the current version with another one.
+
+Parameters
+:
+other (Version) – Version to compare to.
+
+Returns
+:
+-1/0/+1 if the current version is lower/equal/greater than other.
+
+Return type
+:
+int
+
+get_major()→ int
+Gets the value of the major component of the version number for the current Version object.
+
+Returns
+:
+The major version number.
+
+Return type
+:
+int
+
+get_minor()→ int
+Gets the value of the minor component of the version number for the current Version object.
+
+Returns
+:
+The minor version number.
+
+Return type
+:
+int
+
+get_patch()→ int
+Gets the value of the patch component of the version number for the current Version object.
+
+Returns
+:
+The build/patch version number.
+
+Return type
+:
+int
+
+increase(part: VersionPart)→ Version
+Increase a component of the current version.
+
+Parameters
+:
+part (VersionPart) –
+
+Indicates which part (Major, Minor or Patch) of the version number is going to be increased.
+
+If the part is not specified (None) then the last meaningful part of the version will incremented:
+
+If the version only consists of a major part, then it will be the next major version (ex: 2 → 3).
+
+If the version is composed of a major and a minor parts, then the minor part will be incremented (ex: 1.2 → 1.3).
+
+If the version is fully defined (major, minor and patch parts), then the patch part will be incremented (ex: 1.2.3 → 1.2.4).
+
+Raises
+:
+ValueError – The part is not valid.
+
+Returns
+:
+Increased version number.
+
+Return type
+:
+Version
+
+staticparse(version: str)→ Version
+Converts a string into a Version object.
+
+Parameters
+:
+version (str) – A version number composed of 1, 2 or 3 integers separated by a dot ‘.’ character.
+
+Raises
+:
+ValueError – The version is empty or is not a valid version number.
+
+Returns
+:
+Version object.
+
+Return type
+:
+Version
+
+VersionPart enumeration
+classBinder.VersionPart(value, names=None, *values, module=None, qualname=None, type=None, start=1, boundary=None)
+Identifies the component of a version number.
+
