@@ -1,0 +1,221 @@
+import os
+import pandas as pd
+import numpy as np
+import datetime
+
+def main():
+    print("===== COMBINED WELL SCHEMATIC CREATOR WITH KB-GL CORRECTION =====")
+    print(f"Current Date/Time: {datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
+    print(f"Current User: wthesen")
+    
+    # Exact file paths
+    base_dir = r"C:\Users\wadet\Desktop\hoole_work"
+    completions_file = r"C:\Users\wadet\Desktop\hoole_work\well_info_files\completions_list_export_20250311.csv"
+    well_info_file = r"C:\Users\wadet\Desktop\hoole_work\well_info_files\well_info.csv"
+    output_dir = os.path.join(base_dir, "well_schematic")
+    
+    # Create output directory
+    os.makedirs(output_dir, exist_ok=True)
+    
+    # Load completion data
+    print(f"Loading completions data...")
+    compl_df = pd.read_csv(completions_file)
+    
+    # Load well elevation data with the KB-GL column
+    print("Loading well elevation data...")
+    try:
+        well_info_df = pd.read_csv(well_info_file, na_values=['####', 'NA', 'NaN'])
+        print(f"CSV loaded successfully.")
+    except Exception as e:
+        print(f"Error reading CSV: {str(e)}")
+        well_info_df = pd.DataFrame()
+    
+    # Create dictionary of corrections from KB-GL column
+    depth_corrections = {}
+    ft_to_m = 0.3048  # Conversion factor from feet to meters
+    
+    # Use the EXACT column name with the space at the end
+    kb_gl_col = 'KB-GL '
+    
+    if kb_gl_col in well_info_df.columns:
+        print(f"KB-GL column found: '{kb_gl_col}'")
+        # Print first few values to debug
+        print("Sample KB-GL values from file:")
+        sample_count = 0
+        
+        for _, row in well_info_df.iterrows():
+            if 'wellbore_uwi' in row and not pd.isna(row[kb_gl_col]) and sample_count < 5:
+                uwi = str(row['wellbore_uwi'])
+                print(f"  Well {uwi}: KB-GL = {row[kb_gl_col]}")
+                sample_count += 1
+                
+        # Now process all wells
+        for _, row in well_info_df.iterrows():
+            if 'wellbore_uwi' in row and not pd.isna(row[kb_gl_col]):
+                uwi = str(row['wellbore_uwi'])
+                try:
+                    # Handle various ways the KB-GL might be stored
+                    kb_gl_str = str(row[kb_gl_col]).replace('####', '').strip()
+                    kb_gl_val = float(kb_gl_str) if kb_gl_str else 0.0
+                    
+                    # Convert to meters if needed (assuming the values are in feet)
+                    kb_gl_m = kb_gl_val * ft_to_m  # Convert feet to meters
+                    
+                    depth_corrections[uwi] = kb_gl_m
+                    print(f"  Well {uwi}: KB-GL correction = {kb_gl_m:.2f} m ({kb_gl_val:.2f} ft)")
+                except ValueError:
+                    print(f"  Well {uwi}: Invalid KB-GL value: {row[kb_gl_col]} - skipping")
+    else:
+        print(f"WARNING: '{kb_gl_col}' column not found in well_info.csv!")
+        print("Available columns:", list(well_info_df.columns))
+    
+    print(f"Loaded KB-GL corrections for {len(depth_corrections)} wells")
+    
+    # Manual corrections for specific wells based on examples
+    manual_corrections = {
+        # If you need to add specific corrections, add them here:
+        # '02/06-08': 7.0,  # Add 7m to match Techlog depths
+    }
+    
+    # Get unique UWIs
+    unique_uwis = compl_df["uwi"].unique()
+    print(f"Found {len(unique_uwis)} unique wells")
+    
+    # Create a master dataframe to hold all well data
+    all_wells_df = pd.DataFrame(columns=["WELL", "UWI", "DEPTH_M", "PERFORATIONS", "BRIDGE_PLUGS", "FRACTURED"])
+    
+    # Depth increment in meters
+    depth_increment = 0.1  # 10cm intervals
+    
+    # Process each well and append to master dataframe
+    for uwi in unique_uwis:
+        # Filter data for this well
+        well_data = compl_df[compl_df["uwi"] == uwi].copy()
+        well_name = well_data["well name"].iloc[0]
+        
+        # Get depth correction for this well (KB-GL + any manual correction)
+        base_correction = depth_corrections.get(str(uwi), 0)
+        manual_correction = manual_corrections.get(str(uwi), 0)
+        depth_correction = base_correction + manual_correction
+        
+        print(f"Processing: {well_name} (KB-GL: {base_correction:.2f}m, Manual: {manual_correction:.2f}m, Total: {depth_correction:.2f}m)")
+        
+        # Find min/max depths
+        min_depth = well_data["top measure (m) (m)"].min()
+        max_depth = well_data["bottom measure (m) (m)"].max()
+        
+        # Round down min depth and round up max depth to nearest meter
+        min_depth = np.floor(min_depth - 10)  # 10m buffer at top
+        max_depth = np.ceil(max_depth + 10)   # 10m buffer at bottom
+        
+        # Create regular depth intervals
+        depths = np.arange(min_depth, max_depth + depth_increment, depth_increment)
+        depths = [round(d, 2) for d in depths]  # Round to 2 decimal places
+        
+        # Initialize arrays for completions data
+        perforations = [0.0] * len(depths)
+        bridge_plugs = [0.0] * len(depths)
+        fractured = [0.0] * len(depths)
+        
+        # Process each completion record to create blocked intervals
+        for _, row in well_data.iterrows():
+            # Apply KB-GL depth correction to top and bottom depths
+            top = row["top measure (m) (m)"] + depth_correction
+            bottom = row["bottom measure (m) (m)"] + depth_correction
+            treatment_type = str(row["treatment"]).upper()
+            
+            # Debug output to check corrected depths
+            orig_top = row["top measure (m) (m)"]
+            orig_bottom = row["bottom measure (m) (m)"]
+            print(f"  {treatment_type}: Original={orig_top:.1f}-{orig_bottom:.1f}m → Corrected={top:.1f}-{bottom:.1f}m")
+            
+            is_perf = "PERF" in treatment_type
+            is_plug = any(x in treatment_type for x in ["PLUG", "BRIDGE"])
+            is_frac = any(x in treatment_type for x in ["FRAC", "STIMUL", "HYDRA", "PROP"])
+            
+            # Process the entire interval as a solid block for all features
+            for i, depth in enumerate(depths):
+                if top <= depth <= bottom:
+                    if is_perf:
+                        perforations[i] = 1.0
+                    if is_plug:
+                        bridge_plugs[i] = 1.0
+                    if is_frac:
+                        fractured[i] = 1.0
+        
+        # Create well dataframe with all points
+        well_df = pd.DataFrame({
+            "WELL": [well_name] * len(depths),
+            "UWI": [uwi] * len(depths),
+            "DEPTH_M": depths,
+            "PERFORATIONS": perforations,
+            "BRIDGE_PLUGS": bridge_plugs,
+            "FRACTURED": fractured
+        })
+        
+        # Append to master dataframe
+        all_wells_df = pd.concat([all_wells_df, well_df], ignore_index=True)
+        print(f"  Added {len(depths)} points for {well_name}")
+    
+    # Sort the combined dataframe by well name and depth
+    all_wells_df.sort_values(["WELL", "DEPTH_M"], ascending=[True, True], inplace=True)
+    
+    # Save the combined file
+    combined_output_file = os.path.join(output_dir, "all_wells_schematic.csv")
+    all_wells_df.to_csv(combined_output_file, index=False)
+    
+    print(f"\nSuccessfully created combined schematic with {all_wells_df.shape[0]} data points")
+    print(f"Output file: {combined_output_file}")
+    
+    # Create a Techlog-friendly version
+    techlog_output_file = os.path.join(output_dir, "all_wells_techlog.txt")
+    create_techlog_file(all_wells_df, techlog_output_file)
+    
+    print(f"Created Techlog-compatible file: {techlog_output_file}")
+    print(f"\nNext step: Import the Techlog file and verify depths match correctly")
+
+def create_techlog_file(dataframe, output_file):
+    """Create a Techlog-compatible tab-delimited file"""
+    with open(output_file, 'w', encoding='utf-8') as f:
+        # Write header and units
+        f.write("WELL\tUWI\tDEPTH_M\tPERFORATIONS\tBRIDGE_PLUGS\tFRACTURED\n")
+        f.write("\t\tm\t\t\t\n")  # Units row
+        
+        # Write data
+        for _, row in dataframe.iterrows():
+            f.write(f"{row['WELL']}\t{row['UWI']}\t{row['DEPTH_M']}")
+            f.write(f"\t{row['PERFORATIONS']}\t{row['BRIDGE_PLUGS']}\t{row['FRACTURED']}\n")
+    
+    # Create detailed setup instructions
+    instructions_path = os.path.splitext(output_file)[0] + "_INSTRUCTIONS.txt"
+    with open(instructions_path, 'w', encoding='utf-8') as f:
+        f.write("TECHLOG SETUP WITH DEPTH CORRECTION\n")
+        f.write("===============================\n\n")
+        
+        f.write("1. Import the file into Techlog:\n")
+        f.write("   - File > Import > ASCII\n")
+        f.write("   - Select the tab-delimited file\n")
+        f.write("   - Set DEPTH_M as the depth reference\n")
+        f.write("   - Set dataset name to 'completions'\n\n")
+        
+        f.write("2. Create Blocked Curve Variables:\n")
+        f.write("   - Right-click in Variable Explorer > Create > Blocked Curve Variable\n")
+        f.write("   - Create three new variables:\n")
+        f.write("     a) Name: PERFORATIONS_BLOCK, Source: PERFORATIONS\n")
+        f.write("     b) Name: BRIDGE_PLUGS_BLOCK, Source: BRIDGE_PLUGS\n")
+        f.write("     c) Name: FRACTURED_BLOCK, Source: FRACTURED\n\n")
+        
+        f.write("3. Configure Display:\n")
+        f.write("   - Add all three blocked variables to the same track\n")
+        f.write("   - For each variable, right-click > Properties > Display Type > Pattern\n")
+        f.write("   - PERFORATIONS_BLOCK: Pattern = Box/Rectangle, Color = Red\n")
+        f.write("   - BRIDGE_PLUGS_BLOCK: Pattern = Triangle, Color = Black\n")
+        f.write("   - FRACTURED_BLOCK: Pattern = Diamond, Color = Green\n")
+        f.write("   - Set Width to 100% for full block display\n\n")
+        
+        f.write("4. Create a Well Filter:\n")
+        f.write("   - Use 'WELL' as a discrete filter to view specific wells\n")
+        f.write("   - Example filter expression: WELL == 'HOOLE 1-10'\n")
+
+if __name__ == "__main__":
+    main()
