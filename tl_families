@@ -1,0 +1,3032 @@
+Family	Variable	Unit
+Integrated Mobility	BUILDUP_RADIALFLOW_MOBILITY_x_H	*
+Acoustic Amplitude	*TKO_AMP_DEFAULTWAVEFORMNAME_*	*
+Matrix Slowness	*TKO_SL_DEFAULTWAVEFORMNAME_*	*
+Tensile Cylindrical Pressure	Tensile cylindrical pressure*	*
+True Vertical Depth Sub Sea	True Vertical Depth Sub Sea	m
+Pressure	MUD_PRESSURE_BEFORE_OFFSET	psi
+Shear Failure Max Pressure	Shear failure max pressure*	*
+Shear Failure Min Pressure	Shear failure min pressure*	*
+Pressure	MUD_PRESSURE_AFTER_OFFSET	psi
+Borehole Image - Acoustic Impedance	AI_MICRO_DEBONDING_IMAGE*	*
+Remarks	FORMATION_PRESSURE_VALUE*	*
+Pressure	MUD_PRESSURE_THEORETICAL	psi
+Quality Indicator	QC_BLEND_INDICATOR_*_col*	*
+Formation Pressure	SPHERICAL_FLOW_PRESSURE*	psi
+Pressure	START_DRAWDOWN_PRESSURE*	psi
+Drill Trip Statistics	*DRILL_TRIP_STATISTICS*	*
+Mud Density	MUD_DENSITY_EQUIVALENT	g/cm3
+Mud Density	MUD_WEIGHT_THEORETICAL	*
+Pressure	START_BUILDUP_PRESSURE*	psi
+Mud Loss (Mud Weight Equivalent)	FractureGradient_mean	g/cm3
+Pressure	LAST_BUILDUP_PRESSURE*	psi
+Torque - Surface	PS_Convertible Torque	*
+Standpipe Pressure	PS_Standpipe Pressure	*
+WBS probability	WellboreStability_pdf	unitless
+Mud Loss (Mud Weight Equivalent)	CMW_FractureGradient	g/cm3
+Measured Depth	DEPTH_TOOL_REFERENCE*	ft
+Resistivity	FILTERED_RESISTIVITY	*
+Hydraulic Zone	FLUID_HYDRAULIC_ZONE*	*
+WBS probability	FractureGradient_pdf	unitless
+Mud Loss (Mud Weight Equivalent)	FractureGradient_std	g/cm3
+Flow Rate	PS_Total Pump Output	*
+Formation Pressure	RADIAL_FLOW_PRESSURE*	psi
+Time	SPHERICAL_FLOW_START*	s
+Gravity Toolface	ToolFace_Bending_Azi	*
+Borehole Image Radius Array	ARRAY_WBI_RAD_CALIB	*
+Shear Failure Min Pressure (Mud Weight Equivalent)	CMW_PowShearFailure	g/cm3
+Mud Pressure Before	MUD_PRESSURE_BEFORE*	psi
+Quality Control	PRETEST_QUALITY_FPA*	*
+Packer Probe Configuration	PROBE_CONFIGURATION*	*
+Mud Volume	PS_Total Mud Volume	*
+Quality Indicator	QC_BLEND_INDICATOR_*	*
+Time	SPHERICAL_FLOW_STOP*	s
+Time	START_DRAWDOWN_TIME*	s
+Tensile Cylindrical Pressure (Mud Weight Equivalent)	Tensile cylindrical*	*
+True Vertical Depth	True Vertical Depth	m
+Breakdown Pressure	Breakdown pressure*	*
+D-exponent	FILTERED_DEXPONENT	*
+Formation Pressure	FORMATION_PRESSURE*	psi
+Mud Density	MUD_DENSITY_BEFORE	g/cm3
+Mud Pressure After	MUD_PRESSURE_AFTER*	psi
+Time Interval	PS_On Bottom Hours	*
+Quality Indicator	QC_BAD_BLEND_*_col*	*
+Time	START_BUILDUP_TIME*	s
+Stress Azimuth	Azim_Prin_Stress_*	*
+Gas Formation Volume Factor	Bwg_FormVolFactor*	unitless
+Hydrogen Capture Relative Yield	CHY_WALK2_BSL_RMV	*
+Hydrocarbon Volume Per Area	CumAmbroseFreeGIP*	*
+Measured Depth	DEPTH_TOOL_OFFSET*	ft
+Hole Deviation	Devi_Prin_Stress_*	*
+Dip Classification	DIP_SEQUENCE_TYPE*	*
+Key Performance Indicator	DRILL_STATE_DELTA	*
+Dry Solids Weight Fraction	DryWeightFraction*	v/v
+Compressional Slowness	DTC_Reconstructed	*
+Compressional Slowness	FILTERED_SLOWNESS	*
+Fracture Aperture	FRACTURE_APERTURE	mm
+Classification Group	HRA_Tagged	*
+Classification Group	HRA_Class	*
+Probability	HRA_PROBABILITIES*	*
+Principal Component	HRA_PC_*	unitless
+Time	LAST_BUILDUP_TIME*	s
+Mud Density	MUD_DENSITY_AFTER	g/cm3
+Kick Pressure (Mud Weight Equivalent)	PorePressure_mean	g/cm3
+Pressure	PRESSURE_VARIANCE*	psi
+Remarks	PRETEST_BEGIN_POS*	*
+Rig State	PS_RIG_STATE_NAME	*
+Time	RADIAL_FLOW_START*	s
+Shear Failure Max Pressure (Mud Weight Equivalent)	Shear failure max*	*
+Shear Failure Min Pressure (Mud Weight Equivalent)	Shear failure min*	*
+Ratio	SHMAX_SHMIN_RATIO	*
+Acceleration	TOOL_ACCELERATION*	*
+Covariance Vertical Vertical	VARIANCE_VERTVERT*	ft
+Kick Pressure (Mud Weight Equivalent)	CMW_PorePressure	g/cm3
+Remarks	FLUID_ANNOTATION*	*
+WBS probability	PorePressure_pdf	unitless
+Kick Pressure (Mud Weight Equivalent)	PorePressure_std	g/cm3
+Pretest Type	PRETEST_TYPE_FPA*	*
+Gas Indicator	PS_3rd party Gas	*
+Weight On Bit - Surface	PS_Weight on Bit	*
+Time	RADIAL_FLOW_STOP*	s
+Maximum Horizontal Stress Gradient	SHMAX_GRAD_ANISO	*
+Minimum Horizontal Stress Gradient	SHMIN_GRAD_ANISO	*
+Zone Description	ZONE*DESCRIPTION*	*
+Remarks	*PRETEST_STATUS*	*
+Borehole Image - Acoustic Impedance	AI_GASCUT_IMAGE*	*
+Biotite Weight Fraction	Biotite_Mica_wt	lbf/lbf
+Hydrocarbon Volume Per Area	CumDissolvedGIP*	*
+Hook Load - Pick Up	GS_TAD_HKLD_PUH	*
+Hook Load - Pick Up	GS_TAD_HKLD_PUL	*
+Hook Load - Free Rotate	GS_TAD_HKLD_ROT	*
+Hook Load - Slack Off	GS_TAD_HKLD_SOH	*
+Hook Load - Slack Off	GS_TAD_HKLD_SOL	*
+Mud Loss	Losses pressure*	*
+Remarks	MOBILITY_METHOD*	*
+Time	MUD_TIME_BEFORE*	s
+Test Number	Number_Of_Peaks	*
+Length	PACKER_INTERVAL*	ft
+Remarks	PRETEST_END_POS*	*
+Quality Control	PRETEST_QUALITY*	*
+Traveling Block Height	PS_Block Height	*
+Ratio	RATIO_YME_H_VTI	*
+Key Performance Indicator	RIG_STATE_DELTA	*
+General Flag	SELECTED_MODELS	*
+Borehole Image Radius Array	UBI_RAD_CENTRED	*
+Rock Type	*PetroRockType*	unitless
+Stoneley Shear Slowness	*STRVP_DTS_C66*	*
+Activity State	ACTIVITY_STATE*	unitless
+Activity State	ACTIVITY_STATE*	*
+Acoustic Impedance	AI_AVG_HOR_SIG*	*
+Acoustic Impedance	AI_AVG_VER_SIG*	*
+Acoustic Impedance	AI_HOR_SIG_IMG*	*
+Acoustic Impedance	AI_MAX_HOR_SIG*	*
+Acoustic Impedance	AI_MAX_VER_SIG*	*
+Borehole Image - Acoustic Impedance	AI_MDEBOND_IMG*	*
+Acoustic Impedance	AI_MIN_HOR_SIG*	*
+Acoustic Impedance	AI_MIN_VER_SIG*	*
+Borehole Image - Acoustic Impedance	AI_VER_SIG_IMG*	*
+Hydrocarbon Volume Per Mass Of Rock	AmbroseFreeGIP*	*
+Height Of Dip Plane	APP_DipHeight_*	*
+Measured Depth	BOREHOLE-DEPTH	*
+Breakdown Pressure (Mud Weight Equivalent)	Breakdown_mean	g/cm3
+Burst Pressure	BURST_PRESSURE	*
+Permittivity	F0_S11_RAWEPSI*	*
+Permittivity	F1_S11_RAWEPSI*	*
+Permittivity	F2_S11_RAWEPSI*	*
+Permittivity	F3_S11_RAWEPSI*	*
+Fluid Pressure Gradient	FLUID_GRADIENT*	psi/ft
+Mobility	FLUID_MOBILITY*	mD/cP
+Formation Pressure	FLUID_PRESSURE*	psi
+Hook Load - Pick Up	HKLD_LINER_OUT	*
+Hook Load - Pick Up	HKLD_POOH_REAM	*
+Hook Load - Pick Up	HKLD_POOH_TRIP	*
+Hook Load - Pick Up	HKLD_WIPER_OUT*	*
+Angle	Hole Deviation*	*
+Hole Deviation	HOLE_DEVIATION	*
+OBMI LQC Tool 2	LQC_IMG_OBMT_2*	*
+Measured Depth	Measured Depth	*
+General Flag	MEDIAN_RAW_BIN	unitless
+Time	MUD_TIME_AFTER*	s
+Pad A North Tool 2	P1NO_NGI_LOWER*	*
+Pad A North Tool 1	P1NO_NGI_UPPER*	*
+Borehole Image Array	POR_IMAGE_FLAT	*
+Reference	PRETEST_NUMBER*	*
+Pretest Volume	PRETEST_VOLUME*	cm3
+Fluid Density	RHO_FLUID_DEST	*
+Fluid Density	RHO_FLUID_INIT	*
+Continuous Survey Depth	RSSDEP_CONT_RT*	ft
+Coal Flag	SPEC_COAL_FLAG	*
+Salt Flag	SPEC_SALT_FLAG	*
+True Dip Azimuth	STRUCT_Azimuth	*
+Standard Deviation - Time	T2LM_DI_SM_SIG	*
+Height Of Dip Plane	TRU_DipHeight_*	*
+Crossvariance East Vertical	VARIANCE_EVERT*	ft
+Crossvariance North Vertical	VARIANCE_NVERT*	ft
+Uncertainty - Volume Fraction	VUOI_ALPHA_SIG	*
+Height Of Dip Plane	APP_DipHeight	*
+Borehole Image Acoustic Amplitude Array	ARRAY_WBI_AMP	*
+Borehole Image Radius Array	ARRAY_WBI_RAD	*
+NMR Bound Fluid Volume Fraction	BFV_TAPPER_HR	*
+WBS probability	Breakdown_pdf	unitless
+Breakdown Pressure (Mud Weight Equivalent)	Breakdown_std	g/cm3
+Shear Failure Min Pressure (Mud Weight Equivalent)	Breakout_mean	g/cm3
+Hydrogen Capture Relative Yield	CHY_WALK2_BSL	*
+Breakdown Pressure (Mud Weight Equivalent)	CMW_Breakdown	g/cm3
+Hydrocarbon Volume Per Area	CumAmbroseGIP*	*
+True Dip Azimuth	dipDev_PadAZI	*
+Fluid Density	FLUID_DENSITY*	g/cm3
+General Flag	FPLACEMENT_TL	*
+Fast Shear Azimuth	FSA_LVL_NORTH*	deg
+Thomsen Gamma	GAMMA_VTI_DYN	*
+Glauconite Weight Fraction	Glauconite_wt	lbf/lbf
+Stroke Count	GS_CUMPPSTRK1	*
+Torque - Surface	GS_SURFTRQMIN	*
+Hook Load - Slack Off	HKLD_LINER_IN	*
+Hook Load - Slack Off	HKLD_RIH_REAM	*
+Hook Load - Slack Off	HKLD_RIH_TRIP	*
+Hook Load - Slack Off	HKLD_WIPER_IN*	*
+Pore Pressure	HYDROPRESSURE*	*
+Feldspar Weight Fraction	K_Feldspar_wt	lbf/lbf
+Kick Pressure	Kick pressure*	*
+Feldspar Weight Fraction	N_Feldspar_wt	lbf/lbf
+Neutron Caliper	NCAL_NEAR_DOL	cm
+Neutron Caliper	NCAL_NEAR_LIM	cm
+Neutron Caliper	NCAL_NEAR_SAN	cm
+Conductivity - Phase Shift	P10B_COND_UNC	*
+Conductivity - Phase Shift	P16B_COND_UNC	*
+Conductivity - Phase Shift	P28B_COND_UNC	*
+Conductivity - Phase Shift	P34B_COND_UNC	*
+Conductivity - Phase Shift	P40B_COND_UNC	mS/m
+Conductivity - Phase Shift	P40B_COND_UNC	*
+Penetration Rank	PENEMAX_TOTAL	*
+Measured Depth	PS_Hole Depth	*
+Rotations Per Minute	PS_Rotary RPM	*
+Quality Indicator	QC_BAD_BLEND_*	*
+Quality Indicator	QC_RHON_Value	*
+Net Rock Flag	ROCK*NET*FLAG*	*
+Tool Speed	TOOL_VELOCITY*	*
+Uncertainty - Volume Fraction	TPHI_TDTL_SIG	*
+Height Of Dip Plane	TRU_DipHeight	*
+Uncertainty - Volume Fraction	VUOI_SIG_TPHL	*
+General Volume Fraction	VUOI_TPHL_UNC	*
+Uncertainty - Volume Fraction	VUWA_SIG_TPHL	*
+General Volume Fraction	VUWA_TPHL_UNC	*
+Electric Impedance	ZBAM_F?_*_CAL*	*
+Impedivity	ZT90_F?_*_col*	*
+Drill State	*DRILL_STATE*	*
+General Flag	ANHYDRITE_FL*	unitless
+Anhydrite Weight Fraction	Anhydrite_wt	lbf/lbf
+Apparent Dip Azimuth	APP_Azimuth_*	*
+Borehole Image Acoustic Travel Time Array	ARRAY_WBI_TT	*
+Rate Of Penetration	AverageSpeed	ft/h
+Continuous Azimuth	AZIM_CONT_RT	deg
+WBS probability	Breakout_pdf	unitless
+Shear Failure Min Pressure (Mud Weight Equivalent)	Breakout_std	g/cm3
+Capillary Pressure IFT1 (Array)	CAP_PRES*IFT1	*
+General Flag	CARBONATE_FL*	unitless
+Remarks	CHANNEL_NAME*	*
+Shear Failure Min Pressure (Mud Weight Equivalent)	CMW_Breakout	g/cm3
+Hydrocarbon Volume Per Area	CumAdsorbGIP*	*
+Oil Volume Per Area	CumOIPgtT2LC*	*
+Oil Volume Per Area	CumOIPgtT2UC*	*
+Cumulative Volume Fraction	Cumulated_VF	w/w
+Remarks	DATASET_NAME*	*
+Hydrocarbon Volume Per Mass Of Rock	DissolvedGIP*	*
+Downlink Command	DOWNLINK_CMD	unitless
+Quality Indicator	DP_PENETOTAL	unitless
+Stress	Drillability	*
+Quality Control	ECHO_QC_FLAG*	*
+True Dip Azimuth	FILTERED_AZI*	*
+True Dip Inclination	FILTERED_DIP*	*
+Classification Group	FLUID_POINTS*	*
+Stroke Count	GS_PPCUMSTK1	*
+Rate Of Penetration	GS_ROP2DSTEP	*
+Hole Azimuth	Hole Azimuth*	*
+Hole Azimuth	HOLE_AZIMUTH	*
+Continuous Inclination	INCL_CONT_RT	deg
+Kaolinite Weight Fraction	Kaolinite_wt	lbf/lbf
+Remarks	LOCKED_POINT*	*
+OBMI LQC	LQC_IMG_OBMT*	*
+OBMI LQC Tool 2	LQCMG_OBMT_2*	*
+General Flag	MEAN_RAW_BIN	unitless
+Muscovite Weight Fraction	Musc_Mica_wt	lbf/lbf
+Neutron Caliper	NCAL_FAR_DOL	cm
+Neutron Caliper	NCAL_FAR_LIM	cm
+Neutron Caliper	NCAL_FAR_SAN	cm
+Net Pay Flag	PAY*NET*FLAG*	*
+Pretest Type	PRETEST_TYPE*	*
+Stress	Prin_Stress_*	*
+Bit Depth	PS_Bit Depth	*
+Rig State	PS_RIG_STATE	*
+Quality Indicator	QC_BPHI_SAND	*
+Quality Indicator	QC_RHON_Cali	*
+Quality Indicator	QC_RHON_Diff	*
+Quality Indicator	QC_RHON_SIFA	*
+Relative Bearing Tool 2	RB_NGI_LOWER*	*
+Relative Bearing Tool 1	RB_NGI_UPPER*	*
+Net Reservoir Flag	RES*NET*FLAG*	*
+Resistivity Spectrum	RES_HIST_CUM	unitless
+Resistivity - Deep Laterolog	RES_RING_REC	ohm.m
+Continuous Survey Depth	SDEP_CONT_RT*	ft
+True Dip Azimuth	SEQUENCE_AZI*	*
+True Dip Inclination	SEQUENCE_DIP*	*
+Proportionality Factor	SHAPE_FACTOR*	*
+Water Saturation	SW_Timelapse	*
+Pressure Loss	TOOL_LOSS_HY	psi
+Classification Group	TransitCount	unitless
+True Dip Azimuth	TRU_Azimuth_*	*
+Uncertainty - Volume Fraction	VUOI_COR_SIG	*
+Uncertainty - Volume Fraction	VUOI_WIN_SIG	*
+Waveform - Dipole	WF_FILT_FAST*	unitless
+Waveform - Dipole	WF_FILT_SLOW*	unitless
+Impedivity	ZTBAMC_*_col*	*
+Stoneley Slowness	*DTST_DDBHC*	*
+Core Permeability	*PTRi_k_phi*	mD
+Rock Fabric	*PTRi_RFN_L*	unitless
+Hydrocarbon Volume Per Mass Of Rock	AdsorbedGIP*	*
+Ankerite Weight Fraction	Ankerite_wt	lbf/lbf
+Pressure Loss	ANN_LOSS_HY	psi
+Oil Gravity	API_GRAVITY*	dAPI
+Apparent Dip Azimuth	APP_Azimuth	*
+Pressure Loss	BIT_LOSS_HY	psi
+Elastic Modulus	C13_VTI_DYN	*
+Capillary Pressure Reservoir (Array)	CAP_PRES*RES	*
+Waveform - Cement Bond	CE_WFA?_VDL	*
+Pressure Loss	CHK_LOSS_HY	psi
+Chlorite Weight Fraction	Chlorite_wt	lbf/lbf
+Breakout Pressure (Mud Weight Equivalent)	CMW_MAX_TEN	*
+Casing/Pipe Diameter	CSID_MODEL1	*
+Dolomite Weight Fraction	Dolomite_wt	lbf/lbf
+Gas Gravity	GAS_GRAVITY*	*
+Rate Of Penetration	GS_ROPDSTEP	*
+Active Mud Tank Volume	GS_SUMACTTK	*
+Total Tank Volume	GS_SUMALLTK	*
+Hook Load - Slack Off	HKLD_CASING	*
+Mud Angle	MA_F?_*_col*	*
+Marker Name	MARKER*NAME*	*
+Metal Loss	MLOSS_TOTAL	*
+Dry Solids Weight Fraction	Monazite_wt	lbf/lbf
+Pressure Loss	MTR_LOSS_HY	psi
+Pad A Azimuth Tool 2	P1AZ_OBMT_2*	*
+Pad A North Tool 2	P1NO_OBMT_2*	*
+Penetration Rank	PENEMAX_INT	*
+Penetration Rank	PENEMAX_REL	*
+Stress	Pin_Stress_*	*
+Date Time	PS_TIME_REF	*
+Quality Indicator	QC_BPHI_DOL	*
+Quality Indicator	QC_BPHI_LIM	*
+Quality Indicator	QC_RHON_DRN	*
+Quality Indicator	QC_RHON_NDX	*
+Quality Indicator	QC_RHON_ROP	*
+Quality Indicator	QC_RXO_HRLT	unitless
+Quality Indicator	QC_TNPH_DOL	*
+Quality Indicator	QC_TNPH_LIM	*
+Quality Indicator	QC_TNPH_SAN	*
+Quality Indicator	RAW_QC_RHON	*
+Quality Indicator	RAW_QC_TNPH	*
+Quality Indicator	RAW_QC_UCAL	*
+Resistivity at Bit	RES_BIT_REC	ohm.m
+Uncertainty - Resistivity	RESUWAT_UNC*	ohm.m
+Uncertainty - Resistivity	RESXWAT_UNC*	ohm.m
+Quality Indicator	RING_ALL_SM*	*
+Quality Indicator	RING_E1_SM1	unitless
+Quality Indicator	RING_E1_SM2	unitless
+Quality Indicator	RING_E1_SM3	unitless
+Quality Indicator	RING_E1_SM4	unitless
+Quality Indicator	RING_E1_SM5	unitless
+Pressure Loss	RSS_LOSS_HY	psi
+Salinity	SALT_UWATER	kppm
+Salinity	SALT_XWATER	kppm
+Siderite Weight Fraction	Siderite_wt	lbf/lbf
+Smectite Weight Fraction	Smectite_wt	lbf/lbf
+Pressure Loss	SRF_LOSS_HY	psi
+NMR T2 Logarithmic Mean	T2_MEAN_NMR	ms
+Cement Thickness	TCEM_MODEL1	*
+Cement Thickness	TCEM_MODEL2	*
+Casing Thickness	TCSG_MODEL1	*
+True Dip Azimuth	TRU_Azimuth	*
+Borehole Image Acoustic Amplitude Array	UBI_AMP_DYN	*
+Covariance East East	VARIANCE_EE*	ft
+Crossvariance North East	VARIANCE_NE*	ft
+Covariance North North	VARIANCE_NN*	ft
+Uncertainty - Volume Fraction	YG_SIG_TPHL	*
+Gas Holdup	YG_TPHL_UNC	*
+Uncertainty - Volume Fraction	YO_SIG_TPHL	*
+Oil Holdup	YO_TPHL_UNC	*
+Uncertainty - Volume Fraction	YW_SIG_TPHL	*
+Water Holdup	YW_TPHL_UNC	*
+Impedivity	ZT90C_*_col*	*
+Uncertainty	*MC_STDDEV*	*
+Rig State	*RIG_STATE*	*
+Thickness	*THICKNESS*	*
+Resistivity - Deep	90in_2ft_r	OHM-M
+Bulk Density	ABDC*ARRAY*	*
+Bulk Density	ADLA*ARRAY*	*
+Bulk Density	ADSA*ARRAY*	*
+Coefficient	ALPHA_COMP	*
+Hydrocarbon Volume Per Mass Of Rock	AmbroseGIP*	*
+Tool Status	AZISTAT_RT	*
+NMR Bound Fluid Volume Fraction	BFV_3MS_SM	ft3/ft3
+Standard Deviation - Volume Fraction	BFV_SM_SIG	ft3/ft3
+Bit Flow Rate	BIT_FLO_HY	*
+Calcite Weight Fraction	Calcite_wt	w/w
+Electric Impedance	CCAL?_F?MO	ohm
+Offset - Plane Angle	CCAL?_F?PO	deg
+Mud Loss (Mud Weight Equivalent)	CMW_MAX_GS	*
+Shear Failure Max Pressure (Mud Weight Equivalent)	CMW_MAX_MC*	*
+Breakdown Pressure (Mud Weight Equivalent)	CMW_MAX_MT*	*
+Shear Failure Min Pressure (Mud Weight Equivalent)	CMW_MIN_MC*	*
+Tensile Cylindrical Pressure (Mud Weight Equivalent)	CMW_MIN_MT*	*
+Breakout Pressure (Mud Weight Equivalent)	CMW_MIN_SH	*
+Hydrocarbon Volume Per Area	CumFreeGIP*	*
+Shear Failure Max Pressure	CWP_MAX_MC*	*
+Breakdown Pressure	CWP_MAX_MT*	*
+Shear Failure Min Pressure	CWP_MIN_MC*	*
+Tensile Cylindrical Pressure	CWP_MIN_MT*	*
+Water Diffusion Coefficient	DIFFCNST_W	m2/s
+Height Of Dip Plane	DipHeight_*	*
+Pressure Loss	DP_LOSS_HY	psi
+Quality Indicator	DP_PENEINT	unitless
+Quality Indicator	DP_PENEREL	unitless
+True Dip Azimuth	DPTRAZ_ROT	*
+True Dip Azimuth	DPTRAZ_ROT*	dega
+True Dip Azimuth	DPTRAZ_ROT*	*
+Dry Solids Weight Fraction	Dry Weight*	kg/kg
+Dry Solids Weight Fraction	DryWeights*	kg/kg
+Equivalent Circulating Density Computed	ECD_BIT_HY	*
+Equivalent Circulating Density Computed	ECD_CSG_HY	*
+NMR Noise Amplitude	ECHO_NOISE	ft3/ft3
+Fault Block	FAULTBLOCK	*
+NMR Free Fluid Volume Fraction	FFV_3MS_SM	ft3/ft3
+Standard Deviation - Volume Fraction	FFV_SM_SIG	ft3/ft3
+Fluid Code	FLUID_CODE*	*
+Zone Name	FLUID_NAME*	*
+Fluid Code	FLUID_TYPE*	*
+Glauconite Volume Fraction	Glauconite*	m3/m3
+Count Rate	GR_ARC_RAW	1/s
+Gamma Ray	GRAS*ARRAY*	*
+Hook Load	GS_HKLDMAX	*
+Hook Load	GS_HKLDMIN	*
+Torque - Surface	GS_SURTRQB	*
+Integrated Permeability	INTEG_PERM*	*
+Tool Status	KAISTAT_RT	*
+OBMI LQC	LQCMG_OBMT*	*
+Angle	MA_EXT_F?_*	*
+Standard Deviation - Volume Fraction	MRP_HR_SIG	*
+Standard Deviation - Volume Fraction	MRP_SM_SIG	*
+Motor RPM	MTR_RPM_HY	c/min
+Reference	PASSNUMBER	*
+General Volume Fraction	PHI_LOW_PC	*
+Porosity Unclipped	PHIT*_UNCL*	*
+Porosity	PHIT_P*_FIX	v/v
+Porosity	PHIT_P*_FLT	v/v
+Quality Indicator	QC_RHON_CR	*
+Quality Indicator	QC_RHON_HW	*
+Borehole Image Array Resistive	RES_BD_IMG*	*
+Resistivity - Deep Laterolog	RES_BD_REC	ohm.m
+Borehole Image Array Resistive	RES_BM_IMG*	*
+Resistivity - Medium Laterolog	RES_BM_REC	ohm.m
+Borehole Image Array Resistive	RES_BS_IMG*	*
+Resistivity - Shallow Laterolog	RES_BS_REC	ohm.m
+Borehole Image Array Resistive	RES_BX_IMG*	*
+Mechanical Stratigraphy Flag	Shale_Flag	*
+Shock Rate	SHKRATE_RT*	1/s
+Horizontal Stress Gradient (Mud Weight Equivalent)	SHMW_RATIO*	*
+Gas Sigma	SIGMA_UGAS	cu
+Water Sigma	SIGMA_UWAT	cu
+Gas Sigma	SIGMA_XGAS	cu
+Water Sigma	SIGMA_XWAT	cu
+Oil Saturation	SO_SURFACE	%
+Storage Capacity	ST*R*G*CAP*	*
+Start Depth	StartDepth	ft
+Stick Slip	STICKNSLIP*	*
+Stick Ratio	STICKRATIO*	*
+True Dip Inclination	STRUCT_Dip	*
+Water Saturation	SWPC_TAPER	ft3/ft3
+Resistivity Time After Bit	TAB_KAI_EM	h
+Ultrasonic Caliper Time After Bit	TAB_KAI_US	h
+Travel Time	TIME_START*	us
+Gravity Total Field Uncertainty	TOOL_G_DEV*	mG
+General Volume Fraction	VDOLO_NORM	*
+General Volume Fraction	VLIME_NORM	*
+General Volume Fraction	VSAND_NORM	*
+Oil Volume Fraction	VUOI_ALPHA	*
+Water Volume Fraction	VWPC_TAPER	ft3/ft3
+X Location	Well_X*LOC*	*
+Y Location	Well_Y*LOC*	*
+Uncertainty - Volume Fraction	YO_COR_SIG	*
+Uncertainty - Volume Fraction	YO_WIN_SIG	*
+Impedivity	ZTBC_*_col*	*
+Mobility	*MOBILITY*	mD/cP
+Net Flag	*NET*FLAG*	*
+General Flag	*outliers*	*
+Formation Pressure	*RFT*PRES*	*
+Pressure-Time Slope	60S_SLOPE*	psi/min
+Coefficient	ALPHA_USE	*
+General Flag	BADL_TDTL	*
+Barite Weight Fraction	Baryte_wt	lbf/lbf
+NMR Bound Fluid Volume Fraction	BFV_TAPER	ft3/ft3
+Bias Vertical	BIAS_VERT*	ft
+Thickness	BIN*_Cumul	ft
+Bit Depth	Bit_Depth	*
+Breakdown Pressure (Mud Weight Equivalent)	Breakdown*	*
+Caliper 1 Tool 2	C1_OBMT_2*	*
+Caliper 2 Tool 2	C2_OBMT_2*	*
+NMR Bin Porosity	CMR_Water	ft3/ft3
+Continuous Azimuth	CRS_CNAZI	deg
+Continuous Inclination	CRS_CNINC	deg
+Casing/Pipe Diameter	CSID_DIAG	*
+Casing/Pipe Diameter	CSIZ_DIAG	*
+Stroke Count	CumStroke	*
+General Flag	CUSTOM_FL*	unitless
+Casing Weight	CWEI_DIAG	*
+Permeability_Low	DATA_PERM*	*
+Saturation-Percent	DATA_SHYD*	*
+Porosity Correction	DBPHB_DOL	*
+Porosity Correction	DBPHB_LIM	*
+Porosity Correction	DBPHB_SAN	*
+Thermal Neutron Porosity	DBPHI_DOL	v/v
+Thermal Neutron Porosity	DBPHI_LIM	v/v
+Thermal Neutron Porosity	DBPHI_SAN	v/v
+Porosity Correction	DBPHL_DOL	*
+Porosity Correction	DBPHL_LIM	*
+Porosity Correction	DBPHL_SAN	*
+Porosity Correction	DBPHR_DOL	*
+Porosity Correction	DBPHR_LIM	*
+Porosity Correction	DBPHR_SAN	*
+Porosity Correction	DBPHU_DOL	*
+Porosity Correction	DBPHU_LIM	*
+Porosity Correction	DBPHU_SAN	*
+Pretest Volume	DD_VOLUME	cm3
+Invasion Diameter	DI_INV_QC	cm
+Height Of Dip Plane	DipHeight	*
+Slow Shear Slowness	DTSH_SLOW*	*
+Eccentering Azimuth	ECCE_AZIM	*
+Standoff	EMSO_?_RT	in
+Permittivity	EPSI_MATR*	*
+Error	ERROR_CUM	unitless
+Uncertainty - Inelastic Relative Yield	F12MG_SIG	*
+NMR Free Fluid Volume Fraction	FFV_TAPER*	ft3/ft3
+Fast Shear Azimuth	FSA_NORTH*	deg
+Gain (Array)	GAINS_F?_*	*
+Threshold	GRAIN_SEG	unitless
+Rotations Per Minute - Turbine	GS_DHTROT	*
+Mud Gas IC4	GS_iC4OUT	%
+Mud Gas IC5	GS_iC5OUT	%
+Mud Gas NC4	GS_nC4OUT	%
+Mud Gas NC5	GS_nC5OUT	%
+Rotations Per Minute	GS_SURRPM	*
+Gypsum Weight Fraction	Gypsum_wt	lbf/lbf
+General Flag	HALITE_FL*	*
+Halite Weight Fraction	Halite_wt	lbf/lbf
+Borehole Diameter	HD_BOR_QC	cm
+Threshold	HIGHBOUND	unitless
+Hook Load - Pick Up	HKLD_POOH*	*
+Hydraulic Zone	HYDR_ZONE*	*
+Illite Weight Fraction	Illite_wt	lbf/lbf
+Count Rate	INFD_TDTL	*
+Integrated Porosity	INTEG_POR*	*
+Interval Velocity	KPI_SPEED*	*
+Metal Loss	MLOSS_INT	*
+Bulk Modulus (Dynamic)	MODULUS_K*	*
+Shear Modulus (Dynamic)	MODULUS_U*	*
+Annular Back Pressure	MPD_BP_PV	psi
+Calcite Weight Fraction	MX_CALCIT*	*
+Chlorite Weight Fraction	MX_CHLORI*	*
+Quartz Weight Fraction	MX_QUARTZ*	*
+Uncertainty - Inelastic Relative Yield	N12MG_SIG	*
+Count Rate	NBAC_TDTL	*
+Neutron Caliper	NCAL_NEAR	cm
+Neutron Porosity	NEU_ALPHA	ft3/ft3
+Neutron Invasion Factor	NPHI_IFAC	unitless
+Gas Hydrogen Index	NPHI_UGAS	v/v
+Water Hydrogen Index	NPHI_UWAT	v/v
+Gas Hydrogen Index	NPHI_XGAS	v/v
+Water Hydrogen Index	NPHI_XWAT	v/v
+Hydrocarbon Volume Per Volume Of Rock	OIPgtT2LC*	*
+Hydrocarbon Volume Per Volume Of Rock	OIPgtT2UC*	*
+Hydrocarbon Volume Per Volume Of Rock	OIPltT2LC*	*
+Hydrocarbon Volume Per Volume Of Rock	OIPltT2UC*	*
+Pad A Azimuth Tool 1	P1AZ_OBMT*	*
+Pad A North Tool 1	P1NO_OBMT*	*
+Conductivity - Phase Shift	P40B_COND	mS/m
+Color	PassColor	unitless
+Pressure Drop	PD_PAD_HY	psi
+Penetration Rank	PENE_LOSS	*
+Integrated Permeability	PERM*PERF*	*
+Poisson Ratio (Dynamic)	POISSON_R*	*
+Borehole Image Array	POR_IMAGE	*
+Measured Depth	PS_MD_REF	*
+Pyrite Weight Fraction	Pyrite_wt	lbf/lbf
+Quality Indicator	QC_FINAL_*	*
+Quality Indicator	QC_RHON_M	*
+Borehole Image Array Resistive	QGEO_STAT*	*
+Quartz Weight Fraction	Quartz_wt	lbf/lbf
+Relative Bearing Tool 2	RB_OBMT_2*	*
+Density Invasion Factor	RHOB_IFAC	unitless
+Gas Density	RHOB_UGAS	g/cm3
+Water Density	RHOB_UWAT	g/cm3
+Gas Density	RHOB_XGAS	g/cm3
+Water Density	RHOB_XWAT	g/cm3
+Measured Depth	RPDEP_XPT	ft
+Raw Signal	SCTU?_ATR	*
+Raw Signal	SCTU?_INF	*
+Total Shock	SHKTOT_RT*	*
+Maximum Horizontal Stress Gradient (Mud Weight Equivalent)	SHMAX_EMW	*
+Minimum Horizontal Stress Gradient (Mud Weight Equivalent)	SHMIN_EMW	*
+Net Hydrocarbon Saturation	SHNET*CAP*	*
+Sigma Correction	SIGC_TDTL	cu
+Stop Depth	StopDepth	ft
+Vertical Stress	SVERTICAL*	psi
+Flushed Zone Water Saturation Unclipped	SWXO*UNCL*	*
+Borehole Image - Electromagnetic Impedance Amplitude	TAPP?_F?M*	dB
+Electrical Impedance Phase	TAPP?_F?P*	deg
+Travel Time	TIME_STOP*	us
+Remarks	TOOL_TYPE*	*
+Measured Depth	TOP*DEPTH*	*
+Porosity	TPHI_DIAG	*
+Porosity	TPHI_TDTL	*
+Ultrasonic Caliper	UCAL?_KAI*	in
+Cumulative Volume Fraction	UNFLUSHED*	v/v
+Tool Status	USSTAT_RT	*
+Fluid Viscosity	VISCOSITY*	cP
+General Volume Fraction	VUOI_TPHL	*
+General Volume Fraction	VUWA_TPHL	*
+Calcite Volume Fraction	VX_CALCIT*	*
+Chlorite Volume Fraction	VX_CHLORI*	*
+Quartz Volume Fraction	VX_QUARTZ*	*
+Waveform - Dipole	WFA?_DI??	*
+Waveform - Monopole	WFA1_MONO	*
+Waveform - Monopole	WFA2_MONO	*
+Waveform - Monopole	WFA3_MONO	*
+Horizontal Young's Modulus (Dynamic)	YME_H*DYN*	*
+Horizontal Young's Modulus (Static)	YME_H*STA*	*
+Vertical Young's Modulus (Dynamic)	YME_V*DYN*	*
+Vertical Young's Modulus (Static)	YME_V*STA*	*
+Borehole Image - Electromagnetic Impedance Amplitude	ZAPP?_F?M*	dB
+Electrical Impedance Phase	ZAPP?_F?P*	deg
+Dry Solids Weight Fraction	Zircon_wt	lbf/lbf
+Zone Name	ZONE*NAME*	*
+Impedivity Array	ZPROJ?_F?	ohm.m
+Impedivity Array	ZT90_F?_?*	*
+Acquisition Time	*ACQTIME*	s
+Acoustic Attenuation Rate	*ATT*DIS*	*
+Hook Load - Pick Up	*HKLD_PU*	*
+Hook Load - Free Rotate	*HKLD_RO*	*
+Hook Load - Slack Off	*HKLD_SO*	*
+Acoustic Energy	*XENEDIF*	*
+Resistivity - Attenuation	A10B_UNC*	ohm.m
+Resistivity - Attenuation	A16B_UNC*	ohm.m
+Resistivity - Attenuation	A22B_UNC*	ohm.m
+Resistivity - Attenuation	A28B_UNC*	ohm.m
+Resistivity - Attenuation	A34B_UNC*	ohm.m
+Resistivity - Attenuation	A40B_UNC	ohm.m
+Time Interval	ACCZCNTS	*
+Uncertainty - Carbon Oxygen Ratio	ACOR_SIG	*
+Uncertainty - Volume Fraction	APDU_UNC	*
+Apparent Dip Inclination	APP_Dip_*	*
+Maximum Horizontal Stress	AZI*MAHS*	*
+Minimum Horizontal Stress	AZI*MIHS*	*
+True Dip Azimuth	Azimuth_*	*
+Elastic Modulus	C*_ORTHO*	psi
+Mud Gas Wetness	C1vHeavy	*
+Caliper	CALE_ARC	cm
+Capillary Pressure Laboratory (Array)	CAP_PLAB*	*
+General Flag	CBLQC_TL	*
+Gain	CCAL?_F*G	*
+Quality Indicator	CEMINDEX	*
+Dry Solids Weight Fraction	Chert_wt	lbf/lbf
+Kick Pressure (Mud Weight Equivalent)	CMW_KICK*	*
+Mud Loss (Mud Weight Equivalent)	CMW_LOSS*	*
+Fluid Conductivity	COND_ADT*	S/m
+Core Porosity	CORE*POR*	*
+Core Permeability	CORE_PRM*	*
+Core Permeability	COREKAIR*	*
+Kick Pressure	CWP_KICK*	*
+Mud Loss	CWP_LOSS*	*
+Porosity-Percent	DATA_PHI*	*
+Weight percent	DATA_TOC*	*
+Gauge Pressure	DD_PRESS*	psi
+Hole Deviation	DEVI_KAI	deg
+Coefficient	DIFFCNST	*
+True Dip Azimuth	dipDevAz	*
+Apparent Dip Azimuth - North Plane	DPAA_NAZ	*
+Apparent Dip Azimuth - Top Of Hole	DPAA_TOP	*
+Porosity	DPHI_DOL	v/v
+Porosity	DPHI_LIM	v/v
+Porosity	DPHI_SAN	v/v
+Interval Velocity	DS_SPEED*	*
+Fast Shear Slowness	DT*_FAST*	*
+Slow Shear Slowness	DT*_SLOW*	us/ft
+Time	Duration	h
+Elemental Statistical Uncertainty Factor	DWAL_SIG	*
+Elemental Statistical Uncertainty Factor	DWCA_SIG	*
+Elemental Statistical Uncertainty Factor	DWCL_SIG	*
+Elemental Statistical Uncertainty Factor	DWFE_SIG	*
+Uncertainty - Weight Fraction Trace	DWGD_SIG*	*
+Elemental Statistical Uncertainty Factor	DWHY_SIG	*
+Elemental Statistical Uncertainty Factor	DWMG_SIG	*
+Elemental Statistical Uncertainty Factor	DWSI_SIG	*
+Elemental Statistical Uncertainty Factor	DWSU_SIG	*
+Elemental Statistical Uncertainty Factor	DWTI_SIG	*
+Borehole Image Standoff Array	EMSO_IMG	in
+Uncertainty	ENFR_UNC	*
+Permittivity	EPS_UWAT	unitless
+Permittivity	EPS_XWAT	unitless
+Permittivity	EPSI_DLG*	*
+Permittivity	EPSI_DTE*	*
+Permittivity	EPSI_DTR*	*
+Permittivity	EPSI_MSF*	*
+Permittivity	EPSM_ADT*	*
+Uncertainty - Inelastic Relative Yield	F12C_SIG	*
+Uncertainty - Inelastic Relative Yield	F1CA_SIG	*
+Uncertainty - Inelastic Relative Yield	F1FE_SIG	*
+Uncertainty - Inelastic Relative Yield	F1SI_SIG	*
+Uncertainty - Inelastic Relative Yield	F1TB_SIG	*
+Uncertainty - Inelastic Relative Yield	F2AT_SIG	*
+Uncertainty - Inelastic Relative Yield	F2CA_SIG	*
+Uncertainty - Inelastic Relative Yield	F2CL_SIG	*
+Uncertainty - Inelastic Relative Yield	F2DN_SIG	*
+Uncertainty - Inelastic Relative Yield	F2FE_SIG	*
+Uncertainty - Inelastic Relative Yield	F2GD_SIG	*
+Uncertainty - Inelastic Relative Yield	F2MG_SIG	*
+Uncertainty - Inelastic Relative Yield	F2SI_SIG	*
+Uncertainty - Inelastic Relative Yield	F2TB_SIG	*
+Uncertainty - Inelastic Relative Yield	F2TI_SIG	*
+Uncertainty - Carbon Oxygen Ratio	FCOR_SIG	*
+Flow Capacity	FL*W*CAP*	*
+General Flag	FLAL_LLD	*
+General Flag	FLAL_LLS	*
+Uncertainty - Count Rate	FNIC_SIG	*
+Uncertainty - Volume Fraction	FPDU_UNC	*
+Uncertainty - Volume Fraction	FPSU_UNC	*
+Fast Shear Azimuth	FSH_P1AZ*	*
+Fast Shear Azimuth	FSH_P1NO*	*
+Uncertainty - Carbon Oxygen Ratio	FWCO_SIG	*
+Gain	GAIN_ENV	unitless
+Regularization Factor	GAMMA_SM*	*
+Mud Gas C1	GS_C1OUT	%
+Mud Gas C2	GS_C2OUT	%
+Mud Gas C3	GS_C3OUT	%
+Hook Load	GS_HKLDF	*
+Block Velocity	GS_HKSPD	*
+Weight On Bit - Surface	GS_SWOBF	*
+Rotations Per Minute	GS_TDRPM	*
+Torque - Surface	GS_TDTRQ	*
+Total Gas	GS_TGOUT	*
+Rotations Per Minute	GS_TLRPM	*
+Hole Azimuth	HAZI_KAI	deg
+Hook Load - Slack Off	HKLD_RIH*	*
+Hook Load Computed	HKLD_TAD	*
+Hydraulic Zone	HYDRZONE	*
+Mud Gas IC4	iC4_main	%
+Mud Gas IC5	iC5_main	%
+Resistivity - Deep Induction	ILD_CORR	*
+Borehole FlapA Array1	IMAGE_1A*	*
+Borehole FlapB Array1	IMAGE_2A*	*
+Borehole FlapC Array1	IMAGE_3A*	*
+Borehole FlapD Array1	IMAGE_4A*	*
+Length	Interval	ft
+Invasion Diameter	INV_DIAM	*
+Integrated Permeability	IPERM_HR	mD.ft
+Bulk Modulus (Dynamic)	K_MATRIX	*
+Key Performance Indicator	KPI_TIME*	*
+Threshold	LOWBOUND	unitless
+Electromagnetic Attenuation	MDIS_F?M	dB
+Electromagnetic Phase Shift	MDIS_F?P	deg
+Orthoclase Weight Fraction	MX_ORTHO*	*
+Uncertainty - Inelastic Relative Yield	N12C_SIG	*
+Uncertainty - Inelastic Relative Yield	N1CA_SIG	*
+Uncertainty - Inelastic Relative Yield	N1FE_SIG	*
+Uncertainty - Inelastic Relative Yield	N1SI_SIG	*
+Uncertainty - Inelastic Relative Yield	N1TB_SIG	*
+Uncertainty - Inelastic Relative Yield	N2AT_SIG	*
+Uncertainty - Inelastic Relative Yield	N2CA_SIG	*
+Uncertainty - Inelastic Relative Yield	N2CL_SIG	*
+Uncertainty - Inelastic Relative Yield	N2DN_SIG	*
+Uncertainty - Inelastic Relative Yield	N2FE_SIG	*
+Uncertainty - Inelastic Relative Yield	N2GD_SIG	*
+Uncertainty - Inelastic Relative Yield	N2MG_SIG	*
+Uncertainty - Inelastic Relative Yield	N2SI_SIG	*
+Uncertainty - Inelastic Relative Yield	N2TB_SIG	*
+Uncertainty - Inelastic Relative Yield	N2TI_SIG	*
+Mud Gas NC4	nC4_main	%
+Mud Gas NC5	nC5_main	%
+Neutron Caliper	NCAL_DOL	cm
+Neutron Caliper	NCAL_FAR	cm
+Neutron Caliper	NCAL_LIM	cm
+Neutron Caliper	NCAL_SAN	cm
+Uncertainty - Carbon Oxygen Ratio	NCOR_SIG	*
+Net Sand Fraction	NET_SAND	*
+Borehole Image Array Resistive	NGI_STAT*	*
+Uncertainty	NICR_SIG	*
+Uncertainty - Count Rate	NNIC_SIG	*
+Neutron Porosity Hydrocarbon Corrected	NPHI*HCC*	*
+Uncertainty - Carbon Oxygen Ratio	NWCO_SIG	*
+General Flag	OFFCHART	*
+Resistivity - Phase Shift	P40B_UNC	ohm.m
+Net Pay Flag	PAY_Flag	*
+Measured Depth	PDEP_XPT	ft
+Integrated Permeability	PERM_INT*	*
+Coefficient	PHI_CONV*	*
+Porosity	PHND_DOL	v/v
+Porosity	PHND_LIM	v/v
+Porosity	PHND_SAN	v/v
+Porosity	PIGN_CUT*	v/v
+Porosity Spectrum	POR_HIST*	*
+Horizontal Poisson Ratio (Dynamic)	PR_H*DYN*	*
+Horizontal Poisson Ratio (Static)	PR_H*STA*	*
+Vertical Poisson Ratio (Dynamic)	PR_V*DYN*	*
+Vertical Poisson Ratio (Static)	PR_V*STA*	*
+Borehole Image Array Resistive	QGEO_DYN*	*
+Radius	RADIUS_?	*
+Resistivity - Apparent	RAP_?_RT	ohm.m
+Composite Quality Flag	RCQ_FLAG	*
+Resistivity Spectrum	RES_HIST	*
+Reservoir Temperature	RES_TEMP*	*
+Bulk Density Hydrocarbon Corrected	RHOB*HCC*	*
+Resistivity	RLA0_ECC	ohm.m
+Uncertainty - Resistivity	RLA1_SIG	*
+Resistivity	RLA2_ECC	ohm.m
+Uncertainty - Resistivity	RLA2_SIG	*
+Uncertainty - Resistivity	RLA3_SIG	*
+Resistivity	RLA4_ECC	ohm.m
+Uncertainty - Resistivity	RLA4_SIG	*
+Uncertainty - Resistivity	RLA5_SIG	*
+Sigma Borehole	SBFA_FIL	cu
+Uncertainty - Sigma	SBFA_SIG	cu
+Sigma Borehole	SBNA_FIL	cu
+Uncertainty - Sigma	SBNA_SIG	cu
+Slowness Frequency Analysis	SFA_FAST*	*
+Slowness Frequency Analysis	SFA_SLOW*	*
+Sigma Formation	SFFA_FIL	cu
+Uncertainty - Sigma	SFFA_SIG	cu
+Sigma Formation	SFNA_FIL	cu
+Uncertainty - Sigma	SFNA_SIG	cu
+Horizontal Stress	SH_RATIO*	*
+Shale Weight Fraction	Shale_wt	lbf/lbf
+Uncertainty - Sigma	SIGU_UNC	cu
+Slips Status	SLIPSTAT*	*
+Stick Slip	STICK_RT*	*
+Uncertainty - Volume Fraction	STPU_UNC	*
+Uncertainty - Time	STTM_UNC	*
+Water Saturation Error	SW*ERROR*	*
+Flushed Zone Water Saturation Unclipped	SXO*UNCL*	*
+NMR T2 Cutoff	T2CUTOFF	*
+Time - Rig	TIME_RIG	*
+Thermal Neutron Porosity Dolomite	TNPH_DOL*	pu
+Thermal Neutron Porosity Limestone	TNPH_LIM*	pu
+Thermal Neutron Porosity Sandstone	TNPH_SAN*	pu
+Uncertainty - Volume Fraction	TPHI_SIG	*
+Count Rate Ratio	TRAT_FIL	*
+Count Rate Ratio	TRAT_SIG	*
+True Dip Inclination	TRU_Dip_*	*
+Shear Modulus (Dynamic)	U_MATRIX	*
+Ultrasonic Caliper	UCAV_KAI*	in
+Ultrasonic Caliper	UCHO_KAI*	in
+Ultrasonic Caliper	UCVE_KAI*	in
+Borehole Image Radius Array	URAD_IMG	in
+Quality Indicator	USIQI*	*
+Borehole Image Standoff Array	USOI_KAI	in
+Shock Level	V2SEVXYM*	*
+Shale Volume Fraction Unclipped	VSH*UNCL*	*
+Oil Volume Fraction	VUOI_COR	*
+Oil Volume Fraction	VUOI_WIN	*
+Kaolinite Volume Fraction	VX_KAOLI*	*
+Orthoclase Volume Fraction	VX_ORTHO*	*
+Waveform - Dipole	WFA_FAST	*
+Waveform - Dipole	WFA_SLOW	*
+NMR Porosity	WPHI_FIT	ft3/ft3
+Electrical Impedance Amplitude	ZBAM_F?_*	kohm
+Electrical Impedance Phase	ZBPH_F?_*	*
+Impedivity Array	ZPROJ_F?	ohm.m
+Impedivity Array	ZTBAMC_?*	*
+Correction Factor	*MBARIF*	*
+Marquardt Chi-Square	*MCHISQ*	*
+True Vertical Depth Sub Sea	*TVD*SS*	m
+Double Layer Expansion Factor	ALPHAVQ*	cm3/meq
+Tool Status	AMSTAT_*	*
+Angle X	ANG?_KA*	*
+Apparent Dip Azimuth	APP_AZM	dega
+Apparent Dip Inclination	APP_Dip	dega
+Annulus Pressure	APRS_RT	*
+True Dip Azimuth	Azimuth	*
+Breakdown Pressure	BD*PPTF*	*
+Quality Indicator	BDR_SM1	ft3/ft3
+Quality Indicator	BDR_SM2	ft3/ft3
+Quality Indicator	BDR_SM3	ft3/ft3
+Quality Indicator	BDR_SM4	ft3/ft3
+Quality Indicator	BDR_SM5	ft3/ft3
+NMR Bound Fluid Volume Fraction	BFV_3MS	ft3/ft3
+Standard Deviation - Volume Fraction	BFV_SIG	ft3/ft3
+Bit Wear	BitWear	*
+Bulk Modulus (Dynamic)	BMK*DYN*	*
+Breakout Pressure	BO*PPTF*	*
+Borehole Diameter	BS_DIAG*	*
+Fluid Volume Fraction	BVH_NMR	v/v
+Fluid Volume Fraction	BVW_NMR	v/v
+Core Grain Density	C_GRAIN*	*
+Mud Gas C1	C1_main	%
+Caliper 1 Tool 1	C1_OBMT*	*
+Mud Gas C2	C2_main	%
+Caliper 1 Tool 2	C2_OBMT*	*
+Mud Gas C3	C3_main	%
+Calcite Volume Fraction	Calcite*	v/v
+Clay Bound Water	CBW_NMR	v/v
+Tool Status	CCAL?_S	*
+NMR Bin Porosity	CMR_Gas	ft3/ft3
+NMR Bin Porosity	CMR_OBM	ft3/ft3
+NMR Bin Porosity	CMR_Oil	ft3/ft3
+Carbon Oxygen Ratio	CO_CORR	*
+Coal Weight Fraction	Coal_wt	w/w
+Remarks	COMMENT*	*
+Reservoir and Completion Quality Flag	CQ_FLAG	*
+Quality Indicator	DAFC_?I*	*
+Saturation-Percent	DATA_SW*	*
+Quality Indicator	DATC_?I*	*
+Measured Depth	DEPTH_S	*
+Key Performance Indicator	DS_TIME*	*
+Permittivity	EPSI_LG*	*
+Permittivity	EPSI_MC*	*
+Permittivity	EPSI_MD*	*
+Permittivity	EPSI_TR*	*
+Permittivity	EPSI_XD*	*
+Permittivity	EPSI_XO*	*
+Permittivity	EPSI_XS*	*
+Uncertainty - Inelastic Relative Yield	F1C_SIG	*
+Uncertainty - Inelastic Relative Yield	F1O_SIG	*
+Uncertainty - Inelastic Relative Yield	F2H_SIG	*
+Uncertainty - Inelastic Relative Yield	F2K_SIG	*
+Uncertainty - Inelastic Relative Yield	F2S_SIG	*
+Closure Pressure	FC*PPTF*	*
+NMR Free Fluids	FFI_NMR	ft3/ft3
+NMR Free Fluid Volume Fraction	FFV_3MS	ft3/ft3
+Standard Deviation - Volume Fraction	FFV_SIG	ft3/ft3
+Fluid Pressure Gradient	FL*GRAD*	*
+Mud Pump Volume	FLWpmps	*
+Hydrocarbon Volume Per Mass Of Rock	FreeGIP*	*
+Fast Shear Azimuth	FSA_ERR*	*
+Gamma Ray Clean	GR*SAND*	*
+Bit On Bottom	GS_BONB	*
+Block Position	GS_BPOS	*
+Bit Depth	GS_DBTM	*
+Measured Depth	GS_DMEA	*
+Bottom Depth	GS_DRTM	*
+Mud Flow Rate	GS_FLWI	*
+Mud Flow Rate	GS_FLWO	*
+Total Gas	GS_GASA	*
+Equivalent Circulating Density Computed	GS_HECD	*
+Hook Load	GS_HKLD	*
+Mud Density Out	GS_MDOA	*
+Mud Temperature	GS_MTIA	*
+Mud Temperature	GS_MTOA	*
+Stroke Rate - Pump 1	GS_SPM1	*
+Stroke Rate - Pump 2	GS_SPM2	*
+Stroke Rate - Pump 3	GS_SPM3	*
+Stroke Rate - Pump 4	GS_SPM4	*
+Standpipe Pressure	GS_SPPA	*
+Weight On Bit - Surface	GS_SWOB	*
+Mud Flow Rate In	GS_TFLO	*
+Standpipe Pressure Computed	GS_TSPP	*
+Caliper	HD*_PPC*	*
+Hook Load - Free Rotate	HKLD_FR*	*
+Interfacial Tension Laboratory	IFT_LAB*	*
+Interfacial Tension Reservoir	IFT_RES*	*
+Borehole PadA Array1	IMAGE_1	*
+Borehole PadB Array1	IMAGE_2	*
+Borehole PadC Array1	IMAGE_3	*
+Borehole PadD Array1	IMAGE_4	*
+Borehole PadE Array1	IMAGE_5	*
+Borehole PadF Array1	IMAGE_6	*
+Borehole PadG Array1	IMAGE_7	*
+Borehole PadH Array1	IMAGE_8	*
+Porosity Thickness	IPOR_HR	ft
+Bulk Modulus (Dynamic)	K_BRINE	*
+Kerogen Volume Fraction	Kerogen*	m3/m3
+Rate Of Penetration	KPI_ROP*	*
+General Flag	MAJ_BIN	unitless
+Acoustic Energy	MAXXENE*	*
+Elastic Modulus	MC33_BH*	psi
+Minimum Horizontal Stress Gradient (Mud Weight Equivalent)	MIHS*MW*	*
+Acoustic Energy	MINXENE*	*
+NMR Porosity	MRP_3MS*	*
+Standard Deviation - Volume Fraction	MRP_SIG	*
+Albite Weight Fraction	MX_ALBI*	*
+Dolomite Weight Fraction	MX_DOLO*	*
+Pyrite Weight Fraction	MX_PYRI*	*
+Uncertainty - Inelastic Relative Yield	N1C_SIG	*
+Uncertainty - Inelastic Relative Yield	N1O_SIG	*
+Uncertainty - Inelastic Relative Yield	N2H_SIG	*
+Uncertainty - Inelastic Relative Yield	N2K_SIG	*
+Uncertainty - Inelastic Relative Yield	N2S_SIG	*
+Borehole Image Array Resistive	NGI_DYN*	*
+Neutron Porosity	NPHI*SS*	*
+Overburden Pressure	OB*PPTF*	*
+Standpipe Pressure Computed	OFBP_AC	*
+Standpipe Pressure Computed	OFBP_RC	*
+Ovality	OVALITY	*
+Pad A Azimuth	P1AZ_KA*	deg
+Pad A North	P1NO_KA*	deg
+Borehole PadA Average	PAD1AVG	*
+Borehole PadB Average	PAD2AVG	*
+Borehole PadC Average	PAD3AVG	*
+Borehole PadD Average	PAD4AVG	*
+Borehole PadE Average	PAD5AVG	*
+Borehole PadF Average	PAD6AVG	*
+Capillary Pressure IFT1 (Array)	PC_IFT1*	*
+Steering Setting	PDSTEER	unitless
+Threshold	PEAKBIN	unitless
+Net Permeability	PERMNET	*
+Core Porosity	PHI*CORE	*
+Net Porosity	PORENET*	*
+Pore Pressure Gradient	PP*GRAD*	*
+Pore Pressure	PP*PPTF*	*
+Measured Depth	PS_ADEP	*
+Bit Depth	PS_BDEP	*
+Time - Rig	PS_CIRH	*
+Measured Depth	PS_DEPT	*
+Motor Pressure	PS_DIFP	*
+Flow Out Paddle	PS_Flow	*
+Hole Deviation	PS_INCL	*
+Rate Of Penetration	PS_IROP	*
+Rate Of Penetration	PS_OROP	*
+Stroke Rate - Pump 1	PS_SPM1	*
+Stroke Rate - Pump 2	PS_SPM2	*
+Total Gas	PS_TGAS	*
+Quality Indicator	QC_RHON	*
+General Flag	QC_VPVS*	*
+Dip Quality	QUALITY	*
+Cation Concentration Qv	QV_deep	*
+Resistivity - Deep	RACESHX*	*
+Resistivity - Shallow	RACESLX*	*
+Casing/Pipe Radius	RAD_AVG	*
+Casing/Pipe Radius	RAD_MAX	*
+Casing/Pipe Radius	RAD_MIN	*
+Borehole Image Array Resistive	RAP_DYN*	ohm.m
+Borehole Image Array Resistive	RAP_IMG*	ohm.m
+Borehole Image Array Resistive	RAP_TOH*	ohm.m
+Relative Bearing Tool 1	RB_OBMT*	*
+Radius	RD*_PPC?	*
+Resistivity - Deep	RES_DEP*	*
+Resistivity - Medium	RES_MED	*
+Resistivity - Medium	RES_SLW*	*
+Resistivity - Deep	RES_TRD*	*
+Resistivity - Deep	RES_TRX*	*
+Net Flag	RESFLAG*	*
+Core Grain Density	RHO*CORE	*
+Bulk Density	RHOB_FS	*
+Resistivity - Micro	RMG_COR	ohm.m
+Reservoir and Completion Quality Flag	RQ_FLAG	*
+Borehole Diameter	RST_CAL	*
+Resistivity - Deep	RT_COMP	*
+Resistivity - True Formation	RT_SAND	ohm.m
+Runsum	RUNSUM_*	*
+Formation Resistivity Sw100	RX0_REC	ohm.m
+Sand Weight Fraction	Sand_wt	lbf/lbf
+Depth Shift	SHIFT_S	*
+Shear Modulus (Dynamic)	SHM*DYN*	*
+Shear Modulus (Static)	SHM*STA*	*
+Stress	SIGMEAN	*
+Silt Weight Fraction	Silt_wt	lbf/lbf
+Shear Modulus (Dynamic)	SMG*DYN*	*
+Shear Modulus (Static)	SMG*STA*	*
+Uncertainty	SPES_HR	*
+Standpipe Pressure Computed	SPPA_HY	*
+Magnetic Total Reference	STNLOCB*	nT
+Survey Total Gravity Field Reference	STNLOCG*	mG
+Vertical Stress Gradient	SV*GRAD*	*
+Irreducible Water Saturation	SWI_GEO*	v/v
+NMR T2 Transverse Relaxation Time	T2_MEAN*	*
+Tool Status	TAPP?_S*	*
+Bound Water Volume Fraction	TBW_NMR	ft3/ft3
+Formation Temperature	Temp_FM	*
+Casing Thickness	THK_AVG	*
+Casing Thickness	THK_MAX	*
+Casing Thickness	THK_MIN	*
+Slowness Frequency Analysis	TKO_SFA*	*
+NMR Noise Amplitude	TNOISE_*	*
+Torque - Surface Computed	TQA_TAD	*
+True Dip Inclination	TRU_Dip	*
+Borehole Image Acoustic Travel Time Array	TT?_DYN*	us
+Borehole Image Acoustic Travel Time Array	TT?_IMG*	us
+Borehole Image Acoustic Travel Time Array	TT?_TOH*	us
+Tool Status	U?RWMAX	*
+Borehole Image Acoustic Amplitude Array	UBI_AMP	*
+Borehole Image Radius Array	UBI_RAD	*
+Fluid Slowness	USDTM?0*	us/ft
+Hydrocarbon Volume Fraction	USfl_Hc	*
+Borehole Image Standoff Array	USO_IMG	in
+Shock Level	V2SEVZM*	*
+Anhydrite Volume Fraction	VANH_ND	v/v
+Dolomite Volume Fraction	VDOL_ND	v/v
+Vibration	VIB_LAT	*
+Vibration	VIBX_RT	*
+Oil Viscosity	VISC_OP	cP
+Oil Volume Fraction	VUOI_CO	*
+Albite Volume Fraction	VX_ALBI*	*
+Dolomite Volume Fraction	VX_DOLO*	*
+Pyrite Volume Fraction	VX_PYRI*	*
+Waveform - Dipole	WF_FAST*	*
+Waveform - Dipole	WF_SLOW*	*
+Waveform - Low Frequency	WFA_MLT*	*
+Hydrocarbon Volume Fraction	XSfl_Hc	*
+Gas Holdup	YG_TPHL	*
+Young's Modulus (Dynamic)	YME*DYN*	*
+Young's Modulus (Static)	YME*STA*	*
+Young's Modulus (Dynamic)	YMK*DYN*	*
+Young's Modulus (Static)	YMK*STA*	*
+Oil Holdup	YO_TPHL	*
+Water Holdup	YW_TPHL	*
+Tool Status	ZAPP?_S*	*
+Impedivity Array	ZT90C_?*	*
+Acoustic Amplitude	*ADIF_*	*
+Height Above Free Water Level	*HAFWL*	m
+Marquardt Gain	*MGAIN*	*
+Y Location	*NORTH*	*
+Core Permeability Vertical	*PERMV*	*
+Torque - Free Rotation Point	*TQFRP*	*
+Y Location	*UTM*Y*	*
+Conductivity - Attenuation	A*COND*	mS/m
+Equivalent Circulating Density	ACTECD*	*
+Conductivity - Array Induction	AECO20	mS/m
+Conductivity - Array Induction	AECO30	mS/m
+Conductivity - Array Induction	AECO60	mS/m
+Conductivity - Array Induction	AFCB20	mS/m
+Conductivity - Array Induction	AFCB30	mS/m
+Conductivity - Array Induction	AFCB60	mS/m
+Conductivity - Array Induction	AFCO20	mS/m
+Conductivity - Array Induction	AFCO30	mS/m
+Conductivity - Array Induction	AFCO60	mS/m
+Conductivity - Array Induction	AOCB20	mS/m
+Conductivity - Array Induction	AOCB30	mS/m
+Conductivity - Array Induction	AOCB60	mS/m
+Conductivity - Array Induction	AOCO20	mS/m
+Conductivity - Array Induction	AOCO30	mS/m
+Conductivity - Array Induction	AOCO60	mS/m
+Resistivity (Array)	ARI_RR	ohm.m
+Conductivity - Array Induction	ATCB20	mS/m
+Conductivity - Array Induction	ATCB30	mS/m
+Conductivity - Array Induction	ATCB60	mS/m
+Conductivity - Array Induction	ATCO20	mS/m
+Conductivity - Array Induction	ATCO30	mS/m
+Conductivity - Array Induction	ATCO60	mS/m
+Borehole Image Acoustic Amplitude Array	AWBK_S	*
+Barite Volume Fraction	Baryte*	m3/m3
+NMR Porosity	BBC_SM*	ft3/ft3
+Borehole PadA Array1	BCEGA1	*
+Borehole PadA Array2	BCEGA2	*
+Borehole FlapA Array1	BCEGA3	*
+Borehole FlapA Array2	BCEGA4	*
+Borehole PadB Array1	BCEGB1	*
+Borehole PadB Array2	BCEGB2	*
+Borehole FlapB Array1	BCEGB3	*
+Borehole FlapB Array2	BCEGB4	*
+Borehole PadC Array1	BCEGC1	*
+Borehole PadC Array2	BCEGC2	*
+Borehole FlapC Array1	BCEGC3	*
+Borehole FlapC Array2	BCEGC4	*
+Borehole PadD Array1	BCEGD1	*
+Borehole PadD Array2	BCEGD2	*
+Borehole FlapD Array1	BCEGD3	*
+Borehole FlapD Array2	BCEGD4	*
+Quality Indicator	BCR_AI*	*
+Quality Indicator	BCR_CI*	*
+NMR Bound Fluid Volume Fraction	BFV_HR	*
+NMR Bound Fluid Volume Fraction	BFV_SM	ft3/ft3
+Bias East	BIAS_E*	ft
+Bias North	BIAS_N*	ft
+Uncertainty - Percent	BIN*_Pc	*
+Bit Velocity	BITVEL*	*
+Block Velocity	BLKVEL*	*
+General Volume Fraction	BVW_CO	*
+Core Water Saturation (Array)	CAP_SW*	*
+Correction Factor	CCHLLD	unitless
+Correction Factor	CCHLLS	unitless
+Core Depth	CDEPTH	*
+Carbon Oxygen Ratio	CO_MAX	*
+Carbon Oxygen Ratio	CO_MIN	*
+Dip Classification	colour	*
+Bulk Density Correction	CORP2_*	*
+Gauge Pressure	CP_HYD	psi
+Gauge Pressure	CP_SAP	psi
+Core Porosity	CPERMH*	*
+Cumulative Gas Rate	CUMGAS*	*
+Hydrocarbon Volume Per Area	CumGIP*	*
+Cumulative Oil Rate	CUMOIL*	*
+Oil Volume Per Area	CumOIP*	*
+Cumulative Water Rate	CUMWAT*	*
+Resistivity - Attenuation	DA16F1*	ohm.m
+Conductivity - Attenuation	DA16F1*	ms/m
+Resistivity - Attenuation	DA22F1*	ohm.m
+Conductivity - Attenuation	DA22F1*	ms/m
+Resistivity - Attenuation	DA28F1*	ohm.m
+Conductivity - Attenuation	DA28F1*	ms/m
+Resistivity - Attenuation	DA34F1*	ohm.m
+Conductivity - Attenuation	DA34F1*	ms/m
+Resistivity - Attenuation	DA40F1*	ohm.m
+Conductivity - Attenuation	DA40F1*	ms/m
+Invasion Diameter	DI_ARC	cm
+Resistivity - Phase Shift	DP16F1*	ohm.m
+Conductivity - Phase Shift	DP16F1*	ms/m
+Resistivity - Phase Shift	DP22F1*	ohm.m
+Conductivity - Phase Shift	DP22F1*	ms/m
+Resistivity - Phase Shift	DP28F1*	ohm.m
+Conductivity - Phase Shift	DP28F1*	ms/m
+Resistivity - Phase Shift	DP34F1*	ohm.m
+Conductivity - Phase Shift	DP34F1*	ms/m
+Resistivity - Phase Shift	DP40F1*	ohm.m
+Conductivity - Phase Shift	DP40F1*	ms/m
+Shear Slowness	DT_?D_*	*
+Compressional Slowness	DT_GAS*	*
+Borehole Image Acoustic Travel Time Array	DTT*_RT	us
+Hydrocarbon Porosity Thickness	EHCCUM	*
+Borehole Image Standoff Array	EMSO?_*	in
+Standoff	EMSO_?	in
+NMR Noise Amplitude	ENOISE*	ft3/ft3
+Hydrocarbon Porosity Thickness	EPCCUM	*
+Permittivity	EPSI_V*	*
+Vertical Stress	EVERT_*	*
+NMR Free Fluid Volume Fraction	FFV_HR*	ft3/ft3
+NMR Free Fluid Volume Fraction	FFV_SM	ft3/ft3
+Borehole FlapA Array1	FLAP_1*	*
+Borehole FlapB Array1	FLAP_2*	*
+Borehole FlapC Array1	FLAP_3*	*
+Borehole FlapD Array1	FLAP_4*	*
+Fast Shear Azimuth	FSH_RB*	*
+Gamma Ray Clean	GR*MIN*	*
+Borehole Image Gamma Array	GR_IMG*	*
+Core Grain Density	GRAIND*	*
+Gamma Ray	GRAS*M*	*
+Total Elapsed Time	GS_LGT	*
+Total Elapsed Time	DXTM	*
+Rate Of Penetration	GS_ROP	*
+Surface Rotation Speed	GS_RPM	*
+Torque - Surface	GS_TQA*	*
+Mud Gas IC4	iC4_In	%
+Mud Gas IC5	iC5_In	%
+Borehole Image Array	IMAGE_*	*
+Hydrostatic Imbalance	IMB_HY	psi
+Core Permeability	K_CORE*	*
+Borehole Image - Ultrasonic Amplitude	LAMP?_*	mV
+Measured Depth	LDEPTH*	*
+Lithology	LITH_A	*
+Lithology	LITH_K	*
+Lithology	LITH_M	*
+Lithology	LITH_N	*
+Lithology	LITH_P	*
+Hole Azimuth	LOSIDE*	*
+Mud Loss (Mud Weight Equivalent)	Losses*	*
+Waxman-Smits Porosity Exponent Star m*	M*STAR*	*
+Angle	MA_F?_*	*
+Measured Depth	MD_REF	m
+Tool Status	MDIS_S	*
+Quality Indicator	MISFIT*	*
+Illite Weight Fraction	MX_ILL*	*
+Mud Gas NC4	nC4_In	%
+Mud Gas NC5	nC5_In	%
+Net Porosity	NETPHI*	*
+Net Porosity	NETPOR*	*
+Neutron Porosity	NEU_DO	ft3/ft3
+Neutron Porosity	NEU_LS	ft3/ft3
+Neutron Porosity	NEU_SS	ft3/ft3
+Borehole PadA Array2	OBRA_2	*
+Borehole PadB Array2	OBRB_2	*
+Borehole PadC Array2	OBRC_2	*
+Borehole PadD Array2	OBRD_2	*
+General Volume Fraction	OCFRAC	*
+Conductivity - Phase Shift	P*COND*	mS/m
+Entry Pressure	PC_ENT	psi
+Capillary Pressure Reservoir (Array)	PC_RES*	*
+Continuous Azimuth	PDAZIM	deg
+Continuous Inclination	PDINCL	deg
+Net Porosity	PHI*NET	*
+Core Porosity	PHICOR	*
+Net Porosity	POR*NET	*
+Net Porosity	POR*UT*	*
+Measured Depth	PQRDVP*	ft
+Poisson Ratio (Dynamic)	PR*DYN*	*
+Poisson Ratio (Static)	PR_STA*	*
+Hole Azimuth	PS_AZI	*
+Block Position	PS_BHT	*
+Depth of Cut	PS_DOC	*
+Rate Of Penetration	PS_ROP	*
+Rotations Per Minute	PS_RPM	*
+Standpipe Pressure	PS_SPP	*
+Torque - Surface	PS_TOR	*
+Mud Flow Rate	PS_TPO	*
+Weight On Bit - Surface	PS_WOB	*
+Quality Indicator	QCHLLD	unitless
+Quality Indicator	QCHLLS	unitless
+Gauge Pressure	QMBNDP	psi
+Cation Concentration Qv	QV_GEO*	*
+Resistivity Anisotropy	RA_BHC	*
+Borehole Image Array Resistive	RAP_TN*	ohm.m
+X Acceleration	RAXGCB	*
+Y Acceleration	RAYGCB	*
+Z Acceleration	RAZGCB	*
+Relative Bearing	RB_KAI*	deg
+Resistivity - Deep	RES_BD*	*
+Resistivity - Medium	RES_BM*	*
+Resistivity - Medium	RES_BS*	*
+Resistivity - Deep	RES_BX*	*
+Sensor Temperature	RQDPDT	degF
+Resistivity - True Formation	RT_ARC	ohm.m
+Corrected Depth	RTNP_1	*
+Corrected Depth	RTNP_2	*
+Slowness Frequency Analysis	SFA_XD*	*
+Slowness Frequency Analysis	SFA_YD*	*
+Resistivity - Medium	SFR10C*	*
+Resistivity - Deep	SFR50C*	*
+Hydrocarbon Saturation	SH*CAP*	*
+Net Hydrocarbon Saturation	SH*CUT*	*
+Net Effective Hydrocarbon Saturation	SHENET*	*
+Shock Risk	SHKRSK*	*
+Acoustic Anisotropy	SLOANI*	*
+Uncertainty - Volume Fraction	SO_SIG	*
+Stick	STICK_*	rpm
+Swab Surge Pressure	SURGE_*	psi
+Water Saturation	SW*CAP*	*
+Net Water Saturation	SW*NET*	*
+Water Saturation Unclipped	SW*UNCL	*
+NMR T1 Distribution	T1*DIS*	*
+NMR T2 Distribution	T2*DIS*	*
+Acoustic Anisotropy	TIMANI*	*
+Acoustic Normalization Factor	TNGN01	*
+Torque - Surface	Torque	*
+Eccentering	TRICEE	in
+Standoff	TRICES	*
+True Dip Inclination	TRIDPD	deg
+Conductivity - Array Induction	TRIRRC	mS/m
+Conductivity	TRISHD	*
+Conductivity	TRISVD	*
+Borehole Image Acoustic Travel Time Array	TT?_TN*	us
+Borehole Image Acoustic Travel Time Array	TT_IMG*	us
+Borehole Image Acoustic Travel Time Array	TTBK_S	*
+True Vertical Depth Sub Sea	TV*NAP*	*
+True Vertical Depth Below Mudline	TVDBML*	m
+Borehole Image Acoustic Travel Time Array	UBI_TT	*
+Vibration	VIBLAT*	G
+Water Viscosity	VISC_W	cP
+Carbonate Volume Fraction	VLS_ND	ft3/ft3
+Sand Volume Fraction	VSS_ND	v/v
+Illite Volume Fraction	VX_ILL*	*
+X Location	Well_X	*
+Y Location	Well_Y	*
+Waveform - Monopole	WF_MPS*	*
+Waveform - Low Frequency	WF_MST*	*
+X Location	XCOORD	*
+Y Location	YCOORD	*
+Oil Holdup	YO_COR	*
+Oil Holdup	YO_WIN	*
+Measured Depth	ZONE*MD	*
+Impedivity Array	ZTBC_?*	*
+Impedivity Array	HFT*	*
+Measured Depth	*AHTBF	*
+Rotations Per Minute - Collar	*CRPM*	*
+Torque - Downhole	*DTOR*	*
+X Location	*EAST*	*
+Time Interval	*ETIM*	s
+General Flag	*FLAG*	*
+Mud Flow Rate In	*FLWI*	*
+Mud Flow Rate Out	*FLWO*	*
+Hook Load	*HKLD*	klbf
+Acoustic Energy	*MAXE*	*
+Correction Factor	*MBHK*	*
+Acoustic Energy	*MINE*	*
+Marquardt Resolution Degradation Factor	*MRDF*	*
+Mud Weight In	*MWTI*	*
+Mud Weight Out	*MWTO*	*
+Pore Throat Radius	*PTRi*	um
+Resistivity - Deep	*RACM*	*
+Resistivity - Deep	*SEDP*	*
+Resistivity - Medium	*SEMP*	*
+Resistivity - Micro	*SEXP*	*
+Torque - Surface	*STOR*	kft.lbf
+Mud Flow Rate In	*TFLO*	*
+Rotations Per Minute - Turbine	*TRPM*	*
+X Location	*UTM*X	*
+Resistivity - Deep Induction	4F075	ohm.m
+Resistivity - Medium	A*T10*	*
+Resistivity - Deep	A*T90*	*
+Resistivity (Array)	ADI07	ohm.m
+Resistivity (Array)	ADI11	ohm.m
+Resistivity (Array)	ADI15	ohm.m
+Resistivity (Array)	ADI22	ohm.m
+Resistivity (Array)	ADI27	ohm.m
+Resistivity (Array)	AH??0*	*
+Biot Coefficient	ALPH_*	*
+Borehole Image - Ultrasonic Amplitude	AMP?_*	mV
+Borehole Image Array	AMPEQ*	*
+Radius	ARAD1*	*
+Radius	ARAD2*	*
+Radius	ARAD3*	*
+Radius	ARAD4*	*
+Resistivity - Medium	ASF10*	*
+Bad Hole Flag	BAD*H*	*
+Frequency Band Energy	Band-*	*
+Bulk Density	BDC*M*	*
+Bad Hole Flag	BH_FL*	*
+Measured Depth	BOTAH	*
+Waxman B	BSTAR	*
+Elastic Modulus	C*_BH*	psi
+Core Porosity	C_POR*	*
+Mud Gas C1	C1_In	%
+Mud Gas Wetness	C1vC3	*
+Mud Gas C2	C2_In	%
+Mud Gas C3	C3_In	%
+Borehole Image Array	CBHTA*	*
+Borehole Image Array	CBHTT*	*
+Coherence	CH_DT*	*
+Neutron Porosity	CNPOR	PU
+Bulk Density Correction	CORP_*	*
+Bulk Density Correction	CORP2	*
+Core Permeability	CPERM*	*
+Capillary Pressure Laboratory (Array)	CPLAB*	*
+Measured Depth	CPRPD*	ft
+Sensor Temperature	CPSGT*	degF
+Porosity Correction	DBPHB	*
+Porosity Correction	DBPHL	*
+Porosity Correction	DBPHR	*
+Porosity Correction	DBPHU	*
+Measured Depth	DEPTH*	*
+Gamma Ray Cutoff	DISCR*	*
+Moved Hydrocarbon Volume Fraction	DLMHY	v/v
+Density Neutron Separation	DNSEP	*
+Pressure Loss	DPRES*	*
+Fluid Density	DRHOF*	*
+Drift Time	Drift*	ms
+Compressional Slowness	DT_FS	*
+Stoneley Slowness	DT_ST*	*
+Shear Slowness	DTEXR*	*
+Iron Weight Fraction	DWFE*	*
+Variable Density Log	DWF?_*	*
+Correction - Percentage	DWMUD	%
+General Flag	ECFLG	unitless
+X Offset	EDIST	*
+Vertical Stress	EMAHS*	*
+Vertical Stress	EMIHS*	*
+Error	ERROR	unitless
+Vertical Stress	EVERT	*
+General Flag	EXFLG	unitless
+Magnesium Inelastic Relative Yield	F12MG	*
+Magnetic Field Norm	FINOR	*
+Fluid Code	FLUID	*
+Thomsen Gamma	GAMMA	*
+Gamma Ray Clean	GRCLE*	*
+Gamma Ray	GRCOR	gAPI
+Gamma Ray Shale	GRMAX*	*
+Gamma Ray Shale	GRSHA*	*
+Gas Holdup	HUGAS*	*
+Oil Holdup	HUOIL*	*
+Water Holdup	HUWAT*	*
+Borehole FlapA Array1	IMG1A	*
+Borehole FlapB Array1	IMG2A	*
+Borehole FlapC Array1	IMG3A	*
+Borehole FlapD Array1	IMG4A	*
+Moved Hydrocarbon Volume Fraction	IMHYV	v/v
+Acoustic Impedance Compressional	IMPED*	*
+Coherence	INCOH*	*
+Integrated Permeability	IPERM	mD.ft
+Permeability	K_AMB*	*
+Bulk Modulus (Dynamic)	K_GAS	*
+Permeability	K_INS*	*
+Bulk Modulus (Dynamic)	K_OIL	*
+Borehole Image - Ultrasonic Amplitude	LAMP_*	mV
+Borehole Image Acoustic Travel Time Array	LTT?_*	us
+Archie Porosity Exponent m	M_DWA*	*
+Measured Depth	MDTBF	*
+Sensor Temperature	MTEP_*	degF
+Waxman-Smits Saturation Exponent Star n*	N*STAR	*
+Resistivity - Russian Normal	N1100	ohm.m
+Magnesium Inelastic Relative Yield	N12MG	*
+Y Offset	NDIST	*
+Porosity	OPHIT	*
+Formation Pressure	P*RFT*	*
+Vertical Stress	P_ISO*	*
+Borehole PadA Array1	PAD_1*	*
+Borehole PadB Array1	PAD_2*	*
+Borehole PadC Array1	PAD_3*	*
+Borehole PadD Array1	PAD_4*	*
+Model Fit Error	PCOST	unitless
+Resistivity - Profile	PHIGH	*
+Effective Porosity	PORE_*	*
+Neutron Porosity	PORSC	v/v
+Power	POWER	*
+Sensor Temperature	PQ?TR	degF
+Sensor Temperature	PQ?TV	degF
+Measured Depth	PQDVP*	ft
+Pretest Volume	PQPTV*	cm3
+Probability	Proba*	*
+Hole Azimuth	PS_AZ	*
+Hook Load	PS_HL	*
+Measured Depth	PS_MD	*
+Active Mud Tank Volume	PSACT*	*
+Quality Indicator	QCPEF	unitless
+Quality Indicator	QCRXO	unitless
+Resistivity - Micro	R*MIC*	*
+Resistivity Anisotropy	RABHC	*
+Resistivity - Deep	RAC*M*	*
+Borehole Image Array Resistive	RAP?_*	ohm.m
+Resistivity - Apparent	RAP_?	ohm.m
+Resistivity - Deep	RDEEP	*
+Resistivity - Shallow	RFOCC	ohm.m
+Apparent Matrix Density	RHOMA*	*
+Mud Filtrate Density	RHOMF*	*
+Resistivity - Medium	RIPMC	ohm.m
+Resistivity - Medium Lateral	RLMLC	ohm.m
+Resistivity - Micro Normal	RNMLC	ohm.m
+Measured Depth	RPAPD	ft
+Resistivity - Flushed Zone	RPRXC	ohm.m
+Resistivity - Medium	RSHAL*	*
+Ratio	RSORT	unitless
+Sensor Temperature	RTDQK	degF
+Sensor Temperature	RTDQL	degF
+Resistivity - Medium	RTXOR*	*
+Mud Filtrate Salinity	SALMF	*
+Sonde Deviation	SDEVM	*
+Slowness Frequency Analysis	SFA1R*	*
+Slowness Frequency Analysis	SFA1T*	*
+Slowness Frequency Analysis	SFA2R*	*
+Slowness Frequency Analysis	SFA2T*	*
+Slowness Frequency Analysis	SFA3R*	*
+Slowness Frequency Analysis	SFA3T*	*
+Slowness Frequency Analysis	SFA4R*	*
+Slowness Frequency Analysis	SFA4T*	*
+Hydrocarbon Saturation	SH*WS*	*
+Core Hydrocarbon Saturation (Array)	SH_CC*	*
+Dip Classification	shape	*
+Shear Slowness	SHEAR*	*
+Maximum Horizontal Stress	SHMAX*	*
+Minimum Horizontal Stress	SHMIN*	*
+Cable Speed	SPEED*	*
+Neutron Porosity	SPL*F*	*
+Stick Slip	STICK	*
+Core Water Saturation (Array)	SW_CC*	*
+Swab Surge Pressure	SWAB_*	psi
+Flushed Zone Gas Saturation	SXGAS	ft3/ft3
+Acoustic Normalization Factor	T??GN*	*
+Waveform - Dipole	T??WV*	*
+Resistivity - True Formation	TBRTC	ohm.m
+Measured Depth	TOPAH	*
+Stroke Count	TSTK_*	*
+Travel Time	TT_??	*
+True Vertical Depth Sub Sea	TV*SS*	*
+Borehole Image - Ultrasonic Amplitude	U?AMP	mV
+Travel Time	U?TTM	us
+Undisturbed Zone Irreducible Water Volume Fraction	UIwat*	v/v
+Vertical Stress	VERT_*	psi
+Vibration	VIB_X	*
+Voltage	VRAM_*	*
+Voltage	VRPH_*	*
+Waveform - Quadrupole	WF_QP	*
+Acoustic Normalization Factor	WFA?N*	*
+Resistivity - Deep Laterolog	WRLGC	ohm.m
+Resistivity - Shallow Laterolog	WRSGC	ohm.m
+X Location	X*LOC*	*
+X Offset	X*OFF*	*
+Borehole PadA Array1	XPAD1	*
+Borehole PadB Array1	XPAD2	*
+Borehole PadC Array1	XPAD3	*
+Borehole PadD Array1	XPAD4	*
+Borehole PadE Array1	XPAD5	*
+Borehole PadF Array1	XPAD6	*
+Vibration	XY1RM*	*
+Y Location	Y*LOC*	*
+Y Offset	Y*OFF*	*
+Incremental Gas Rate	ZCGAS*	*
+Incremental Oil Rate	ZCOIL*	*
+Incremental Water Rate	ZCWAT*	*
+Rock Fabric Continuous	*_RFN	*
+Bit Size	*BIT*	in
+Bulk Density Correction	*DHR*	*
+Bulk Density Correction	*DRH*	*
+Resistivity - Deep	*ILD*	ohm.m
+Resistivity - Deep Laterolog	*LLD*	ohm.m
+Resistivity - Micro	*MLL*	*
+Mobility	*MOB*	*
+True Horizontal Length	*THL*	ft
+Resistivity (Array)	A*20*	*
+Resistivity (Array)	A*30*	*
+Resistivity (Array)	A*60*	*
+Resistivity - Attenuation	A10H*	ohm.m
+Conductivity - Attenuation	A10H*	ms/m
+Resistivity - Attenuation	A10L*	ohm.m
+Conductivity - Attenuation	A10L*	ms/m
+Resistivity - Attenuation	A16H*	ohm.m
+Conductivity - Attenuation	A16H*	ms/m
+Resistivity - Attenuation	A16L*	ohm.m
+Conductivity - Attenuation	A16L*	ms/m
+Resistivity - Attenuation	A22H*	ohm.m
+Conductivity - Attenuation	A22H*	ms/m
+Resistivity - Attenuation	A22L*	ohm.m
+Conductivity - Attenuation	A22L*	ms/m
+Resistivity - Attenuation	A28H*	ohm.m
+Conductivity - Attenuation	A28H*	ms/m
+Resistivity - Attenuation	A28L*	ohm.m
+Conductivity - Attenuation	A28L*	ms/m
+Resistivity - Attenuation	A34H*	ohm.m
+Conductivity - Attenuation	A34H*	ms/m
+Resistivity - Attenuation	A34L*	ohm.m
+Conductivity - Attenuation	A34L*	ms/m
+Resistivity - Attenuation	A40B	ohm.m
+Resistivity - Attenuation	A40H*	ohm.m
+Conductivity - Attenuation	A40H*	ms/m
+Resistivity - Attenuation	A40L	ohm.m
+Resistivity - Attenuation	A40L*	ohm.m
+Conductivity - Attenuation	A40L*	ms/m
+Bulk Density	ABDC*	*
+Caliper	ACAL	*
+X Acceleration	ACCX*	*
+Y Acceleration	ACCY*	*
+Z Acceleration	ACCZ*	*
+Standoff	ACES	*
+Acoustic Impedance Compressional	ACIM*	*
+Carbon Oxygen Ratio	ACOR	*
+Gauge Pressure	ACQG	psi
+Borehole Diameter	ADIA	cm
+Bulk Density	ADLA*	*
+Bulk Density	ADSA*	*
+Resistivity (Array)	AE10	ohm.m
+Resistivity (Array)	AE90	ohm.m
+Quality Indicator	AECF	unitless
+Quality Indicator	AEHF	unitless
+Quality Indicator	AEMF	unitless
+Quality Indicator	AERF	unitless
+Processing Option	AERF	*
+Resistivity (Array)	AF?0*	*
+Count Rate	AFFD*	*
+Count Rate	AFND*	*
+Conductivity - Array Induction	AIBC	mS/m
+Borehole Diameter	AIBD*	in
+Mud Resistivity	AIMR*	ohm.m
+Permeability	AIRK*	mD
+Borehole Image - Ultrasonic Amplitude	AMP_*	mV
+Borehole Image Acoustic Amplitude Array	AMPL	*
+Acceleration Norm	ANOR	*
+Resistivity (Array)	AO?0*	*
+Epithermal Neutron Porosity Dolomite	APDC	*
+Epithermal Neutron Porosity Dolomite	APDU	*
+Gauge Pressure	APQK	psi
+Gauge Pressure	APQL	psi
+Neutron Porosity	APSC*	*
+Tool Status	APSW*	*
+Gauge Pressure	AQAP	psi
+Sensor Temperature	AQAT	degF
+Borehole Image Radius Array	ARAD*	*
+Borehole Image Array	ARDD*	*
+Salinity_Low	ASAL*	*
+Gauge Pressure	ASAP	psi
+Sensor Temperature	ASAT	degF
+Resistivity - Deep	ASF9*	*
+Mud Resistivity	ASMF*	*
+Resistivity (Array)	AT?0*	*
+Acoustic Attenuation	ATTN*	dB
+Auxiliary Downhole Gain	AUXG*	*
+Caliper	AVCA*	*
+Porosity	AVHI*	*
+Porosity	AVLO*	*
+Borehole Image Acoustic Amplitude Array	AWBK*	*
+Borehole Image Array	AWCN	*
+Invasion Diameter	AXD1	in
+Invasion Diameter	AXD2	in
+Resistivity (Array)	AXRI	*
+Pad A Azimuth	AZCB*	*
+Pad A Azimuth	AZDP*	*
+Pad A Azimuth	AZEI*	*
+Pad A Azimuth	AZI1*	*
+Hole Azimuth	AZIM	*
+Pad A Azimuth	AZOD	*
+Pad A Azimuth	AZST*	*
+Sensor Temperature	B?TR	degF
+Sensor Temperature	B?TV	degF
+General Flag	BADL	*
+Acoustic Attenuation	BATT*	dB
+Compressional Slowness	BCSL*	*
+Resistivity - Deep	BDAV*	*
+Breakout Pressure (Mud Weight Equivalent)	BDMW*	*
+Correction Factor	BHKF*	*
+Oil Holdup	BHOF*	*
+Borehole Image Acoustic Amplitude Array	BHTA*	*
+Borehole Image Acoustic Travel Time Array	BHTT*	*
+Biot Coefficient	BIOT*	*
+Bucker Gain	BKRG*	*
+Block Position	BLKP	*
+Resistivity - Medium	BMAV*	*
+Breakout Azimuth	BOAZ	*
+Breakout Pressure (Mud Weight Equivalent)	BOMW*	*
+Bit On Bottom	BONB*	*
+Block Position	BPOS*	*
+Borehole Salinity	BSAL*	*
+Resistivity - Shallow	BSAV*	*
+Dip Button 1	BT1C*	*
+Borehole PadA Array1	BT1L	*
+Borehole PadA Array2	BT1U	*
+Dip Button 2	BT2C*	*
+Borehole PadB Array1	BT2L	*
+Borehole PadB Array2	BT2U	*
+Dip Button 3	BT3C*	*
+Borehole PadC Array1	BT3L	*
+Borehole PadC Array2	BT3U	*
+Dip Button 4	BT4C*	*
+Borehole PadD Array1	BT4L	*
+Borehole PadD Array2	BT4U	*
+Dip Button 5	BT5C*	*
+Borehole PadE Array1	BT5L	*
+Borehole PadE Array2	BT5U	*
+Dip Button 6	BT6C*	*
+Borehole PadF Array1	BT6L	*
+Borehole PadF Array2	BT6U	*
+Borehole PadG Array1	BT7L	*
+Borehole PadG Array2	BT7U	*
+Borehole PadH Array1	BT8L	*
+Borehole PadH Array2	BT8U	*
+Dip Button 1	BTN1*	*
+Dip Button 2	BTN2*	*
+Dip Button 3	BTN3*	*
+Dip Button 4	BTN4*	*
+Dip Button 5	BTN5*	*
+Dip Button 6	BTN6*	*
+Block Velocity	BVEL*	*
+Hydrocarbon Volume Fraction	BVHC*	V/V
+Borehole Volume	BVOL	F3
+Caliper	CADF*	*
+Caliper 1	CAL1*	*
+Caliper 2	CAL2*	*
+Caliper 3	CAL3*	*
+Caliper 4	CAL4*	*
+Caliper 5	CAL5*	*
+Caliper 6	CAL6*	*
+Caliper 7	CAL7*	cm
+Caliper 8	CAL8*	cm
+Caliper	CALI*	*
+Caliper	CAML*	*
+Caliper	CAMS*	*
+Caliper	CAPD*	*
+Pad A Azimuth	CBIO*	*
+Conductivity - Bound Water	CBWA	mho/m
+Chlorine Capture Relative Yield	CCHL	v/v
+Casing Collar Locator	CCLD*	*
+Correlation Coefficient	CCOR*	*
+Hole Azimuth	CDAZ*	*
+Core Grain Density	CDEN*	*
+Sonde Deviation	CDEV*	*
+Iron Uncorrected Capture Relative Yield	CFEU	v/v
+Formation Resistivity Factor	CFRF*	*
+Fluid Slowness	CFVL*	*
+Count Rate Ratio	CIRF*	*
+Count Rate Ratio	CIRN*	*
+Magnesium Capture Relative Yield	CMAG	v/v
+Voltage	CMAX	*
+Voltage	CMIN	*
+Coal Flag	COAL*	*
+Offset	COFF	*
+Bulk Density Correction	CORM*	*
+Bulk Density Correction	CORP	*
+Potassium Concentration	CP40	%
+Core Porosity	CPHI*	*
+Net Capture Spectrum Variance	CPNV	*
+Core Porosity	CPOR*	*
+Measured Depth	CPPD*	ft
+Pretest Volume	CPPV*	cm3
+Gauge Pressure	CPQP*	psi
+Sensor Temperature	CPQT*	degF
+Gauge Pressure	CPSG*	psi
+Count Rate	CRFI*	*
+Count Rate	CRNI*	*
+Core Mercury Saturation (Array)	CSHG*	*
+Casing Inside Diameter	CSID	*
+Casing Outside Diameter	CSOD	*
+Sulfur Corrected Capture Relative Yield	CSUL	*
+Sulfur Corrected Capture Relative Yield	CSUU	v/v
+Cable Velocity	CVEL*	*
+Cement Volume	CVLD*	*
+Cement Volume	CVOL*	*
+Date Time	DATE*	*
+Acoustic Attenuation Rate	DATN*	*
+Dip Button 1A	DB1A*	*
+Dip Button 2A	DB2A*	*
+Dip Button 3A	DB3A*	*
+Dip Button 4A	DB4A*	*
+Travel Time	DBT1	us
+Travel Time	DBT2	us
+Travel Time	DBT3	us
+Travel Time	DBT4	us
+Bit Depth	DBTM	m
+Bit Depth	DBTR*	*
+Bit True Vertical Depth	DBTV	ft
+Differential Caliper	DCAL*	*
+Density Caliper	DCAV*	*
+Cement Bond Amplitude	DCBL*	*
+Density Caliper	DCHO	cm
+Bulk Density Correction	DCOR	G/C3
+Borehole Image Radius Array	DCRA	cm
+Density Caliper	DCVE	cm
+Bulk Density Correction	DENC*	*
+Resistivity - Deep	DEPR*	*
+Measured Depth	DEPT	*
+Pressure	DHAP*	*
+Caliper 1	DI15	*
+Caliper 2	DI26	*
+Caliper 3	DI37	*
+Caliper 4	DI48	*
+Angle	DIL_*	*
+Invasion Diameter	DINV	*
+True Dip Inclination	Dip_*	*
+Dip Button 1	DIP1*	*
+Dip Button 2	DIP2*	*
+Dip Button 3	DIP3*	*
+Dip Button 4	DIP4*	*
+Dip Button 5	DIP5*	*
+Dip Button 6	DIP6*	*
+Borehole Volume	DLHV	v/v
+Tension	DLOD*	*
+Dog Leg Severity	DLS_*	dega/100ft
+Caliper	DMAX*	*
+Measured Depth	DMEA	m
+Caliper	DMIN*	*
+Porosity	DMRP	ft3/ft3
+Apparent Dip Azimuth	DPAA*	*
+Apparent Dip Inclination	DPAP*	*
+True Dip Azimuth	DPAZ*	*
+Porosity	DPHZ*	*
+Porosity	DPOA	v/v
+Porosity Correction	DPOA	*
+Correction - Percentage	DPRS	%
+True Dip Inclination	DPTR*	*
+Borehole Image Radius Array	DRCA*	*
+Rotations Per Minute - Collar	DRPM	*
+Borehole Image Density Correction Array	DRSC	g/cm3
+Borehole Image Density Correction Array	DRSI	g/cm3
+Correction - Percentage	DSBH	%
+Correction - Percentage	DSFM	%
+Sigma Correction	DSIG	cu
+Standoff	DSO8	*
+Standoff	DSOB	cm
+Standoff	DSOL	cm
+Standoff	DSOR	cm
+Standoff	DSOU	cm
+Correction - Percentage	DSUM	%
+Compressional Slowness	DT*P*	us/ft
+Stoneley Slowness	DT3R*	*
+Compressional Slowness	DTCO*	*
+Compressional Slowness	DTMA*	*
+Correction - Percentage	DTMP	%
+Shear Slowness	DTSM*	*
+Stoneley Slowness	DTST*	us/ft
+Shear Slowness	DTXX*	us/ft
+Shear Slowness	DTYY*	us/ft
+True Vertical Depth	DVER	m
+Aluminum Weight Fraction	DWAL*	*
+Calcium Weight Fraction	DWCA*	*
+Chlorine Weight Fraction	DWCL	w/w
+Gadolinium Weight Fraction	DWGD*	w/w
+Hydrogen Weight Fraction	DWHY	w/w
+Potassium Weight Fraction	DWK_*	*
+Weight On Bit - Downhole	DWOB	*
+Weight On Bit - Downhole	DWOB*	*
+Silicon Weight Fraction	DWSI*	*
+Sulfur Weight Fraction	DWSU*	*
+Titanium Weight Fraction	DWTI*	*
+Shear Slowness	DXDT	us/ft
+Shear Slowness	DYDT	us/ft
+Electromagnetic Attenuation Rate	EATT*	dB/m
+Raw Amplitude	EBE?	mV
+Error - Percent	EBSZ	*
+Eccentering	ECCE	*
+Gamma Ray	ECGR*	*
+Error - Percent	EDIE	%
+General Flag	EDIT	*
+Quality Indicator - Borehole Diameter	EHM8	*
+Quality Indicator - Borehole Diameter	EHMZ	*
+Error - Percent	ELSZ	*
+Permittivity	EPSI	*
+Error - Percent	ESSZ	*
+Elemental Statistical Uncertainty Factor	ESUF	*
+Carbon Inelastic Relative Yield	F12C	*
+Dip Button 1	F1B1*	*
+Calcium Inelastic Relative Yield	F1CA	*
+Iron Inelastic Relative Yield	F1FE	*
+Silicon Inelastic Relative Yield	F1SI	*
+Tool Background Inelastic Relative Yield	F1TB	*
+Oxygen Capture Relative Yield	F2AT	*
+Dip Button 2	F2B1*	*
+Calcium Capture Relative Yield	F2CA	*
+Chlorine Capture Relative Yield	F2CL	*
+Density Effect Capture Relative Yield	F2DN	*
+Iron Capture Relative Yield	F2FE	*
+Gadolinium Capture Relative Yield	F2GD	*
+Magnesium Capture Relative Yield	F2MG	*
+Silicon Capture Relative Yield	F2SI	*
+Tool Background Capture Relative Yield	F2TB	*
+Titanium Capture Relative Yield	F2TI	*
+Dip Button 3	F3B1*	*
+Dip Button 4	F4B1*	*
+Dip Button 5	F5B1*	*
+Dip Button 6	F6B1*	*
+Lithology	FACI*	*
+Friction Angle	FANG*	*
+Count Rate	FBAC*	*
+Power	FBEF*	*
+FMI Electronic Gain	FBGA*	*
+Borehole PadA Array1	FCA1*	*
+Borehole PadA Array2	FCA2*	*
+Borehole FlapA Array1	FCA3*	*
+Borehole FlapA Array2	FCA4*	*
+X Acceleration	FCAX*	*
+Y Acceleration	FCAY*	*
+Z Acceleration	FCAZ*	*
+Borehole PadB Array1	FCB1*	*
+Borehole PadB Array2	FCB2*	*
+Borehole FlapB Array1	FCB3*	*
+Borehole FlapB Array2	FCB4*	*
+Borehole PadC Array1	FCC1*	*
+Borehole PadC Array2	FCC2*	*
+Borehole FlapC Array1	FCC3*	*
+Borehole FlapC Array2	FCC4*	*
+Borehole PadD Array1	FCD1*	*
+Borehole PadD Array2	FCD2*	*
+Borehole FlapD Array1	FCD3*	*
+Borehole FlapD Array2	FCD4*	*
+Covariance	FCOC	*
+Carbon Oxygen Ratio	FCOR*	*
+Bulk Density Correction	FDCC*	*
+Count Rate	FDSN*	*
+Chi Square	FECS	*
+Correction Factor	FEGF	*
+Correction Factor	FEOF	*
+Correction Factor	FERD	*
+Clay Grain Volume Fraction	FGCL*	*
+True Vertical Depth Sub Sea	FGOL*	*
+True Vertical Depth Sub Sea	FGWL*	*
+Correction Factor	FIBG	*
+Correction Factor	FIBO	*
+Correction Factor	FIBS	*
+Chi Square	FICS	*
+Correction Factor	FIGF	*
+Magnetic Field Inclination	FINC	*
+Correction Factor	FIOF	*
+Correction Factor	FIRD	*
+Quality Indicator	FLPE	unitless
+Quality Indicator	FLPE	*
+Borehole FlapA Array1	FMFA	*
+Borehole FlapB Array1	FMFB	*
+Borehole FlapC Array1	FMFC	*
+Borehole FlapD Array1	FMFD	*
+Borehole PadA Array1	FMPA	*
+Borehole PadB Array1	FMPB	*
+Borehole PadC Array1	FMPC	*
+Borehole PadD Array1	FMPD	*
+Count Rate	FNCC	*
+Count Rate	FNIC	*
+True Vertical Depth Sub Sea	FOWL*	*
+Fracture Pressure Gradient (Mud Weight Equivalent)	FPMW*	*
+Gauge Pressure	FPRE	psi
+Fracture Pressure	FPRS*	*
+Gauge Pressure	FSAP	psi
+Sensor Temperature	FSAT	degF
+Sigma Formation	FSIG*	cu
+Count Rate	FTDT*	*
+Formation Temperature	FTEM*	*
+Time Interval	FTIM*	*
+Mean Hydraulic Fracture Aperture	FVAH*	mm
+Carbon Oxygen Ratio	FWCO	*
+Carbon Oxygen Ratio	FWCO*	*
+Oxides Closure Normalization Factor	FY2W	*
+Gain Code	GCOD*	*
+Core Grain Density	GDEN*	*
+Guard Gain	GG01*	*
+Gamma Ray	GRAS*	*
+Acceleration Norm	GRAV	*
+Gamma Ray Cutoff	GRCO*	*
+Gamma Ray Cutoff	GRCU*	*
+Error - Percent	GREZ	*
+Gamma Ray Clean	GRSA*	*
+Borehole Image Gamma Array	GRSI*	*
+Gamma Ray	H?GR*	*
+Neutron Porosity	HALC*	*
+Borehole Image Array Resistive	HARD*	ohmm
+Borehole Image Array Resistive	HARS*	ohmm
+Neutron Porosity	HASC*	*
+Caliper	HCAL*	*
+Borehole Diameter	HDAR*	in
+Caliper	HDMI	*
+Quality Indicator	HDQC	*
+Bulk Density Correction	HDRA*	*
+Bulk Density Correction	HDRB	*
+Resistivity - Deep	HDRS*	*
+Measured Depth	HDTH	m
+Height Above Free Water Level	HFWL	*
+Hook Load	HKLA	*
+Hook Load	HKLD*	*
+Resistivity - Medium	HMRS*	*
+Thermal Neutron Porosity	HNPO*	*
+Resistivity - Deep	HO90	ohmm
+Borehole Diameter	HORD	cm
+Photoelectric Factor	HPEA	*
+Porosity Correction	HPOA	*
+Mud Lift Pump Pressure	HPPR	psi
+Photoelectric Factor	HPRA	*
+Quality Indicator	HQLS	*
+Quality Indicator	HQSS	*
+Sigma Measured	HSIG*	cu
+Photoelectric Factor	HSPA	*
+Uncertainty	HSPE	*
+Resistivity - Deep	HT90	ohmm
+Thorium Concentration	HTHO*	*
+Thermal Neutron Porosity	HTNP*	*
+True Vertical Depth	HTVD	m
+Volumetric Photoelectric Effect	HULS	*
+Uranium Concentration	HURA*	*
+Hydrocarbon Volume Fraction	HVOL*	*
+Resistivity - Deep	I5FR*	*
+Pad A Azimuth	IAP1	*
+Hole Azimuth	IAZI	*
+Hole Azimuth	IAZT	*
+Borehole Image - Quality	IDDQ	*
+Bulk Density Correction	IDDR*	*
+Photoelectric Factor	IDPE*	*
+Resistivity - Deep	IDPH*	*
+Bulk Density	IDRO*	*
+Caliper 1	IECX	*
+Caliper 3	IECY	*
+Resistivity - Deep Induction	IELC	ohm.m
+Hole Deviation	IFTT	*
+Borehole Image Array	IMAG	*
+Borehole PadA Array1	IMG1	*
+Borehole PadB Array1	IMG2	*
+Borehole PadC Array1	IMG3	*
+Borehole PadD Array1	IMG4	*
+Borehole PadE Array1	IMG5	*
+Borehole PadF Array1	IMG6	*
+Borehole PadG Array1	IMG7	*
+Borehole PadH Array1	IMG8	*
+Resistivity - Medium	IMPH*	*
+Hole Deviation	INCL*	*
+Count Rate	INFD	*
+Count Rate	INND	*
+Porosity Thickness	IPOR	ft
+Count Rate Ratio	IRAT*	*
+Relative Bearing	IRHS	*
+Shear Strength	ISHS*	*
+Hole Deviation	ITLT	*
+Integrated Transit Time	ITTI	*
+Core Permeability	KAIR*	*
+Permeability	KDMR	mD
+Permeability	KGAS*	mD
+Kick Pressure	Kick*	*
+Permeability	KINT*	mD
+Permeability	KWTR*	mD
+Resistivity - Russian Laterals	L045	ohm.m
+Resistivity - Russian Laterals	L105	ohm.m
+Resistivity - Russian Laterals	L225	ohm.m
+Resistivity - Russian Laterals	L425	ohm.m
+Resistivity - Russian Laterals	L850	ohm.m
+Bulk Density	LDEN*	*
+Bulk Density Correction	LDNC*	*
+Quality Indicator	LDQC	unitless
+Quality Indicator	LDQC	*
+Invasion Length	LINV	*
+Lithology	LITH*	*
+Resistivity - Deep Groningen	LL*G*	*
+Resistivity - Deep	LL9D*	*
+Resistivity - Medium	LL9S*	*
+Resistivity - Shallow Laterolog	LLSC	ohm.m
+Core Permeability Log10	LOGK*	*
+Longitude	LONG*	*
+Quality Indicator	LQLS	*
+Quality Indicator	LQSS	unitless
+Quality Indicator	LQSS	*
+Borehole Image Array	LSAZ*	*
+Compressional Slowness	LSSL*	*
+Borehole Image Array	LTAZ*	*
+Uncertainty - Density	LUS3	*
+Uncertainty - Density	LUS4	*
+Resistivity (Array)	M0R?	*
+Resistivity (Array)	M1R?	*
+Resistivity (Array)	M2R?	*
+Resistivity - Micro	M2R1*	*
+Resistivity - Deep	M2RX*	*
+Resistivity (Array)	M4R?	*
+Magnetic Field Norm	MAGN	nT
+X Magnetometer	MAGX*	*
+Y Magnetometer	MAGY*	*
+Z Magnetometer	MAGZ*	*
+Maximum Horizontal Stress	MAHS*	*
+Degradation Factor	MARD	*
+Irreducible Water Volume Fraction	MBVI	ft3/ft3
+NMR Free Fluid Volume Fraction	MBVM	ft3/ft3
+Clay Bound Water	MCBM	ft3/ft3
+Mud Conductivity	MCIA*	*
+Mud Conductivity	MCOA*	*
+Mud Density	MDIA	ppg
+Mud Density In	MDIA	*
+Magnetic Dip Calculated	MDIP*	deg
+Mud Density	MDOA	ppg
+Mud Density Out	MDOA	*
+Resistivity - Medium	MEDR*	*
+NMR Free Fluid Volume Fraction	MFF1	ft3/ft3
+NMR Free Fluid Volume Fraction	MFF2	ft3/ft3
+NMR Free Fluid Volume Fraction	MFF3	ft3/ft3
+NMR Free Fluid Volume Fraction	MFF4	ft3/ft3
+NMR Free Fluid Volume Fraction	MFF5	ft3/ft3
+NMR Free Fluid Volume Fraction	MFF6	ft3/ft3
+NMR Free Fluid Volume Fraction	MFF7	ft3/ft3
+Mud Flow Rate In	MFIA	*
+Mud Flow Rate	MFOA	*
+Minimum Horizontal Stress	MIHS*	*
+Resistivity - Micro	MILL*	*
+Resistivity - Micro	MINV	*
+Resistivity - Micro	MINV*	ohm.m
+Mud Loss (Mud Weight Equivalent)	MLMW*	*
+Resistivity - Micro	MNOR	*
+Resistivity - Micro	MNOR*	ohm.m
+NMR Effective Porosity	MPHE	ft3/ft3
+NMR Porosity	MPHS	ft3/ft3
+Mud Resistivity	MRES*	*
+Resistivity - Spherically Focused	MSFL*	*
+Resistivity - Micro	MSFU*	*
+Mud Temperature	MTIA	*
+Mud Temperature	MTOA	*
+Fluid Density	MWFD*	*
+Resistivity - Russian Normal	N050	ohm.m
+Carbon Inelastic Relative Yield	N12C	*
+Calcium Inelastic Relative Yield	N1CA	*
+Iron Inelastic Relative Yield	N1FE	*
+Silicon Inelastic Relative Yield	N1SI	*
+Tool Background Inelastic Relative Yield	N1TB	*
+Oxygen Capture Relative Yield	N2AT	*
+Calcium Capture Relative Yield	N2CA	*
+Chlorine Capture Relative Yield	N2CL	*
+Density Effect Capture Relative Yield	N2DN	*
+Iron Capture Relative Yield	N2FE	*
+Gadolinium Capture Relative Yield	N2GD	*
+Magnesium Capture Relative Yield	N2MG	*
+Silicon Capture Relative Yield	N2SI	*
+Tool Background Capture Relative Yield	N2TB	*
+Titanium Capture Relative Yield	N2TI	*
+Resistivity - Russian Normal	N600	ohm.m
+Acoustic Attenuation Rate	NATN*	*
+Count Rate	NBAC	*
+Power	NBEF*	*
+Neutron Caliper	NCAL	cm
+North Count	NCNT*	*
+Covariance	NCOC	*
+Carbon Oxygen Ratio	NCOR*	*
+Porosity	NDPH	v/v
+Shift Corrected Depth	NDPI	*
+Count Rate	NDSN*	*
+Chi Square	NECS	*
+Correction Factor	NEGF	*
+Correction Factor	NEOF	*
+Correction Factor	NERD	*
+Net Reservoir Flag	NETR*	*
+Net Reservoir Flag	NETS*	*
+Correction Factor	NIBG	*
+Correction Factor	NIBO	*
+Correction Factor	NIBS	*
+Count Rate Ratio	NICR*	*
+Chi Square	NICS	*
+Correction Factor	NIGF	*
+Correction Factor	NIOF	*
+Correction Factor	NIRD	*
+Thermal Neutron Porosity	NLIM*	*
+Count Rate	NNIC	*
+Neutron Porosity	NP*L*	*
+Neutron Porosity	NPHI*	*
+Thermal Neutron Porosity	NPHU*	pu
+Neutron Porosity	NPOR*	*
+Thermal Neutron Near Far Ratio	NRAT*	*
+Bulk Density	NRHB	*
+Bulk Density Correction	NRHB*	*
+Carbon Oxygen Ratio	NWCO	*
+Carbon Oxygen Ratio	NWCO*	*
+Resistivity Ratio	OABR	*
+Vertical Stress Gradient (Mud Weight Equivalent)	OBMW*	*
+Borehole PadA Array1	OBRA*	*
+Borehole PadB Array1	OBRB*	*
+Borehole PadC Array1	OBRC*	*
+Borehole PadD Array1	OBRD*	*
+Mud Flow Rate	OFBF*	*
+Standpipe Pressure	OFBP*	*
+Standpipe Pressure	ONBP*	*
+Resistivity (Array)	P*20*	*
+Resistivity (Array)	P*30*	*
+Resistivity (Array)	P*60*	*
+Resistivity - Phase Shift	P*UNC	ohm.m
+Borehole PadA Array1	P1?T*	*
+Resistivity - Phase Shift	P10H*	ohm.m
+Conductivity - Phase Shift	P10H*	ms/m
+Resistivity - Phase Shift	P10L*	ohm.m
+Conductivity - Phase Shift	P10L*	ms/m
+Resistivity - Phase Shift	P16H*	ohm.m
+Conductivity - Phase Shift	P16H*	ms/m
+Resistivity - Phase Shift	P16L*	ohm.m
+Conductivity - Phase Shift	P16L*	ms/m
+Pad A Azimuth	P1AZ*	*
+Pad A North	P1NO*	*
+Borehole PadA Array1	P1O?*	*
+Borehole PadB Array1	P2?T*	*
+Resistivity - Phase Shift	P22H*	ohm.m
+Conductivity - Phase Shift	P22H*	ms/m
+Resistivity - Phase Shift	P22L*	ohm.m
+Conductivity - Phase Shift	P22L*	ms/m
+Resistivity - Phase Shift	P28H*	ohm.m
+Conductivity - Phase Shift	P28H*	ms/m
+Resistivity - Phase Shift	P28L*	ohm.m
+Conductivity - Phase Shift	P28L*	ms/m
+Borehole PadB Array1	P2O?*	*
+Borehole PadC Array1	P3?T*	*
+Resistivity - Phase Shift	P34H*	ohm.m
+Conductivity - Phase Shift	P34H*	ms/m
+Resistivity - Phase Shift	P34L*	ohm.m
+Conductivity - Phase Shift	P34L*	ms/m
+Borehole PadC Array1	P3O?*	*
+Borehole PadD Array1	P4?T*	*
+Resistivity - Phase Shift	P40B	ohm.m
+Resistivity - Phase Shift	P40H*	ohm.m
+Conductivity - Phase Shift	P40H*	ms/m
+Resistivity - Phase Shift	P40L*	ohm.m
+Conductivity - Phase Shift	P40L*	ms/m
+Borehole PadD Array1	P4O?*	*
+Borehole PadE Array1	P5?T*	*
+Borehole PadE Array1	P5O?*	*
+Borehole PadF Array1	P6?T*	*
+Borehole PadF Array1	P6O?*	*
+Resistivity - Deep	P9*H*	*
+Borehole PadA Array1	PAD1*	*
+Borehole PadB Array1	PAD2*	*
+Borehole PadC Array1	PAD3*	*
+Borehole PadD Array1	PAD4*	*
+Borehole PadE Array1	PAD5*	*
+Borehole PadF Array1	PAD6*	*
+Borehole PadG Array1	PAD7*	*
+Borehole PadH Array1	PAD8*	*
+Pad Force	PADF*	%
+Pad Gain	PADG*	*
+Measured Depth	PAPD	ft
+Gauge Pressure	PAQP	psi
+Sensor Temperature	PAQT	degF
+Gauge Pressure	PASG	psi
+Sensor Temperature	PATV	degF
+Net Pay Flag	PAY_*	*
+Pad A Azimuth	PAZI*	*
+Guard Voltage Array	PD6G*	*
+Dip Button 1	PDD1*	*
+Dip Button 2	PDD2*	*
+Dip Button 3	PDD3*	*
+Dip Button 4	PDD4*	*
+Dip Button 5	PDD5*	*
+Dip Button 6	PDD6*	*
+Photoelectric Factor	PDPE*	*
+Toolface	PDTF	rad
+Photoelectric Factor	PEAL	unitless
+Photoelectric Factor	PEAL	*
+Photoelectric Factor	PEAS	*
+Grain Photoelectric Factor	PEGE	*
+Mud Cake Photoelectric Factor	PEM8	*
+Mud Cake Photoelectric Factor	PEMZ	*
+Perforation	PERF*	*
+Permeability	PERM*	*
+Borehole Image PE Array	PESC*	*
+Borehole Image PE Array	PESI*	*
+Caliper	PFC1*	*
+Caliper	PFC2*	*
+Porosity	PHIA*	*
+Effective Porosity	PHIE*	*
+Core Porosity	PHIH*	*
+Total Porosity	PHIT*	*
+Core Porosity	PHIV*	*
+Peak Coherence	PKCH*	*
+Peak Slowness	PKSL*	*
+Peak Travel Time	PKTI*	*
+Pumping Time	PMPT*	h
+Gauge Pressure	PONE	psi
+Porosity	POR_*	*
+Effective Porosity	PORE	v/v
+Pore Pressure	PORE	psi
+Porosity	PORT*	*
+Potassium Concentration	POTA*	*
+Potassium Concentration	POTC	%
+Pore Pressure Gradient (Mud Weight Equivalent)	PPMW*	*
+Pore Pressure	PPRS*	*
+Gauge Pressure	PQQP*	psi
+Gauge Pressure	PQRD*	psi
+Gauge Pressure	PQSG*	psi
+Resistivity - Micro	PROX*	*
+Resistivity - Deep	PSDR*	*
+Sensor Temperature	PVTT	degF
+Acoustic Normalization Factor	PWN?	*
+Acceleration Norm	QACB	*
+Magnetic Field Norm	QBCB	*
+Sensor Temperature	QGTM	degF
+Quality Factor	QIDD	*
+Quality Factor	QRBB	*
+Quality Control	QRTT*	*
+Speed Quality	QSPD*	*
+Spin Quality	QSPN*	us/ft
+Dip Quality	QUAF	*
+Resistivity - Medium	R*ME*	*
+Resistivity - Deep	R1LD*	*
+Resistivity - Medium	R1LM*	*
+Borehole Image Array Resistive	R3IM*	*
+Resistivity - Deep	R85F	OHM.M
+Resistivity - Deep	R85H	OHMM
+Resistivity - Deep	R85O	OHMM
+Resistivity - Deep	R85T	OHMM
+Resistivity - Attenuation	RACE*	*
+Resistivity - Attenuation	RACH*	*
+Resistivity - Attenuation	RACL*	*
+Resistivity - Attenuation	RACS*	*
+Radius Pad 1	RAD1*	*
+Radius Pad 2	RAD2*	*
+Radius Pad 3	RAD3*	*
+Radius Pad 4	RAD4*	*
+Radius Pad 5	RAD5*	*
+Radius Pad 6	RAD6*	*
+Radius Pad 7	RAD7*	*
+Radius Pad 8	RAD8*	*
+Borehole Image Array	RADS*	*
+Radius Pad 1	RAX1	*
+Radius Pad 5	RAX5	*
+Radius Pad 3	RAY3	*
+Radius Pad 7	RAY7	*
+Resistivity - Shallow	RBIT*	*
+Relative Bearing	RBOD	*
+Relative Bearing Offset	RBOF*	*
+Radius	RCAV	*
+Resistivity - Deep	RDEP*	*
+Radius	RDMI	*
+Measured Depth	RDVP*	ft
+Resistivity - Deep	RESD*	*
+Resistivity - Medium	RESM*	*
+Resistivity - Shallow	RESS	ohm.m
+Resistivity - Deep	RF90	ohmm
+Reflection Coefficient	RFC_*	*
+Resistivity - Shallow	RFOC*	ohm.m
+Measured Depth	RFPD	ft
+Count Rate	RGRA	1/s
+Count Rate	RGRB	1/s
+Count Rate	RGRL	1/s
+Count Rate	RGRR	1/s
+Count Rate	RGRU	1/s
+Grain Density	RHGA*	g/cm3
+Bulk Density	RHO8*	*
+Bulk Density	RHOA	g/cm3
+Bulk Density	RHOB*	*
+Bulk Density Correction	RHOC	g/cc
+Fluid Density	RHOF*	g/cm3
+Grain Density	RHOG*	g/cm3
+Bulk Density	RHOI*	*
+Bulk Density	RHOM	g/cm3
+Bulk Density	RHON*	*
+Acoustic Impedance	RHOV*	*
+Bulk Density	RHOZ*	*
+Bulk Density	RHS3	g/cm3
+Bulk Density	RHS4	g/cm3
+Resistivity - Horizontal Formation	RHSH	ohm.m
+Resistivity - Deep	RI*D*	*
+Resistivity - Medium	RILM*	*
+Resistivity - Medium Induction	RIMC	ohm.m
+Resistivity - Shallow	RING*	*
+Resistivity (Array)	RLA?	*
+Resistivity	RLA0*	ohm.m
+Resistivity - Shallow Laterolog	RLA1*	*
+Resistivity	RLA2*	ohm.m
+Resistivity - Medium Laterolog	RLA3*	*
+Resistivity	RLA4*	ohm.m
+Resistivity - Deep Laterolog	RLA5*	*
+Gauge Pressure	RLDF	psi
+Resistivity - Deep Laterolog	RLGC	ohm.m
+Borehole Image Density Array LS	RLSC	g/cm3
+Borehole Image Density Array LS	RLSI	g/cm3
+Mudcake Resistivity	RMCA*	*
+Resistivity - Micro	RMCZ*	*
+Mud Filtrate Resistivity	RMFA*	*
+Resistivity - Micro	RMLC	ohm.m
+Resistivity - Micro	RMSC	ohm.m
+Mud Resistivity	RMUD*	*
+Mud Cake Density	ROM8	*
+Mud Cake Density	ROMZ	*
+Rate Of Penetration	ROP5	ft/hr
+Borehole Image Density Array	ROSC*	*
+Borehole Image Density Array	ROSI*	*
+Resistivity - Phase Shift	RPCE*	*
+Resistivity - Phase Shift	RPCH*	*
+Resistivity - Phase Shift	RPCL*	*
+Resistivity - Medium	RPCM*	*
+Resistivity - Phase Shift	RPCS*	*
+Rotations Per Minute	RPMS	*
+Gauge Pressure	RPQP	psi
+Gauge Pressure	RQDP	psi
+Sensor Temperature	RQPT	degF
+Count Rate	RSCF*	*
+Count Rate	RSCN*	*
+Resistivity - Medium	RSFR*	*
+Resistivity - Shallow Laterolog	RSGC	ohm.m
+Resistivity - Shallow	RSHA	*
+Borehole Image Density Array SS	RSSC	g/cm3
+Borehole Image Density Array SS	RSSI	g/cm3
+Sensor Temperature	RTES	degF
+Time Interval	RTIM	s
+Resistivity - Micro	RVDR	ohm.m
+Resistivity - Vertical Formation	RVSH	ohm.m
+Resistivity - Micro	RVSR	ohm.m
+Uncertainty - Percent	SABK	*
+Mud Salinity	SALM	*
+Salinity	SALT	*
+Bulk Density	SBD2*	*
+Sigma Borehole	SBFA	cu
+Uncertainty - Weight Fraction	SBHK	*
+Sigma Borehole	SBHN*	cu
+Sigma Borehole	SBNA	cu
+Shift Corrected Velocity	SCDV	*
+Uncertainty	SCGR	unitless
+Cable Velocity	SCVL*	*
+Sonde Deviation	SDEV	*
+Uncertainty - Volume Fraction	SDPO	*
+Resistivity - Medium	SESP*	*
+Sigma Formation	SFFA	cu
+Sigma Formation	SFFC	cu
+Sigma Formation	SFFD*	cu
+Sigma Formation	SFNA	cu
+Sigma Formation	SFNC	cu
+Sigma Formation	SFND*	cu
+Flushed Zone Hydrocarbon Saturation	SHXO*	*
+Sigma Borehole	SIBF	cu
+Sigma Borehole	SIBH*	cu
+Sigma Borehole	SIGB	cu
+Sigma Formation	SIGF*	cu
+Sigma Formation	SIGM*	cu
+Vertical Stress	SIGV*	psi
+Sigma Porosity	SIPH*	ft3/ft3
+Uncertainty - Photoelectric Factor	SLPE*	*
+Uncertainty - Volume Fraction	SNDP	*
+Uncertainty - Density	SNRB	*
+Standoff	SOA1	cm
+Standoff	SOA2	cm
+Standoff	SOA3	cm
+Standoff	SOA4	cm
+Standoff	SOA5	cm
+Standoff	SOA6	cm
+Standoff	SOA7	cm
+Standoff	SOA8	cm
+Threshold	SORT	unitless
+Uncertainty - Photoelectric Factor	SPEL	*
+Uncertainty - Photoelectric Factor	SPES	*
+Sonic Porosity	SPHI*	ft3/ft3
+Waveform - Spinner	SPI1*	*
+Waveform - Spinner	SPIN*	*
+Stroke Rate - Pump 1	SPM1*	*
+Stroke Rate - Pump 2	SPM2*	*
+Stroke Rate - Pump 3	SPM3*	*
+Stroke Rate - Pump 4	SPM4*	*
+Stroke Rate - Pump 5	SPM5*	*
+Standpipe Pressure	SPPA*	*
+Resistivity - Synthetic	SRES*	*
+Uncertainty - Density	SRHL	*
+Uncertainty - Density	SRHM	*
+Gauge Pressure	SRQP*	psi
+Uncertainty	SSGR	unitless
+Shear Slowness	SSON*	*
+Bulk Density	SSRH	g/cm3
+Stick Slip	SSRP*	*
+Borehole Image Array	STAZ*	*
+Compressional Slowness	STC1*	*
+Stoneley Slowness	STC3*	*
+Uncertainty - Concentration	STHO	*
+Slips Status	STIS*	*
+Standoff	STOF	*
+Orientation	STOH*	*
+Specific Area	SUAR*	*
+Uncertainty - Concentration	SURA	*
+Weight On Bit - Surface	SWOB	*
+Weight On Bit - Surface	SWOB*	*
+Flushed Zone Water Saturation	SWXO*	*
+Flushed Zone Water Saturation	SXWI	v/v
+Reflection Coefficient	SZ??	*
+NMR Relaxation Time Ratio	T12R	unitless
+Count Rate	TCFD*	*
+Count Rate	TCND*	*
+Pump Time	TCRC	*
+Measured Depth	TDEP	*
+Travel Time	TDIF*	us
+Temperature	TEMP	degF
+Sensor Temperature	TEMS	degF
+Tension	TENS*	*
+Angle	TETA*	*
+Waveform - Monopole	TFWV*	*
+Total Gas	TGAS	*
+Total Gas	TGAS*	*
+Hook Load	THKD*	*
+Thorium Concentration	THOR*	*
+Hole Deviation	TILT	dega
+Date Time	TIME*	s
+Ratio	TNRB	*
+Ratio	TNRU	*
+Waveform - Monopole	TNWV*	*
+Zone Name	TOPS	*
+Porosity	TPHI	*
+Total Tank Volume	TPIT	*
+NMR T2 Distribution	TPOR*	*
+Torque - Free Rotation Point	TQLS*	*
+Torque - Surface	TQMI	*
+Torque - Surface	TQMN	*
+Torque - Surface	TQMX	*
+Count Rate Ratio	TRAT	*
+Borehole Image Acoustic Travel Time Array	TRAV	*
+General Flag	TRC_*	*
+Formation Temperature	TRES	*
+Count Rate	TSCF*	*
+Count Rate	TSCN*	*
+Shear Slowness	TSLD	*
+Shear Slowness	TSMP	*
+Stroke Rate	TSPM*	*
+Stroke Count	TSTK	*
+Tensile Strength	TSTR*	*
+Shear Slowness	TSUD	*
+Borehole Image Acoustic Travel Time Array	TTBK	*
+Borehole Image Acoustic Travel Time Array	TTBK*	*
+Borehole Image Array	TTCN	*
+Tool Temperature	TTEM	degC
+Cable Velocity	TTEN*	*
+Minimum Horizontal Stress	TXSP	*
+Dip Classification	type	*
+Maximum Horizontal Stress	TYSP	*
+Vertical Stress	TZSP	psi
+Pad A Azimuth	UBAZ	*
+Relative Bearing	UBRB	*
+Ultrasonic Caliper	UCAV	cm
+Ultrasonic Caliper	UCHO	cm
+Caliper	UCLI	*
+Borehole Image Radius Array	UCRA*	*
+Ultrasonic Caliper	UCVE	cm
+Borehole Image Array Resistive	UHRI*	*
+Borehole Image Array Resistive	Strata*	*
+Volumetric Photoelectric Factor	ULDS	unitless
+Volumetric Photoelectric Effect	ULDS	*
+Volumetric Photoelectric Factor	UMAA*	*
+Undisturbed Zone Oil Volume Fraction	UOIL*	v/v
+Borehole Image Standoff Array	UOIM	cm
+Borehole Image Array	UOIM*	*
+Pad A Azimuth	UPAZ	*
+Special Fluid Volume Fraction	Usfl*	m3/m3
+Borehole Image Array	USOI*	*
+X Location	UTME*	*
+Y Location	UTMN*	*
+Undisturbed Zone Water Volume Fraction	UWat*	v/v
+Calcite Volume Fraction	VCLC*	v/v
+Shale Volume Fraction	VDSH	*
+Borehole Diameter	VERD	cm
+Vertical Stress	VERT	psi
+Isolated Porosity	VISO*	v/v
+Oil Volume Fraction	VOIL*	*
+VpVs (Compressional To Shear) Ratio	VPVS*	*
+Vertical Section	VSCT*	ft
+Vertical Section	VSEC*	ft
+Shear Velocity	VSHH*	km/s
+Shear Velocity	VSHV*	km/s
+Carbon Oxygen Ratio	VUGA*	*
+Carbon Oxygen Ratio	VUOI*	*
+Carbon Oxygen Ratio	VUWA*	*
+Flushed Zone Gas Volume Fraction	VXGA	*
+Flushed Zone Water Volume Fraction	VXWA	*
+Anhydrite Weight Fraction	WANH*	*
+Carbonate Weight Fraction	WCAR*	*
+Clay Weight Fraction	WCLA*	*
+Coal Weight Fraction	WCOA*	*
+Well Identifier	Well	*
+Evaporite Weight Fraction	WEVA*	*
+Waveform - Monopole	WF?I	*
+Waveform - Monopole	WF?R	*
+Waveform - Dipole	WF_X*	*
+Waveform - Dipole	WF_Y*	*
+Waveform	WFA?	*
+Waveform	WFA_*	*
+Waveform - Low Frequency	WFA4*	*
+Fluid Density	WFDE*	*
+Count Rate Ratio	WINR*	*
+Weight On Bit	WOBA	*
+Borehole Pressure	WPRE*	*
+Pyrite Weight Fraction	WPYR*	*
+Quartz-Feldspar-Mica Weight Fraction	WQFM*	*
+Waxman B	WS_B	*
+Siderite Weight Fraction	WSID*	*
+Borehole Temperature	WTEP*	*
+Borehole Image Radius Array	XRBK	in
+Special Fluid Volume Fraction	Xsfl*	m3/m3
+Vibration	Z1RM*	*
+Z Acceleration	ZACC*	*
+Bulk Density Correction	ZCOR*	*
+Bulk Density	ZDEN*	*
+Bulk Density	ZDNC	G/CC
+Bit Friction Coefficient ZETA	ZETA	*
+Zone Name	ZONE*	*
+Borehole PadA Array1	ZR1A*	*
+Borehole PadA Array2	ZR1B*	*
+Borehole PadB Array1	ZR2A*	*
+Borehole PadB Array2	ZR2B*	*
+Borehole PadC Array1	ZR3A*	*
+Borehole PadC Array2	ZR3B*	*
+Borehole PadD Array1	ZR4A*	*
+Borehole PadD Array2	ZR4B*	*
+Borehole PadE Array1	ZR5A*	*
+Borehole PadE Array2	ZR5B*	*
+Borehole PadF Array1	ZR6A*	*
+Borehole PadF Array2	ZR6B*	*
+Bulk Density	ZRHO*	*
+Bit Size	*BS*	in
+Variable Density Log	*VDL	*
+Resistivity - Deep Induction	6F1	ohm.m
+Resistivity - Medium	A10*	*
+Resistivity - Deep	A40*	*
+Compressional Slowness	AC_*	*
+General Flag	ACF	unitless
+General Flag	ACF	*
+Shear Slowness	ACS*	*
+Gamma Ray	AGR*	*
+Measured Depth	AHD*	*
+Conductivity (Array)	AIC*	*
+Coefficient	AMC*	unitless
+Epithermal Neutron Porosity Limestone	APLK*	pu
+Neutron Porosity	APL*	*
+Neutron Porosity	APS*	*
+General Flag	AQF	unitless
+Resistivity - Deep	ATR*	ohm.m
+Hole Azimuth	AZI	*
+Pad A Azimuth	AZW*	*
+Borehole PadA Array2	BA1	*
+Borehole PadA Array1	BA2	*
+Borehole PadB Array2	BB1	*
+Borehole PadB Array1	BB2	*
+Borehole PadC Array2	BC1	*
+Borehole PadC Array1	BC2	*
+Borehole PadD Array2	BD1	*
+Borehole PadD Array1	BD2	*
+Breakdown Pressure Gradient	BDG*	*
+Failure Image	BF_*	*
+Fluid Volume Fraction	BFV	ft3/ft3
+Bound Water Volume Fraction	BFV*	*
+Bottom Hole Temperature	BHT*	*
+Bit Size	BIT*	*
+Bulk Modulus (Static)	BMK*	*
+Breakout Pressure Gradient	BOG*	*
+Thermal Neutron Porosity	BPH*	*
+Gauge Pressure	BQP*	psi
+Sensor Temperature	BQT*	degF
+Waxman BQv	BQV*	*
+Gauge Pressure	BRD*	psi
+Gauge Pressure	BSG*	psi
+Fluid Volume Fraction	BVW*	*
+Fluid Volume Fraction	BVX*	*
+Caliper 1	C1_*	in
+Elastic Modulus	C13	GPa
+Caliper 1	C13*	in
+Caliper 2	C2_*	in
+Caliper 2	C24*	in
+Elastic Modulus	C44*	psi
+Elastic Modulus	C55*	psi
+Elastic Modulus	C66*	psi
+Caliper	CAL*	mm
+Caliper	CAL*	*
+Caliper	CAV*	*
+Pad A Azimuth	CAZ*	*
+Barium Capture Relative Yield	CBA	v/v
+Cement Bond Amplitude	CBL*	*
+Bound Water Volume Fraction	CBW*	*
+Calcium Capture Relative Yield	CCA	v/v
+Cation Exchange Capacity CEC	CEC	*
+Iron Corrected Capture Relative Yield	CFE	v/v
+Correction Factor	CFK	unitless
+Correction Factor	CFT	unitless
+Correction Factor	CFU	unitless
+Gadolinium Capture Relative Yield	CGD	v/v
+Gamma Ray	CGR	gAPI
+Gamma Ray Minus Uranium	CGR*	*
+Core Mercury Saturation (Array)	CHG*	*
+Tension	CHT*	*
+Hydrogen Capture Relative Yield	CHY	v/v
+Core Permeability	CKH*	*
+Core Permeability Vertical	CKV*	*
+Core Permeability	CKX*	*
+Slowness Time Projection	CMB*	*
+NMR T2 Distribution	CMR*	*
+Neutron Porosity	CNC*	*
+Neutron Porosity	CNF*	ft3/ft3
+Neutron Porosity	CNL*	*
+Peak Coherence	CPK*	*
+Relative Bearing	CRB*	*
+Bit Size	CSG*	*
+Silicon Capture Relative Yield	CSI	v/v
+Core Water Saturation (Array)	CSW*	*
+Thorium Concentration	CTH	ppm
+Titanium Capture Relative Yield	CTI	v/v
+Cumulative Flow Rate	CUM*	*
+Water Conductivity	CWA*	*
+Measured Depth	DAH*	*
+Hole Azimuth	DAZ*	*
+Dip Button 1	DB1	*
+Dip Button 2	DB2	*
+Dip Button 3	DB3	*
+Dip Button 4	DB4	*
+Cement Bond Index	DBI	*
+Carbon Oxygen Ratio	DCO	*
+Pretest Volume	DDV	cm3
+Bulk Density Hydrocarbon Corrected	DEN_HCC*	*
+Bulk Density	DEN*	*
+Hole Deviation	DEV*	*
+Invasion Diameter	DI_*	*
+Angle	DIL	*
+True Dip Inclination	Dip	*
+Resistivity - Deep	DLL*	*
+Dog Leg Severity	DLS	*
+Depth of Cut	DOC	in/c
+Invasion Diameter	DOI*	*
+Porosity	DPO	v/v
+Compressional Slowness	DTC*	*
+Shear Slowness	DTS*	us/ft
+Measured Depth	DVP*	ft
+D-exponent	DXC	*
+Equivalent Circulating Density	ECD*	ppg
+Gamma Ray	EGR*	*
+Hydrocarbon Volume Fraction	EHV	*
+Equivalent Static Density	ESD*	ppg
+Carbon Inelastic Relative Yield	F1C	*
+Oxygen Inelastic Relative Yield	F1O	*
+Hydrogen Capture Relative Yield	F2H	*
+Potassium Capture Relative Yield	F2K	*
+Sodium Capture Relative Yield	F2S	*
+Closure Pressure Gradient	FCG*	*
+Closure Pressure	FCP*	*
+Bulk Density	FDC*	*
+Fluid Volume Fraction	FFV	ft3/ft3
+Leak Off Pressure	FIP*	*
+Leak Off Pressure	FIT*	*
+Fluid Code	FLD	*
+Formation Pressure	FMP*	*
+Neutron Porosity	FNC*	%
+Propagation Pressure	FPP*	*
+Mean Fracture Aperture	FVA*	mm
+Height Above Free Water Level	FWL*	*
+Gamma Ray	GAM*	*
+Z Acceleration	GAZ*	*
+Borehole Diameter	GHD	*
+Hydrocarbon Volume Per Mass Of Rock	GIP*	*
+Gas Oil Ratio	GOR*	scf(60F)/bbl
+Gamma Ray	GR_*	*
+Gamma Ray	GRC*	*
+Gamma Ray Normalized	GRN*	*
+Gamma Ray	GRP*	*
+Gravity Toolface	GTF*	deg
+Resistivity - Russian Laterals-BKZ Gradient	GZ1*	*
+Resistivity - Russian Laterals-BKZ Gradient	GZ2*	*
+Resistivity - Russian Laterals-BKZ Gradient	GZ3*	*
+Resistivity - Russian Laterals-BKZ Gradient	GZ4*	*
+Resistivity - Russian Laterals-BKZ Gradient	GZ5*	*
+Hole Azimuth	HAZ*	*
+Hydrocarbon Volume Fraction	HCV*	*
+Caliper	HD1	in
+Caliper	HD2	in
+Invasion Diameter	HDI	in
+Potassium Concentration	HFK*	*
+Gamma Ray	HGR*	*
+Bulk Density Correction	HRH*	*
+Neutron Porosity	HTN*	*
+Mud Gas IC4	IC4	*
+Mud Gas IC5	IC5	*
+Borehole Volume	IHV	v/v
+Resistivity - Medium Induction	ILM*	ohm.m
+Resistivity - Shallow Induction	ILS*	ohm.m
+Hole Deviation	INC	*
+Integrated Transit Time	ITT	*
+Permeability	KFP*	mD
+Potassium Concentration	KGR	%
+Latitude	LAT*	*
+Bulk Density	LDT*	*
+Resistivity - Medium	LL3*	*
+Resistivity - Deep	LL7*	*
+Resistivity - Shallow	LL8*	*
+Resistivity - Medium	LLM*	*
+Resistivity - Shallow Laterolog	LLS*	ohm.m
+Acoustic Impedance	LN_*	*
+Leak Off Pressure	LOT*	*
+Photoelectric Factor	LPE	unitless
+Resistivity - Micro	MBK*	*
+Compressional Slowness	MDT*	us/ft
+Caliper	MKV*	*
+Resistivity - Micro	MLI*	*
+Resistivity - Micro	MLN*	*
+Resistivity - Medium	MRS*	*
+Mechanical Specific Energy	MSE	psi
+Magnetic Toolface	MTF*	deg
+Mud Weight	MW_*	*
+Carbon Inelastic Relative Yield	N1C	*
+Oxygen Inelastic Relative Yield	N1O	*
+Hydrogen Capture Relative Yield	N2H	*
+Potassium Capture Relative Yield	N2K	*
+Sodium Capture Relative Yield	N2S	*
+Mud Gas NC4	NC4	*
+Mud Gas NC5	NC5	*
+Net Flag	NET*	*
+Neutron Porosity Hydrocarbon Corrected	NEU_HCC*	*
+Neutron Porosity	NEU*	*
+Russian Thermal Neutron Porosity	NKT*	*
+Neutron Porosity	NPS*	*
+Thermal Neutron Near Far Ratio	NRC	v/v
+Borehole PadA Array1	OAA*	*
+Borehole PadC Array1	OAC*	*
+Borehole PadD Array1	OAD*	*
+Pressure Gradient	OBG*	*
+Relative Bearing Offset	OFF*	*
+Hydrocarbon Volume Per Volume Of Rock	OIP*	*
+Borehole PadA Array1	OM*1	*
+Borehole PadB Array1	OM*2	*
+Borehole PadC Array1	OM*3	*
+Borehole PadD Array1	OM*4	*
+Borehole PadE Array1	OM*5	*
+Borehole PadF Array1	OM*6	*
+One-Way Time	OWT*	*
+Resistivity - Medium	P10*	*
+Resistivity - Deep	P40*	*
+Photoelectric Factor	PE_*	*
+Photoelectric Factor	PEB*	*
+Photoelectric Factor	PEC	b/elec
+Photoelectric Factor	PEF*	*
+Photoelectric Factor	PEU*	*
+Porosity	PHI*	*
+Porosity	POR*	*
+Pore Pressure	PP_*	*
+Pretest Volume	PTV*	cm3
+Gauge Pressure	QCP	psi
+Normalized Qv	QVN*	*
+R35 Pore Throat Radius	R35*	um
+X Acceleration	RAX*	*
+Y Acceleration	RAY*	*
+Z Acceleration	RAZ*	*
+Radius	RD?	in
+Resistivity - Deep Laterolog	RDC	ohm.m
+Resistivity	RES	*
+Reflection Coefficient	RFC	*
+Gamma Ray Raw	RGR	*
+Resistivity - Horizontal Formation	RH_*	*
+Bulk Density	RHL	g/cm3
+Resistivity (Array)	RL?	*
+Resistivity - Medium Lateral	RLL*	ohm.m
+Mud Resistivity	RM_*	*
+Mud Resistivity	RMA	*
+Mudcake Resistivity	RMC	*
+Mud Filtrate Resistivity	RMF	*
+X Magnetometer	RMX*	*
+Y Magnetometer	RMY*	*
+Z Magnetometer	RMZ*	*
+Resistivity (Array)	RN?	*
+Bulk Density	ROB*	*
+Rate Of Penetration	ROP*	ft/hr
+Relative Bearing	ROT*	*
+Rotations Per Minute	RPM*	*
+Resistivity - Medium	RS_*	*
+Resistivity - Shallow Laterolog	RSC	ohm.m
+Net Flag	RSH*	*
+Resistivity - True Formation	RT_*	*
+Resistivity - Vertical Formation	RV_*	*
+Water Resistivity	RWA*	*
+Resistivity - Flushed Zone	RXO*	ohm.m
+Resistivity - Micro	RXR	ohm.m
+Formation Water Salinity	SAL*	*
+Water Saturation	SAT*	*
+Borehole Image Array	SAZ*	*
+Acoustic Slowness	SBM*	*
+Shift Corrected Depth	SCD*	*
+Time Interval	SEC	s
+Uncertainty - Weight Fraction	SFK	*
+Resistivity - Spherically Focused	SFL*	*
+Sigma Formation	SGN*	cu
+Gauge Pressure	SGP	psi
+Gamma Ray	SGR*	*
+Survey Total Gravity Calculated	SGT*	mG
+Hydrocarbon Saturation	SH_*	*
+Hydrocarbon Saturation	SHE*	*
+Core Mercury Saturation (Array)	SHG*	*
+Magnetic Total Calculated	SHT*	nT
+Hydrocarbon Saturation	SHT*	*
+Sigma Formation	SIF*	cu
+Resistivity - Shallow Normal	SNC	ohm.m
+Neutron Porosity	SNP*	*
+Compressional Slowness	SON*	*
+Spontaneous Potential	SP_*	*
+Cable Speed	SPD	*
+Slowness Time Projection	SPJ*	*
+Standpipe Pressure	SPP	*
+Slowness Time Projection	SPR*	*
+Slowness Time Projection	SPT*	*
+Effective Water Saturation	SWE*	*
+Waveform	SWF*	*
+Core Water Saturation	SWI*	*
+Water Saturation	SWT*	*
+Flushed Zone Water Saturation	SXO*	*
+Tension	TEN	*
+Thorium Concentration	TGR	ppm
+Temperature	TM8*	*
+Neutron Porosity	TNPK*	v/v
+Thermal Neutron Porosity	TNP*	pu
+Neutron Porosity	TNP*	*
+Total Organic Carbon Weight Fraction	TOC*	*
+Measured Depth	TOP	*
+Electromagnetic Propagation Time	TPL*	ns/m
+Torque - Surface	TQA*	*
+Telemetry Sliding Indicator	TSI	*
+True Stratigraphic Thickness	TST*	*
+Trip Tank Volume	TTK*	bbl
+Total Tank Volume	TTV	bbl
+Active Mud Tank Volume	TVA	bbl
+True Vertical Depth	TVD*	*
+True Vertical Thickness	TVT*	*
+Two-Way Time	TWT*	*
+Unconfined Compressive Strength	UCS*	*
+Breakdown Pressure	UFP*	*
+Grain Volumetric Photoelectric Factor	UGE	*
+Uranium Concentration	URA*	ppm
+Borehole Image U Array	USC*	barns/cm3
+General Flag	USE*	*
+Borehole Image U Array	USI*	barns/cm3
+Bound Water Volume Fraction	VBW	*
+Clay Volume Fraction	VCL*	*
+Variable Density Log	VDL*	*
+Hydrocarbon Volume Fraction	VHY*	*
+Compressional Velocity	VP_*	*
+Shear Velocity	VS_*	*
+Shale Volume Fraction	VSH*	*
+Water Cut	WCG*	unitless
+Water Cut	WCO*	unitless
+Waveform	WF_*	*
+Waveform - Monopole	WFI	*
+Waveform - Monopole	WFR	*
+Weight On Bit - Surface	WOB	*
+Mud Resistivity	WRM*	*
+Resistivity - Attenuation	A*H	ohm.m
+Compressional Slowness	AC	*
+Acoustic Impedance	AI*	*
+X Acceleration	AX	*
+Y Acceleration	AY	*
+Pad A Azimuth	AZ	dega
+Z Acceleration	AZ	*
+Resistivity - Russian Laterals	BK	ohm.m
+Inclination Build Rate	BR*	deg/100ft
+Fluid Volume Fraction	BV*	v/v
+X Magnetometer	BX	*
+Y Magnetometer	BY	*
+Z Magnetometer	BZ	*
+Cohesion Strength	C0*	*
+Caliper 1	C1	in
+Mud Gas C1	C1	%
+Caliper 2	C2	in
+Mud Gas C2	C2	%
+Mud Gas C3	C3	*
+Potassium Capture Relative Yield	CK	v/v
+Cable Speed	CS*	*
+Uranium Concentration	CU	ppm
+Invasion Diameter	DI	*
+Measure Point Offset	DO*	*
+Compressional Slowness	DT*	*
+X Offset	ED*	*
+Time Interval	ET*	ms
+Emex Voltage	EV*	*
+Resistivity - Micro	FE	ohm.m
+X Magnetometer	FX	*
+Y Magnetometer	FY	*
+Z Magnetometer	FZ	*
+Gamma Ray	GK	*
+Gamma Ray	GR	*
+Grain Size	GS*	*
+X Acceleration	GX	*
+Y Acceleration	GY	*
+Z Acceleration	GZ	*
+Resistivity - Deep Induction	IK	ohm.m
+Flow Rate	IQ*	bbl/d
+Core Permeability	KG*	mD
+Horizontal Permeability	KH*	*
+Vertical Permeability	KV*	*
+Core Permeability	KW*	mD
+Measured Depth	MD	*
+Bit Friction Coefficient MU	MU	*
+Mud Weight	MW	*
+Mud Weight	MW*	*
+X Offset	ND*	*
+Neutron Porosity	NP*	%
+Resistivity - Phase Shift	P*H	ohm.m
+Capillary Pressure Laboratory (Array)	PC*	*
+Photoelectric Factor	PE	*
+Petrophysical Group	PG*	*
+Pore Pressure	PP	*
+Poisson Ratio (Dynamic)	PR*	*
+Spontaneous Potential	PS	*
+Resistivity - Russian Normal	PZ*	*
+Acceleration Norm	QA	*
+Acceleration Norm	QA*	*
+Magnetic Field Norm	QB*	*
+Cumulative Gas Rate	QG*	*
+Magnetic Field Inclination	QM*	*
+Cumulative Oil Rate	QO*	*
+Cumulative Flow Rate	QT*	*
+Cation Concentration Qv	QV*	MEQ/ML
+Volumetric CEC	QV*	*
+Cumulative Water Rate	QW*	*
+Relative Bearing	RB*	*
+Resistivity - Horizontal Formation	RH	*
+Formation Resistivity Sw100	RO*	ohm.m
+Resistivity - Medium	RS	*
+Resistivity - True Formation	RT*	ohm.m
+Resistivity - Vertical Formation	RV	*
+Water Resistivity	RW*	*
+Hydrocarbon Saturation	SH*	v/v
+Resistivity - Shallow	SN	*
+Oil Saturation	SO*	ft3/ft3
+Spontaneous Potential	SP*	*
+Vertical Stress	SV*	*
+Water Saturation	SW*	*
+Torque - Downhole	T0	*
+Total Gas	TG	*
+Thorium Concentration	TH	*
+Thorium Concentration	TH*	ppm
+Azimuth Turn Rate	TR*	deg/100ft
+Travel Time	TT*	*
+Effective Velocity	VE	*
+Gas Volume Fraction	VG*	*
+Interval Velocity	VI	*
+Compressional Velocity	VP	*
+Shear Velocity	VS	*
+Water Volume Fraction	VW*	*
+Weight On Bit - Downhole	W0	*
+Waxman B	B	*
+Young's Modulus (Dynamic)	E	GPa
+Shear Modulus (Dynamic)	G	GPa
+Permeability	K	mD
+Bulk Modulus (Dynamic)	K	GPa
+Potassium Concentration	K	%
+Archie Porosity Exponent m	M	unitless
+Bulk Modulus (Dynamic)	M	GPa
+Archie Saturation Exponent n	N	*
+Volumetric Photoelectric Effect	UPEK*	b/cm3
+Uranium Concentration	U*	ppm
+Volumetric Photoelectric Effect	U*	barns/cm3
+X Location	X	*
+Y Location	Y	*
+Core Depth	Z	*
+Volumetric CEC	*	meq/cm3
+Mobility	*	mD/cP
+Gamma Ray	*	gAPI
+Temperature	*	degF
+Pit State	PIT_STATE	*
+Borehole Image - Quality	DCQI*	*
+Fluorescence	VRK*	%
+Grain Density	RHOK*	g/cm3
+Bulk Density	RHEK*	g/cm3
+Bulk Density	RHLK*	g/cm3
+Photoelectric Factor	PEK*	b/e
+Ratio	HCRK*	unitless
+Carbon Weight Fraction	DWCK*	w/w
+Hydrogen Weight Fraction	DWHK*	w/w
+Ratio	CCFK*	unitless
+Hydrogen Index	HIK*	unitless
+Epithermal Neutron Porosity	ENPK*	v/v
+Sigma Formation	SIGK*	cu
+Fast Neutron Elastic Scattering Cross Section	FNXK*	1/m
